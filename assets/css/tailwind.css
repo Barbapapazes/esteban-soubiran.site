@@ -4,6 +4,6 @@
 
 @font-face {
   font-family: 'CascadiaCode';
-  font-weight: 400;
-  src: local('CascadiaCode'), url(../fonts/CascadiaCode-Regular.ttf);
+  src: local('CascadiaCode'), url(../fonts/CascadiaCode.woff2);
+  font-display: swap;
 }
