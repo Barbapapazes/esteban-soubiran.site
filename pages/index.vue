@@ -51,6 +51,49 @@
       <hr class="bg-white h-1 rounded-full" />
     </div>
     <section class="px-4 pb-4 md:pb-10 md:px-10 xl:p-0 xl:pb-20 xl:px-20">
+      <Title>&#60; mes projets &#62;</Title>
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8 mt-4 md:mt-10"
+      >
+        <Card :src="require('@/assets/img/bnei.webp')" alt="logo du bnei">
+          <template v-slot:title>Mon engagement au BNEI</template>
+          <template v-slot:tag>#association #bnei</template>
+          <template v-slot:date>25-11-2020</template>
+          <template v-slot:btn>&#60; voir plus &#62;</template>
+        </Card>
+        <Card :src="require('@/assets/img/bnei.webp')" alt="logo du bnei">
+          <template v-slot:title>Mon engagement au BNEI</template>
+          <template v-slot:tag>#association #bnei</template>
+          <template v-slot:date>25-11-2020</template>
+          <template v-slot:btn>&#60; voir plus &#62;</template>
+        </Card>
+        <Card :src="require('@/assets/img/bnei.webp')" alt="logo du bnei">
+          <template v-slot:title>Mon engagement au BNEI</template>
+          <template v-slot:tag>#association #bnei</template>
+          <template v-slot:date>25-11-2020</template>
+          <template v-slot:btn>&#60; voir plus &#62;</template>
+        </Card>
+        <Card :src="require('@/assets/img/bnei.webp')" alt="logo du bnei">
+          <template v-slot:title>Mon engagement au BNEI</template>
+          <template v-slot:tag>#association #bnei</template>
+          <template v-slot:date>25-11-2020</template>
+          <template v-slot:btn>&#60; voir plus &#62;</template>
+        </Card>
+        <Card :src="require('@/assets/img/bnei.webp')" alt="logo du bnei">
+          <template v-slot:title>Mon engagement au BNEI</template>
+          <template v-slot:tag>#association #bnei</template>
+          <template v-slot:date>25-11-2020</template>
+          <template v-slot:btn>&#60; voir plus &#62;</template>
+        </Card>
+        <Card :src="require('@/assets/img/bnei.webp')" alt="logo du bnei">
+          <template v-slot:title>Mon engagement au BNEI</template>
+          <template v-slot:tag>#association #bnei</template>
+          <template v-slot:date>25-11-2020</template>
+          <template v-slot:btn>&#60; voir plus &#62;</template>
+        </Card>
+      </div>
+    </section>
+    <section class="px-4 pb-4 md:pb-10 md:px-10 xl:p-0 xl:pb-20 xl:px-20">
       <Title>&#60; à propos &#62;</Title>
       <div
         class="m-auto shadow-medium rounded-2xl text-justify text-light-grey p-4 md:p-8 font-text text-lg md:text-2xl mt-4 md:mt-10"
@@ -96,11 +139,9 @@
         </p>
       </div>
       <div class="flex justify-center mt-6 md:mt-12">
-        <a
-          href="mailto:pro.soubiran@gmail.com"
-          class="mx-auto font-text hover:shadow-medium transition-shadow duration-300 text-lg md:text-2xl rounded-5 text-white p-4 uppercase"
-          >&#60; contact &#62;</a
-        >
+        <Btn>
+          <a href="mailto:pro.soubiran@gmail.com">&#60; contact &#62;</a>
+        </Btn>
       </div>
     </section>
   </div>
