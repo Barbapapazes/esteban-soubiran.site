@@ -1,9 +1,16 @@
 module.exports = {
   theme: {
     extend: {
+      spacing: {
+        1: '5px',
+        2: '10px',
+      },
       colors: {
         'deep-blue': '#344163',
         'light-grey': '#D7D7D7',
+      },
+      height: {
+        small: '2px',
       },
       fontSize: {
         '8xl': '6rem',
@@ -16,6 +23,7 @@ module.exports = {
       },
       borderRadius: {
         5: '5px',
+        10: '10px',
       },
       fontFamily: {
         text: ['CascadiaCode', 'sans-serif'],

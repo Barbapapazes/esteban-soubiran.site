@@ -1,18 +1,18 @@
 <template>
-  <div class="p-4 md:p-6 rounded-2xl shadow-medium">
-    <div class="rounded-5 shadow-inner-small p-2 md:p-4">
+  <div class="p-2 rounded-10 shadow-medium font-text grid gap-1">
+    <div class="rounded-10 shadow-inner-small p-2 mb-1">
       <img :src="src" :alt="alt" class="rounded-5 w-full h-auto" />
     </div>
-    <h3 class="font-bold text-white text-2xl md:text-3xl mt-4">
+    <h3 class="text-white">
       <slot name="title"></slot>
     </h3>
-    <p class="font-text text-light-grey text-lg md:text-xl">
+    <p class="text-light-grey text-sm">
       <slot name="tag"></slot>
     </p>
-    <p class="font-text text-light-grey text-lg">
+    <p class="text-light-grey text-sm">
       <slot name="date"></slot>
     </p>
-    <div class="flex justify-end mt-2 md:mt-4">
+    <div class="flex justify-end pt-1">
       <Btn>
         <slot name="btn"></slot>
       </Btn>
