@@ -1,5 +1,9 @@
 <template>
   <div class="bg-deep-blue">
-    <Nuxt class="max-w-screen-xl m-auto" />
+    <TheHeader />
+    <main class="px-5">
+      <Nuxt />
+    </main>
+    <TheFooter />
   </div>
 </template>
