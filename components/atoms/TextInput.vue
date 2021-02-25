@@ -10,16 +10,20 @@
       :id="name"
       name="input"
       :className="getInputClass"
+      :value="value"
+      :input="textInput"
       :type="type"
       :inputName="name"
       :placeholder="placeholder"
     >
       <input
         :id="name"
+        :value="value"
         :type="type"
         :name="name"
         :class="getInputClass"
         :placeholder="placeholder"
+        @input="textInput"
       />
     </slot>
   </div>
@@ -29,6 +33,10 @@
 export default {
   name: 'TextInput',
   props: {
+    value: {
+      type: String,
+      default: '',
+    },
     type: {
       type: String,
       default: '',
@@ -49,6 +57,11 @@ export default {
   computed: {
     getInputClass() {
       return 'flex-1 placeholder-light-grey bg-transparent focus:ring-white focus:ring-2 focus:outline-none rounded-none rounded-r-5 p-1 -mr-1'
+    },
+  },
+  methods: {
+    textInput(event) {
+      this.$emit('input', event.target.value)
     },
   },
 }
