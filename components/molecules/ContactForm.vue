@@ -6,8 +6,6 @@
     data-netlify-honeypot="bot-field"
     @submit.prevent="handleSubmit"
   >
-    {{ email }}
-    {{ message }}
     <p class="hidden">
       <label
         >Don’t fill this out if you’re human: <input name="bot-field"
@@ -96,8 +94,13 @@ export default {
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
         body: new URLSearchParams(this.createFormDataObj(data)).toString(),
       })
-        .then((res) => console.log(res))
-        .catch((error) => console.error(error))
+        .then((res) =>
+          this.$emit(
+            'res',
+            res.ok ? 'Merci pour votre message !' : 'Une erreur est survenue !'
+          )
+        )
+        .catch(() => this.$emit('res', 'Une erreur est survenue !'))
     },
   },
 }

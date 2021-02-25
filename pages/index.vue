@@ -74,7 +74,7 @@
     <Section>
       <Title>me contacter</Title>
       <Social :links="links" :size="34" />
-      <ContactForm />
+      <TheContactForm />
     </Section>
   </div>
 </template>
