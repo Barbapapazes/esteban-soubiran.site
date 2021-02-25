@@ -77,7 +77,7 @@ export default {
         tea: this.teaName,
       }
       // This POSTs your encoded form to Netlify with the required headers (for text; headers will be different for POSTing a file) and, on success, redirects to the custom success page located at pages/thanks.vue
-      fetch('/', {
+      fetch('/form', {
         method: 'POST',
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
         body: new URLSearchParams(this.createFormDataObj(data)).toString(),
