@@ -6,6 +6,11 @@
     data-netlify-honeypot="bot-field"
     @submit.prevent="handleSubmit"
   >
+    <p class="hidden">
+      <label
+        >Don’t fill this out if you’re human: <input name="bot-field"
+      /></label>
+    </p>
     <input type="hidden" name="form-name" value="contact" />
     <TextInput type="email" name="email" placeholder="courriel" center>
       <IconMail fill="white" class="h-6 w-6" />
