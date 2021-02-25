@@ -1,34 +1,16 @@
 <template>
   <div class="container">
-    <div>
-      <h2>Pick a Tea</h2>
-    </div>
-    <div>
-      <form
-        netlify
-        name="vue-tea"
-        method="post"
-        data-netlify-honeypot="bot-field"
-        @submit.prevent="handleSubmit"
-      >
-        <input type="hidden" name="form-name" value="vue-tea" />
-        <div class="tea">
-          <label
-            v-for="tea in teaNames"
-            :key="tea"
-            :class="{
-              'tea-label': true,
-              checked: tea === chosenTea,
-            }"
-          >
-            <input v-model="chosenTea" name="tea" type="radio" :value="tea" />
-            <span>{{ tea }}</span>
-          </label>
-        </div>
-        <div>
-          <h1>{{ teaName }}</h1>
-        </div>
-        <button>Submit</button>
+    <h1 class="title">Contact</h1>
+    <div class="content">
+      <form name="contact" action="" method="post" netlify>
+        <input type="hidden" name="form-name" value="contact" />
+        <label class="form-label" for="name"> Name: </label>
+        <input id="name" class="form-field" name="name" />
+        <label class="form-label" for="email"> Email: </label>
+        <input id="email" class="form-field" name="email" />
+        <label class="form-label" for="message"> Message: </label>
+        <textarea id="message" class="form-field" name="message"></textarea>
+        <input class="form-button" type="submit" value="Send message" />
       </form>
     </div>
   </div>
