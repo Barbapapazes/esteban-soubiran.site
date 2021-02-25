@@ -31,7 +31,7 @@
       </template>
     </TextInput>
     <div class="flex justify-end">
-      <Button type="submit" @click.prevent="">envoyer</Button>
+      <Button type="submit">envoyer</Button>
     </div>
   </form>
 </template>
@@ -48,7 +48,7 @@ export default {
         )
         .join('&')
     },
-    handleSubmit() {
+    handleSubmit(event) {
       const axiosConfig = {
         header: { 'Content-Type': 'application/x-www-form-urlencoded' },
       }
@@ -62,6 +62,16 @@ export default {
           axiosConfig
         )
         .then(() => console.log('hello'))
+      fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: this.encode({
+          'form-name': 'contact',
+          email: 'test@test.test',
+        }),
+      })
+        .then(() => console.log('/thank-you/'))
+        .catch((error) => alert(error))
     },
   },
 }
