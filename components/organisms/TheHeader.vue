@@ -1,12 +1,16 @@
 <template>
   <header
-    class="flex justify-between items-center absolute top-5 inset-x-0 px-5"
+    class="flex justify-between items-center absolute top-5 md:top-10 lg:top-16 inset-x-0 px-5 md:px-10 lg:px-16"
   >
-    <h1 class="tracking-tight text-light-grey font-text">
-      <NuxtLink to="/">Estéban SOUBIRAN</NuxtLink>
+    <h1 class="tracking-tight text-light-grey font-text md:text-lg">
+      <NuxtLink
+        to="/"
+        class="focus:outline-none focus:ring-white focus:ring-2 rounded-5 p-1"
+        >Estéban SOUBIRAN</NuxtLink
+      >
     </h1>
     <button
-      class="focus:outline-none focus:ring-white focus:ring-2"
+      class="focus:outline-none focus:ring-white focus:ring-2 md:hidden"
       @click="toggleOpen()"
     >
       <transition name="fade" mode="out-in">
@@ -19,6 +23,7 @@
         <MobileNavLinks :links="links" />
       </MobileNav>
     </TransitionExpend>
+    <MobileNavLinks :links="links" class="hidden md:grid" />
   </header>
 </template>
 

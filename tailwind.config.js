@@ -11,6 +11,7 @@ module.exports = {
       },
       height: {
         small: '2px',
+        medium: '4px',
       },
       fontSize: {
         '8xl': '6rem',
