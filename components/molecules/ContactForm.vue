@@ -58,7 +58,7 @@
       </template>
     </TextInput>
     <div class="flex justify-end">
-      <Button type="submit">envoyer</Button>
+      <AppButton type="submit">envoyer</AppButton>
     </div>
   </form>
 </template>

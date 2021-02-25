@@ -15,8 +15,8 @@ export default {
   name: 'MobileNavLinks',
   props: {
     links: {
-      type: Object,
-      default: () => {},
+      type: Array,
+      default: () => [],
     },
   },
 }

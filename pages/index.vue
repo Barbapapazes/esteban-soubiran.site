@@ -8,13 +8,15 @@
         <CardTitle>Lorem ipsum amet</CardTitle>
         <CardSubtitle>Donec tristique ca varius</CardSubtitle>
         <CardSubtitle>Donec viverra </CardSubtitle>
-        <CardActions><Button>voir plus</Button></CardActions>
+        <CardActions
+          ><AppButton to="/projets/bnei">voir plus</AppButton></CardActions
+        >
       </Card>
       <Card gap>
         <CardTitle>Lorem ipsum amet</CardTitle>
         <CardSubtitle>Donec tristique ca varius</CardSubtitle>
         <CardSubtitle>Donec viverra </CardSubtitle>
-        <CardActions><Button>voir plus</Button></CardActions>
+        <CardActions><AppButton>voir plus</AppButton></CardActions>
       </Card>
     </Section>
     <Section>
