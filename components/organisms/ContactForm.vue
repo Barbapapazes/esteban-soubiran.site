@@ -1,9 +1,7 @@
 <template>
   <form
-    action="#"
     class="grid gap-5 font-text"
     name="contact"
-    method="POST"
     data-netlify="true"
     data-netlify-honeypot="bot-field"
     @submit.prevent="handleSubmit"
@@ -54,14 +52,16 @@ export default {
       const axiosConfig = {
         header: { 'Content-Type': 'application/x-www-form-urlencoded' },
       }
-      axios.post(
-        '/',
-        this.encode({
-          'form-name': 'ask-question',
-          name: 'hello',
-        }),
-        axiosConfig
-      )
+      axios
+        .post(
+          '/',
+          this.encode({
+            'form-name': 'contact',
+            name: 'hello',
+          }),
+          axiosConfig
+        )
+        .then(() => console.log('hello'))
     },
   },
 }
