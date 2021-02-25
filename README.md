@@ -1,5 +1,7 @@
 # barbapapazes
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/79df8485-fa4f-4d51-95c9-f025e2915577/deploy-status)](https://app.netlify.com/sites/esteban-soubiran/deploys)
+
 ## Build Setup
 
 ```bash

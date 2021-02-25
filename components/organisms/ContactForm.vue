@@ -1,5 +1,14 @@
 <template>
-  <form action="#" class="grid gap-5 font-text">
+  <form
+    action="#"
+    class="grid gap-5 font-text"
+    name="contact"
+    method="POST"
+    data-netlify="true"
+    data-netlify-honeypot="bot-field"
+    @submit.prevent="handleSubmit"
+  >
+    <input type="hidden" name="form-name" value="contact" />
     <TextInput type="email" name="email" placeholder="courriel" center>
       <IconMail fill="white" class="h-6 w-6" />
     </TextInput>
@@ -30,7 +39,32 @@
 </template>
 
 <script>
-export default {}
+import axios from 'axios'
+
+export default {
+  methods: {
+    encode(data) {
+      return Object.keys(data)
+        .map(
+          (key) => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`
+        )
+        .join('&')
+    },
+    handleSubmit() {
+      const axiosConfig = {
+        header: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      }
+      axios.post(
+        '/',
+        this.encode({
+          'form-name': 'ask-question',
+          name: 'hello',
+        }),
+        axiosConfig
+      )
+    },
+  },
+}
 </script>
 
 <style></style>
