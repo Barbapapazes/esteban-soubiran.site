@@ -4,10 +4,7 @@
     <Section>
       <Title>mes projets</Title>
       <Card gap>
-        <CardImage
-          :src="require('@/assets/img/bnei.webp')"
-          alt="logo du bnei"
-        />
+        <CardImage src="img/bnei.webp" alt="logo du bnei" />
         <CardTitle>Lorem ipsum amet</CardTitle>
         <CardSubtitle>Donec tristique ca varius</CardSubtitle>
         <CardSubtitle>Donec viverra </CardSubtitle>

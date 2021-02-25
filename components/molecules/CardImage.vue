@@ -1,6 +1,6 @@
 <template>
-  <div class="rounded-10 shadow-inner-small p-2 mb-1">
-    <img :src="src" :alt="alt" class="rounded-5 w-full h-auto" />
+  <div class="rounded-10 shadow-inner-small p-2">
+    <img :src="getImage" :alt="alt" class="rounded-5 w-full h-auto mt-0 mb-0" />
   </div>
 </template>
 
@@ -15,6 +15,12 @@ export default {
     alt: {
       type: String,
       default: '',
+    },
+  },
+  computed: {
+    getImage() {
+      // il faut passer le folder name  et le file name
+      return require(`@/assets/${this.src}`)
     },
   },
 }

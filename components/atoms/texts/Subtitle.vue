@@ -1,5 +1,5 @@
 <template>
-  <p class="text-light-grey tracking-tight">
+  <p class="font-text text-light-grey tracking-tight">
     <slot></slot>
   </p>
 </template>

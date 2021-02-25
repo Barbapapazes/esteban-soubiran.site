@@ -18,7 +18,7 @@
         </transition>
         <transition name="fade-long" appear>
           <img
-            style="transition-delay: 0.4s"
+            style="transition-delay: 0.6s"
             src="~/assets/img/pp-esteban.webp"
             alt="photo de profil de Estéban"
             class="shadow-small rounded-full shadow-medium w-2/4"

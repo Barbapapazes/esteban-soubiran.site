@@ -28,6 +28,19 @@ module.exports = {
       fontFamily: {
         text: ['CascadiaCode', 'sans-serif'],
       },
+      typography: (theme) => ({
+        DEFAULT: {
+          css: {
+            color: theme('colors.white'),
+            textAlign: 'justify',
+            img: {
+              marginTop: '0',
+              marginBottom: '0',
+            },
+          },
+        },
+      }),
     },
   },
+  plugins: [require('@tailwindcss/typography')],
 }

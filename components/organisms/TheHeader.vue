@@ -2,7 +2,9 @@
   <header
     class="flex justify-between items-center absolute top-5 inset-x-0 px-5"
   >
-    <h1 class="tracking-tight text-light-grey font-text">Estéban SOUBIRAN</h1>
+    <h1 class="tracking-tight text-light-grey font-text">
+      <NuxtLink to="/">Estéban SOUBIRAN</NuxtLink>
+    </h1>
     <button
       class="focus:outline-none focus:ring-white focus:ring-2"
       @click="toggleOpen()"
