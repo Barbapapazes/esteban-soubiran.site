@@ -98,7 +98,11 @@
     </Section>
     <Section>
       <Title>me contacter</Title>
-      <Social :links="links" :size="34" />
+      <Social
+        :links="links"
+        :size="40"
+        class="grid grid-cols-3 gap-16 max-w-sm mx-auto"
+      />
       <TheContactForm class="max-w-sm mx-auto" />
     </Section>
   </div>
@@ -108,7 +112,6 @@
 export default {
   data() {
     return {
-      nav: true,
       links: [
         {
           href: 'https://facebook.com/esteban.soubiran',

@@ -1,5 +1,5 @@
 <template>
-  <ul class="flex flex-row justify-around">
+  <ul>
     <li v-for="link in links" :key="link.href">
       <a :href="link.href" rel="noreferrer noopener" target="_blank"
         ><img :src="link.src" :alt="link.alt" :width="size" :height="size"
