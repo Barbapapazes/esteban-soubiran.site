@@ -1,6 +1,13 @@
 <template>
   <div
-    class="p-2 md:p-5 rounded-10 shadow-medium font-text self-start"
+    v-observe-visibility="{
+      callback: visibilityChanged,
+      intersection: {
+        threshold: 0.2,
+      },
+      once: true,
+    }"
+    class="p-2 md:p-5 rounded-10 shadow-medium font-text self-start opacity-0 transform translate-y-10 duration-700 ease-in-out"
     :class="{ 'gap-1': gap }"
   >
     <slot></slot>
@@ -14,6 +21,21 @@ export default {
     gap: {
       type: Boolean,
       default: false,
+    },
+  },
+  data() {
+    return {
+      isVisible: false,
+    }
+  },
+  methods: {
+    visibilityChanged(isVisible, entry) {
+      this.isVisible = isVisible
+      if (isVisible) {
+        entry.target.classList.add('transition-all')
+        entry.target.classList.add('-translate-y-0')
+        entry.target.classList.add('opacity-100')
+      }
     },
   },
 }
