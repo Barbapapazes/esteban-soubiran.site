@@ -1,6 +1,6 @@
 <template>
   <div
-    class="p-2 rounded-10 shadow-medium font-text grid"
+    class="p-2 md:p-5 rounded-10 shadow-medium font-text self-start"
     :class="{ 'gap-1': gap }"
   >
     <slot></slot>

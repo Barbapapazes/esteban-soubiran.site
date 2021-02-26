@@ -1,23 +1,46 @@
 <template>
-  <div class="grid gap-10 pb-2">
+  <div class="grid gap-10">
     <TheHero />
     <Section>
       <Title>mes projets</Title>
-      <Card gap>
-        <CardImage src="img/bnei.webp" alt="logo du bnei" />
-        <CardTitle>Lorem ipsum amet</CardTitle>
-        <CardSubtitle>Donec tristique ca varius</CardSubtitle>
-        <CardSubtitle>Donec viverra </CardSubtitle>
-        <CardActions
-          ><AppButton to="/projets/bnei">voir plus</AppButton></CardActions
-        >
-      </Card>
-      <Card gap>
-        <CardTitle>Lorem ipsum amet</CardTitle>
-        <CardSubtitle>Donec tristique ca varius</CardSubtitle>
-        <CardSubtitle>Donec viverra </CardSubtitle>
-        <CardActions><AppButton>voir plus</AppButton></CardActions>
-      </Card>
+      <SectionGrid>
+        <Card gap>
+          <CardImage src="img/bnei.webp" alt="logo du bnei" />
+          <CardTitle>Lorem ipsum amet</CardTitle>
+          <CardSubtitle>Donec tristique ca varius</CardSubtitle>
+          <CardSubtitle>Donec viverra </CardSubtitle>
+          <CardActions
+            ><AppButton to="/projets/bnei">voir plus</AppButton></CardActions
+          >
+        </Card>
+        <Card gap>
+          <CardTitle>Lorem ipsum amet</CardTitle>
+          <CardSubtitle>Donec tristique ca varius</CardSubtitle>
+          <CardSubtitle>Donec viverra </CardSubtitle>
+          <CardActions><AppButton>voir plus</AppButton></CardActions>
+        </Card>
+        <Card gap>
+          <CardImage src="img/bnei.webp" alt="logo du bnei" />
+          <CardTitle>Lorem ipsum amet</CardTitle>
+          <CardSubtitle>Donec tristique ca varius</CardSubtitle>
+          <CardSubtitle>Donec viverra </CardSubtitle>
+          <CardActions
+            ><AppButton to="/projets/bnei">voir plus</AppButton></CardActions
+          >
+        </Card>
+        <Card gap>
+          <CardTitle>Lorem ipsum amet</CardTitle>
+          <CardSubtitle>Donec tristique ca varius</CardSubtitle>
+          <CardSubtitle>Donec viverra </CardSubtitle>
+          <CardActions><AppButton>voir plus</AppButton></CardActions>
+        </Card>
+        <Card gap>
+          <CardTitle>Lorem ipsum amet</CardTitle>
+          <CardSubtitle>Donec tristique ca varius</CardSubtitle>
+          <CardSubtitle>Donec viverra </CardSubtitle>
+          <CardActions><AppButton>voir plus</AppButton></CardActions>
+        </Card>
+      </SectionGrid>
     </Section>
     <Section>
       <Title>bénévolat</Title>
@@ -76,7 +99,7 @@
     <Section>
       <Title>me contacter</Title>
       <Social :links="links" :size="34" />
-      <TheContactForm />
+      <TheContactForm class="max-w-sm mx-auto" />
     </Section>
   </div>
 </template>
