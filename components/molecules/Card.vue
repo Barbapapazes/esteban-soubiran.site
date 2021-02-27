@@ -23,14 +23,8 @@ export default {
       default: false,
     },
   },
-  data() {
-    return {
-      isVisible: false,
-    }
-  },
   methods: {
     visibilityChanged(isVisible, entry) {
-      this.isVisible = isVisible
       if (isVisible) {
         entry.target.classList.add('transition-all')
         entry.target.classList.add('-translate-y-0')

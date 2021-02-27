@@ -2,7 +2,7 @@
   <div class="grid gap-10">
     <TheHero />
     <Section>
-      <Title>mes projets</Title>
+      <Title observe>mes projets</Title>
       <SectionGrid>
         <Card gap>
           <CardImage src="img/bnei.webp" alt="logo du bnei" />
@@ -43,10 +43,10 @@
       </SectionGrid>
     </Section>
     <Section>
-      <Title>bénévolat</Title>
+      <Title observe>bénévolat</Title>
     </Section>
     <Section>
-      <Title>mes compétences</Title>
+      <Title observe>mes compétences</Title>
       <Card>
         <CardText>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
@@ -62,10 +62,10 @@
       </Card>
     </Section>
     <Section>
-      <Title>mes études</Title>
+      <Title observe>mes études</Title>
     </Section>
     <Section>
-      <Title>à propos</Title>
+      <Title observe>à propos</Title>
       <Card>
         <CardText>
           Je suis Estéban, élève-ingénieur à l’INSA Centre Val de Loire dans la
@@ -97,7 +97,7 @@
       </Card>
     </Section>
     <Section>
-      <Title>me contacter</Title>
+      <Title observe>me contacter</Title>
       <Social
         :links="links"
         :size="40"
