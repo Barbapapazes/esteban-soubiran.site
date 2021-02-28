@@ -26,5 +26,37 @@ export default {
       page,
     }
   },
+  head() {
+    return {
+      title: this.page.title.toUpperCase() ?? 'chargement...'.toUpperCase(),
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: this.page.description ?? "L'un des articles du portfolio !",
+        },
+        {
+          hid: 'og:title',
+          property: 'og:title',
+          content: `${this.page.title.toUpperCase()} - Estéban SOUBIRAN`,
+        },
+        {
+          hid: 'og:description',
+          property: 'og:description',
+          content: this.page.description ?? "L'un des articles du portfolio !",
+        },
+        {
+          hid: 'twitter:title',
+          name: 'twitter:title',
+          content: `${this.page.title.toUpperCase()} - Estéban SOUBIRAN`,
+        },
+        {
+          hid: 'twitter:description',
+          name: 'twitter:description',
+          content: this.page.description ?? "L'un des articles du portfolio !",
+        },
+      ],
+    }
+  },
 }
 </script>

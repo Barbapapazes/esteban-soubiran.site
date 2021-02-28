@@ -3,6 +3,7 @@ title: lorem ipsum
 date: lorem ipsum
 tags: In gavida leo ut sem luctus dapibus
 banner: img/bnei.webp
+description:
 alt: logo du BNEI
 ---
 
