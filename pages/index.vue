@@ -4,46 +4,30 @@
     <Section>
       <Title observe>mes projets</Title>
       <SectionGrid>
-        <Card gap>
-          <CardImage src="img/bnei.webp" alt="logo du bnei" />
-          <CardTitle>Lorem ipsum amet</CardTitle>
-          <CardSubtitle>Donec tristique ca varius</CardSubtitle>
-          <CardSubtitle>Donec viverra </CardSubtitle>
+        <Card v-for="projet in projets" :key="projet.path" gap>
+          <CardImage :src="projet.banner" :alt="projet.alt" />
+          <CardTitle>{{ projet.title }}</CardTitle>
+          <CardSubtitle>{{ projet.tags }}</CardSubtitle>
+          <CardSubtitle>{{ projet.date }}</CardSubtitle>
           <CardActions
-            ><AppButton to="/projets/bnei">voir plus</AppButton></CardActions
+            ><AppButton :to="projet.path">voir plus</AppButton></CardActions
           >
-        </Card>
-        <Card gap>
-          <CardTitle>Lorem ipsum amet</CardTitle>
-          <CardSubtitle>Donec tristique ca varius</CardSubtitle>
-          <CardSubtitle>Donec viverra </CardSubtitle>
-          <CardActions><AppButton>voir plus</AppButton></CardActions>
-        </Card>
-        <Card gap>
-          <CardImage src="img/bnei.webp" alt="logo du bnei" />
-          <CardTitle>Lorem ipsum amet</CardTitle>
-          <CardSubtitle>Donec tristique ca varius</CardSubtitle>
-          <CardSubtitle>Donec viverra </CardSubtitle>
-          <CardActions
-            ><AppButton to="/projets/bnei">voir plus</AppButton></CardActions
-          >
-        </Card>
-        <Card gap>
-          <CardTitle>Lorem ipsum amet</CardTitle>
-          <CardSubtitle>Donec tristique ca varius</CardSubtitle>
-          <CardSubtitle>Donec viverra </CardSubtitle>
-          <CardActions><AppButton>voir plus</AppButton></CardActions>
-        </Card>
-        <Card gap>
-          <CardTitle>Lorem ipsum amet</CardTitle>
-          <CardSubtitle>Donec tristique ca varius</CardSubtitle>
-          <CardSubtitle>Donec viverra </CardSubtitle>
-          <CardActions><AppButton>voir plus</AppButton></CardActions>
         </Card>
       </SectionGrid>
     </Section>
     <Section>
       <Title observe>bénévolat</Title>
+      <SectionGrid>
+        <Card v-for="item in benevolat" :key="item.path" gap>
+          <CardImage :src="item.banner" :alt="item.alt" />
+          <CardTitle>{{ item.title }}</CardTitle>
+          <CardSubtitle>{{ item.tags }}</CardSubtitle>
+          <CardSubtitle>{{ item.date }}</CardSubtitle>
+          <CardActions
+            ><AppButton :to="item.path">voir plus</AppButton></CardActions
+          >
+        </Card>
+      </SectionGrid>
     </Section>
     <Section>
       <Title observe>mes compétences</Title>
@@ -63,6 +47,17 @@
     </Section>
     <Section>
       <Title observe>mes études</Title>
+      <SectionGrid>
+        <Card v-for="item in etudes" :key="item.path" gap>
+          <CardImage :src="item.banner" :alt="item.alt" />
+          <CardTitle>{{ item.title }}</CardTitle>
+          <CardSubtitle>{{ item.tags }}</CardSubtitle>
+          <CardSubtitle>{{ item.date }}</CardSubtitle>
+          <CardActions
+            ><AppButton :to="item.path">voir plus</AppButton></CardActions
+          >
+        </Card>
+      </SectionGrid>
     </Section>
     <Section>
       <Title observe>à propos</Title>
@@ -110,8 +105,21 @@
 
 <script>
 export default {
+  async asyncData({ $content }) {
+    const types = ['projets', 'benevolat', 'etudes']
+    const data = {}
+    for (const type of types) {
+      data[type] = await $content(type)
+        .only(['title', 'date', 'tags', 'banner', 'path', 'alt'])
+        .sortBy('date')
+        .fetch()
+    }
+    console.log(data)
+    return data
+  },
   data() {
     return {
+      sections: [],
       links: [
         {
           href: 'https://facebook.com/esteban.soubiran',
