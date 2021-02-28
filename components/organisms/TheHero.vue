@@ -30,7 +30,12 @@
         </transition>
       </div>
     </div>
-    <hr class="bg-white h-small md:h-medium rounded-full" />
+    <transition name="fade-long" appear>
+      <hr
+        class="bg-white h-small md:h-medium rounded-full"
+        style="transition-delay: 1s"
+      />
+    </transition>
   </section>
 </template>
 

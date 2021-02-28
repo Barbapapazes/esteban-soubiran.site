@@ -114,7 +114,6 @@ export default {
         .sortBy('date')
         .fetch()
     }
-    console.log(data)
     return data
   },
   data() {

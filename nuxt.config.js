@@ -19,6 +19,9 @@ export default {
       { hid: 'description', name: 'description', content: '' },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    bodyAttrs: {
+      class: ['scrollbar scrollbar-thumb-light-grey scrollbar-track-deep-blue'],
+    },
   },
 
   // Global CSS (https://go.nuxtjs.dev/config-css)

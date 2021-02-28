@@ -41,6 +41,7 @@
     "lint-staged": "^10.4.0",
     "postcss": "^7",
     "prettier": "^2.1.2",
+    "tailwind-scrollbar": "^1.0.2",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat"
   }
 }

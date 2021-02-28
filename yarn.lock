@@ -9630,6 +9630,11 @@ tailwind-config-viewer@^1.4.0:
     portfinder "^1.0.26"
     replace-in-file "^6.1.0"
 
+tailwind-scrollbar@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/tailwind-scrollbar/-/tailwind-scrollbar-1.0.2.tgz#9da917491b8e0aec93a5b7104abb7bea591f847f"
+  integrity sha512-eTpqIx6kbOmEtwitFtUED9V3Ga+ARn8O/tWZle0OteySRDNPtl1+9IMAaD327K576BHA3r12qg0kjUEjAZp05A==
+
 tailwindcss@^1.9.6:
   version "1.9.6"
   resolved "https://registry.yarnpkg.com/tailwindcss/-/tailwindcss-1.9.6.tgz#0c5089911d24e1e98e592a31bfdb3d8f34ecf1a0"
