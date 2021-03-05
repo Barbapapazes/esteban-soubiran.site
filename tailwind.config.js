@@ -7,6 +7,7 @@ module.exports = {
       },
       colors: {
         'deep-blue': '#344163',
+        'dark-blue': '#020025',
         'light-grey': '#D7D7D7',
       },
       height: {
@@ -37,6 +38,15 @@ module.exports = {
             img: {
               marginTop: '0',
               marginBottom: '0',
+            },
+            h2: {
+              color: theme('colors.dark-blue'),
+            },
+            h3: {
+              color: theme('colors.dark-blue'),
+            },
+            a: {
+              color: theme('colors.light-grey'),
             },
           },
         },
