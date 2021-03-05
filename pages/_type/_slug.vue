@@ -2,7 +2,7 @@
   <article class="pt-16 md:pt-36 pb-5 grid gap-5 md:gap-8">
     <div class="w-full md:w-8/12 2xl:w-6/12 mx-auto grid gap-5 md:gap-8">
       <Card>
-        <CardImage src="img/bnei.webp" />
+        <CardImage :src="page.banner" />
       </Card>
       <div>
         <Subtitle>{{ page.date }}</Subtitle>

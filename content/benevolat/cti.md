@@ -10,7 +10,7 @@ alt: logo du BNEI
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sagittis massa arcu, a cursus purus tempor sagittis. Proin convallis sapien ac mauris malesuada volutpat. Vivamus volutpat tincidunt massa ac faucibus. Vestibulum pellentesque, velit eget finibus vehicula, sapien dolor ornare neque, commodo volutpat ligula lorem eget justo. Cras ex diam, bibendum quis dolor eget, bibendum volutpat augue. In vel lectus a ante vestibulum faucibus. Praesent a vehicula lectus. Integer tempus nisl commodo nulla facilisis vehicula. Donec ullamcorper dolor id blandit ornare. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nam pulvinar tortor non mauris bibendum dictum. Proin magna nunc, convallis a nunc in, varius hendrerit dolor. Integer blandit odio eu nunc condimentum efficitur. Aenean gravida diam quam, eget imperdiet nulla maximus nec. Sed vitae dictum nisl. Nulla venenatis odio nec lorem ornare, quis pharetra ex congue.
 
 <card>
-<card-image src="img/bnei.webp"></card-image>
+  <card-image src="img/bnei.webp"></card-image >
 </card>
 
 In gravida leo ut sem luctus dapibus. Quisque ut cursus dui, et viverra massa. Sed placerat congue laoreet. Quisque tristique aliquam orci, vitae placerat elit accumsan ut. Fusce lobortis rhoncus sapien vitae ultrices. Praesent tincidunt, arcu ac eleifend commodo, lectus purus posuere libero, eget dictum lectus urna quis augue. Proin venenatis lorem sit amet purus placerat, vel ultricies ipsum vehicula.
