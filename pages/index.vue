@@ -2,7 +2,7 @@
   <div class="grid gap-10">
     <TheHero />
     <Section>
-      <Title observe>mes projets</Title>
+      <Title id="projets" observe>mes projets</Title>
       <SectionGrid>
         <Card v-for="projet in projets" :key="projet.path" gap>
           <CardImage :src="projet.banner" :alt="projet.alt" />
@@ -16,7 +16,7 @@
       </SectionGrid>
     </Section>
     <Section>
-      <Title observe>bénévolat</Title>
+      <Title id="benevolat" observe>bénévolat</Title>
       <SectionGrid>
         <Card v-for="item in benevolat" :key="item.path" gap>
           <CardImage :src="item.banner" :alt="item.alt" />
@@ -30,7 +30,7 @@
       </SectionGrid>
     </Section>
     <Section>
-      <Title observe>mes compétences</Title>
+      <Title id="competences" observe>mes compétences</Title>
       <Card>
         <CardText>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
@@ -46,7 +46,7 @@
       </Card>
     </Section>
     <Section>
-      <Title observe>mes études</Title>
+      <Title id="etudes" observe>mes études</Title>
       <SectionGrid>
         <Card v-for="item in etudes" :key="item.path" gap>
           <CardImage :src="item.banner" :alt="item.alt" />
@@ -60,7 +60,7 @@
       </SectionGrid>
     </Section>
     <Section>
-      <Title observe>à propos</Title>
+      <Title id="a-propos" observe>à propos</Title>
       <Card>
         <CardText>
           Je suis Estéban, élève-ingénieur à l’INSA Centre Val de Loire dans la
@@ -80,7 +80,7 @@
         </CardText>
         <CardText class="mt-3">
           Le reste de mon temps libre, je le passe dans des associations
-          étudiants et des engagements bénévoles. De la petite association
+          étudiantes et des engagements bénévoles. De la petite association
           développement durable de l’école à l’association nationale de
           représentation des élèves-ingénieurs, c’est dans l’ensemble du paysage
           étudiant que je m’investis. <br />
@@ -92,7 +92,7 @@
       </Card>
     </Section>
     <Section>
-      <Title observe>me contacter</Title>
+      <Title id="contact" observe>me contacter</Title>
       <Social
         :links="links"
         :size="40"
@@ -111,7 +111,7 @@ export default {
     for (const type of types) {
       data[type] = await $content(type)
         .only(['title', 'date', 'tags', 'banner', 'path', 'alt'])
-        .sortBy('date')
+        .sortBy('order', 'desc')
         .fetch()
     }
     return data
