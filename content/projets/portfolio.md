@@ -1,18 +1,30 @@
 ---
-title: lorem ipsum
-date: lorem ipsum
-tags: In gavida leo ut sem luctus dapibus
-banner: img/bnei.webp
-description:
-alt: logo du BNEI
+title: Portfolio
+date: 2021
+order: 5
+tags: présentation web nuxt
+banner: img/portfolio.webp
+description: Mon portfolio !
+alt: Hero banner du site
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sagittis massa arcu, a cursus purus tempor sagittis. Proin convallis sapien ac mauris malesuada volutpat. Vivamus volutpat tincidunt massa ac faucibus. Vestibulum pellentesque, velit eget finibus vehicula, sapien dolor ornare neque, commodo volutpat ligula lorem eget justo. Cras ex diam, bibendum quis dolor eget, bibendum volutpat augue. In vel lectus a ante vestibulum faucibus. Praesent a vehicula lectus. Integer tempus nisl commodo nulla facilisis vehicula. Donec ullamcorper dolor id blandit ornare. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nam pulvinar tortor non mauris bibendum dictum. Proin magna nunc, convallis a nunc in, varius hendrerit dolor. Integer blandit odio eu nunc condimentum efficitur. Aenean gravida diam quam, eget imperdiet nulla maximus nec. Sed vitae dictum nisl. Nulla venenatis odio nec lorem ornare, quis pharetra ex congue.
+Il s'agit tout simplement du site que vous être en train de consulter !
 
-<card>
-  <card-image src="img/bnei.webp"></card-image >
-</card>
+Vous pouvez y retrouver :
 
-In gravida leo ut sem luctus dapibus. Quisque ut cursus dui, et viverra massa. Sed placerat congue laoreet. Quisque tristique aliquam orci, vitae placerat elit accumsan ut. Fusce lobortis rhoncus sapien vitae ultrices. Praesent tincidunt, arcu ac eleifend commodo, lectus purus posuere libero, eget dictum lectus urna quis augue. Proin venenatis lorem sit amet purus placerat, vel ultricies ipsum vehicula.
+- les projets sur lesquels j'ai pu travailler
+- les expériences de bénévolats auxquelles j'ai pu participer
+- les compétences que j'ai pu développer au travers de toutes mes expériences
+- les études que j'ai réalisée
 
-In in quam at mi dictum porta. Vivamus posuere consequat urna. Etiam lobortis enim vel velit interdum imperdiet. Maecenas sollicitudin sollicitudin metus nec fringilla. Proin eget mauris erat. Quisque id justo maximus, tincidunt eros ac, rutrum ex. Aliquam porta dolor egestas ex tempor, vel pulvinar sem consequat. Suspendisse at congue lorem. Aenean eleifend, dolor eget rutrum hendrerit, neque nunc laoreet sem, sit amet ornare lorem magna non ante. Vestibulum id porttitor elit, sit amet congue eros. Nam vel fermentum urna. In hac habitasse platea dictumst. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;
+## Réalisation
+
+Pour mener à bien ce projet, j'ai commencé par me demander ce que je pouvais y mettre. J'ai donc choisi d'y raconter ce qui me passionne, ce qui me fait vivre.
+
+Ensuite, j'ai dessiné dans [Figma](https://figma.com) l'ensemble du projet avec une version mobile et une version grand écran. Ce travail m'a permis de trouver l'esthétisme du site, les couleurs et l'agencement global !
+
+Par la suite, j'ai intégré l'ensemble de la maquette avec [Nuxtjs](https://nuxtjs.org) et [Tailwindcss](https://tailwindcss.com). J'utilise aussi Nuxt Content, un CMS basé sur git afin de gérer l'ensemble de mon contenu.
+
+Le site est automatiquement déployé sur [Netlify](https://netlify.com) via un pipeline.
+
+Bonne découverte et bonne lecture !

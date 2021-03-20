@@ -1,6 +1,7 @@
 ---
 title: Nuit de l'Info
 date: 2020 - 2019 - 2018
+order: 2
 tags: concours équipes informatique
 banner: img/ndi.webp
 description: Participation à un concours d'informatique en équipe

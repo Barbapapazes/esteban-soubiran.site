@@ -1,18 +1,29 @@
 ---
-title: lorem ipsum
-date: lorem ipsum
-tags: In gavida leo ut sem luctus dapibus
-banner: img/bnei.webp
-description:
-alt: logo du BNEI
+title: Générateur pour le site campus
+date: 2020
+order: 3
+tags: développement web nuxt vuetify insa campus
+banner: img/generator-campus.webp
+description: Générateur de template pour le site campus
+alt: image du générateur
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sagittis massa arcu, a cursus purus tempor sagittis. Proin convallis sapien ac mauris malesuada volutpat. Vivamus volutpat tincidunt massa ac faucibus. Vestibulum pellentesque, velit eget finibus vehicula, sapien dolor ornare neque, commodo volutpat ligula lorem eget justo. Cras ex diam, bibendum quis dolor eget, bibendum volutpat augue. In vel lectus a ante vestibulum faucibus. Praesent a vehicula lectus. Integer tempus nisl commodo nulla facilisis vehicula. Donec ullamcorper dolor id blandit ornare. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nam pulvinar tortor non mauris bibendum dictum. Proin magna nunc, convallis a nunc in, varius hendrerit dolor. Integer blandit odio eu nunc condimentum efficitur. Aenean gravida diam quam, eget imperdiet nulla maximus nec. Sed vitae dictum nisl. Nulla venenatis odio nec lorem ornare, quis pharetra ex congue.
+Après avoir [refais le site campus](/projets/site-campus) de mon école, il a fallu lui ajouter du contenu !
+
+Ayant utilisé un CMS basé sur git, Nuxt Content, cela m'a permis de créer et de mettre en page facilement du contenu sur le site. Ce système permet aussi de modifier très simplement et très rapidement les différents éléments à afficher pour chaque association permettant ainsi d'avoir le contenu qui correspond à son association.
+
+Cependant, l'écriture et la compréhension de ce contenu n'est pas si simple que je le pensais. J'ai donc dû trouver un moyen de **simplifier le processus de création** de sa fiche association. Pour cela, j'ai donc mis [au point un générateur](https://campus-insa-cvl.github.io/campus-website-templates/) via un simple formulaire en ligne ! Ce dernier, en fonction du **template** choisi par l'association, demande un ensemble d'information et les combine pour former le fichier final à intégrer directement dans le site. Il permet aussi de gérer les images, en les retaillant puis en les compressant !
+
+Le formulaire de génération des fiches d'associations :
 
 <card>
-  <card-image src="img/bnei.webp"></card-image >
+  <card-image src="img/generator-campus-form.webp"></card-image >
 </card>
 
-In gravida leo ut sem luctus dapibus. Quisque ut cursus dui, et viverra massa. Sed placerat congue laoreet. Quisque tristique aliquam orci, vitae placerat elit accumsan ut. Fusce lobortis rhoncus sapien vitae ultrices. Praesent tincidunt, arcu ac eleifend commodo, lectus purus posuere libero, eget dictum lectus urna quis augue. Proin venenatis lorem sit amet purus placerat, vel ultricies ipsum vehicula.
+Les associations ont le choix parmi différents templates :
 
-In in quam at mi dictum porta. Vivamus posuere consequat urna. Etiam lobortis enim vel velit interdum imperdiet. Maecenas sollicitudin sollicitudin metus nec fringilla. Proin eget mauris erat. Quisque id justo maximus, tincidunt eros ac, rutrum ex. Aliquam porta dolor egestas ex tempor, vel pulvinar sem consequat. Suspendisse at congue lorem. Aenean eleifend, dolor eget rutrum hendrerit, neque nunc laoreet sem, sit amet ornare lorem magna non ante. Vestibulum id porttitor elit, sit amet congue eros. Nam vel fermentum urna. In hac habitasse platea dictumst. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;
+<card>
+  <card-image src="img/generator-campus-templates.webp"></card-image >
+</card>
+
+Avec ce système en place, il devient alors **très simple** pour les associations de créer le contenu, le modifier ou utiliser un nouveau template. Il suffit alors de m'envoyer par mail dossier obtenu afin que je puisse, en quelques cliques, **modifier le contenu du site** !
