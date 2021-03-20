@@ -1,18 +1,23 @@
 ---
-title: lorem ipsum
-date: lorem ipsum
-tags: In gavida leo ut sem luctus dapibus
-banner: img/bnei.webp
-description:
-alt: logo du BNEI
+title: INSA Centre Val de Loire
+date: 2018
+order: 1
+tags: école supérieur enseignement ingénieur
+banner: img/insa-logo.webp
+description: L'INSA Centre Val de Loire est mon école d'ingénieur depuis 2018 !
+alt: logo de l'INSA Centre Val de Loire
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sagittis massa arcu, a cursus purus tempor sagittis. Proin convallis sapien ac mauris malesuada volutpat. Vivamus volutpat tincidunt massa ac faucibus. Vestibulum pellentesque, velit eget finibus vehicula, sapien dolor ornare neque, commodo volutpat ligula lorem eget justo. Cras ex diam, bibendum quis dolor eget, bibendum volutpat augue. In vel lectus a ante vestibulum faucibus. Praesent a vehicula lectus. Integer tempus nisl commodo nulla facilisis vehicula. Donec ullamcorper dolor id blandit ornare. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nam pulvinar tortor non mauris bibendum dictum. Proin magna nunc, convallis a nunc in, varius hendrerit dolor. Integer blandit odio eu nunc condimentum efficitur. Aenean gravida diam quam, eget imperdiet nulla maximus nec. Sed vitae dictum nisl. Nulla venenatis odio nec lorem ornare, quis pharetra ex congue.
+L'INSA Centre Val de Loire, c'est l'école que j'ai intégré en post-bac. Directement après mon bac, j'ai pu intégrer la prépa intégrée de l'école.
 
-<card>
-  <card-image src="img/bnei.webp"></card-image >
-</card>
+## La Prépa
 
-In gravida leo ut sem luctus dapibus. Quisque ut cursus dui, et viverra massa. Sed placerat congue laoreet. Quisque tristique aliquam orci, vitae placerat elit accumsan ut. Fusce lobortis rhoncus sapien vitae ultrices. Praesent tincidunt, arcu ac eleifend commodo, lectus purus posuere libero, eget dictum lectus urna quis augue. Proin venenatis lorem sit amet purus placerat, vel ultricies ipsum vehicula.
+Durant les 2 premières années, j'ai pu, en plus de suivre les différents cours, participer à la vie associative de mon école et participer à la vie de mon école.
 
-In in quam at mi dictum porta. Vivamus posuere consequat urna. Etiam lobortis enim vel velit interdum imperdiet. Maecenas sollicitudin sollicitudin metus nec fringilla. Proin eget mauris erat. Quisque id justo maximus, tincidunt eros ac, rutrum ex. Aliquam porta dolor egestas ex tempor, vel pulvinar sem consequat. Suspendisse at congue lorem. Aenean eleifend, dolor eget rutrum hendrerit, neque nunc laoreet sem, sit amet ornare lorem magna non ante. Vestibulum id porttitor elit, sit amet congue eros. Nam vel fermentum urna. In hac habitasse platea dictumst. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;
+Ainsi, j'ai pu prendre goût très rapidement à la richesse de la vie associative, ces apports, les rencontres que l'on peut y faire...
+
+## Le cycle ingénieur
+
+Ensuite, à partir de la 3ème année, je me suis spécialisé dans la sécurité informatique. Au delà de cette spécialisation, j'ai continué a pratiquer le développement web, l'une de mes passions. J'ai aussi pu profiter du temps supplémentaire à ma disposition pour continuer à évoluer aux travers différentes associations.
+
+Vous pouvez en savoir plus sur l'école [en suivant ce lien](https://www.insa-centrevaldeloire.fr/fr/insa-centre-val-de-loire/qui-sommes-nous) !

@@ -2,7 +2,13 @@
 title: Site campus de l'INSA Centre Val de Loire
 date: 2020
 order: 4
-tags: développement web nuxt insa vuetify campus
+tags:
+  - développement
+  - web
+  - nuxt
+  - insa
+  - vuetify
+  - campus
 banner: img/site-campus.webp
 description: Réalisation du site campus de l'INSA Centre Val de Loire
 alt: image du site campus

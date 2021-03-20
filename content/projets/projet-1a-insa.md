@@ -2,7 +2,12 @@
 title: Projet 1A Info-Elec
 date: 2018
 order: 1
-tags: insa équipe projet électronique informatique
+tags:
+  - insa
+  - équipe
+  - projet
+  - électronique
+  - informatique
 banner: img/projet-1a-insa.webp
 description: Réalisation d'une plateforme de communication radio entre des modules et une page web
 alt: Première slide de la présentation de notre projet
@@ -37,5 +42,5 @@ Ce projet m'a permis de développer des compétences dans la création de site w
 ## En savoir plus
 
 - [Code source](https://github.com/Barbapapazes/raspIoT)
-- [Présentation du projet](/raspiot-presentation.pdf)
-- [Rapport du projet](/raspiot-rapport.pdf)
+- <a href="/raspiot-presentation.pdf" target="_blank">Présentation du projet</a>
+- <a href="/raspiot-rapport.pdf" target="_blank">Rapport du projet</a>

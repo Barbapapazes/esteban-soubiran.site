@@ -6,7 +6,7 @@
       </Card>
       <div>
         <Subtitle>{{ page.date }}</Subtitle>
-        <Subtitle>{{ page.tags }}</Subtitle>
+        <AppTags :words="page.tags" />
       </div>
       <Title>{{ page.title }}</Title>
     </div>

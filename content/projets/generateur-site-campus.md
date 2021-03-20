@@ -2,7 +2,13 @@
 title: Générateur pour le site campus
 date: 2020
 order: 3
-tags: développement web nuxt vuetify insa campus
+tags:
+  - développement
+  - web
+  - nuxt
+  - vuetify
+  - insa
+  - campus
 banner: img/generator-campus.webp
 description: Générateur de template pour le site campus
 alt: image du générateur

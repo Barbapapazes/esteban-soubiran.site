@@ -2,7 +2,10 @@
 title: Portfolio
 date: 2021
 order: 5
-tags: présentation web nuxt
+tags:
+  - présentation
+  - web
+  - nuxt
 banner: img/portfolio.webp
 description: Mon portfolio !
 alt: Hero banner du site
