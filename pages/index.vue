@@ -21,7 +21,7 @@
         <Card v-for="item in benevolat" :key="item.path" gap>
           <CardImage :src="item.banner" :alt="item.alt" />
           <CardTitle>{{ item.title }}</CardTitle>
-          <AppTags>{{ item.tags }}</AppTags>
+          <AppTags :words="item.tags" />
           <CardSubtitle>{{ item.date }}</CardSubtitle>
           <CardActions
             ><AppButton :to="item.path">voir plus</AppButton></CardActions
