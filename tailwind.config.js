@@ -48,6 +48,9 @@ module.exports = {
             a: {
               color: theme('colors.light-grey'),
             },
+            strong: {
+              color: theme('colors.dark-blue'),
+            },
           },
         },
         sm: {
