@@ -48,7 +48,7 @@
     "markdownlint-cli": "^0.26.0",
     "postcss": "^7",
     "prettier": "^2.1.2",
-    "tailwind-scrollbar": "^1.0.2",
+    "tailwind-scrollbar": "^1.2.4",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat"
   }
 }
