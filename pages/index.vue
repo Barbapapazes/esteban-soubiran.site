@@ -33,15 +33,8 @@
       <Title id="competences" observe>mes compétences</Title>
       <Card>
         <CardText>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
-          condimentum leo sit amet metus lobortis mollis. Sed cursus pulvinar
-          est. Praesent sit amet justo ac libero volutpat viverra id sit amet
-          nunc. Nulla ipsum lorem, fringilla eget metus et, pulvinar mattis
-          nunc. Mauris mattis egestas volutpat. Praesent tortor sem, feugiat nec
-          interdum ut, semper a purus. Orci varius natoque penatibus et magnis
-          dis parturient montes, nascetur ridiculus mus. Curabitur venenatis sem
-          et metus auctor, ac mollis dui placerat. Curabitur facilisis
-          ullamcorper erat ac tristique.
+          Il semble que cette section soit encore vide ! Un peu de patience !
+          Acquisition des compétences en cours... ⏳
         </CardText>
       </Card>
     </Section>

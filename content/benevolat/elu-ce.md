@@ -1,18 +1,22 @@
 ---
-title: lorem ipsum
-date: lorem ipsum
-tags: In gavida leo ut sem luctus dapibus
-banner: img/bnei.webp
-description:
-alt: logo du BNEI
+title: Élu au conseil des études
+date: 2021 - 2019
+order: 2
+tags:
+  - elu
+  - ce
+  - étudiant
+  - conseil
+  - insa
+banner: img/elu-ce.webp
+description: Mes mandats en tant qu'élu au conseil des études !
+alt: image des salles des conseils
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sagittis massa arcu, a cursus purus tempor sagittis. Proin convallis sapien ac mauris malesuada volutpat. Vivamus volutpat tincidunt massa ac faucibus. Vestibulum pellentesque, velit eget finibus vehicula, sapien dolor ornare neque, commodo volutpat ligula lorem eget justo. Cras ex diam, bibendum quis dolor eget, bibendum volutpat augue. In vel lectus a ante vestibulum faucibus. Praesent a vehicula lectus. Integer tempus nisl commodo nulla facilisis vehicula. Donec ullamcorper dolor id blandit ornare. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nam pulvinar tortor non mauris bibendum dictum. Proin magna nunc, convallis a nunc in, varius hendrerit dolor. Integer blandit odio eu nunc condimentum efficitur. Aenean gravida diam quam, eget imperdiet nulla maximus nec. Sed vitae dictum nisl. Nulla venenatis odio nec lorem ornare, quis pharetra ex congue.
+À partir de février 2019, je me suis mis sur la liste des élus pour le conseil des études de mon école, sans réellement savoir ce qu'on pouvait y faire et sur ce que le poste impliquait ! Mais je me suis tout de même engagé parce que j'avais un peu de temps.
 
-<card>
-  <card-image src="img/bnei.webp"></card-image >
-</card>
+Au fûr et à mesure des conseils, j'ai pu découvrir le fonctionnement de l'école, diverses discussions sur les études au sein de l'école, ce qui pouvait être améliorer et la relation entre les élèves, les professeurs et l'administration.
 
-In gravida leo ut sem luctus dapibus. Quisque ut cursus dui, et viverra massa. Sed placerat congue laoreet. Quisque tristique aliquam orci, vitae placerat elit accumsan ut. Fusce lobortis rhoncus sapien vitae ultrices. Praesent tincidunt, arcu ac eleifend commodo, lectus purus posuere libero, eget dictum lectus urna quis augue. Proin venenatis lorem sit amet purus placerat, vel ultricies ipsum vehicula.
+Durant mon premier mandat, les élus ont pu participer à l'élection du nouveau directeur de l'école, la valorisation de l'engagement étudiant, des séminaires pour les élus INSA. Cela permet de créer du lien avec l'ensemble des élèves de l'école mais aussi d'autres écoles ! On a aussi pu participer à des formations du BNEI !
 
-In in quam at mi dictum porta. Vivamus posuere consequat urna. Etiam lobortis enim vel velit interdum imperdiet. Maecenas sollicitudin sollicitudin metus nec fringilla. Proin eget mauris erat. Quisque id justo maximus, tincidunt eros ac, rutrum ex. Aliquam porta dolor egestas ex tempor, vel pulvinar sem consequat. Suspendisse at congue lorem. Aenean eleifend, dolor eget rutrum hendrerit, neque nunc laoreet sem, sit amet ornare lorem magna non ante. Vestibulum id porttitor elit, sit amet congue eros. Nam vel fermentum urna. In hac habitasse platea dictumst. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;
+En 2021, j'ai décidé de me remettre sur une liste considérant que les travaux entrepris lors de mon précédent mandat n'avais pas été suffisant ni terminé notamment sur les questions de la valorisation de l'engagement étudiant et pour accompagner les nouveaux élus !
