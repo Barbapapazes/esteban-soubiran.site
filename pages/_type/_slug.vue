@@ -26,6 +26,7 @@ export default {
       page,
     }
   },
+  scrollToTop: true,
   head() {
     return {
       title: this.page.title.toUpperCase() ?? 'chargement...'.toUpperCase(),
