@@ -1,6 +1,11 @@
 <template>
   <div class="rounded-10 shadow-inner-small p-2">
-    <img :src="getImage" :alt="alt" class="rounded-5 w-full h-auto mt-0 mb-0" />
+    <img
+      :src="getImage"
+      :alt="alt"
+      loading="lazy"
+      class="rounded-5 w-full h-auto mt-0 mb-0"
+    />
   </div>
 </template>
 

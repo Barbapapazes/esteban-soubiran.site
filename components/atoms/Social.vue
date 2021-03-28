@@ -2,7 +2,12 @@
   <ul>
     <li v-for="link in links" :key="link.href">
       <a :href="link.href" rel="noreferrer noopener" target="_blank"
-        ><img :src="link.src" :alt="link.alt" :width="size" :height="size"
+        ><img
+          :src="link.src"
+          :alt="link.alt"
+          :width="size"
+          :height="size"
+          loading="lazy"
       /></a>
     </li>
   </ul>

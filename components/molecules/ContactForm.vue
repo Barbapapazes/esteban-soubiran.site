@@ -42,7 +42,7 @@
     <TextInput v-model="message" name="message" placeholder="message">
       <IconTextDescription fill="white" class="h-6 w-6" />
       <template
-        v-slot:input="{ className, id, inputName, placeholder, value, input }"
+        #input="{ className, id, inputName, placeholder, value, input }"
       >
         <textarea
           :id="id"
