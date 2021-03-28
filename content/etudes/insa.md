@@ -2,7 +2,11 @@
 title: INSA Centre Val de Loire
 date: 2018
 order: 1
-tags: école supérieur enseignement ingénieur
+tags:
+  - école
+  - supérieur
+  - enseignement
+  - ingénieur
 banner: img/insa-logo.webp
 description: L'INSA Centre Val de Loire est mon école d'ingénieur depuis 2018 !
 alt: logo de l'INSA Centre Val de Loire
