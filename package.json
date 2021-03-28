@@ -29,14 +29,13 @@
     "@nuxtjs/pwa": "^3.0.2",
     "@tailwindcss/typography": "^0.4.0",
     "core-js": "^3.6.5",
-    "npm-run-all": "^4.1.5",
-    "nuxt": "^2.14.6",
+    "nuxt": "^2.15.3",
     "vue-observe-visibility": "^1.0.0"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^3.1.0",
     "@nuxtjs/eslint-module": "^2.0.0",
-    "@nuxtjs/tailwindcss": "^3.1.0",
+    "@nuxtjs/tailwindcss": "^4.0.2",
     "autoprefixer": "^9",
     "babel-eslint": "^10.1.0",
     "eslint": "^7.10.0",
@@ -46,9 +45,9 @@
     "husky": "^4.3.0",
     "lint-staged": "^10.4.0",
     "markdownlint-cli": "^0.26.0",
-    "postcss": "^7",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.2.8",
     "prettier": "^2.1.2",
-    "tailwind-scrollbar": "^1.0.2",
-    "tailwindcss": "npm:@tailwindcss/postcss7-compat"
+    "tailwind-scrollbar": "^1.0.2"
   }
 }
