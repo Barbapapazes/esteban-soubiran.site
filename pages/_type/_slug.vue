@@ -19,6 +19,7 @@
 
 <script>
 export default {
+  transition: 'fade',
   // scrollToTop: true,
   async asyncData({ $content, params }) {
     const page = await $content(params.type, params.slug).fetch()
@@ -27,7 +28,6 @@ export default {
       page,
     }
   },
-  transition: 'fade',
   head() {
     return {
       title: this.page.title.toUpperCase() ?? 'chargement...'.toUpperCase(),
