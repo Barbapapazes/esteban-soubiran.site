@@ -59,19 +59,19 @@
           Je suis Estéban, élève-ingénieur à l’INSA Centre Val de Loire dans la
           spécialité sécurité informatique.
         </CardText>
-        <CardText class="mt-3">
+        <CardText class="mt-4">
           J’adore apprendre, découvrir, essayer, tester, tenter...! Et c’est
-          durant la plus part de mon temps libre que je m’adosse le plus à ces
+          durant la plus part de mon temps libre que je m’adosse à ces
           activités. <br />
-          De la réalisation de sites web et de serveurs web au dépoyment de ces
-          derniers en passant par la création et le management de projets.
+          De la réalisation de sites web et de serveurs web au déploiement de
+          ces derniers en passant par la création et le management de projets.
         </CardText>
-        <CardText class="mt-3">
+        <CardText class="mt-4">
           Ce qui me motive c’est de réussir à mener des projets mais c’est aussi
           de me sortir de ma zone de confort en me confrontant à des situations
           inconnues.
         </CardText>
-        <CardText class="mt-3">
+        <CardText class="mt-4">
           Le reste de mon temps libre, je le passe dans des associations
           étudiantes et des engagements bénévoles. De la petite association
           développement durable de l’école à l’association nationale de
@@ -83,12 +83,14 @@
           école.
         </CardText>
         <CardText class="mt-3">
+          Retrouver
           <a
             href="/esteban-soubiran-2020.pdf"
             target="_blank"
-            class="underline font-bold"
-            >Retrouvez mon CV (2020-05) pour en savoir d'avantage !</a
+            class="hover:underline font-bold"
+            >mon CV (2020-05)</a
           >
+          pour en savoir d'avantage !
         </CardText>
       </Card>
     </Section>
