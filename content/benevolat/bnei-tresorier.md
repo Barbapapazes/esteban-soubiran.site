@@ -11,7 +11,7 @@ description: Mon poste de trésorier du BNEI !
 alt: logo du BNEI
 ---
 
-C'est en cours ! On en reparle d'ici **quelques mois** !
+C'est en cours ! On en reparle d'ici **quelques mois** ! 😄
 
 <card>
   <card-image src="img/bnei-tresorier.webp"></card-image >

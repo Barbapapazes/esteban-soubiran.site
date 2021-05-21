@@ -14,25 +14,25 @@ alt: logo de l'INSAil
 
 Lors de mon arrivé à l'INSA, j'ai découvert cette association et j'ai de suite accroché ! L'INSAil, c'est une association de voile. À l'INSAil, on fait du bateau ! Mais pour rappel, l'INSA Centre Val de Loire est dans le centre de la France ! En voilà donc une chose étonnante qui m'a attiré !
 
-Aussi, ils recherchaient un responsable communication pour produire des affiches pour la vente de crêpes qui finance l'association, des affiches pour les évènements, pour l'écriture de postes sur la page facebook.
+Aussi, ils recherchaient un responsable communication pour produire des affiches pour la vente de crêpes qui finance l'association, des affiches pour les évènements, pour l'écriture de postes sur la page facebook et pour revoir leur logo.
 
-Une affiche que j'ai pu réaliser pour la vente de crêpes hebdomadaire :
+Par exemple, voici une affiche que j'ai pu réaliser pour la vente de crêpes hebdomadaire :
 
 <card>
 <card-image src="img/insail-affiche-crepes.webp"></card-image >
 </card>
 
-Aussi, lors des différentes sorties voiles, auxquelles j'ai participé, j'avais aussi pour mission de capturer des images, les traiter et les publier sur les réseaux sociaux afin de faire connaître l'association et donner envie !
+Aussi, lors des différentes sorties voiles auxquelles j'ai participé, j'avais aussi pour mission de capturer des images, les traiter et les publier sur les réseaux sociaux afin de faire connaître l'association et donner envie !
 
 Vous pouvez retrouver mon travail [ici](https://www.facebook.com/INSAilCVL/posts/2948938845135195) et [là](https://www.facebook.com/INSAilCVL/posts/2946508848711528) !
 
 ## La Course Croisière Inter-INSA
 
-En 2019, l'association a lancé la course croisière inter-INSA (2C2I). L'idée est simple, regrouper l'ensemble des associations de voiles de tous les INSA pendant une semaine, une semaine de navigation, une semaine de voiles, 1 semaine de rencontre !
+En 2019, l'association a lancé la course croisière inter-INSA (2C2I). L'idée est simple. Regrouper l'ensemble des associations de voiles de tous les INSA pendant une semaine, une semaine de navigation, une semaine de voiles, une semaine de rencontre !
 
-L'association avait investi dans des cameras sportives. Ainsi, j'étais en charge de l'organisation des différentes cameras afin qu'elles puissent tourner sur chaque bateau ! Aussi, tous les soirs de la semaine, je récupérais, triais et traitais les photos prises dans la journée afin de créer le poste pour les réseaux sociaux !
+L'association avait investi dans des cameras sportives. Ainsi, j'étais en charge de l'organisation des différentes caméras afin qu'elles puissent tourner sur chaque bateau ! Aussi, tous les soirs de la semaine, je récupérais, triais et traitais les photos prises dans la journée afin de créer le poste pour les réseaux sociaux !
 
-Retrouvez l'ensemble des posts ici :
+Vous pouvez d'ailleurs retrouver l'ensemble des posts ici :
 
 - [Le lundi](https://www.facebook.com/INSAilCVL/posts/2699744600054622)
 - [Le mardi](https://www.facebook.com/INSAilCVL/posts/2701608453201570)

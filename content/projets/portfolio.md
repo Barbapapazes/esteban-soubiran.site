@@ -11,7 +11,7 @@ description: Mon portfolio !
 alt: Hero banner du site
 ---
 
-Il s'agit tout simplement du site que vous être en train de consulter !
+Il s'agit tout simplement du site que vous êtes en train de consulter !
 
 Vous pouvez y retrouver :
 
@@ -28,6 +28,6 @@ Ensuite, j'ai dessiné dans [Figma](https://figma.com) l'ensemble du projet avec
 
 Par la suite, j'ai intégré l'ensemble de la maquette avec [Nuxtjs](https://nuxtjs.org) et [Tailwindcss](https://tailwindcss.com). J'utilise aussi Nuxt Content, un CMS basé sur git afin de gérer l'ensemble de mon contenu.
 
-Le site est automatiquement déployé sur [Netlify](https://netlify.com) via un pipeline.
+Le site est automatiquement déployé sur [Netlify](https://netlify.com) via un pipeline de déployment continue.
 
 Bonne découverte et bonne lecture !

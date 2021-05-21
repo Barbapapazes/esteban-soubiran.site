@@ -34,7 +34,7 @@ Vous pouvez retrouver l'ensemble [des sources ici](https://github.com/Barbapapaz
 
 Après avoir appris [Vuejs](https://vuejs.org), quoi de mieux d'un projet concret pour mettre en pratique l'apprentissage ? C'est ce que je me suis dit en 2019 lorsque j'ai l'idée d'une petite application, très simple, pour le sport ! Sur cette dernière, il est possible d'utiliser un chronomètre, un compte à rebours et même d'y renseigner ses entraînements qui peuvent être automatiquement suivi par le compte à rebours !
 
-Pour l'interface graphique, j'ai utilisé [Vuetify](https://vuetify.com). Cela m'a permis de me concentrer sur l'écriture de la logique de l'application, tout en apprenant une librairie graphique et apprennent tout doucement le design !
+Pour l'interface graphique, j'ai utilisé [Vuetify](https://vuetify.com). Cela m'a permis de me concentrer sur l'écriture de la logique de l'application, tout en apprenant une librairie graphique et progressant tout doucement le design !
 
 J'ai aussi, durant 1 an, payé un nom de domaine personnalisé afin d'en apprendre un peu plus sur ce sujet !
 

@@ -1,5 +1,5 @@
 ---
-title: Nuit de l'Info
+title: Nuits de l'Info
 date: 2020 - 2019 - 2018
 order: 2
 tags:

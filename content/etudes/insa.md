@@ -22,6 +22,6 @@ Ainsi, j'ai pu prendre goût très rapidement à la richesse de la vie associati
 
 ## Le cycle ingénieur
 
-Ensuite, à partir de la 3ème année, je me suis spécialisé dans la sécurité informatique. Au delà de cette spécialisation, j'ai continué a pratiquer le développement web, l'une de mes passions. J'ai aussi pu profiter du temps supplémentaire à ma disposition pour continuer à évoluer aux travers différentes associations.
+Ensuite, à partir de la 3ème année, je me suis spécialisé dans la sécurité informatique. Au delà de cette spécialisation, j'ai continué a pratiquer le développement web, l'une de mes passions, que je pratiquais déjà en première année. J'ai aussi pu profiter du temps supplémentaire à ma disposition pour continuer à évoluer aux travers différentes associations.
 
 Vous pouvez en savoir plus sur l'école [en suivant ce lien](https://www.insa-centrevaldeloire.fr/fr/insa-centre-val-de-loire/qui-sommes-nous) !
