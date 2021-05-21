@@ -33,7 +33,7 @@
     <transition name="fade-long" appear>
       <hr
         class="bg-white h-small md:h-medium rounded-full"
-        style="transition-delay: 1s"
+        style="transition-delay: 1.2s"
       />
     </transition>
   </section>
