@@ -12,7 +12,15 @@
     </div>
     <nuxt-content
       :document="page"
-      class="prose prose-sm md:prose lg:prose-lg xl:prose-xl font-text tracking-tighter mx-auto"
+      class="
+        prose prose-sm
+        md:prose
+        lg:prose-lg
+        xl:prose-xl
+        font-text
+        tracking-tighter
+        mx-auto
+      "
     />
   </article>
 </template>

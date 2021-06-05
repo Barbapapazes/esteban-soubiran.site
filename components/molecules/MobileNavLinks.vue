@@ -3,7 +3,14 @@
     <li v-for="item in links" :key="item.name">
       <NuxtLink
         :to="'/#' + item.link"
-        class="focus:outline-none focus:ring-white focus:ring-2 rounded-5 p-1 mx-2 md:mx-0"
+        class="
+          focus:outline-none
+          focus:ring-white focus:ring-2
+          rounded-5
+          p-1
+          mx-2
+          md:mx-0
+        "
         >{{ item.name }}</NuxtLink
       >
     </li>

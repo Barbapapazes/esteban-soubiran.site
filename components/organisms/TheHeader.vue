@@ -1,6 +1,18 @@
 <template>
   <header
-    class="flex justify-between items-center absolute top-5 md:top-10 lg:top-16 inset-x-0 px-5 md:px-10 lg:px-16"
+    class="
+      flex
+      justify-between
+      items-center
+      absolute
+      top-5
+      md:top-10
+      lg:top-16
+      inset-x-0
+      px-5
+      md:px-10
+      lg:px-16
+    "
   >
     <h1 class="tracking-tight text-light-grey font-text md:text-lg">
       <NuxtLink

@@ -4,7 +4,17 @@
   >
     <div class="h-full flex flex-col md:flex-row justify-center items-center">
       <div
-        class="grid gap-8 md:gap-16 md:grid-flow-col md:auto-cols-max font-text text-center md:text-left justify-items-center"
+        class="
+          grid
+          gap-8
+          md:gap-16
+          md:grid-flow-col
+          md:auto-cols-max
+          font-text
+          text-center
+          md:text-left
+          justify-items-center
+        "
       >
         <div class="grid gap-8">
           <transition name="slideup" appear>

@@ -7,7 +7,19 @@
       },
       once: true,
     }"
-    class="p-2 md:p-5 rounded-10 shadow-medium font-text self-start opacity-0 transform translate-y-10 duration-700 ease-in-out"
+    class="
+      p-2
+      md:p-5
+      rounded-10
+      shadow-medium
+      font-text
+      self-start
+      opacity-0
+      transform
+      translate-y-10
+      duration-700
+      ease-in-out
+    "
     :class="{ 'gap-2': gap, grid: gap }"
   >
     <slot></slot>

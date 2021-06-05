@@ -1,7 +1,20 @@
 <template>
   <component
     :is="componentType"
-    class="font-text text-white text-sm md:text-lg rounded-5 py-2 px-4 uppercase transition-shadow duration-300 hover:shadow-medium focus:outline-none focus:ring-2 focus:ring-white"
+    class="
+      font-text
+      text-white text-sm
+      md:text-lg
+      rounded-5
+      py-2
+      px-4
+      uppercase
+      transition-shadow
+      duration-300
+      hover:shadow-medium
+      focus:outline-none
+      focus:ring-2 focus:ring-white
+    "
     :to="to"
     :type="type"
   >
