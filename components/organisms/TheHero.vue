@@ -7,9 +7,7 @@
         class="
           grid
           gap-8
-          md:gap-16
-          md:grid-flow-col
-          md:auto-cols-max
+          md:gap-16 md:grid-flow-col md:auto-cols-max
           font-text
           text-center
           md:text-left

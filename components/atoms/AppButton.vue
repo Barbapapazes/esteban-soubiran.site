@@ -11,14 +11,15 @@
       uppercase
       transition-shadow
       duration-300
+      focus:ring-2 focus:ring-white
       hover:shadow-medium
       focus:outline-none
-      focus:ring-2 focus:ring-white
     "
     :to="to"
     :type="type"
   >
-    <span class="mr-2">&#60;</span><slot></slot><span class="ml-2">&#62;</span>
+    <span class="mr-2">&#60;</span><slot></slot
+    ><span class="ml-2"> &#47;&#62;</span>
   </component>
 </template>
 
