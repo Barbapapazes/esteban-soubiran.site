@@ -99,7 +99,7 @@
       <Social
         :links="links"
         :size="40"
-        class="grid grid-cols-3 gap-16 max-w-sm mx-auto"
+        class="flex flex-row gap-8 md:gap-16 max-w-sm mx-auto"
       />
       <TheContactForm class="max-w-sm mx-auto" />
     </Section>
@@ -137,6 +137,11 @@ export default {
           href: 'https://github.com/barbapapazes',
           src: require('@/assets/logo/github-dark.svg'),
           alt: 'logo de facebook',
+        },
+        {
+          href: 'https://dev.to/barbapapazes',
+          src: require('@/assets/logo/devto.svg'),
+          alt: 'logo de dev.to',
         },
       ],
     }
