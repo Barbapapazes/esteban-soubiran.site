@@ -1,6 +1,14 @@
 <template>
   <div
-    class="flex bg-deep-blue text-white rounded-5 shadow-inner-small flex-grow"
+    class="
+      flex
+      bg-deep-blue
+      text-white
+      rounded-5
+      shadow-inner-small
+      flex-grow
+      focus-within:ring-2 focus-within:ring-white
+    "
     :class="{ 'items-center': center }"
   >
     <label :for="name" class="m-1">
@@ -56,7 +64,7 @@ export default {
   },
   computed: {
     getInputClass() {
-      return 'flex-1 placeholder-light-grey bg-transparent focus:ring-white focus:ring-2 focus:outline-none rounded-none rounded-r-5 p-1'
+      return 'flex-1 placeholder-light-grey bg-transparent focus:outline-none rounded-none rounded-r-5 p-1'
     },
   },
   methods: {
