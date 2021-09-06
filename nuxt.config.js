@@ -24,7 +24,9 @@ export default {
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
     bodyAttrs: {
-      class: ['scrollbar scrollbar-thumb-light-grey scrollbar-track-deep-blue'],
+      class: [
+        'scrollbar scrollbar-thumb-light-grey scrollbar-track-deep-blue transition duration-200',
+      ],
     },
   },
 
@@ -60,12 +62,19 @@ export default {
     jit: true,
   },
 
+  robots: {
+    UserAgent: '*',
+    Allow: '/',
+  },
+
   // Modules (https://go.nuxtjs.dev/config-modules)
   modules: [
     // https://go.nuxtjs.dev/pwa
     '@nuxtjs/pwa',
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
+    // https://www.npmjs.com/package/@nuxtjs/robots
+    '@nuxtjs/robots',
   ],
 
   // Content module configuration (https://go.nuxtjs.dev/config-content)
