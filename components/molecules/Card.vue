@@ -8,9 +8,8 @@
       once: true,
     }"
     class="
-      p-2
-      md:p-5
-      rounded-10
+      p-4
+      rounded-xl
       shadow-medium
       font-text
       self-start
@@ -19,8 +18,9 @@
       translate-y-10
       duration-700
       ease-in-out
+      h-full
     "
-    :class="{ 'gap-2': gap, grid: gap }"
+    :class="cardClass"
   >
     <slot></slot>
   </div>
@@ -33,6 +33,13 @@ export default {
     gap: {
       type: Boolean,
       default: false,
+    },
+  },
+  computed: {
+    cardClass() {
+      if (!this.gap) return
+
+      return 'flex flex-col space-y-2'
     },
   },
   methods: {

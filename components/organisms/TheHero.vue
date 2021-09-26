@@ -1,13 +1,13 @@
 <template>
-  <section
-    class="h-screen flex flex-col justify-between py-5 md:py-10 lg:py-16"
-  >
+  <section class="h-screen flex flex-col justify-between p-6 md:p-12 lg:p-16">
     <div class="h-full flex flex-col md:flex-row justify-center items-center">
       <div
         class="
+          md:gap-16
           grid
+          md:grid-flow-col
           gap-8
-          md:gap-16 md:grid-flow-col md:auto-cols-max
+          md:auto-cols-max
           font-text
           text-center
           md:text-left

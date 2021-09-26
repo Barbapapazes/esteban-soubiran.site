@@ -1,6 +1,6 @@
 <template>
   <form
-    class="grid gap-5 font-text"
+    class="grid gap-6 font-text"
     name="contact"
     netlify
     data-netlify-honeypot="bot-field"
@@ -20,6 +20,18 @@
       center
     >
       <IconMail fill="white" class="h-6 w-6" />
+      <template
+        #input="{ className, id, inputName, placeholder, value, input }"
+      >
+        <input
+          :id="id"
+          :name="inputName"
+          :value="value"
+          :placeholder="placeholder"
+          :class="className"
+          @input="input"
+        />
+      </template>
     </TextInput>
     <TextInput
       v-model="name"
@@ -29,6 +41,18 @@
       center
     >
       <IconPersonn fill="white" class="h-6 w-6" />
+      <template
+        #input="{ className, id, inputName, placeholder, value, input }"
+      >
+        <input
+          :id="id"
+          :name="inputName"
+          :value="value"
+          :placeholder="placeholder"
+          :class="className"
+          @input="input"
+        />
+      </template>
     </TextInput>
     <TextInput
       v-model="object"
@@ -38,6 +62,18 @@
       center
     >
       <IconTextBox fill="white" class="h-6 w-6" />
+      <template
+        #input="{ className, id, inputName, placeholder, value, input }"
+      >
+        <input
+          :id="id"
+          :name="inputName"
+          :value="value"
+          :placeholder="placeholder"
+          :class="className"
+          @input="input"
+        />
+      </template>
     </TextInput>
     <TextInput v-model="message" name="message" placeholder="message">
       <IconTextDescription fill="white" class="h-6 w-6" />
@@ -49,7 +85,6 @@
           :name="inputName"
           :value="value"
           :placeholder="placeholder"
-          cols="30"
           rows="10"
           class="resize-none"
           :class="className"

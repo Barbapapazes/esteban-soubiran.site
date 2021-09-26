@@ -9,8 +9,8 @@
       md:top-10
       lg:top-16
       inset-x-0
-      px-5
-      md:px-10
+      px-6
+      md:px-12
       lg:px-16
     "
   >

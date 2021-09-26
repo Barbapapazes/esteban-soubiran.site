@@ -1,5 +1,5 @@
 <template>
-  <div class="grid gap-10">
+  <div class="grid gap-16">
     <TheHero />
     <Section>
       <Title id="projets" observe>mes projets</Title>
@@ -9,8 +9,8 @@
           <CardTitle>{{ projet.title }}</CardTitle>
           <AppTags :words="projet.tags" />
           <CardSubtitle>{{ projet.date }}</CardSubtitle>
-          <CardActions
-            ><AppButton :to="projet.path">voir plus</AppButton></CardActions
+          <CardActions>
+            <AppButton :to="projet.path">voir plus</AppButton></CardActions
           >
         </Card>
       </SectionGrid>
@@ -23,8 +23,8 @@
           <CardTitle>{{ item.title }}</CardTitle>
           <AppTags :words="item.tags" />
           <CardSubtitle>{{ item.date }}</CardSubtitle>
-          <CardActions
-            ><AppButton :to="item.path">voir plus</AppButton></CardActions
+          <CardActions>
+            <AppButton :to="item.path">voir plus</AppButton></CardActions
           >
         </Card>
       </SectionGrid>
@@ -99,9 +99,9 @@
       <Social
         :links="links"
         :size="40"
-        class="flex flex-row gap-8 md:gap-16 max-w-sm mx-auto"
+        class="flex flex-row gap-8 max-w-md mx-auto"
       />
-      <TheContactForm class="max-w-sm mx-auto" />
+      <TheContactForm class="max-w-md mx-auto" />
     </Section>
   </div>
 </template>
@@ -124,23 +124,23 @@ export default {
       sections: [],
       links: [
         {
-          href: 'https://facebook.com/esteban.soubiran',
-          src: require('@/assets/logo/facebook.svg'),
-          alt: 'logo de facebook',
+          href: 'https://www.instagram.com/estebansoubiran/',
+          name: 'LogoInstagram',
+          alt: "logo d'Instagram",
         },
         {
           href: 'https://linkedin.com/in/esteban25',
-          src: require('@/assets/logo/linkedin.svg'),
-          alt: 'logo de facebook',
+          name: 'LogoLinkedin',
+          alt: 'logo de LinkedIn',
         },
         {
           href: 'https://github.com/barbapapazes',
-          src: require('@/assets/logo/github-dark.svg'),
-          alt: 'logo de facebook',
+          name: 'LogoGithub',
+          alt: 'logo de GitHub',
         },
         {
           href: 'https://dev.to/barbapapazes',
-          src: require('@/assets/logo/devto.svg'),
+          name: 'LogoDevto',
           alt: 'logo de dev.to',
         },
       ],
