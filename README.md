@@ -10,11 +10,13 @@ To create a new article, a template can be used !
 
 ## Build
 
+This project use **pnpm**.
+
 ```sh
 # Start the dev server
-yarn dev
+pnpm run dev
 # Build the static site
-yarn generate
+pnpm run generate
 ```
 
 This _Nuxt Project_ is a static site and automatically deploy on Netlify.
