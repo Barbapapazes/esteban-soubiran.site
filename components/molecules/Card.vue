@@ -18,7 +18,6 @@
       translate-y-10
       duration-700
       ease-in-out
-      h-full
     "
     :class="cardClass"
   >
@@ -39,7 +38,7 @@ export default {
     cardClass() {
       if (!this.gap) return
 
-      return 'flex flex-col space-y-2'
+      return 'flex flex-col space-y-2 h-full'
     },
   },
   methods: {
