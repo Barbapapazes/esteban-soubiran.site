@@ -15,5 +15,7 @@ module.exports = {
   ],
   plugins: ['prettier'],
   // add your custom rules here
-  rules: {},
+  rules: {
+    'vue/script-setup-uses-vars': 'off',
+  },
 }

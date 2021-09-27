@@ -9,15 +9,15 @@
       md:top-10
       lg:top-16
       inset-x-0
-      px-5
-      md:px-10
+      px-6
+      md:px-12
       lg:px-16
     "
   >
     <h1 class="tracking-tight text-light-grey font-text md:text-lg">
       <NuxtLink
         to="/"
-        class="focus:outline-none focus:ring-white focus:ring-2 rounded-5 p-1"
+        class="focus:outline-none focus:ring-white focus:ring-2 rounded-md p-1"
         >Estéban SOUBIRAN</NuxtLink
       >
     </h1>

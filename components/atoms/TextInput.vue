@@ -1,17 +1,20 @@
 <template>
   <div
     class="
-      flex
+      flex flex-row
+      space-x-2
+      md:space-x-4
+      p-2
+      md:px-4
+      rounded
       bg-deep-blue
       text-white
-      rounded-5
       shadow-inner-small
-      flex-grow
       focus-within:ring-2 focus-within:ring-white
     "
     :class="{ 'items-center': center }"
   >
-    <label :for="name" class="m-1">
+    <label :for="name">
       <slot></slot>
     </label>
     <slot
@@ -23,23 +26,14 @@
       :type="type"
       :inputName="name"
       :placeholder="placeholder"
-    >
-      <input
-        :id="name"
-        :value="value"
-        :type="type"
-        :name="name"
-        :class="getInputClass"
-        :placeholder="placeholder"
-        @input="textInput"
-      />
-    </slot>
+    />
   </div>
 </template>
 
 <script>
 export default {
   name: 'TextInput',
+  inheritAttrs: false,
   props: {
     value: {
       type: String,
@@ -64,7 +58,7 @@ export default {
   },
   computed: {
     getInputClass() {
-      return 'flex-1 placeholder-light-grey bg-transparent focus:outline-none rounded-none rounded-r-5 p-1'
+      return 'flex-1 placeholder-light-grey bg-transparent focus:outline-none rounded-none'
     },
   },
   methods: {

@@ -44,8 +44,8 @@ export default {
   components: [
     '~/components/atoms',
     '~/components/atoms/icons',
+    '~/components/atoms/logos',
     '~/components/atoms/texts',
-    '~/components/global',
     '~/components/organisms',
     '~/components/molecules',
   ],
@@ -57,10 +57,6 @@ export default {
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
   ],
-
-  tailwindcss: {
-    jit: true,
-  },
 
   robots: {
     UserAgent: '*',

@@ -5,7 +5,7 @@
       font-text
       text-white text-sm
       md:text-lg
-      rounded-5
+      rounded-md
       py-2
       px-4
       uppercase
