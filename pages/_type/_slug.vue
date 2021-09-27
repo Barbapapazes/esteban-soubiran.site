@@ -1,5 +1,5 @@
 <template>
-  <article class="pt-16 md:pt-36 pb-6 grid gap-8 md:gap-16">
+  <article class="pt-16 md:pt-36 pb-6 grid gap-8 md:gap-16 px-4">
     <div class="w-full md:w-8/12 2xl:w-6/12 mx-auto grid gap-8">
       <Card>
         <CardImage :src="page.banner" />
