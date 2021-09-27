@@ -99,7 +99,7 @@
       <Social
         :links="links"
         :size="40"
-        class="flex flex-row gap-8 max-w-md mx-auto"
+        class="flex flex-row gap-8 max-w-xl mx-auto"
       />
       <TheContactForm class="max-w-md mx-auto" />
     </Section>
@@ -127,6 +127,11 @@ export default {
           href: 'https://www.instagram.com/estebansoubiran/',
           name: 'LogoInstagram',
           alt: "logo d'Instagram",
+        },
+        {
+          href: 'https://twitter.com/soubiran25/',
+          name: 'LogoTwitter',
+          alt: 'logo de Twitter',
         },
         {
           href: 'https://linkedin.com/in/esteban25',
