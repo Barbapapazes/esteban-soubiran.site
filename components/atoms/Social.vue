@@ -1,8 +1,23 @@
 <template>
   <ul>
     <li v-for="link in links" :key="link.href">
-      <a :href="link.href" rel="noreferrer noopener" target="_blank">
-        <component :is="link.name" class="text-white w-8 h-8 md:w-12 md:h-12" />
+      <a
+        :href="link.href"
+        rel="noreferrer noopener"
+        target="_blank"
+        class="
+          focus:outline-none
+          w-8
+          md:w-12
+          focus:ring-white focus:ring-2
+          p-1
+          h-8
+          md:h-12
+          block
+          rounded-md
+        "
+      >
+        <component :is="link.name" class="text-white w-full h-full" />
       </a>
     </li>
   </ul>

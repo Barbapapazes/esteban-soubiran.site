@@ -17,7 +17,7 @@
     <h1 class="tracking-tight text-light-grey font-text md:text-lg">
       <NuxtLink
         to="/"
-        class="focus:outline-none focus:ring-white focus:ring-2 rounded p-1"
+        class="focus:outline-none focus:ring-white focus:ring-2 rounded-md p-1"
         >Estéban SOUBIRAN</NuxtLink
       >
     </h1>
