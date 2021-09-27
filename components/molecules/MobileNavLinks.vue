@@ -4,9 +4,10 @@
       <NuxtLink
         :to="'/#' + item.link"
         class="
-          focus:outline-none focus:ring-white focus:ring-2
-          rounded-5
+          focus:outline-none
           p-1
+          focus:ring-white focus:ring-2
+          rounded-md
           mx-2
           md:mx-0
         "

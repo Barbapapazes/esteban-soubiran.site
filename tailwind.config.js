@@ -33,10 +33,10 @@ module.exports = {
               marginBottom: '0',
             },
             h2: {
-              color: theme('colors.dark-blue'),
+              color: theme('colors.white'),
             },
             h3: {
-              color: theme('colors.dark-blue'),
+              color: theme('colors.white'),
             },
             a: {
               color: theme('colors.light-grey'),
