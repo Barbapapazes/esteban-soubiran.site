@@ -1,3 +1,5 @@
+import getRoutes from './utils/getRoutes'
+
 export default {
   // Target (https://go.nuxtjs.dev/config-target)
   target: 'static',
@@ -74,6 +76,8 @@ export default {
     '@nuxtjs/robots',
     // https://motion.vueuse.org/
     'nuxt-use-motion',
+    // https://sitemap.nuxtjs.org
+    '@nuxtjs/sitemap',
   ],
 
   // Content module configuration (https://go.nuxtjs.dev/config-content)
@@ -81,4 +85,12 @@ export default {
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {},
+
+  // Sitemap module configuration (https://sitemap.nuxtjs.org)
+  sitemap: {
+    hostname: process.env.BASE_URL,
+    routes() {
+      return getRoutes()
+    },
+  },
 }
