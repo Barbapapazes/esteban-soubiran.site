@@ -1,8 +1,8 @@
 <template>
   <div class="bg-deep-blue">
-    <transition name="fade-long" appear>
-      <TheHeader style="transition-delay: 1.2s" />
-    </transition>
+    <!-- <transition name="fade-long" appear> -->
+    <TheHeader />
+    <!-- </transition> -->
     <main>
       <Nuxt />
     </main>

@@ -1,7 +1,7 @@
 <template>
   <article class="pt-16 md:pt-36 grid gap-8 md:gap-16 px-4">
     <div class="w-full md:w-8/12 2xl:w-6/12 mx-auto grid gap-8">
-      <Card>
+      <Card no-animation>
         <CardImage :src="page.banner" />
       </Card>
       <div class="flex flex-col space-y-2">
