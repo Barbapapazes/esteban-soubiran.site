@@ -1,24 +1,15 @@
 <template>
   <div
-    v-observe-visibility="{
-      callback: visibilityChanged,
-      intersection: {
-        threshold: 0.2,
-      },
-      once: true,
-    }"
-    class="
-      p-4
-      rounded-xl
-      shadow-medium
-      font-text
-      self-start
-      opacity-0
-      transform
-      translate-y-10
-      duration-700
-      ease-in-out
+    v-observe-visibility="
+      !noAnimation && {
+        callback: visibilityChanged,
+        intersection: {
+          threshold: 0.2,
+        },
+        once: true,
+      }
     "
+    class="p-4 rounded-xl shadow-medium font-text self-start"
     :class="cardClass"
   >
     <slot></slot>
@@ -29,6 +20,10 @@
 export default {
   name: 'Card',
   props: {
+    noAnimation: {
+      type: Boolean,
+      default: false,
+    },
     gap: {
       type: Boolean,
       default: false,
@@ -36,9 +31,19 @@ export default {
   },
   computed: {
     cardClass() {
-      if (!this.gap) return
+      const classNames = []
 
-      return 'flex flex-col space-y-2 h-full'
+      if (this.gap) {
+        classNames.push('flex flex-col space-y-2 h-full')
+      }
+
+      if (!this.noAnimation) {
+        classNames.push(
+          'opacity-0 transform translate-y-10 duration-700 ease-in-out'
+        )
+      }
+
+      return classNames.join(' ')
     },
   },
   methods: {

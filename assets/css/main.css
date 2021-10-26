@@ -1,17 +1,9 @@
 .fade-enter-active,
 .fade-leave-active {
-  transition: opacity 0.2s;
+  transition: opacity 0.6s;
 }
 .fade-enter,
 .fade-leave-to {
-  opacity: 0;
-}
-.fade-long-enter-active,
-.fade-long-leave-active {
-  transition: opacity 1.2s;
-}
-.fade-long-enter,
-.fade-long-leave-to {
   opacity: 0;
 }
 
@@ -24,15 +16,4 @@
 .expand-enter,
 .expand-leave-to {
   height: 0;
-}
-
-.slideup-enter-active,
-.slideup-leave-active {
-  transition: all 1s ease-in-out;
-}
-
-.slideup-enter,
-.slideup-leave-to {
-  transform: translateY(25px);
-  opacity: 0;
 }
