@@ -88,18 +88,13 @@ export default {
         "
       >
         <div class="grid gap-8">
-          <!-- <transition name="slideup" appear> -->
           <Title ref="title" class="opacity-0">code</Title>
-          <!-- </transition> -->
-          <!-- <transition name="slideup" appear> -->
           <div ref="subtitle" class="opacity-0 grid gap-2 md:gap-1">
             <Subtitle>Élève-ingénieur en sécurité informatique</Subtitle>
             <Subtitle> Développeur web dans son temps libre</Subtitle>
             <Subtitle> Passionné par le monde associatif</Subtitle>
           </div>
-          <!-- </transition> -->
         </div>
-        <!-- <transition name="fade-long" appear> -->
         <NuxtImg
           ref="image"
           src="img/pp-esteban.webp"
@@ -108,11 +103,8 @@ export default {
           width="250"
           height="250"
         />
-        <!-- </transition> -->
       </div>
     </div>
-    <!-- <transition name="fade-long" appear> -->
     <hr ref="hr" class="bg-white h-small md:h-medium rounded-full opacity-0" />
-    <!-- </transition> -->
   </section>
 </template>
