@@ -53,6 +53,10 @@ export default {
     '@nuxtjs/eslint-module',
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
+    // https://image.nuxtjs.org
+    '@nuxt/image',
+    // https://composition-api.nuxtjs.org
+    '@nuxtjs/composition-api/module',
   ],
 
   robots: {
@@ -68,6 +72,8 @@ export default {
     '@nuxt/content',
     // https://www.npmjs.com/package/@nuxtjs/robots
     '@nuxtjs/robots',
+    // https://motion.vueuse.org/
+    'nuxt-use-motion',
   ],
 
   // Content module configuration (https://go.nuxtjs.dev/config-content)
