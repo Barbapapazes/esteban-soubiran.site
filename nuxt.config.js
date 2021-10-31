@@ -89,6 +89,7 @@ export default {
   // Sitemap module configuration (https://sitemap.nuxtjs.org)
   sitemap: {
     hostname: process.env.BASE_URL,
+    trailingSlash: true,
     routes() {
       return getRoutes()
     },
