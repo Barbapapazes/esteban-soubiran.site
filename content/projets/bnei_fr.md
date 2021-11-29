@@ -5,10 +5,10 @@ tags:
   - web
   - projet
   - bnei
-banner: img/bnei.png
+banner: img/bnei_fr.png
 description: Remise à pied du site web du BNEI
 alt: image de bnei.fr
-order: 8
+order: 9
 ---
 
 Depuis plusieurs années, le BNEI a la volonté de refaire son site internet. Cette année, c'est la bonne et [un nouveau site voit enfin le jour](https://bnei.fr) !
