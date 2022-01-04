@@ -1,3 +1,11 @@
+### Version 2.0.0
+- fix(bump): version
+- chore: update dependancies
+- fix(header): display in mobile
+- feat(content): update prose
+- feat(head): update
+- fix(head): udpate
+
 ### Version 1.0.0
 - initial commit
 - refactor: remove unused files
