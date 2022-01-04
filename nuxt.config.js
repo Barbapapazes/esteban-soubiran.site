@@ -20,12 +20,46 @@ export default {
         name: 'description',
         content: "Portfolio d'Estéban SOUBIRAN !",
       },
+      {
+        hid: 'og:site_name',
+        property: 'og:site_name',
+        content: 'Estéban Soubiran',
+      },
+      { hid: 'og:type', property: 'og:type', content: 'website' },
+      { hid: 'twitter:site', name: 'twitter:site', content: '@soubiran25' },
+      {
+        hid: 'twitter:card',
+        name: 'twitter:card',
+        content: 'summary_large_image',
+      },
+      {
+        hid: 'og:image',
+        property: 'og:image',
+        content: 'https://esteban-soubiran.site/preview.png',
+      },
+      {
+        hid: 'og:image:secure_url',
+        property: 'og:image:secure_url',
+        content: 'https://esteban-soubiran.site/preview.png',
+      },
+      {
+        hid: 'og:image:alt',
+        property: 'og:image:alt',
+        content: "Portfolio d'Estéban SOUBIRAN !",
+      },
+      {
+        hid: 'twitter:image',
+        name: 'twitter:image',
+        content: 'https://esteban-soubiran.site/preview.png',
+      },
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
-    bodyAttrs: {
-      class: [
-        // 'scrollbar scrollbar-thumb-light-grey scrollbar-track-deep-blue transition duration-200',
-      ],
+    link: [
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'preconnect', href: 'https://fonts.gstatic.com' },
+    ],
+    htmlAttrs: {
+      lang: 'fr-FR',
+      amp: true,
     },
   },
 
