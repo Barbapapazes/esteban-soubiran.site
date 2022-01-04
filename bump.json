@@ -1,0 +1,9 @@
+{
+  "files": {
+    "components/organisms/TheFooter.vue": [
+      ".*v(\\d.\\d.\\d).*",
+      "[version]",
+      "i"
+    ]
+  }
+}

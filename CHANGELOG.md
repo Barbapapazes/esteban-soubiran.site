@@ -1,0 +1,109 @@
+### Version 1.0.0
+- initial commit
+- refactor: remove unused files
+- feat: first draft of the home page
+- feat: resize image
+- feat: add the responsive layout
+- feat: adding more content
+- ci: add cd
+- ci: ci on master
+- refactor: update some component
+- feat: create cards
+- ci: typo
+- build(dependencies): update all packages
+- ci(cd/cd): update pipeline
+- feat: rework first page
+- feat(update): create the new home page
+- feat(hero): add animations
+- feat(page): create slug page
+- fix(deployment): generate fallback
+- feat(form): try adding form
+- feat(form): try adding form
+- feat(form): try adding form
+- feat(form): try adding form
+- feat(form): try adding form
+- feat(form): try adding form
+- feat(form): try adding form
+- feat(form): try adding form
+- feat(form): try adding form
+- feat(form): try adding form
+- feat(form): add support for netlify
+- feat(slug): add styling for pc
+- feat(button): create nuxt-link in button
+- feat(hero): add pc version
+- feat(responsive): add responsive to the site
+- feat(intersection): add intersection
+- feat(social): rework the section
+- feat(transition): add on title
+- ci(workflows): update ci
+- feat(content): add data fetching
+- feat(style): add transition and scroll bar color
+- ci(lint): test pipeline
+- ci(lint): test pipeline
+- ci(lint): test pipeline
+- ci(lint): test pipeline
+- feat(finish): add icon and ceo content
+- build(dependancies): update dependancies
+- build(dependancies): update dependancies
+- build(dependancies): update dependancies
+- feat(content): add somes pages
+- fix(index): fix typo & add id
+- feat(content): create articles
+- feat(content): add tags components
+- feat(content): add more articles
+- fix(design): update somes var
+- feat(design): update strong value
+- feat(content): add insail
+- feat(content): add img for insail
+- feat(design): rework the max size
+- feat(content): add more content
+- build(tailwindcss): add jit
+- build(packages): update dependancies
+- fix #47
+- fix #45
+- feat(scroll): add a smooth scroll
+- fix #46
+- feat(analytics): add clarity
+- feat(content): add lfe formation
+- fix(img): crop logo
+- fix(form): focus ring updated
+- fix(hero): update delay
+- fix: typo
+- fix: typos
+- build(dependencies): update all dependencies
+- feat(readme): create file
+- feat(cv): add 2021
+- style(lint): lint all files
+- chore: update dependencies
+- feat(social): add link to dev.to
+- feat(design): add / to end tags
+- feat(content): add adonis blog
+- chore: udpate dependencies
+- feat: add robots.txt
+- chore: update to pnpm
+- refactor(redesign): update design and many gap
+- feat(social): add twitter
+- feat(social): add twitter
+- feat(typographie): update colors
+- feat(social): create focus
+- build: setup for netlify
+- build: setup for netlify
+- build: setup for netlify
+- fix(slug): add padding
+- Update _slug.vue
+- Update Card.vue
+- fix: full static mode
+- chore: install motion and image
+- feat: update image and animation
+- fix: remove unused code
+- feat(content): write insamee_fr
+- build: update node version
+- feat(sitemap): create one
+- fix(sitemap): trailing slash
+- feat(content): add bnei_fr
+- fix(content): image name and pos
+- fix(content): update md files
+- fix(img): add new bnei logo
+- fix(sitemap): remove template
+- chore: remove unused package
+- build: add bump for update

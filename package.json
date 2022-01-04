@@ -1,6 +1,6 @@
 {
   "name": "esteban-soubiran.site",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": true,
   "description": "Portfolio d'Estéban Soubiran",
   "author": {
@@ -50,13 +50,13 @@
     "@nuxtjs/robots": "^2.5.0",
     "@nuxtjs/sitemap": "^2.4.0",
     "@tailwindcss/typography": "^0.4.1",
-    "bump": "^0.2.5",
     "core-js": "^3.17.2",
     "nuxt": "^2.15.8",
     "nuxt-use-motion": "^2.0.0-beta.5",
     "vue-observe-visibility": "^1.0.0"
   },
   "devDependencies": {
+    "@fabiospampinato/bump": "^2.1.0",
     "@nuxt/image": "^0.6.0",
     "@nuxtjs/eslint-config": "^6.0.1",
     "@nuxtjs/eslint-module": "^3.0.2",

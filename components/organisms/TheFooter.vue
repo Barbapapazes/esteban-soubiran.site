@@ -10,7 +10,7 @@
       items-center
     "
   >
-    2021 - Par Estéban Soubiran -&nbsp;
+1.0.1
     <IconHeart fill="#344163" class="h-5 w-5" />
   </footer>
 </template>
