@@ -1,5 +1,11 @@
 module.exports = {
-  mode: 'jit',
+  content: [
+    './components/**/*.{js,vue,ts}',
+    './layouts/**/*.vue',
+    './pages/**/*.vue',
+    './plugins/**/*.{js,ts}',
+    './nuxt.config.{js,ts}',
+  ],
   theme: {
     extend: {
       colors: {
@@ -23,55 +29,7 @@ module.exports = {
       fontFamily: {
         text: ['CascadiaCode', 'sans-serif'],
       },
-      typography: (theme) => ({
-        DEFAULT: {
-          css: {
-            color: theme('colors.white'),
-            textAlign: 'justify',
-            img: {
-              marginTop: '0',
-              marginBottom: '0',
-            },
-            h2: {
-              color: theme('colors.white'),
-            },
-            h3: {
-              color: theme('colors.white'),
-            },
-            a: {
-              color: theme('colors.light-grey'),
-            },
-            strong: {
-              color: theme('colors.dark-blue'),
-            },
-          },
-        },
-        sm: {
-          css: {
-            img: {
-              marginTop: '0',
-              marginBottom: '0',
-            },
-          },
-        },
-        lg: {
-          css: {
-            img: {
-              marginTop: '0',
-              marginBottom: '0',
-            },
-          },
-        },
-        xl: {
-          css: {
-            img: {
-              marginTop: '0',
-              marginBottom: '0',
-            },
-          },
-        },
-      }),
     },
   },
-  plugins: [require('@tailwindcss/typography'), require('tailwind-scrollbar')],
+  plugins: [require('@tailwindcss/typography')],
 }

@@ -76,6 +76,7 @@ export default {
     <div class="h-full flex flex-col md:flex-row justify-center items-center">
       <div
         class="
+          z-0
           md:gap-16
           grid
           md:grid-flow-col

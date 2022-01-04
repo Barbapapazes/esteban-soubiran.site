@@ -6,7 +6,7 @@ tags:
   - trésorerie
   - BNEI
   - association
-banner: img/bnei.webp
+banner: img/bnei_logo.png
 description: Mon poste de trésorier du BNEI !
 alt: logo du BNEI
 ---

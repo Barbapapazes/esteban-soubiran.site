@@ -1,7 +1,7 @@
 <template>
   <div class="bg-deep-blue">
     <TheHeader />
-    <main>
+    <main class="relative">
       <Nuxt />
     </main>
     <TheFooter class="mt-16" />

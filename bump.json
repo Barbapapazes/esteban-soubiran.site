@@ -1,0 +1,9 @@
+{
+  "files": {
+    "components/organisms/TheFooter.vue": [
+      ".*v(\\d.\\d.\\d).*",
+      "2022 - v[version] - Par Estéban Soubiran -&nbsp;",
+      "i"
+    ]
+  }
+}
