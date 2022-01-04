@@ -6,7 +6,7 @@ tags:
   - BNEI
   - DD
   - mission
-banner: img/bnei.webp
+banner: img/bnei_logo.png
 description: Chargé de mission au pôle développement durable du BNEI
 alt: logo du BNEI
 ---
