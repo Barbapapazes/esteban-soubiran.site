@@ -55,6 +55,7 @@ export default {
   <header
     ref="header"
     class="
+      z-10
       opacity-0
       flex
       justify-between

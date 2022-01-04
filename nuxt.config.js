@@ -34,7 +34,7 @@ export default {
   },
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
-  css: ['@/assets/css/main.css'],
+  css: ['@/assets/css/main.css', '@/assets/css/tailwind.css'],
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
   plugins: ['~/plugins/directives', '~/plugins/analytics.client'],
@@ -53,8 +53,8 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/eslint
     '@nuxtjs/eslint-module',
-    // https://go.nuxtjs.dev/tailwindcss
-    '@nuxtjs/tailwindcss',
+    // https://tailwindcss.com/docs/guides/nuxtjs
+    '@nuxt/postcss8',
     // https://image.nuxtjs.org
     '@nuxt/image',
     // https://composition-api.nuxtjs.org
@@ -84,7 +84,14 @@ export default {
   content: {},
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
-  build: {},
+  build: {
+    postcss: {
+      plugins: {
+        tailwindcss: {},
+        autoprefixer: {},
+      },
+    },
+  },
 
   // Sitemap module configuration (https://sitemap.nuxtjs.org)
   sitemap: {
