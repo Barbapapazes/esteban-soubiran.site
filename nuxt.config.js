@@ -58,8 +58,7 @@ export default {
       { rel: 'preconnect', href: 'https://fonts.gstatic.com' },
     ],
     htmlAttrs: {
-      lang: 'fr-FR',
-      amp: true,
+      lang: 'fr',
     },
   },
 
