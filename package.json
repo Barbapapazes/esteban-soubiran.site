@@ -21,6 +21,7 @@
     "node": ">=12.20.0"
   },
   "scripts": {
+    "update": "bump",
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
@@ -49,6 +50,7 @@
     "@nuxtjs/robots": "^2.5.0",
     "@nuxtjs/sitemap": "^2.4.0",
     "@tailwindcss/typography": "^0.4.1",
+    "bump": "^0.2.5",
     "core-js": "^3.17.2",
     "nuxt": "^2.15.8",
     "nuxt-use-motion": "^2.0.0-beta.5",
