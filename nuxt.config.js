@@ -24,7 +24,7 @@ export default {
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
     bodyAttrs: {
       class: [
-        'scrollbar scrollbar-thumb-light-grey scrollbar-track-deep-blue transition duration-200',
+        // 'scrollbar scrollbar-thumb-light-grey scrollbar-track-deep-blue transition duration-200',
       ],
     },
   },

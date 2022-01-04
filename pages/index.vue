@@ -109,7 +109,7 @@
 <script>
 export default {
   async asyncData({ $content }) {
-    const types = ['projets', 'benevolat', 'etudes', 'pro']
+    const types = ['projets', 'benevolat', 'etudes']
     const data = {}
     for (const type of types) {
       data[type] = await $content(type)
