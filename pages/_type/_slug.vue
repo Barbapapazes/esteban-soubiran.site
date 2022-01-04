@@ -13,13 +13,19 @@
     <nuxt-content
       :document="page"
       class="
-        prose prose-sm
-        md:prose
+        mx-auto
+        prose
         lg:prose-lg
         xl:prose-xl
+        prose-headings:text-white
+        prose-a:text-light-grey
+        hover:prose-a:text-gray-400
+        prose-strong:text-white
+        prose-strong:font-semibold
+        prose-strong:tracking-normal
+        text-white text-justify
         font-text
         tracking-tighter
-        mx-auto
       "
     />
   </article>
