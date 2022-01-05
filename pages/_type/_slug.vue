@@ -21,8 +21,10 @@
         prose-a:text-white
         hover:prose-a:text-grey-primary-light
         prose-strong:text-white
-        prose-strong:font-semibold
-        prose-strong:tracking-normal
+        prose-img:mt-0 prose-img:mb-0
+        lg:prose-img:mt-0 lg:prose-img:mb-0
+        xl:prose-img:mt-0 xl:prose-img:mb-0
+        prose-strong:font-semibold prose-strong:tracking-normal
         font-mono
         text-white text-justify
       "
