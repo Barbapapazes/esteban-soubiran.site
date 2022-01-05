@@ -9,7 +9,7 @@
       items-center
       inset-x-0
       top-6
-      bg-deep-blue
+      bg-primary-base
       border-b-2 border-white
       font-text
       text-white text-center

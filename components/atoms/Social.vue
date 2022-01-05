@@ -17,7 +17,16 @@
           rounded-md
         "
       >
-        <component :is="link.name" class="text-white w-full h-full" />
+        <component
+          :is="link.name"
+          class="
+            text-white
+            hover:text-grey-primary-light
+            w-full
+            h-full
+            transition
+          "
+        />
       </a>
     </li>
   </ul>
