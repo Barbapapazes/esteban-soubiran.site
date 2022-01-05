@@ -7,7 +7,7 @@
       p-2
       md:px-4
       rounded
-      bg-deep-blue
+      bg-primary-base
       text-white
       shadow-inner-small
       focus-within:ring-2 focus-within:ring-white
@@ -58,7 +58,7 @@ export default {
   },
   computed: {
     getInputClass() {
-      return 'flex-1 placeholder-light-grey bg-transparent focus:outline-none rounded-none'
+      return 'flex-1 placeholder-white bg-transparent focus:outline-none rounded-none'
     },
   },
   methods: {

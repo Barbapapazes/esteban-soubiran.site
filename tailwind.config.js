@@ -9,9 +9,18 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'deep-blue': '#344163',
-        'dark-blue': '#020025',
-        'light-grey': '#D7D7D7',
+        primary: {
+          light: 'hsl(225, 20%, 47%)',
+          base: 'hsl(223, 31%, 30%)',
+          dark: 'hsl(216, 78%, 13%)',
+        },
+        'grey-primary': {
+          light: 'hsl(224, 8%, 47%)',
+          base: 'hsl(223, 14%, 30%)',
+          dark: 'hsl(216, 16%, 13%)',
+        },
+        white: 'hsl(0, 0%, 97%)',
+        black: 'hsl(227, 100%, 5%)',
       },
       height: {
         small: '2px',

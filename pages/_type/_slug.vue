@@ -19,7 +19,7 @@
         xl:prose-xl
         2xl:prose-2xl
         prose-headings:text-white prose-headings:font-text
-        prose-a:text-light-grey
+        prose-a:text-white
         hover:prose-a:text-gray-400
         prose-strong:text-white
         prose-strong:font-semibold

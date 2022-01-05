@@ -2,9 +2,9 @@
   <footer
     class="
       h-16
-      bg-light-grey
+      bg-white
       font-text
-      text-sm text-deep-blue
+      text-sm text-primary-base
       flex
       justify-center
       items-center

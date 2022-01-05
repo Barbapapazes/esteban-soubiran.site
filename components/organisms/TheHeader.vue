@@ -70,7 +70,7 @@ export default {
       lg:px-16
     "
   >
-    <h1 class="tracking-tight text-light-grey font-text md:text-lg">
+    <h1 class="tracking-tight text-white font-text md:text-lg">
       <NuxtLink
         to="/"
         class="focus:outline-none focus:ring-white focus:ring-2 rounded-md p-1"

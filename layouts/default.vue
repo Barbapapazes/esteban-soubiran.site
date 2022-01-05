@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-deep-blue">
+  <div class="bg-primary-base">
     <TheHeader />
     <main class="relative">
       <Nuxt />
