@@ -1,3 +1,7 @@
+### Version 2.1.1
+- fix(CV): update file
+- feat(projets): add ndi 2021
+
 ### Version 2.1.0
 - fix(content): update text font
 - fix(colors): update
