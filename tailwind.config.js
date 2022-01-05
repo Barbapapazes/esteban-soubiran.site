@@ -15,7 +15,7 @@ module.exports = {
           dark: 'hsl(216, 78%, 13%)',
         },
         'grey-primary': {
-          light: 'hsl(224, 8%, 47%)',
+          light: 'hsl(224, 15%, 70%)',
           base: 'hsl(223, 14%, 30%)',
           dark: 'hsl(216, 16%, 13%)',
         },
@@ -31,9 +31,9 @@ module.exports = {
       },
       boxShadow: {
         'inner-small':
-          'inset -5px -5px 8px 0 rgb(62, 78, 119), inset 5px 5px 8px 0 rgb(42, 52, 79)',
+          'inset -5px -5px 8px 0 rgba(62, 78, 119), inset 5px 5px 8px 0 rgb(42, 52, 79)',
         medium:
-          '-9px -9px 15px 0 rgb(62, 78, 119), 9px 9px 15px 0 rgb(42, 52, 79)',
+          '-9px -9px 15px 0 rgba(62, 78, 119), 9px 9px 15px 0 rgb(42, 52, 79)',
       },
       fontFamily: {
         text: ['CascadiaCode', 'sans-serif'],

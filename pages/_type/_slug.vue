@@ -17,10 +17,9 @@
         prose
         lg:prose-lg
         xl:prose-xl
-        2xl:prose-2xl
         prose-headings:text-white prose-headings:font-text
         prose-a:text-white
-        hover:prose-a:text-gray-400
+        hover:prose-a:text-grey-primary-light
         prose-strong:text-white
         prose-strong:font-semibold
         prose-strong:tracking-normal
