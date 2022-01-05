@@ -1,6 +1,6 @@
 ---
 title: Nuits de l'Info
-date: 2020 - 2019 - 2018
+date: 2021 - 2020 - 2019 - 2018
 order: 2
 tags:
   - concours
@@ -30,6 +30,12 @@ Sur cette seconde fois, je suis venu avec plus d'expérience. Pour continuer dan
 ### 2020
 
 Cette fois-ci fût très particulière puisque, en plein confinement, nous n'avons pas pu nous regrouper. Nous nous sommes adaptés et nous avons tout réalisé en visio. Fort de mes précédentes expériences, j'ai cette année pris le lead de l'équipe ce qui m'a permis de développer le management d'équipe et le travail en équipe à distance ! Nous avons aussi utilisé des technologies comme [vite](https://vitejs.dev/) ou [docker](https://www.docker.com/) pour la réalisation du projet !
+
+### 2021
+
+Pour la 4ème année consécutive, j'ai pu participer à la nuit de l'info ! Cette année marque le retour de la nuit en présentiel après une édition marquée par le covid et une participation à distance !
+
+Pour cette nuit, j'ai axé mon travail sur l'architecture de la base de données avec d'autres de l'équipe et la création de l'ensemble de l'application back-end ! Au front-end, j'ai laissé le reste de l'équipe s'en charger afin de réaliser de la 3D !
 
 ## En savoir plus
 
