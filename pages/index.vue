@@ -85,10 +85,10 @@
         <CardText class="mt-3">
           Retrouver
           <a
-            href="/esteban-soubiran-2021.pdf"
+            href="/esteban-soubiran-2022.pdf"
             target="_blank"
             class="hover:underline font-bold"
-            >mon CV (2021-06)</a
+            >mon CV (2022-01)</a
           >
           pour en savoir d'avantage !
         </CardText>
