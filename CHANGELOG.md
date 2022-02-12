@@ -1,3 +1,6 @@
+### Version 2.2.0
+- feat(la-cuisine): add project
+
 ### Version 2.1.1
 - fix(CV): update file
 - feat(projets): add ndi 2021
