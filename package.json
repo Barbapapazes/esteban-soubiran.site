@@ -73,6 +73,6 @@
     "markdownlint-cli": "^0.28.1",
     "npm-run-all": "^4.1.5",
     "postcss": "^8.4.5",
-    "prettier": "^2.3.2"
+    "prettier": "^2.6.1"
   }
 }
