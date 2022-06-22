@@ -1,6 +1,10 @@
 name: ci
 
-on: [push, pull_request]
+on:
+  push:
+    branches:
+      - main
+  pull_request:
 
 jobs:
   ci:
@@ -33,4 +37,3 @@ jobs:
 
       - name: Run linter 👀
         run: yarn lint
-
