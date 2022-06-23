@@ -10,7 +10,7 @@
       items-center
     "
   >
-2022 - v2.2.0 - Par Estéban Soubiran -&nbsp;
+    2022 - v2.3.0 - Par Estéban Soubiran -&nbsp;
     <IconHeart fill="#344163" class="h-5 w-5" />
   </footer>
 </template>
