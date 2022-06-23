@@ -20,7 +20,7 @@ En effet, après plusieurs années d'utilisation et dans une volonté de réaffi
 
 ## Une première maquette
 
-Pour ce projet, nous sommes accompagné d'[Aneo](https://aneo.eu), une entreprise en conseils. Grâce à elle, nous avons pu bénéficier d'un export en UX UI qui nous a réalisé les nouvelles maquettes !
+Pour ce projet, nous sommes accompagné d'[Aneo](https://aneo.eu), une entreprise en conseil. Grâce à elle, nous avons pu bénéficier d'un export en UX UI qui nous a réalisé les nouvelles maquettes !
 
 Afin de lui permettre de réaliser des maquettes au plus proche de nos attentes, nous avons pu lui fournir notre nouvelle charte graphique, l'ancien site ainsi que nos volontés :
 
@@ -43,7 +43,7 @@ Les contraintes étaient les suivantes :
 - Site statique avec beaucoup de textes
 - Seul développeur disponible
 
-Ainsi, nous avons (j'ai) décidé de partir sur des technologies que je maîtrise et qui ont pu faire leur preuve dans d'autres projets :
+Ainsi, nous avons (j'ai) décidé de partir sur des technologies que je maîtrise et qui ont pu faire leurs preuves dans d'autres projets :
 
 - [Nuxt3](https://v3.nuxtjs.org/)
 - [Nuxt Content v2](https://content.nuxtjs.org/)
@@ -65,7 +65,7 @@ Mais comme depuis des années le site était piloté par Webflow, il y avait un 
 
 ## Une nouvelle expérience
 
-C'est la première fois que j'ai pu avoir accès à des maquettes de qualités et réalisées sur Figma à intégrer avec un framework front-end.
+C'est la première fois que j'ai pu avoir accès à des maquettes de qualité et réalisées sur Figma à intégrer avec un framework front-end.
 
 C'est très formateur et n'ayant pas la main sur les maquettes, je n'ai pas eu d'autres choix que de la respecter de A à Z !
 
