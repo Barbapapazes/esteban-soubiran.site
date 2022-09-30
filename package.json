@@ -9,8 +9,9 @@
   },
   "devDependencies": {
     "@nuxt/content": "^2.1.1",
-    "nuxt-windicss": "^2.5.2",
     "nuxt": "3.0.0-rc.11",
-    "nuxt-schema-org": "1.1.0-beta.4"
+    "nuxt-schema-org": "1.1.0-beta.4",
+    "nuxt-windicss": "^2.5.2",
+    "sass": "^1.55.0"
   }
 }
