@@ -9,8 +9,7 @@
   },
   "devDependencies": {
     "@nuxt/content": "^2.1.1",
-    "@nuxtjs/tailwindcss": "^5.3.3",
-    "@tailwindcss/typography": "^0.5.7",
+    "nuxt-windicss": "^2.5.2",
     "nuxt": "3.0.0-rc.11",
     "nuxt-schema-org": "1.1.0-beta.4"
   }
