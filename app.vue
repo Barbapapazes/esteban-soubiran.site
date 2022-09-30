@@ -1,4 +1,14 @@
 <script lang="ts" setup>
+useHead({
+  htmlAttrs: {
+    lang: 'fr',
+    class: 'font-sans antialiased',
+  },
+  bodyAttrs: {
+    class: 'dark',
+  },
+})
+
 useSchemaOrg([
   definePerson({
     name: 'Estéban Soubiran'

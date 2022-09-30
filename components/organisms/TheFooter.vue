@@ -3,7 +3,7 @@ const navigation = await fetchContentNavigation()
 </script>
 
 <template>
-  <footer class="max-w-screen-xl mx-auto pb-16 pt-10 border-t border-zinc-700/40">
+  <footer class="max-w-screen-xl mx-auto mt-32 pb-16 pt-10 border-t border-zinc-700/40">
     <div class="max-w-screen-lg mx-auto flex flex-row justify-between items-center">
       <nav aria-labelledby="Navigation secondaire">
         <ul>
