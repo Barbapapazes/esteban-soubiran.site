@@ -1,3 +1,6 @@
 <template>
-  <slot />
+  <div>
+    Bonjour !
+    <slot />
+  </div>
 </template>
