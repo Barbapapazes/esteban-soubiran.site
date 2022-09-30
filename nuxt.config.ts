@@ -1,6 +1,6 @@
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
-  modules: ['@nuxt/content', '@nuxtjs/tailwindcss', 'nuxt-schema-org'],
+  modules: ['@nuxt/content', 'nuxt-windicss', 'nuxt-schema-org'],
   content: {
     documentDriven: true,
   },

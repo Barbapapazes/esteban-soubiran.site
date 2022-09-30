@@ -1,5 +1,3 @@
----
-layout: article
----
-
 # Hello world !
+
+[about](about)
