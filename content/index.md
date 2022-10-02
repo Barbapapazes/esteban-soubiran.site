@@ -7,10 +7,19 @@ navigation: false
 profile:
   src: /images/esteban.webp
   alt: Photo de profil d'Estéban
-github: https://github.com/Barbapapazes
-devto: https://dev.to/barbapapazes
-linkedin: https://www.linkedin.com/in/esteban25/
-twitter: https://twitter.com/esteban_dev_
+socials:
+  - name: GitHub
+    url: https://github.com/Barbapapazes
+    icon: mdi:github
+  - name: Dev.to
+    url: https://dev.to/barbapapazes
+    icon: mdi:dev-to
+  - name: LinkedIn
+    url: https://www.linkedin.com/in/esteban25/
+    icon: mdi:linkedin
+  - name: Twitter
+    url: https://twitter.com/esteban_dev_
+    icon: mdi:twitter
 ---
 #title
 Développeur web et passionné par l'associatif

@@ -4,11 +4,11 @@ defineProps<{
     src: string
     alt: string
   }
-  github?: string
-  devto?: string
-  linkedin?: string
-  twitter?: string
-  instagram?: string
+  socials?: {
+    name: string
+    link: string
+    icon: string
+  }[]
 }>()
 </script>
 
@@ -24,20 +24,9 @@ defineProps<{
         <ContentSlot :use="$slots.subtitle" unwrap="p" />
       </p>
       <div class="flex flex-row gap-6">
-        <NuxtLink v-if="$props.github" :to="$props.github">
-          <Icon class="w-6 h-6 dark:text-zinc-400 dark:hover:text-zinc-300" name="mdi:github" />
-        </NuxtLink>
-        <NuxtLink v-if="$props.devto" :to="$props.devto">
-          <Icon class="w-6 h-6 dark:text-zinc-400 dark:hover:text-zinc-300" name="ic:round-logo-dev" />
-        </NuxtLink>
-        <NuxtLink v-if="$props.linkedin" :to="$props.linkedin">
-          <Icon class="w-6 h-6 dark:text-zinc-400 dark:hover:text-zinc-300" name="mdi:linkedin" />
-        </NuxtLink>
-        <NuxtLink v-if="$props.twitter" :to="$props.twitter">
-          <Icon class="w-6 h-6 dark:text-zinc-400 dark:hover:text-zinc-300" name="mdi:twitter" />
-        </NuxtLink>
-        <NuxtLink v-if="$props.instagram" :to="$props.instagram">
-          <Icon class="w-6 h-6 dark:text-zinc-400 dark:hover:text-zinc-300" name="mdi:instagram" />
+        <NuxtLink v-for="social in $props.socials" :to="social.link">
+          <span class="sr-only">Profil {{ social.name }}</span>
+          <Icon class="w-6 h-6 dark:text-zinc-400 dark:hover:text-zinc-300" :name="social.icon" />
         </NuxtLink>
       </div>
     </div>
