@@ -25,10 +25,13 @@ useSchemaOrg([
 </script>
 
 <template>
-  <div class="bg-black">
-    <main>
+  <div class="min-h-screen dark:bg-black">
+    <div class="absolute inset-0 sm:px-8 lg:px-16">
+      <div class="w-full h-full max-w-screen-xl mx-auto dark:bg-zinc-900"></div>
+    </div>
+    <main class="relative">
       <NuxtPage />
     </main>
-    <OrganismsTheFooter />
+    <OrganismsTheFooter class="relative" />
   </div>
 </template>
