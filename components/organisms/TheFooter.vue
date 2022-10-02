@@ -3,9 +3,9 @@ const navigation = await fetchContentNavigation()
 </script>
 
 <template>
-  <footer class="sm:px-8 lg:px-16">
+  <footer class="mt-32 sm:px-8 lg:px-16">
     <div class="max-w-screen-xl mx-auto px-8 pb-16 pt-10 border-t border-zinc-700/40">
-      <div class="max-w-screen-lg mx-auto flex flex-col gap-6 sm:flex-row justify-between items-center">
+      <div class="max-w-2xl lg:max-w-5xl mx-auto flex flex-col gap-6 sm:flex-row justify-between items-center">
         <nav aria-labelledby="Navigation secondaire">
           <ul class="flex flex-row">
             <li v-for="item in navigation" :key="item._path">
