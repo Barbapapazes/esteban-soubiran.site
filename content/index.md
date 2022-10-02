@@ -2,6 +2,6 @@
 navigation: false
 ---
 
-# Hello world !
+Hello world !
 
 [about](about)
