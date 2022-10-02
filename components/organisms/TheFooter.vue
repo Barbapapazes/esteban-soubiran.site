@@ -7,9 +7,9 @@ const navigation = await fetchContentNavigation()
     <div class="max-w-screen-xl mx-auto px-8 pb-16 pt-10 border-t border-zinc-700/40">
       <div class="max-w-screen-lg mx-auto flex flex-col gap-6 sm:flex-row justify-between items-center">
         <nav aria-labelledby="Navigation secondaire">
-          <ul>
+          <ul class="flex flex-row">
             <li v-for="item in navigation" :key="item._path">
-              <AtomsAppLink to="about">{{ item.title }}</AtomsAppLink>
+              <AtomsAppLink :to="item._path">{{ item.title }}</AtomsAppLink>
             </li>
           </ul>
         </nav>
