@@ -26,9 +26,10 @@ defineProps<{
             <ContentSlot :use="$slots.subtitle" unwrap="p" />
           </p>
           <div class="flex flex-row gap-6">
-            <NuxtLink v-for="social in $props.socials" :to="social.url">
+            <NuxtLink v-for="social in $props.socials" :to="social.url" class="-m-1 p-1">
               <span class="sr-only">Profil {{ social.name }}</span>
-              <Icon class="w-6 h-6 dark:text-zinc-400 dark:hover:text-zinc-300" :name="social.icon" />
+              <Icon class="w-6 h-6 dark:text-zinc-400 dark:hover:text-zinc-300 transition duration-300"
+                :name="social.icon" />
             </NuxtLink>
           </div>
         </div>
