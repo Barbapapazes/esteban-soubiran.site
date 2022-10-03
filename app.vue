@@ -2,10 +2,10 @@
 useHead({
   htmlAttrs: {
     lang: 'fr',
-    class: 'font-sans antialiased',
+    class: 'h-full font-sans antialiased dark',
   },
   bodyAttrs: {
-    class: 'dark',
+    class: 'h-full flex flex-col dark:bg-black',
   },
 })
 
@@ -25,12 +25,14 @@ useSchemaOrg([
 </script>
 
 <template>
-  <div class="min-h-screen dark:bg-black">
-    <div class="absolute inset-0 sm:px-8 lg:px-16">
+  <div class="h-full pt-6">
+    <div class="fixed inset-0 sm:px-8 lg:px-16">
       <div class="w-full h-full max-w-screen-xl mx-auto dark:bg-zinc-900"></div>
     </div>
-    <OrganismsTheHeader />
-    <main class="relative">
+    <div class="z-10 sticky top-6 flex flex-row justify-center">
+      <OrganismsTheHeader />
+    </div>
+    <main class="relative mt-16">
       <NuxtPage />
     </main>
     <OrganismsTheFooter class="relative" />
