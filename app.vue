@@ -29,6 +29,7 @@ useSchemaOrg([
     <div class="absolute inset-0 sm:px-8 lg:px-16">
       <div class="w-full h-full max-w-screen-xl mx-auto dark:bg-zinc-900"></div>
     </div>
+    <OrganismsTheHeader />
     <main class="relative">
       <NuxtPage />
     </main>
