@@ -3,7 +3,7 @@ title: La refonte du site du Classement des Associations
 createdAt: 2022-05-20
 ---
 
-Dans le cadre de l'organisation du concours "Le Classement des Associations", j'ai réalisé le nouveau site web de l'événement.
+Dans le cadre de l'organisation du concours "Le Classement des Associations", j'ai réalisé le nouveau site web de l'événement avec l'aide d'une experte en UI et UX.
 
 <!-- more -->
 
@@ -21,7 +21,7 @@ Ainsi, nous avons revu l'ensemble des supports de communication du concours et n
 
 Le site web est une composante importante du concours et de sa promotion. En effet, il permet à n'importe qui et en quelques clics d'en savoir plus et de s'inscrire au concours.
 
-Le site web précédent était réalisé avec Webflow. Il était simple mais très peu ergonomique, pas à jour et surtout pas à l'image de la version que nous voulions mettre en place cette année.
+Le site web précédent était réalisé avec Webflow. Il était simple mais très peu ergonomique, pas à jour et surtout pas à l'image de la version que nous voulions mettre en place cette année pour le classement.
 
 <!-- Image du précédent website -->
 
@@ -41,7 +41,7 @@ En quelques jours et grâce à l'ensemble des informations que nous avions pu lu
 
 <!-- Image de la première version des maquettes -->
 
-Les première maquettes ont permis de valider l'agencement général du site. Une fois ce dernier validé, nous avons reçu les maquettes définitives.
+Les première maquettes ont permis de valider l'agencement général du site. Une fois l'agencement validé, nous avons reçu les maquettes définitives et elles étaient magnifiques !
 
 <!-- Image de la seconde version des maquettes -->
 
@@ -60,9 +60,9 @@ Avec tout cela en tête, j'ai choisi d'utiliser des technologies que j'ai déjà
 
 Je suis parti sur la stack suivante :
 
-- [Nuxt3](https://v3.nuxtjs.org/)
-- [Nuxt Content v2](https://content.nuxtjs.org/)
-- [Netlify](https://www.netlify.com/)
+- [Nuxt3](https://v3.nuxtjs.org/);
+- [Nuxt Content v2](https://content.nuxtjs.org/);
+- [Netlify](https://www.netlify.com/).
 
 C'est une stack que j'ai déjà pu mettre en oeuvre lors de la création de [mon porte-folio](./first-portfolio-in-production) et sur la [création du site campus](./new-website-campus) de mon école.
 
@@ -92,7 +92,7 @@ Ainsi, il a fallu créer une fausse route dans public afin que Nitro ne prenne p
 
 Et pour finir, il a fallu changer le DNS du nom de domain pour le faire pointer vers le nouveau site !
 
-Et voilà !
+Et voilà ! Le site est en ligne : [https://le-classement.fr](https://le-classement.fr)
 
 <!-- Image du site fonctionnel dans un navigateur en navigation privée -->
 
