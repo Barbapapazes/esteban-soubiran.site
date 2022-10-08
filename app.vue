@@ -29,7 +29,7 @@ useSchemaOrg([
     <div class="fixed inset-0 sm:px-8 lg:px-16">
       <div class="w-full h-full max-w-screen-xl mx-auto dark:bg-zinc-900"></div>
     </div>
-    <div class="z-10 sticky top-6 flex flex-row justify-center">
+    <div class="z-90 sticky top-6 flex flex-row justify-center">
       <OrganismsTheHeader />
     </div>
     <main class="relative mt-16">

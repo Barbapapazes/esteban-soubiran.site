@@ -1,3 +1,7 @@
 ---
 title: Articles
 ---
+
+::articles-list
+
+::
