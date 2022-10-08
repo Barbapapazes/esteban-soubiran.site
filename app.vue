@@ -7,6 +7,13 @@ useHead({
   bodyAttrs: {
     class: 'h-full flex flex-col dark:bg-black',
   },
+  link: [
+    {
+      rel: 'icon',
+      type: 'image/ico',
+      href: '/favicon.ico',
+    },
+  ],
 })
 
 useSchemaOrg([
