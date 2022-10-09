@@ -22,7 +22,7 @@ socials:
     icon: mdi:twitter
 ---
 #title
-Développeur web et passionné par l'associatif
+Développeur web et <br /> passionné par l'associatif
 
 #subtitle
 Je suis Estéban, un développeur web basé à Paris. Je suis le vice-président général du Bureau National des Élèves Ingénieurs. Je me plais à utiliser mes compétences pour aider les associations étudiantes à se développer. 
