@@ -18,13 +18,16 @@ useHead({
 
 useSchemaOrg([
   definePerson({
-    name: 'Estéban Soubiran'
-  }),
-  defineWebSite({
     name: 'Estéban Soubiran',
+    image: '/images/esteban.webp',
     sameAs: [
       'https://www.linkedin.com/in/esteban25/',
     ],
+  }),
+  defineWebSite({
+    name: 'Estéban Soubiran',
+    url: 'https://esteban-soubiran.site',
+    inLanguage: 'fr-FR',
   })
   ,
   defineWebPage(),
