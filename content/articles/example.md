@@ -8,6 +8,15 @@ Here the beginning of the article !
 
 <!-- more -->
 
+::detail
+---
+title: Un test de détail
+---
+
+Here the beginning of the detail !
+
+::
+
 Le projet est open-source :git-hub-link{repo="barbapapazes/esteban-soubiran.site"} ! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Id diam vel quam elementum. Laoreet non curabitur gravida arcu ac tortor dignissim convallis. Enim praesent elementum facilisis leo vel fringilla est. Scelerisque purus semper eget duis at tellus at. Viverra vitae congue eu consequat ac felis. Enim diam vulputate ut pharetra sit amet. Ipsum suspendisse ultrices gravida dictum fusce ut placerat orci. Quis imperdiet massa tincidunt nunc pulvinar sapien et ligula ullamcorper. In dictum non consectetur a erat nam at. Arcu odio ut sem nulla pharetra diam sit amet. Risus viverra adipiscing at in tellus integer feugiat. Maecenas pharetra convallis posuere morbi. Id velit ut tortor pretium viverra suspendisse potenti nullam ac. Gravida rutrum quisque non tellus orci ac.
 
 Nulla porttitor massa id neque aliquam vestibulum morbi. Quis risus sed vulputate odio ut enim blandit volutpat. Nunc sed velit dignissim sodales ut eu sem integer. Etiam non quam lacus suspendisse faucibus interdum. Suspendisse faucibus interdum posuere lorem ipsum dolor sit amet consectetur. Malesuada bibendum arcu vitae elementum curabitur vitae nunc. Arcu dictum varius duis at consectetur lorem. Eros in cursus turpis massa. Lacus viverra vitae congue eu. Tincidunt eget nullam non nisi est sit amet. Nunc sed blandit libero volutpat sed cras. Amet mauris commodo quis imperdiet massa tincidunt nunc pulvinar sapien.
