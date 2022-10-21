@@ -15,5 +15,6 @@
     "nuxt-windicss": "^2.5.2",
     "sass": "^1.55.0",
     "sitemap": "^7.1.1"
-  }
+  },
+  "packageManager": "yarn@3.2.4"
 }
