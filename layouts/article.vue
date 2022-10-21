@@ -13,7 +13,8 @@ const image = ref(page.value.image)
       <AtomsArticleTime :datetime="page.createdAt" class="order-first" />
     </div>
     <img v-if="image" :src="image.src" :alt="image.alt" class="rounded-2xl">
-    <div class="mx-auto prose w-full">
+    <div
+      class="w-full mx-auto prose prose-zinc prose-a:font-semibold prose-a:underline prose-a:transition-all prose-a:ease-in    dark:prose-a:decoration-sky-500/30 dark:prose-a:text-sky-500  dark:prose-invert hover:dark:prose-a:decoration-sky-500">
       <slot />
     </div>
   </article>
