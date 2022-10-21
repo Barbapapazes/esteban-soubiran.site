@@ -14,7 +14,7 @@ const image = ref(page.value.image)
     </div>
     <img v-if="image" :src="image.src" :alt="image.alt" class="rounded-2xl">
     <div
-      class="w-full mx-auto prose prose-zinc prose-a:font-semibold prose-a:underline prose-a:transition-all prose-a:ease-in    dark:prose-a:decoration-sky-500/30 dark:prose-a:text-sky-500  dark:prose-invert hover:dark:prose-a:decoration-sky-500">
+      class="w-full mx-auto prose max-w-2xl prose-zinc prose-a:font-semibold prose-a:underline prose-a:transition-all prose-a:ease-in    dark:prose-a:decoration-sky-500/30 dark:prose-a:text-sky-500  dark:prose-invert hover:dark:prose-a:decoration-sky-500">
       <slot />
     </div>
   </article>

@@ -3,6 +3,13 @@ export default defineNuxtConfig({
   modules: ['@nuxt/content', '@nuxtjs/tailwindcss', 'nuxt-schema-org', 'nuxt-icon'],
   content: {
     documentDriven: true,
+    watch: {
+      ws: {
+        port: 4000,
+        hostname: 'localhost',
+        showURL: false,
+      },
+    },
   },
   schemaOrg: {
     canonicalHost: 'https://esteban-soubiran.site',
