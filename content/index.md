@@ -13,7 +13,7 @@ socials:
     icon: mdi:github
   - name: Dev.to
     url: https://dev.to/barbapapazes
-    icon: mdi:dev-to
+    icon: ic:outline-logo-dev
   - name: LinkedIn
     url: https://www.linkedin.com/in/esteban25/
     icon: mdi:linkedin
