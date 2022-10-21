@@ -1,5 +1,8 @@
 <script lang="ts" setup>
 useHead({
+  titleTemplate: (titleChunk) => {
+    return titleChunk ? `${titleChunk} - Estéban Soubiran` : 'Estéban Soubiran';
+  },
   htmlAttrs: {
     lang: 'fr',
     class: 'h-full font-sans antialiased dark',
