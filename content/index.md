@@ -49,8 +49,12 @@ images:
 ---
 ::
 
-::app-section
-  ::experience-list
-  Experience
+::app-section{.mt-24}
+  ::app-grid
+    ::articles-list{.grow}
+    ::
+    ::experience-list
+    Experience
+    ::
   ::
 ::
