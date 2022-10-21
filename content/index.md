@@ -31,19 +31,19 @@ Je suis Estéban, un développeur web basé à Paris. Je suis le vice-président
 ::home-pictures
 ---
 images:
-  - src: /images/esteban.webp
+  - src: /images/home/1.webp
     alt: Photo de profil d'Estéban
     right: true
-  - src: /images/esteban.webp
+  - src: /images/home/2.webp
     alt: Photo de profil d'Estéban
     left: true
-  - src: /images/esteban.webp
+  - src: /images/home/3.webp
     alt: Photo de profil d'Estéban
     right: true
-  - src: /images/esteban.webp
+  - src: /images/home/4.webp
     alt: Photo de profil d'Estéban
     right: true
-  - src: /images/esteban.webp
+  - src: /images/home/5.webp
     alt: Photo de profil d'Estéban 
     left: true
 ---
