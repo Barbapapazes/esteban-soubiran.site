@@ -10,9 +10,9 @@ defineProps<{
 </script>
 
 <template>
-  <section class="mt-16 sm:mt-20">
+  <section>
     <h2 class="sr-only">
-      <ContentSlot :use="$slots.title" unwrap="p" />
+      <ContentSlot :use="$slots.default" unwrap="p" />
     </h2>
     <div class="-my-4 flex justify-center gap-5 overflow-hidden py-4 sm:gap-8">
       <div v-for="image in $props.images" :key="image.src"
