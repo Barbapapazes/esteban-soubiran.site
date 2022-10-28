@@ -1,14 +1,14 @@
 <template>
   <AtomsAppSection>
     <div class="flex flex-col gap-20">
-      <MoleculesProjectsHeader>
+      <OrganismsProjectsHeader>
         <ContentSlot :use="$slots.default" unwrap="p" />
         <template v-slot:subtitle>
           <ContentSlot :use="$slots.subtitle" unwrap="p" />
         </template>
-      </MoleculesProjectsHeader>
+      </OrganismsProjectsHeader>
 
-      <MoleculesProjectsList></MoleculesProjectsList>
+      <OrganismsProjectsList></OrganismsProjectsList>
     </div>
   </AtomsAppSection>
 </template>

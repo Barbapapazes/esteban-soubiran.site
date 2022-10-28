@@ -7,9 +7,9 @@
       <ContentSlot :use="$slots.pictures" unwrap="p" />
     </div>
     <AtomsAppSection class="mt-24">
-      <AtomsAppGrid>
+      <div class="flex flex-col xl:flex-row gap-12">
         <ContentSlot :use="$slots.grid" unwrap="p" />
-      </AtomsAppGrid>
+      </div>
     </AtomsAppSection>
   </section>
 </template>
