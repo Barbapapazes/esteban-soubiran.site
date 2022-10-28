@@ -8,25 +8,25 @@ image:
   src: /images/about/me.webp
   alt: Photo de profil d'Estéban Soubiran
 socials:
-- name: Follow on GitHub
+- name: Me suivre sur GitHub
   url: https://github.com/Barbapapazes
   icon: mdi:github
-- name: Follow on Dev.to
+- name: Me suivre sur Dev.to
   url: https://dev.to/barbapapazes
   icon: ic:outline-logo-dev
-- name: Follow on LinkedIn
+- name: Me suivre sur LinkedIn
   url: https://www.linkedin.com/in/esteban25/
   icon: mdi:linkedin
-- name: Follow on Twitter
+- name: Me suivre sur Twitter
   url: https://twitter.com/esteban_dev_
   icon: mdi:twitter
 mail: 
-  url: mailto:pro.soubiran25@gmail.com
-  name: pro.soubiran25@gmail.com
+  url: mailto:pro.soubiran+portfolio@gmail.com
+  name: pro.soubiran@gmail.com
   icon: heroicons:envelope-solid
 ---
-Je suis le titre
+Je suis Estéban. Je vis à Paris et je développe des expériences utilisateurs.  
 
 #content
-Hello world
+<!-- Ajouter le reste du contenu -->
 ::
