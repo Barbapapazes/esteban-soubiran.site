@@ -45,7 +45,7 @@ useSchemaOrg([
     <div class="z-50 sticky top-6 flex flex-row justify-center">
       <OrganismsTheHeader />
     </div>
-    <main class="relative mt-16">
+    <main class="relative mt-16 sm:mt-32">
       <NuxtPage />
     </main>
     <OrganismsTheFooter class="relative" />
