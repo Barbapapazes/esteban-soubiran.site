@@ -3,7 +3,7 @@ const { data: projects } = await useAsyncData('projects', () => queryContent('/p
 </script>
 
 <template>
-  <div class="flex flex-col gap-16">
+  <div class="flex max-w-3xl flex-col space-y-16">
     <MoleculesProjectCard v-for="project in projects" :project="project" :key="project._path" />
   </div>
 </template>
