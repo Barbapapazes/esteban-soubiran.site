@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 import { ParsedContent } from '@nuxt/content/dist/runtime/types';
 
-const props = defineProps<{ article: ParsedContent }>()
+const props = defineProps<{ project: ParsedContent }>()
 </script>
 
 <template>
@@ -10,16 +10,16 @@ const props = defineProps<{ article: ParsedContent }>()
       <div
         class="absolute -inset-y-6 -inset-x-4 z-0 scale-95 bg-zinc-50 opacity-0 transition group-hover:scale-100 group-hover:opacity-100 dark:bg-zinc-800/50 sm:-inset-x-6 sm:rounded-2xl duration-200 ease-in">
       </div>
-      <NuxtLink :to=$props.article._path>
+      <NuxtLink :to=$props.project._path>
         <span class="absolute -inset-y-6 -inset-x-4 sm:-inset-x-6 z-20 sm:rounded-2xl"></span>
         <span class="relative z-10">
-          {{ $props.article.title }}
+          {{ $props.project.title }}
         </span>
       </NuxtLink>
     </h3>
-    <AtomsArticleTime :datetime="props.article.createdAt" class="order-first relative mb-3" />
+    <AtomsCardDate :datetime="props.project.createdAt" class="order-first relative mb-3" />
     <p class="relative mt-2 text-sm text-zinc-400">
-      {{ $props.article.description }}
+      {{ $props.project.description }}
     </p>
     <div aria-hidden="true" class="relative mt-4 inline-flex items-center gap-1 text-sky-500">
       <span class="text-sm font-semibold">Lire plus</span>
