@@ -51,12 +51,4 @@ navigation: false
   ---
   Images de mes aventures
   ::
-
-#grid
-  ::articles-list{.grow}
-  Liste des articles
-  ::
-  ::experience-list
-  Experience
-  ::
 ::
