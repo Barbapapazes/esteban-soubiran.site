@@ -7,7 +7,7 @@ const props = defineProps<{ article: ParsedContent }>()
 <template>
   <article class="md:grid md:grid-cols-4 md:items-baseline">
     <div class="md:col-span-3 group relative flex flex-col">
-      <h2 class="text-base text-zinc-100 font-semibold tracking-tight">
+      <h3 class="text-base text-zinc-100 font-semibold tracking-tight">
         <div
           class="absolute -inset-y-6 -inset-x-4 z-0 scale-95 bg-zinc-50 opacity-0 transition group-hover:scale-100 group-hover:opacity-100 dark:bg-zinc-800/50 sm:-inset-x-6 sm:rounded-2xl duration-200 ease-in">
         </div>
@@ -17,7 +17,7 @@ const props = defineProps<{ article: ParsedContent }>()
             {{ $props.article.title }}
           </span>
         </NuxtLink>
-      </h2>
+      </h3>
       <AtomsCardDate withBorder :datetime="props.article.createdAt" class="md:hidden order-first relative mb-3" />
       <p class="relative mt-2 text-sm text-zinc-400">
         {{ $props.article.description }}
