@@ -17,7 +17,12 @@ const { data: projects } = await query
 </script>
 
 <template>
-  <div class="flex max-w-3xl flex-col space-y-16">
-    <MoleculesProjectCard v-for="project in projects" :project="project" :key="project._path" />
-  </div>
+  <section>
+    <h2 class="sr-only">
+      <slot></slot>
+    </h2>
+    <div class="flex max-w-3xl flex-col space-y-16">
+      <MoleculesProjectCard v-for="project in projects" :project="project" :key="project._path" />
+    </div>
+  </section>
 </template>

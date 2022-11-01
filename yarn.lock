@@ -413,12 +413,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@iconify/vue@npm:^3.2.1":
-  version: 3.2.1
-  resolution: "@iconify/vue@npm:3.2.1"
+"@iconify/types@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "@iconify/types@npm:2.0.0"
+  checksum: 029f58542c160e9d4a746869cf2e475b603424d3adf3994c5cc8d0406c47e6e04a3b898b2707840c1c5b9bd5563a1660a34b110d89fce43923baca5222f4e597
+  languageName: node
+  linkType: hard
+
+"@iconify/vue@npm:^4.0.0":
+  version: 4.0.0
+  resolution: "@iconify/vue@npm:4.0.0"
+  dependencies:
+    "@iconify/types": ^2.0.0
   peerDependencies:
-    vue: 3.x
-  checksum: efc082b1c984a0b476264980b5eb4f8b48d476811f8803f0b08d59cf339f3f0901e6c975ff87de55a49f0b707f123d91355f9c44a6d9cc43b00e0fbee16b21ad
+    vue: ">=3"
+  checksum: 2ebfa434edb503c0c3c03bf8308dbe8c4c3bae2ddfdb22868076aae319c0d81d89b92f8cd2a8f591f0a5e82307d53825f4196df13ffbb0c017c038a49ede6a6a
   languageName: node
   linkType: hard
 
@@ -579,14 +588,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nuxt/content@npm:^2.2.0":
-  version: 2.2.0
-  resolution: "@nuxt/content@npm:2.2.0"
+"@nuxt/content@npm:^2.2.1":
+  version: 2.2.1
+  resolution: "@nuxt/content@npm:2.2.1"
   dependencies:
     "@nuxt/kit": ^3.0.0-rc.12
     consola: ^2.15.3
     defu: ^6.1.0
-    destr: ^1.1.1
+    destr: ^1.2.0
     detab: ^3.0.1
     html-tags: ^3.2.0
     json5: ^2.2.1
@@ -604,7 +613,7 @@ __metadata:
     rehype-sort-attributes: ^4.0.0
     remark-emoji: ^3.0.2
     remark-gfm: ^3.0.1
-    remark-mdc: ^1.0.7
+    remark-mdc: ^1.1.0
     remark-parse: ^10.0.1
     remark-rehype: ^10.1.0
     remark-squeeze-paragraphs: ^5.0.1
@@ -618,8 +627,8 @@ __metadata:
     unist-util-position: ^4.0.3
     unist-util-visit: ^4.1.1
     unstorage: ^0.6.0
-    ws: ^8.9.0
-  checksum: 10d6dc860aae9955b8881327e78b2a707964d8dd9cbdb85c7f8b34002dd5606e89f51df9a0ff6dbf1b0cb71a808dccbe2fb8f5ea45b32360ea2778b7cc7dcf2c
+    ws: ^8.10.0
+  checksum: 743767e04cf2dc5895f09566a653b59665d79fef75f6d334b67cd8cf7a296843bb5c94e63679507428e0e0a575914802dc25822daa6e8511d87f563017ccd58a
   languageName: node
   linkType: hard
 
@@ -656,7 +665,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nuxt/kit@npm:3.0.0-rc.12, @nuxt/kit@npm:^3.0.0-rc.11, @nuxt/kit@npm:^3.0.0-rc.12, @nuxt/kit@npm:^3.0.0-rc.9":
+"@nuxt/kit@npm:3.0.0-rc.12, @nuxt/kit@npm:^3.0.0-rc.10, @nuxt/kit@npm:^3.0.0-rc.11, @nuxt/kit@npm:^3.0.0-rc.12":
   version: 3.0.0-rc.12
   resolution: "@nuxt/kit@npm:3.0.0-rc.12"
   dependencies:
@@ -817,9 +826,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nuxtjs/tailwindcss@npm:^6.0.1":
-  version: 6.0.1
-  resolution: "@nuxtjs/tailwindcss@npm:6.0.1"
+"@nuxtjs/tailwindcss@npm:^6.1.2":
+  version: 6.1.2
+  resolution: "@nuxtjs/tailwindcss@npm:6.1.2"
   dependencies:
     "@nuxt/kit": ^3.0.0-rc.12
     "@nuxt/postcss8": ^1.1.3
@@ -835,7 +844,7 @@ __metadata:
     tailwind-config-viewer: ^1.7.2
     tailwindcss: ^3.2.0
     ufo: ^0.8.6
-  checksum: 338873ea164801c903960207d449dfe6763d439d06964afdf44452d4efa988fae7f843d60c0bbbf7d9aaf76e2496acd6f1bf94935b3b4be2fc12580c8aa976a5
+  checksum: 7ca2b4fe91e5b69b3852510736afa1331eb2ca63dd779a5b3d8509c4693495acba82fa0f079a0a35ac5eb43bd247d78f10f1aa6b381abe2848bfb8779aed1f47
   languageName: node
   linkType: hard
 
@@ -5322,7 +5331,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"micromark@npm:^3.0.0, micromark@npm:^3.0.10":
+"micromark@npm:^3.0.0, micromark@npm:^3.1.0":
   version: 3.1.0
   resolution: "micromark@npm:3.1.0"
   dependencies:
@@ -5890,13 +5899,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"nuxt-icon@npm:^0.1.6":
-  version: 0.1.6
-  resolution: "nuxt-icon@npm:0.1.6"
+"nuxt-icon@npm:^0.1.7":
+  version: 0.1.7
+  resolution: "nuxt-icon@npm:0.1.7"
   dependencies:
-    "@iconify/vue": ^3.2.1
-    "@nuxt/kit": ^3.0.0-rc.9
-  checksum: 51f7666d57177c16aaa3704393dac2c95842a80a36dffd73e0f017fb08f33829382d880091b3719ebc08068ca33018ff19b9df570b132b1949f1a4fd3c167a52
+    "@iconify/vue": ^4.0.0
+    "@nuxt/kit": ^3.0.0-rc.10
+  checksum: 0b814e8c824f18c23caa3e1e716a4c821ea8ae7463b9dd642f9ee3a956e96d6bc2c737ee74fb269c8196da0e5fe6431b6ac966d18836bbb5c7b468bcee673292
   languageName: node
   linkType: hard
 
@@ -7053,25 +7062,25 @@ __metadata:
   languageName: node
   linkType: hard
 
-"remark-mdc@npm:^1.0.7":
-  version: 1.0.8
-  resolution: "remark-mdc@npm:1.0.8"
+"remark-mdc@npm:^1.1.0":
+  version: 1.1.0
+  resolution: "remark-mdc@npm:1.1.0"
   dependencies:
     flat: ^5.0.2
     js-yaml: ^4.1.0
     mdast-util-from-markdown: ^1.2.0
     mdast-util-to-markdown: ^1.3.0
-    micromark: ^3.0.10
+    micromark: ^3.1.0
     micromark-core-commonmark: ^1.0.6
     micromark-factory-space: ^1.0.0
     micromark-factory-whitespace: ^1.0.0
     micromark-util-character: ^1.1.0
     parse-entities: ^4.0.0
-    scule: ^0.2.1
-    stringify-entities: ^4.0.2
-    unist-util-visit: ^4.1.0
-    unist-util-visit-parents: ^5.1.0
-  checksum: ed6afaa1035d6858c607709564d544b449d3985924a2248ee01ead8e01c7ad861f3007de289d3700beabb9fde324640dab67d9329bbd31325cfc0afdbe263cb9
+    scule: ^0.3.2
+    stringify-entities: ^4.0.3
+    unist-util-visit: ^4.1.1
+    unist-util-visit-parents: ^5.1.1
+  checksum: 242db2cb07069d840b90263436f22268a3e3acc42d7555e1908791e5240d8f23fcde322890eb3e2dca5662ad91df7376915b488d49f369053678a6465fbfd4bd
   languageName: node
   linkType: hard
 
@@ -7295,11 +7304,11 @@ __metadata:
   resolution: "root-workspace-0b6124@workspace:."
   dependencies:
     "@headlessui/vue": ^1.7.3
-    "@nuxt/content": ^2.2.0
-    "@nuxtjs/tailwindcss": ^6.0.1
+    "@nuxt/content": ^2.2.1
+    "@nuxtjs/tailwindcss": ^6.1.2
     "@tailwindcss/typography": ^0.5.7
     nuxt: 3.0.0-rc.12
-    nuxt-icon: ^0.1.6
+    nuxt-icon: ^0.1.7
     nuxt-schema-org: 1.1.0-beta.5
     sitemap: ^7.1.1
   languageName: unknown
@@ -7397,13 +7406,6 @@ __metadata:
     ajv: ^6.12.5
     ajv-keywords: ^3.5.2
   checksum: fb73f3d759d43ba033c877628fe9751620a26879f6301d3dbeeb48cf2a65baec5cdf99da65d1bf3b4ff5444b2e59cbe4f81c2456b5e0d2ba7d7fd4aed5da29ce
-  languageName: node
-  linkType: hard
-
-"scule@npm:^0.2.1":
-  version: 0.2.1
-  resolution: "scule@npm:0.2.1"
-  checksum: d9731b4c3560ce6983d23cc594395b718bc3c08ea3da930a9cd2bd3feb137ad3295521bcbc50baa82dc05d8521a7a41d6b78d2723e5195c053d93359f5808706
   languageName: node
   linkType: hard
 
@@ -7750,7 +7752,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"stringify-entities@npm:^4.0.2":
+"stringify-entities@npm:^4.0.3":
   version: 4.0.3
   resolution: "stringify-entities@npm:4.0.3"
   dependencies:
@@ -8252,7 +8254,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"unist-util-visit-parents@npm:^5.0.0, unist-util-visit-parents@npm:^5.1.0, unist-util-visit-parents@npm:^5.1.1":
+"unist-util-visit-parents@npm:^5.0.0, unist-util-visit-parents@npm:^5.1.1":
   version: 5.1.1
   resolution: "unist-util-visit-parents@npm:5.1.1"
   dependencies:
@@ -8738,6 +8740,21 @@ __metadata:
   version: 1.0.2
   resolution: "wrappy@npm:1.0.2"
   checksum: 159da4805f7e84a3d003d8841557196034155008f817172d4e986bd591f74aa82aa7db55929a54222309e01079a65a92a9e6414da5a6aa4b01ee44a511ac3ee5
+  languageName: node
+  linkType: hard
+
+"ws@npm:^8.10.0":
+  version: 8.10.0
+  resolution: "ws@npm:8.10.0"
+  peerDependencies:
+    bufferutil: ^4.0.1
+    utf-8-validate: ^5.0.2
+  peerDependenciesMeta:
+    bufferutil:
+      optional: true
+    utf-8-validate:
+      optional: true
+  checksum: 3a32e15dffe633dd5ce99659793dbcf1440ea25d2da1060c88cbd22efdfb7986a6933e68aaa4b098fc3f1f7870cb386afd378a1ceaca4b31748471576d5a8b52
   languageName: node
   linkType: hard
 

@@ -14,7 +14,7 @@ defineProps<{
 
 
 <template>
-  <div class="max-w-2xl flex flex-col gap-6">
+  <section class="max-w-2xl flex flex-col gap-6">
     <img :src="$props.profile.src" :alt="$props.profile.alt" class="rounded-full h-16 w-16">
     <h1 class="text-4xl sm:text-5xl leading-[3.5rem] font-bold tracking-tight  dark:text-zinc-100">
       <ContentSlot :use="$slots.title" unwrap="p" />
@@ -28,5 +28,5 @@ defineProps<{
         <Icon class="w-6 h-6 dark:text-zinc-400 dark:hover:text-zinc-300 transition duration-300" :name="social.icon" />
       </NuxtLink>
     </div>
-  </div>
+  </section>
 </template>

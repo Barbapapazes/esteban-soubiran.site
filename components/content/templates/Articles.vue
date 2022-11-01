@@ -8,7 +8,9 @@
         </template>
       </OrganismsMainHeader>
 
-      <OrganismsArticlesList></OrganismsArticlesList>
+      <OrganismsArticlesList>
+        Mes articles
+      </OrganismsArticlesList>
     </div>
   </AtomsAppSection>
 </template>
