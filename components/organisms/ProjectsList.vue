@@ -8,9 +8,9 @@ const props = defineProps<{
 
 let query: AsyncData<ParsedContent[], true | Error>
 if (props.max) {
-  query = useAsyncData(`projects-${props.max}`, () => queryContent('/projects/').sort({ createdAt: -1 }).limit(props.max).find())
+  query = useAsyncData(`projects-${props.max}`, () => queryContent('/projects/').sort({ datePublished: -1 }).limit(props.max).find())
 } else {
-  query = useAsyncData('projects', () => queryContent('/projects/').sort({ createdAt: -1 }).find())
+  query = useAsyncData('projects', () => queryContent('/projects/').sort({ datePublished: -1 }).find())
 }
 
 const { data: projects } = await query
