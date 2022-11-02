@@ -1,3 +1,11 @@
+<script lang="ts" setup>
+useSchemaOrg([
+  defineWebPage({
+    '@type': 'CollectionPage',
+  }),
+]);
+</script>
+
 <template>
   <AtomsAppSection>
     <div class="flex flex-col gap-20">

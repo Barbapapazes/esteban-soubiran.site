@@ -1,7 +1,8 @@
 ---
 title: Un article test
-createdAt: 2022-09-07
-layout: article
+datePublished: 2022-09-07
+dateModified: 2022-09-07
+layout: prose
 ---
 
 Here the beginning of the article !

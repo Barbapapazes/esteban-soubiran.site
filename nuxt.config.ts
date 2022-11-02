@@ -13,5 +13,6 @@ export default defineNuxtConfig({
   },
   schemaOrg: {
     canonicalHost: 'https://esteban-soubiran.site',
+    defaultLanguage: 'fr-FR',
   },
 })

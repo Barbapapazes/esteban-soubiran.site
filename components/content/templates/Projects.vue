@@ -1,3 +1,11 @@
+<script lang="ts" setup>
+useSchemaOrg([
+  defineWebPage({
+    '@type': 'CollectionPage',
+  }),
+]);
+</script>
+
 <template>
   <AtomsAppSection>
     <div class="flex flex-col gap-20">
@@ -8,7 +16,9 @@
         </template>
       </OrganismsMainHeader>
 
-      <OrganismsProjectsList></OrganismsProjectsList>
+      <OrganismsProjectsList>
+        Mes projets
+      </OrganismsProjectsList>
     </div>
   </AtomsAppSection>
 </template>
