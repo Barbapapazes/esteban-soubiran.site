@@ -18,7 +18,7 @@ useSchemaOrg([
       <h1 class="dark:text-zinc-100 text-5xl font-bold tracking-tight">
         {{ page.title }}
       </h1>
-      <AtomsArticleTime :datetime="page.datePublished" class="order-first" />
+      <AtomsAppDate :datetime="page.datePublished" class="order-first" />
     </div>
     <img v-if="page.image" :src="page.image.src" :alt="page.image.alt" class="rounded-2xl">
     <div

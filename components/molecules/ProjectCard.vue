@@ -17,7 +17,7 @@ const props = defineProps<{ project: ParsedContent }>()
         </span>
       </NuxtLink>
     </h3>
-    <AtomsCardDate withBorder :datetime="props.project.createdAt" class="order-first relative mb-3" />
+    <AtomsAppDate withBorder :datetime="props.project.createdAt" class="order-first relative mb-3" />
     <p class="relative mt-2 text-sm text-zinc-400">
       {{ $props.project.description }}
     </p>
