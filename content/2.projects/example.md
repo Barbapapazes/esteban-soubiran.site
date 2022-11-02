@@ -1,6 +1,6 @@
 ---
 title: Un projet test
-createdAt: 2022-09-07
+datePublished: 2022-09-07
 layout: projet
 ---
 

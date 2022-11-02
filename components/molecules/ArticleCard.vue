@@ -18,7 +18,7 @@ const props = defineProps<{ article: ParsedContent }>()
           </span>
         </NuxtLink>
       </h3>
-      <AtomsAppDate withBorder :datetime="props.article.createdAt" class="md:hidden order-first relative mb-3" />
+      <AtomsAppDate withBorder :datetime="props.article.datePublished" class="md:hidden order-first relative mb-3" />
       <p class="relative mt-2 text-sm text-zinc-400">
         {{ $props.article.description }}
       </p>
@@ -27,6 +27,6 @@ const props = defineProps<{ article: ParsedContent }>()
         <Icon class="w-4 h-4" name="heroicons:chevron-right-20-solid" />
       </div>
     </div>
-    <AtomsAppDate :datetime="props.article.createdAt" class="hidden md:block order-first relative" />
+    <AtomsAppDate :datetime="props.article.datePublished" class="hidden md:block order-first relative" />
   </article>
 </template>
