@@ -13,7 +13,7 @@ defineProps<{
       </span>
     </summary>
     <div data-content class="mt-2 text-zinc-300 text-sm">
-      <ContentSlot :use="$slots.default" unwrap="p" />
+      <ContentSlot :use="$slots.default" />
     </div>
   </details>
 </template>

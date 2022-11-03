@@ -1,6 +1,11 @@
 ---
 title: La refonte du site du Classement des Associations
-createdAt: 2022-05-20
+image: 
+  src: /images/projects/le-classement_new-website.webp
+  alt: Capture d'écran du site du Classement des Associations. Le titre indique "Le Classement des Associations" et le sous-titre "Le concours national de référence qui recense et classe les meilleures associations étudiantes !"
+datePublished: 2022-05-20
+dateModified: 2022-11-03
+layout: prose
 ---
 
 Dans le cadre de l'organisation du concours "Le Classement des Associations", j'ai réalisé le nouveau site web de l'événement avec l'aide d'une experte en UI et UX.
@@ -13,7 +18,7 @@ Dans le cadre des mes [activités au sein du BNEI](../experience/bnei), j'ai eu 
 
 Afin de faciliter la promotion du concours, l'ensemble de l'équipe organisatrice a décidé de revoir l'entièreté de la charte graphique du concours passant de rien à cela :
 
-<!-- Mettre une image de la charte graphique -->
+:icon{name=heroicons:photo-20-solid}  [Voir la charte graphique](/pdf/projects/le-classement_charte-graphique.pdf)
 
 Ainsi, nous avons revu l'ensemble des supports de communication du concours et notamment le site web. 
 
@@ -23,7 +28,7 @@ Le site web est une composante importante du concours et de sa promotion. En eff
 
 Le site web précédent était réalisé avec Webflow. Il était simple mais très peu ergonomique, pas à jour et surtout pas à l'image de la version que nous voulions mettre en place cette année pour le classement.
 
-<!-- Image du précédent website -->
+![Capture d'écran du précédent site du Classement des Associations. On peut y voir à gauche, un titre avec "Le Classement des Associations" et à droite un sous-titre "Le Palmarès de référence des meilleures associations étudiantes". Un bouton sous le sous-titre permet de participer au classement.](/images/projects/le-classement_previous-website.webp)
 
 ### Besoins et objectifs
 
@@ -39,11 +44,11 @@ Une fois que nous avions défini les besoins, nous avons commencé à travailler
 
 En quelques jours et grâce à l'ensemble des informations que nous avions pu lui transmettre comme la nouvelle charte graphique et les besoins, elle a pu nous fournir des maquettes.
 
-<!-- Image de la première version des maquettes -->
+![Maquettes basses fidélités du site du Classement des Associations](/images/projects/le-classement_maquettes-low.webp)
 
 Les première maquettes ont permis de valider l'agencement général du site. Une fois l'agencement validé, nous avons reçu les maquettes définitives et elles étaient magnifiques !
 
-<!-- Image de la seconde version des maquettes -->
+![Maquettes hautes fidélités du site du Classement des Associations](/images/projects/le-classement_maquettes-high.webp)
 
 ### Développement
 
@@ -60,9 +65,9 @@ Avec tout cela en tête, j'ai choisi d'utiliser des technologies que j'ai déjà
 
 Je suis parti sur la stack suivante :
 
-- [Nuxt3](https://v3.nuxtjs.org/);
+- :icon{name=logos:nuxt-icon} [Nuxt3](https://v3.nuxtjs.org/);
 - [Nuxt Content v2](https://content.nuxtjs.org/);
-- [Netlify](https://www.netlify.com/).
+- :icon{name=logos:netlify} [Netlify](https://www.netlify.com/).
 
 C'est une stack que j'ai déjà pu mettre en oeuvre lors de la création de [mon porte-folio](./first-portfolio-in-production) et sur la [création du site campus](./new-website-campus) de mon école.
 
@@ -70,7 +75,7 @@ La nouveauté était le passage à de Nuxt2 à Nuxt3. J'ai donc profité de ce p
 
 C'est une stack très efficace qui m'a permis en une vingtaine d'heures de créer les différentes maquettes, notamment les différents carousels et autres interactions.
 
-Ce projet est open-source et disponible à [juste ici](https://github.com/barbapapazes/le-classement.fr) !
+Ce projet est open-source :git-hub-link{repo=barbapapazes/le-classement.fr}
 
 ### Mise en production
 
@@ -78,7 +83,7 @@ Avec Netlify, la mise en production est toujours un plaisir. Il suffit de suivre
 
 Cependant, j'ai pu rencontrer quelques difficultés lors de la mise en place du formulaire. En effet, des changements internes à Nuxt, comme son utilisation des _functions_, ont compliqué sa mise e place. Mais après quelques quelques recherches, j'ai pu trouver la solution.
 
-::details
+::detail
 ---
 title: En savoir plus
 ---
@@ -93,8 +98,6 @@ Ainsi, il a fallu créer une fausse route dans public afin que Nitro ne prenne p
 Et pour finir, il a fallu changer le DNS du nom de domain pour le faire pointer vers le nouveau site !
 
 Et voilà ! Le site est en ligne : [https://le-classement.fr](https://le-classement.fr)
-
-<!-- Image du site fonctionnel dans un navigateur en navigation privée -->
 
 ## Conclusion
 
