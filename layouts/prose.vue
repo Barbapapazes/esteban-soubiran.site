@@ -19,11 +19,13 @@ useSchemaOrg([
         <h1 class="dark:text-zinc-100 text-5xl font-bold tracking-tight">
           {{ page.title }}
         </h1>
-        <AtomsAppDate :datetime="page.datePublished" class="order-first" />
+        <AtomsAppDate with-border :datetime="page.datePublished" class="order-first" />
       </div>
       <img v-if="page.image" :src="page.image.src" :alt="page.image.alt" class="rounded-2xl">
       <div
-        class="w-full mx-auto prose max-w-2xl prose-zinc prose-a:font-semibold prose-a:underline prose-a:transition-all prose-a:ease-in    dark:prose-a:decoration-sky-500/30 dark:prose-a:text-sky-500  dark:prose-invert hover:dark:prose-a:decoration-sky-500">
+        class="w-full mx-auto prose max-w-2xl prose-zinc
+        prose-a:prose-headings:no-underline
+        prose-a:transition-all prose-a:ease-in  prose-a:prose-p:font-semibold   dark:prose-a:prose-p:decoration-sky-500/30 dark:prose-a:prose-p:text-sky-500  dark:prose-invert hover:dark:prose-a:prose-p:decoration-sky-500">
         <slot />
       </div>
     </article>
