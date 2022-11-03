@@ -18,7 +18,7 @@ Dans le cadre des mes [activités au sein du BNEI](../experience/bnei), j'ai eu 
 
 Afin de faciliter la promotion du concours, l'ensemble de l'équipe organisatrice a décidé de revoir l'entièreté de la charte graphique du concours passant de rien à cela :
 
-:icon{name=heroicons:photo-20-solid}  [Voir la charte graphique](/pdf/projects/le-classement_charte-graphique.pdf)
+:icon{name=heroicons:photo-20-solid}  [Voir la charte graphique](/pdf/projects/le-classement_charte-graphique.pdf){target=_blank}
 
 Ainsi, nous avons revu l'ensemble des supports de communication du concours et notamment le site web. 
 
