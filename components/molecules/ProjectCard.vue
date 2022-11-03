@@ -6,6 +6,7 @@ defineProps<{ project: ParsedContent }>()
 
 <template>
   <article class="group relative flex flex-col sm:flex-row gap-4">
+    <!-- TODO: Use container to have correct size in hero -->
     <img v-if="project.image" :src="project.image.src" :alt="project.image.alt"
       class="z-10 aspect-video sm:w-60 object-cover object-center rounded-lg">
     <div class="flex flex-col">
