@@ -5,9 +5,9 @@ defineProps<{ project: ParsedContent }>()
 </script>
 
 <template>
-  <article class="group relative flex flex-row gap-4">
+  <article class="group relative flex flex-col sm:flex-row gap-4">
     <img v-if="project.image" :src="project.image.src" :alt="project.image.alt"
-      class="z-10 aspect-video w-60 object-cover object-center rounded-lg">
+      class="z-10 aspect-video sm:w-60 object-cover object-center rounded-lg">
     <div class="flex flex-col">
       <h3 class="text-base text-zinc-100 font-semibold tracking-tight">
         <div
