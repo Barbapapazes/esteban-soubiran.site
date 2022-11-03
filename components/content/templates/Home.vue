@@ -11,9 +11,9 @@
         <OrganismsProjectsList :max="3" class="grow">
           Mes projets
         </OrganismsProjectsList>
-        <OrganismsExperienceList class="lg:max-w-sm">
+        <OrganismsExperienceTimeline class="lg:max-w-sm">
           Expérience
-        </OrganismsExperienceList>
+        </OrganismsExperienceTimeline>
       </div>
     </AtomsAppSection>
   </div>
