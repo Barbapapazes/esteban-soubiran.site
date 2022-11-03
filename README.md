@@ -1,42 +1,58 @@
-# Nuxt 3 Minimal Starter
 
-Look at the [nuxt 3 documentation](https://v3.nuxtjs.org) to learn more.
+# esteban-soubiran.site
 
-## Setup
+My little home on the internet 🏡.
 
-Make sure to install the dependencies:
 
-```bash
-# yarn
-yarn install
+## Tech Stack
 
-# npm
-npm install
+**Client:** Nuxt3, TailwindCSS
 
-# pnpm
-pnpm install --shamefully-hoist
-```
+**Server:** Netlify
 
-## Development Server
 
-Start the development server on http://localhost:3000
+## Run Locally
+
+Clone the project
 
 ```bash
-npm run dev
+  git clone https://github.com/Barbapapazes/esteban-soubiran.site
 ```
 
-## Production
-
-Build the application for production:
+Go to the project directory
 
 ```bash
-npm run build
+  cd esteban-soubiran.ste
 ```
 
-Locally preview production build:
+Install dependencies
 
 ```bash
-npm run preview
+  yarn
 ```
 
-Checkout the [deployment documentation](https://v3.nuxtjs.org/guide/deploy/presets) for more information.
+Start the server
+
+```bash
+  yarn dev
+```
+
+
+## Deployment
+
+First, you need to build this project.
+
+```bash
+  yarn build
+```
+
+Then, you can preview the result.
+
+```bash
+  yarn preview
+```
+
+## Authors
+
+- [@barbapapazes](https://www.github.com/barbapapazes)
+
