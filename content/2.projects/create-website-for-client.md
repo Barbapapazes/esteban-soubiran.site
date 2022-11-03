@@ -20,7 +20,7 @@ Durant le mois de mars 2021, la Junior Entreprise de mon école a publié une of
 
 ## Le projet
 
-Le projet était de développer le site vitrine d'une petite entreprise de formations. Pour mener à bien, c'est plaquette était à ma disposition.
+Le projet était de développer le site vitrine d'une petite entreprise de formations. Pour mener à bien cette mission, une plaquette graphique réalisée par une graphiste était à ma disposition.
 
 ### Déroulement
 
@@ -28,13 +28,13 @@ Dans un premier temps, le chef de projet de la Junior Entreprise a fait un point
 
 Par la suite, j'ai eu accès aux maquettes du site. J'ai ensuite dû choisir une stack technologique pour réaliser le site. J'ai choisi de le faire en vanilla JS, HTML et CSS afin de faciliter une reprise si elle devait avoir lieu.
 
-Une fois cela fait, j'ai pu commencer à développer le site. Pendant le processus de création, j'ai pu voir l'entreprise, recevoir des retours sur ce que j'avais pu faire.
+Une fois cela fait, j'ai pu commencer à développer le site. Pendant le processus de création, j'ai pu voir l'entreprise, recevoir des retours sur ce que j'avais pu faire et donc améliorer le site de manière continue pour toujours répondre aux besoins du client.
 
 La réalisation s'est faite durant 4 semaines.
 
 ### Fin de mission
 
-Une fois la réalisation terminée, j'ai mise le site en production sur les serveurs de l'entreprise. Comme il s'agit de fichiers statiques, cela s'est fait sans aucune difficultés.
+Une fois la réalisation terminée, j'ai mis le site en production sur les serveurs de l'entreprise. Comme il s'agit de fichiers statiques, cela s'est fait sans aucune difficultés.
 
 Le projet n'est pas open source mais le résultat visible à [cette adresse](https://lfe-formation.fr).
 
@@ -42,4 +42,4 @@ Le projet n'est pas open source mais le résultat visible à [cette adresse](htt
 
 C'est un projet que j'ai beaucoup apprécié faire parce qu'il s'agit du premier où j'ai pu monétiser mes compétences acquises en auto-didacte. Cela a été un vrai tremplin pour toute la suite.
 
-C'est aussi la première fois que j'ai eu à répondre à un besoin client. Il m'a fallu le comprendre avant de pouvoir le mettre d'y apporter une solution.
+C'est aussi la première fois que j'ai eu à répondre à un besoin client. Il m'a fallu le comprendre avant de pouvoir le mettre d'y apporter une solution et cela a rendu le projet très formateur.
