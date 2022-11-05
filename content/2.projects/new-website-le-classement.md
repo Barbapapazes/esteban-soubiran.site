@@ -46,7 +46,7 @@ En quelques jours et grâce à l'ensemble des informations que nous avions pu lu
 
 ![Maquettes basses fidélités du site du Classement des Associations](/images/projects/le-classement_maquettes-low.webp)
 
-Les première maquettes ont permis de valider l'agencement général du site. Une fois l'agencement validé, nous avons reçu les maquettes définitives et elles étaient magnifiques !
+Les premières maquettes ont permis de valider l'agencement général du site. Une fois l'agencement validé, nous avons reçu les maquettes définitives et elles étaient magnifiques !
 
 ![Maquettes hautes fidélités du site du Classement des Associations](/images/projects/le-classement_maquettes-high.webp)
 
@@ -81,7 +81,7 @@ Ce projet est open-source :git-hub-link{repo=barbapapazes/le-classement.fr}
 
 Avec Netlify, la mise en production est toujours un plaisir. Il suffit de suivre les indications et ça fonctionne !
 
-Cependant, j'ai pu rencontrer quelques difficultés lors de la mise en place du formulaire. En effet, des changements internes à Nuxt, comme son utilisation des _functions_, ont compliqué sa mise e place. Mais après quelques quelques recherches, j'ai pu trouver la solution.
+Cependant, j'ai pu rencontrer quelques difficultés lors de la mise en place du formulaire. En effet, des changements internes à Nuxt, comme son utilisation des _functions_, ont compliqué sa mise en place. Mais après quelques quelques recherches, j'ai pu trouver la solution.
 
 ::detail
 ---
@@ -90,7 +90,7 @@ title: En savoir plus
 
 Désormais, Nuxt utilise Nitro. Ainsi, Nuxt est en mesure d'être en SSR via les _functions_ de Netlify.
 
-Mais cela a pour conséquences que l'ensemble des requêtes sont interceptées par Nitro et non plus par Netlify. Sauf que pour l'envoi du formulaire, il est nécessaire de passer par Netlify.
+Mais cela a pour conséquence que l'ensemble des requêtes sont interceptées par Nitro et non plus par Netlify. Sauf que pour l'envoi du formulaire, il est nécessaire de passer par Netlify.
 
 Ainsi, il a fallu créer une fausse route dans public afin que Nitro ne prenne pas en charge la requête et qu'elle puisse être reçue par Netlify.
 ::
