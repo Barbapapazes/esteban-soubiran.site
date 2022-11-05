@@ -31,7 +31,7 @@ Tout cela est hébergé sur un :icon{name=logos:raspberry-pi} Raspberry Pi 3B+ a
 
 ### Conclusion
 
-Ce projet, sans grande prétention, m'a permis de découvrir Docker Compose et l'architecture micro-services.
+Ce projet, sans grande prétention, m'a permis de découvrir :icon{name=vscode-icons:file-type-docker} Docker Compose et l'architecture micro-services.
 
 ## Bodybuilding app - 2019
 
@@ -55,7 +55,7 @@ Le projet est open source :git-hub-link{repo=Barbapapazes/bodybuilding-app}.
 
 ### Conclusion
 
-Ce petit projet, que j'ai utilisé à la salle de sport, m'a permis de mettre en pratique toute la découverte de Vue.js que j'avais pu faire. J'ai également pu découvrir Vuetify et la gestion d'un nom de domaine. Une bonne première expérience.
+Ce petit projet, que j'ai utilisé à la salle de sport, m'a permis de mettre en pratique toute la découverte de :icon{name=vscode-icons:file-type-vue} Vue.js que j'avais pu faire. J'ai également pu découvrir :icon{name=logos:vuetifyjs} Vuetify et la gestion d'un nom de domaine. Une bonne première expérience.
 
 ## Station Météo - 2018
 
@@ -67,7 +67,7 @@ Après avoir pu jouer avec des :icon{name=vscode-icons:file-type-arduino} Arduin
 
 Ce projet se voulait être une vraie découverte.
 
-J'ai utilisé des modules Arduino ESP8266. Ces modules était connecté à un thermomètre électronique et à un module Wifi. Ainsi, et de manière régulière, des mesures étaient faites et transmis, via le Wifi, au Raspberry Pi.
+J'ai utilisé des modules  :icon{name=vscode-icons:file-type-arduino} Arduino ESP8266. Ces modules était connecté à un thermomètre électronique et à un module Wifi. Ainsi, et de manière régulière, des mesures étaient faites et transmis, via le Wifi, au :icon{name=logos:raspberry-pi} Raspberry Pi.
 
 ::detail
 ---
@@ -76,13 +76,13 @@ title: Connexion à un Wifi
 Les modules Arduino n'intègre pas directement les identifiants du Wifi. Pour pallier à cela, lorsque l'Arduino démarre, il commence par émettre un réseau wifi. En se connectant dessus via un navigateur internet, on peut alors renseigner les identifiants du Wifi. Une fois cela fait, l'Arduino se connecte au Wifi et peut alors envoyer les données.
 ::
 
-Sur le Raspberry Pi, j'avais mis en place un server web capable d'enregistrer les données dans une base de données.
+Sur le :icon{name=logos:raspberry-pi} Raspberry Pi, j'avais mis en place un server web capable d'enregistrer les données dans une base de données.
 
 Ensuite, j'ai créer des interfaces web permettant de visualiser, via des courbes, l'ensemble des données.
 
 ### Conclusion
 
-Ce projet m'a permis de découvrir les modules Arduino ESP8266 et de mettre en place un serveur web. Une évolution de mon projet de première année et une bonne expérience dans l'utilisation d'un serveur web.
+Ce projet m'a permis de découvrir les modules  :icon{name=vscode-icons:file-type-arduino} Arduino ESP8266 et de mettre en place un serveur web. Une évolution de mon projet de première année et une bonne expérience dans l'utilisation d'un serveur web.
 
 ## Mon premier site - 2018
 
@@ -98,7 +98,7 @@ Il s'agissait d'un blog créer avec :icon{name=simple-icons:express} Express et 
 
 J'ai mis en place l'authentification, un changement de thème et même de langue. La partie intéressante est la gestion du markdown dans l'éditeur de texte.
 
-J'ai ensuite déployé le site du Heroku avec une base de données MongoDB Atlas.
+J'ai ensuite déployé le site du :icon{name=logos:heroku-icon} Heroku avec une base de données MongoDB Atlas.
 
 Le projet est open source :git-hub-link{repo=Barbapapazes/esteban-s-website}.
 
