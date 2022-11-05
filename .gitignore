@@ -6,3 +6,7 @@ node_modules
 .output
 .env
 dist
+
+.yarn/*
+!.yarn/releases
+!yarn.lock
