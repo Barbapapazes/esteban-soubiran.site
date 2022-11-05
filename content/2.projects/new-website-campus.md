@@ -1,6 +1,11 @@
 ---
 title: Créer un nouveau site campus
-createdAt: 2020-09-01
+image:
+  src: /images/projects/campus_new-website.webp
+  alt: Capture d'écran du nouveau site campus. On peut y voir un titre "#campus INSA CVL".
+datePublished: 2020-09-01
+dateModified: 2020-11-05
+layout: prose
 ---
 
 Pour la rentrée scolaire, j'ai eu l'opportunité de mettre à jour le site campus de mon école. Cela est passé par le contact des associations et le développement d'un nouveau site.
@@ -23,10 +28,10 @@ En effet, j'ai réalisé ce site durant les grandes vacances, c'est à dire que 
 
 Ainsi, pour réussir à faire cela dans les temps, j'ai choisi la stack technologique suivante :
 
-- [Nuxt2](https://nuxtjs.org/) pour le développement du site;
+- :icon{name=vscode-icons:file-type-nuxt} [Nuxt2](https://nuxtjs.org/) pour le développement du site;
 - [Nuxt Content](https://content.nuxtjs.org/) pour la gestion du contenu via des fichiers markdown;
-- [Vuetify](https://vuetifyjs.com/en/) pour le design. N'ayant pas les compétences pour les créations de l'interface utilisateur, j'ai choisi une librairie qui me permet de faire des interfaces rapidement quitte à sacrifier la personnalisation;
-- [Netlify](https://www.netlify.com/) pour le déploiement.
+- :icon{name=logos:vuetifyjs} [Vuetify](https://vuetifyjs.com/en/) pour le design. N'ayant pas les compétences pour les créations de l'interface utilisateur, j'ai choisi une librairie qui me permet de faire des interfaces rapidement quitte à sacrifier la personnalisation;
+- :icon{name=vscode-icons:file-type-netlify} [Netlify](https://www.netlify.com/) pour le déploiement.
 
 ### Contenu
 
@@ -39,7 +44,7 @@ Le site contient différentes pages :
 
 Comme chaque fichier, qui est d'ailleurs équivalent à chaque page, est un fichier markdown et que le site est hébergé sur Netlify, la modification du site est aisée pour la plus part des personnes.
 
-::details
+::detail
 ---
 title: Déploiement en continu
 ---
@@ -57,10 +62,10 @@ Pour découvrir le site, c'est par ici : [campus.insa-cvl.org](https://campus.in
 
 J'ai tenu les délais et le site a pu être présenté à l'ensemble des élèves lors de la réunion de rentrée ! 🎉
 
-Le site est open-source et disponible à cette [adresse]https://github.com/Campus-INSA-CVL/campus-website).
+Le site est open-source :git-hub-link{repo="Campus-INSA-CVL/campus-website"}.
 
 C'était pour moi un sacré challenge parce que c'était la première fois que je devais créer un site en un temps imparti qui allait ensuite être utilisé dans la vraie vie.
 
 C'est aussi un projet qui m'a permis d'approfondir mes compétences dans la définition du besoin et de la compréhension des problématiques.
 
-Aussi, cela m'a permis de conformer ma maîtrise de Nuxt2 et de Vuetify. Des outils importants pour mes prochains projets !
+Aussi, cela m'a permis de progresser dans ma maîtrise de Nuxt2 et de Vuetify. Des outils importants pour mes prochains projets !
