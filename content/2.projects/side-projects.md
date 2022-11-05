@@ -1,6 +1,11 @@
 ---
-title: 
-createdAt: 2020-04-15
+title: Mes petits projets
+image: 
+  src: /images/projects/side-projects.webp
+  alt: Capture d'écran de mon profil GitHub
+datePublished: 2020-04-15
+dateModified: 2020-11-05
+layout: prose
 ---
 
 Quelques petits projets réalisés lors de moments d'ennui ou pour se découvrir des petites technologies. Souvent rien d’ambitieux mais toujours intéressant à faire.
@@ -22,7 +27,7 @@ L'idée est simple. Construire différents services qui permettront de monitorer
 - Client web permettant l'affichage des résultats;
 - Bot Twitter permettant de publier régulièrement les résultats.
 
-Tout cela est hébergé sur un Raspberry Pi 3B+ avec Docker Compose pour la gestion des services.
+Tout cela est hébergé sur un :icon{name=logos:raspberry-pi} Raspberry Pi 3B+ avec :icon{name=vscode-icons:file-type-docker} Docker Compose pour la gestion des services.
 
 ### Conclusion
 
@@ -32,7 +37,7 @@ Ce projet, sans grande prétention, m'a permis de découvrir Docker Compose et l
 
 ### Contexte
 
-Après avoir appris Vue.js, j'ai décidé de me lancer dans un petit projet pour mettre en oeuvre tous les concepts que j'avais pu voir.
+Après avoir appris :icon{name=vscode-icons:file-type-vue} Vue.js, j'ai décidé de me lancer dans un petit projet pour mettre en oeuvre tous les concepts que j'avais pu voir.
 
 J'ai alors regardé autour de moi ce que je pouvais faire. Faisant de la musculation, je me suis aperçu qu'il était pénible de naviguer entre son chronomètre et son entraînement. J'ai alors décidé de réunir cela au sein d'une même application.
 
@@ -40,11 +45,13 @@ J'ai alors regardé autour de moi ce que je pouvais faire. Faisant de la muscula
 
 Jai alors eu l'idée de créer une petite application web permettant à un utilisateur d'avoir dans un même endroit, un chronomètre, un compte à rebours et même d'y renseigner ses entraînements qui peuvent être automatiquement suivi par le compte à rebours.
 
-Pour l'interface graphique, j'ai utilisé Vuetify. Cela m'a permis de me concentrer sur les fonctionnalités de l'application plutôt que de devoir aussi gérer le design, un sujet que je ne maîtrise pas encore. 
+Pour l'interface graphique, j'ai utilisé :icon{name=logos:vuetifyjs} Vuetify. Cela m'a permis de me concentrer sur les fonctionnalités de l'application plutôt que de devoir aussi gérer le design, un sujet que je ne maîtrise pas encore. 
 
 Enfin, j'ai mis en production l'application et j'ai acheté un nom de domaine. Cela m'a permis de découvrir la gestion de ce dernier.
 
-<!-- Image de l'application -->
+![Capture d'écran de l'application Bodybuilding](/images/projects/side-projects_bodybuilding-app.webp)
+
+Le projet est open source :git-hub-link{repo=Barbapapazes/bodybuilding-app}.
 
 ### Conclusion
 
@@ -54,7 +61,7 @@ Ce petit projet, que j'ai utilisé à la salle de sport, m'a permis de mettre en
 
 ### Contexte
 
-Après avoir pu jouer avec des Arduino et un Raspberry Pi durant mon [projet de première année](./discover-iot), j'ai décidé de continuer avec une nouvelle formule. Cette fois-ci, je voulais pouvoir avoir des données météorologiques en temps réel.
+Après avoir pu jouer avec des :icon{name=vscode-icons:file-type-arduino} Arduino et un :icon{name=logos:raspberry-pi} Raspberry Pi durant mon [projet de première année](./discover-iot), j'ai décidé de continuer avec une nouvelle formule. Cette fois-ci, je voulais pouvoir avoir des données météorologiques en temps réel.
 
 ### Projet
 
@@ -66,7 +73,7 @@ J'ai utilisé des modules Arduino ESP8266. Ces modules était connecté à un th
 ---
 title: Connexion à un Wifi
 ---
-Les modules Arduino n'intégré pas directement les identifiants du Wifi. Pour pallier à cela, lorsque l'Arduino démarre, il commence par émettre un réseau wifi. En se connectant dessus via un navigateur internet, on peut alors renseigner les identifiants du Wifi. Une fois cela fait, l'Arduino se connecte au Wifi et peut alors envoyer les données.
+Les modules Arduino n'intègre pas directement les identifiants du Wifi. Pour pallier à cela, lorsque l'Arduino démarre, il commence par émettre un réseau wifi. En se connectant dessus via un navigateur internet, on peut alors renseigner les identifiants du Wifi. Une fois cela fait, l'Arduino se connecte au Wifi et peut alors envoyer les données.
 ::
 
 Sur le Raspberry Pi, j'avais mis en place un server web capable d'enregistrer les données dans une base de données.
@@ -87,15 +94,13 @@ Depuis mes débuts dans le développement web, j'ai envie de réaliser mon propr
 
 L'idée est simple, créer un site où je peux être en mesure de créer des articles. En parallèle de mon [projet de première année](./discover-iot.md), et avec le peu de connaissance que je pouvais avoir, j'ai décidé de me lancer.
 
-Il s'agissait d'un blog créer avec Express et MongoDB. Pour la partie graphique, j'ai essayé de tout faire à la main.
+Il s'agissait d'un blog créer avec :icon{name=simple-icons:express} Express et :icon{name=vscode-icons:file-type-mongo} MongoDB. Pour la partie graphique, j'ai essayé de tout faire à la main.
 
 J'ai mis en place l'authentification, un changement de thème et même de langue. La partie intéressante est la gestion du markdown dans l'éditeur de texte.
 
 J'ai ensuite déployé le site du Heroku avec une base de données MongoDB Atlas.
 
-<!-- Image de mon premier site -->
-
-Il est possible de trouver les [sources sur GitHub](https://github.com/Barbapapazes/esteban-s-website).
+Le projet est open source :git-hub-link{repo=Barbapapazes/esteban-s-website}.
 
 ### Conclusion
 
