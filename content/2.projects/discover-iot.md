@@ -1,6 +1,11 @@
 ---
 title: Mes premiers modules d'IoT
-createdAt: 2019-06-15
+image:
+    src: /images/projects/discover-iot.webp
+    alt: Première page de notre présentation du projet. On peut y lire "Gestion d'électronique à distance, projet 1A".
+datePublished: 2019-06-15
+dateModified: 2020-11-05
+layout: prose
 ---
 
 J'ai crée mes premiers modules d'internet of things (IoT) lors d'un projet au sein de ma première année d'école d'ingénieurs.
@@ -20,8 +25,6 @@ Mais ce projet était à réaliser avec 2 autres personnes. Afin de satisfaire c
 ### Projet
 
 Pour lier le développement et l'électronique, nous avons décidé de créer des modules Arduino pilotable depuis une interface web.
-
-<!-- Image de l'interface web -->
 
 Ainsi, l'idée était la suivante :
 
@@ -69,7 +72,7 @@ Pour mener à bien ce projet, nous avons utilisé les technologies et outils sui
 
 Voici un schéma de notre projet :
 
-<!-- Schéma de l'ensemble du projet -->
+![Schéma montrant 1 Raspberry Pi connecté à 2 Arduino. L'un permettant à l'émission des messages et le second à la réception. Le second circuit montre un Arduino connecté à un interrupteur, un récepteur et un émetteur.](/images/projects/discover-iot_schema-full.webp)
 
 Lorsque l'utilisateur appuie sur l'interrupteur physique, un message est émis via le module radio connecté à l'Arduino. Le module de l'interface principal le reçoit et met à jour la base de données via un script python et le port série. En effet, l'Arduino récepteur était en charge de l'écriture sur le port série et un script python avait la charge d'intercepter et interpréter les messages.
 
@@ -83,34 +86,35 @@ Voici un exemple du fichier JSON servant de base de données :
 
 ```json
 {
-    "addDevices": false,
-    "bulbs": [{
-            "name": "one",
-            "id": "1",
-            "state": true,
-            "type": "relay"
-        },
-        {
-            "name": "two",
-            "id": "2",
-            "value": 36,
-            "type": "pwm"
-        },
-        {
-            "name": "three",
-            "id": "3",
-            "state": true,
-            "type": "relay"
-        },
-        {
-            "name": "four",
-            "id": "4",
-            "value": 91,
-            "type": "pwm"
-        }
-    ],
-    "deleteDevices": false,
-    "python": false
+  "addDevices": false,
+  "bulbs": [
+  {
+    "name": "one",
+    "id": "1",
+    "state": true,
+    "type": "relay"
+  },
+  {
+    "name": "two",
+    "id": "2",
+    "value": 36,
+    "type": "pwm"
+  },
+  {
+    "name": "three",
+    "id": "3",
+    "state": true,
+    "type": "relay"
+  },
+  {
+    "name": "four",
+    "id": "4",
+    "value": 91,
+    "type": "pwm"
+  }
+],
+"deleteDevices": false,
+"python": false
 }
 ```
 
@@ -118,7 +122,7 @@ L'intégralité du projet a été réalisé par le groupe. Nous avons trouvé tr
 
 Il est aussi intéressant de noter que le concept de base de données n'était pas encore présent dans notre spectre de connaissances. Ainsi, nous avons choisi de stocker les données dans un fichier JSON.
 
-Ce projet est open-source et [disponible sur GitHub](https://github.com/Barbapapazes/raspIoT).
+Ce projet est open-source :git-hub-link{repo=barbapapazes/raspIoT}.
 
 ## Conclusion
 
