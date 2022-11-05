@@ -32,7 +32,7 @@ Le premier est le plus simple. Il s'agit d'un formulaire disponible où, en fonc
 
 Le second niveau consiste à passer par un Codesandbox pour éditer le contenu sans toute la complexité de GitHub. Une fois l'édition effectué, il suffit d'envoyer le lien du Codesandbox au gestionnaire du site pour procéder aux modifications.
 
-Le troisième niveau est le plus complexe. Il s'agit de cloner le repository GitHub du site campus. L'utilisateur peut alors éditer le fichier markdown directement sur son ordinateur. Une fois l'édition effectué, il suffit de push les modifications sur GitHub pour que le site via une Pull Request. Le gestionnaire n'a plus qu'à approuver les modifications et le site est mis à jour.
+Le troisième niveau est le plus complexe. Il s'agit de cloner le repository GitHub du site campus. L'utilisateur peut alors éditer le fichier markdown directement sur son ordinateur. Une fois l'édition effectuée, il suffit de push les modifications sur GitHub via une Pull Request. Le gestionnaire n'a plus qu'à approuver les modifications et le site est mis à jour.
 
 Le générateur est open-source :git-hub-link{repo=Campus-INSA-CVL/campus-website-templates}.
 
@@ -40,7 +40,7 @@ Le générateur est open-source :git-hub-link{repo=Campus-INSA-CVL/campus-websit
 
 Ce générateur m'a permis de simplifier la vie des auteurs de contenu. En effet et dès sa mise en place, j'ai reçu énormément de fiches créées via ce générateur.
 
-Cependant, il ne fut pas si simple à créer. En effet, chacun des formulaires est généré via un fichier de configuration et à la volée. Ainsi, il m'a fallu créer un système de formulaire dynamique où les images sont retenues, optimisées avant d'être téléchargées. Il a aussi fallu mettre en place le système de téléchargement de ce dossier tout cela via une application web static.
+Cependant, il ne fut pas si simple à créer. En effet, chacun des formulaires est généré via un fichier de configuration et à la volée. Ainsi, il m'a fallu créer un système de formulaire dynamique où les images sont retenues, optimisées avant d'être téléchargées. Il a aussi fallu mettre en place le système de téléchargement de ce dossier tout cela via une application web sans back-end.
 
 J'ai pu continuer à me familiariser avec :icon{name=vscode-icons:file-type-vue} [VueJS](https://vuejs.org) et :icon{name=logos:vuetifyjs} [Vuetify](https://vuetifyjs.com). 
 
