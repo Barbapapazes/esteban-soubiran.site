@@ -22,9 +22,9 @@ Le précédent site campus était un agrégat de différents site WordPress. Ain
 
 ### Réalisation
 
-La première question que j'ai du me poser des de savoir comment j'allais réaliser ce nouveau site. En effet, je suis encore débutant dans plein de domaines. Mais la plus grandes contraintes est le temps. 
+La première question que j'ai du me poser est de savoir comment j'allais réaliser ce nouveau site. En effet, je suis encore débutant dans plein de domaines. Mais la plus grandes contraintes est le temps. 
 
-En effet, j'ai réalisé ce site durant les grandes vacances, c'est à dire que j'avais 7 semaines pour la réalisation. C'est à dire évaluer le besoin en contactant les associations, développer le site, le faire valider par le bureau des élèves, le mettre en ligne et ajouter le contenu en contactant à nouveau l'ensemble des associations.
+En effet, j'ai réalisé ce site durant les grandes vacances, c'est à dire que j'avais 7 semaines pour la réalisation. Évaluer le besoin en contactant les associations, développer le site, le faire valider par le bureau des élèves, le mettre en ligne et ajouter le contenu en contactant à nouveau l'ensemble des associations.
 
 Ainsi, pour réussir à faire cela dans les temps, j'ai choisi la stack technologique suivante :
 
