@@ -1,7 +1,0 @@
----
-title: Articles
----
-
-::articles-list
-
-::

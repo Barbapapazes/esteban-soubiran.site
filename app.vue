@@ -1,5 +1,8 @@
 <script lang="ts" setup>
 useHead({
+  titleTemplate: (titleChunk) => {
+    return titleChunk ? `${titleChunk} - Estéban Soubiran` : 'Estéban Soubiran';
+  },
   htmlAttrs: {
     lang: 'fr',
     class: 'h-full font-sans antialiased dark',
@@ -39,10 +42,10 @@ useSchemaOrg([
     <div class="fixed inset-0 sm:px-8 lg:px-16">
       <div class="w-full h-full max-w-screen-xl mx-auto ring-1 dark:bg-zinc-900 dark:ring-zinc-300/20"></div>
     </div>
-    <div class="z-90 sticky top-6 flex flex-row justify-center">
+    <div class="z-50 sticky top-6 flex flex-row justify-center">
       <OrganismsTheHeader />
     </div>
-    <main class="relative mt-16">
+    <main class="relative mt-16 sm:mt-32">
       <NuxtPage />
     </main>
     <OrganismsTheFooter class="relative" />

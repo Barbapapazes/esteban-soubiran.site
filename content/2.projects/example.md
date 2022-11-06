@@ -1,10 +1,10 @@
 ---
-title: Un article test
-createdAt: 2022-09-07
-layout: article
+title: Un projet test
+datePublished: 2022-09-07
+layout: projet
 ---
 
-Here the beginning of the article !
+Here the beginning of the projet !
 
 <!-- more -->
 
