@@ -8,7 +8,7 @@ dateModified: 2022-11-06
 layout: prose
 ---
 
-J'ai créer mon premier porte-folio ! Une place qui me ressemble, à mon image et qui permet de présenter mes projets, mes essaies et mes réalisations.
+J'ai créer mon premier porte-folio ! Une place qui me ressemble, à mon image et qui permet de présenter mes projets, mes essais et mes réalisations.
 
 <!-- more -->
 
@@ -20,7 +20,7 @@ Alors que [depuis le début](./side-projects#mon-premier-site-2018) de mon appre
 
 Pour mener à bien ce projet, je me suis d'abord questionné en me demandant ce que je pouvais y raconter et y exposer.
 
-Ensuite, une fois les idées claires, il m'a fallu créer trouver un style à ce futur site. Pour cela, j'ai commencé à le mettre en forme sur Figma en créant des maquettes. Après plusieurs tentatives, j'ai fini par trouver un esthétisme, des couleurs et un agencement qui me plait.
+Une fois les idées claires, il m'a fallu créer trouver un style à ce futur site. Pour cela, j'ai commencé à le mettre en forme sur Figma en créant des maquettes. Après plusieurs tentatives, j'ai fini par trouver un esthétisme, des couleurs et un agencement qui me plait.
 
 ![Maquettes du site](/images/projects/portfolio-v2_maquettes.webp)
 
