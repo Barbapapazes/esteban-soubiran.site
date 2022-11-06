@@ -3,6 +3,9 @@ export default defineNuxtConfig({
   modules: ['@nuxt/content', '@nuxtjs/tailwindcss', 'nuxt-schema-org', 'nuxt-icon'],
   content: {
     documentDriven: true,
+    highlight: {
+      theme: 'github-dark',
+    },
     watch: {
       ws: {
         port: 4000,
