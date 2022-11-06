@@ -78,7 +78,7 @@ Lorsque l'utilisateur appuie sur l'interrupteur physique, un message est émis v
 
 Dès que le fichier JSON, servant de base de données était mis à jour, le serveur web était notifié. Via une connexion websocket, il mettait à jour les interfaces web des clients connectés.
 
-Lors que l'utilisateur interagit via l'interface web, cette dernière envoie un message au serveur web via la connection websocket. Le module principal reçoit l'information, met à jour la base de données et écrit sur le port série. Ce message est lu par l'Arduino et émis via l’émetteur radio. Dans le même temps, l'ensemble des interfaces web sont synchronisées via la connexion websocket.
+Lorsque l'utilisateur interagit via l'interface web, cette dernière envoie un message au serveur web via la connection websocket. Le module principal reçoit l'information, met à jour la base de données et écrit sur le port série. Ce message est lu par l'Arduino et émis via l’émetteur radio. Dans le même temps, l'ensemble des interfaces web sont synchronisées via la connexion websocket.
 
 Dans les faits, cela marchait plutôt bien. Cependant, il pouvait arriver des conflits dans l'écriture et la lecture du fichier JSON. Cela faisait alors planter le serveur web et il fallait réparer à la main le fichier.
 
