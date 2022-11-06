@@ -1,6 +1,11 @@
 ---
 title: J'ai construit une cuisine numérique
-createdAt: 2022-09-15
+image:
+  src: /images/projects/digital-kitchen.webp
+  alt: Capture d'écran du site web de la cuisine numérique
+datePublished: 2022-09-15
+dateModified: 2022-09-15
+layout: prose
 ---
 
 Passant chaque soir à me demander ce que je pouvais manger, j'ai décidé de construire une cuisine numérique. Une place où chaque recette testée et approuvée y seraient stockées !
@@ -26,6 +31,8 @@ Un jour, j'ai découvert :icon{name="simple-icons:notion"} Notion et de ses tabl
 Initialement, le projet ne devait ne servir qu'à moi. Mais en y regardant de plus près, j'ai pu trouver des bénéfices à ouvrir le projet. En effet, j'ai remarqué que mes camarades pouvaient avoir les même difficultés. Dans le même temps, cela me permettait de demander aux utilisateurs des recettes pour agrandir la base de données.
 
 Du coup, j'ai construit sur Notion une base de données qui permet de stocker et consulter des recettes de cuisine. J'ai également créé un formulaire pour permettre aux utilisateurs de proposer des recettes et un site internet pour permettre de communiquer sur le projet.
+
+Le projet est disponible à l'adresse suivante : [la-cuisine.esteban-soubiran.site](https://la-cuisine.esteban-soubiran.site).
 
 ## Conclusion
 
