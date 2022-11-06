@@ -1,6 +1,11 @@
 ---
-titre: Un renouveau pour bnei.fr
-createdAt: 2021-11-26
+title: Un renouveau pour le BNEI
+image:
+  src: /images/projects/restore-bnei-fr.webp
+  alt: Capture d'écran de la page d'accueil de bnei.fr. On peut y voir un titre "Le Bureau National des Elèves Ingénieurs" et un sous titre "Représenter, Informer, Former"
+datePublished: 2021-11-26
+dateModified: 2022-11-06
+layout: prose
 ---
 
 J'ai remis sur pied et modernisé le site du Bureau National des Élèves Ingénieurs qui avait plus de 10 ans.
@@ -15,7 +20,7 @@ Cela fait maintenant des années que le Bureau National des Élèves Ingénieurs
 
 ## Précédemment
 
-Sur le plan technique, l'ancien site était un WordPress avec un thème générique à 50€, prêt à l'emploi. C'était un bon point de départ mais qui commence à avoir plusieurs lacunes.
+Sur le plan technique, l'ancien site était un :icon{name=logos:wordpress-icon} WordPress avec un thème générique à 50€, prêt à l'emploi. C'était un bon point de départ mais qui commence à avoir plusieurs lacunes.
 
 D'une part, son architecture interne ne permet pas de faire des évolution facilement. D'autre part, il est presque impossible à maintenir tant son code source est complexe et obsolète. Et enfin, l'architecture des données n'est plus adaptées aux besoins de la structure.
 
@@ -53,13 +58,13 @@ Cette tâche fut particulièrement complexe parce qu'il a fallu faire preuve de 
 
 Dans le même temps que la création des maquettes, il a fallu choisir les outils et les technologies qui permettraient de mettre en place le site. En effet, le choix technologie est un choix influant sur les maquettes et réciproquement.
 
-Au final, il a été choisi de rester sur WordPress pour sa simplicité et sa rapidité de développement, sa maintenabilité, son interface d'administration prête à l'emploi et sa gestion robuste du contenu.
+Au final, il a été choisi de rester sur :icon{name=logos:wordpress-icon} WordPress pour sa simplicité et sa rapidité de développement, sa maintenabilité, son interface d'administration prête à l'emploi et sa gestion robuste du contenu.
 
 ### Développement
 
 Cette étape a été la plus longue et la plus complexe. Elle a consisté à mettre en place les maquettes et les prototypes en code.
 
-Mais c'était pour moi la première fois que je développais avec WordPress et même que je touchais à du PHP. J'ai donc dû tout apprendre sur le tas. Heureusement pour moi, rien de bien complexe et j'ai pu me débrouiller avec des tutoriels et des forums. Je pense que mon expérience de développeur web m'a aidé à m'y retrouver.
+Mais c'était pour moi la première fois que je développais avec :icon{name=logos:wordpress-icon} WordPress et même que je touchais à du PHP. J'ai donc dû tout apprendre sur le tas. Heureusement pour moi, rien de bien complexe et j'ai pu me débrouiller avec des tutoriels et des forums. Je pense que mon expérience de développeur web m'a aidé à m'y retrouver.
 
 Dans le même temps, il a fallu migrer l'ensemble des données de l'ancien site vers le nouveau. Avoir un joli site ne sert à rien s'il n'est pas rempli ! Cette étape fut particulièrement complexe parce que toute l'architecture des données a été revue et que les données étaient très nombreuses. Il a donc fallu, à la main, migrer les articles et les pages.
 
@@ -69,7 +74,7 @@ Cette partie, je l'ai déléguée au pôle IT de la structure. En effet, cela ne
 
 Pour mener à bien cette collaboration, j'ai dû documenter le processus de mise en production et d'installation du projet. J'ai essayé de faire cette étape la plus rapidement possible afin que l'équipe puisse avec un retour concret sur l'avancement du projet.
 
-<!-- Images du site -->
+Le site est visible à cette adresse: [bnei.fr](https://bnei.fr)
 
 ### Amélioration continue
 
@@ -81,7 +86,7 @@ C'est un site en mouvement permanent.
 
 Ce projet, je l'ai mené du début à la fin, de l'établissement du besoin à sa communication, et quelle fierté une fois de plus que de créer et mener un projet qui se retrouve en ligne et qui est utilisé par des milliers de personnes.
 
-C'est un projet qui m'a permis de découvrir de nouvelles technologies comme PHP et WordPress. J'ai aussi dû créer de grandes maquettes, une première !
+C'est un projet qui m'a permis de découvrir de nouvelles technologies comme :icon{name=vscode-icons:file-type-php} PHP et :icon{name=logos:wordpress-icon} WordPress. J'ai aussi dû créer de grandes maquettes, une première !
 
 Le temps, le budget et les contraintes étaient très limités. Mais j'ai réussi à mener à bien ce projet en respectant les objectifs et en respectant les délais.
 
