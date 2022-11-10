@@ -18,13 +18,13 @@ Depuis que je me forme au développement web en lisant ou en regardant des vidé
 
 Dans le même temps, je pense que réussir à créer un tutoriel, à expliquer un sujet et que l'autre le comprenne, est la preuve d'une compréhension d'un sujet.
 
-En 2020, j'avais déjà pu commencer à écrire un ensemble de slides pour apprendre à écrire à utiliser :icon{name="vscode-icons:file-type-html"} HTML, :icon{name="vscode-icons:file-type-css"} CSS et :icon{name="vscode-icons:file-type-js"} JavaScript. Mais je n'ai jamais eu le temps de les finaliser notamment parce que je n'avais pas anticiper la difficulté de créer un tutoriel.
+En 2020, j'avais déjà pu commencer à écrire un ensemble de slides pour apprendre à écrire à utiliser :icon{name="vscode-icons:file-type-html"} HTML, :icon{name="vscode-icons:file-type-css"} CSS et :icon{name="vscode-icons:file-type-js"} JavaScript. Mais je n'ai jamais eu le temps de les finaliser notamment parce que je n'avais pas anticipé la difficulté de créer un tutoriel.
 
 Durant 1 an, j'ai conservé l'idée jusqu'à que je trouve une occasion de réessayer l’exercice !
 
 ## Premier tutoriel
 
-Fin août 2021, en travaillant sur un projet web, j'ai découvert :icon{name="logos:adonisjs-icon"} [AdonisJS](https://adonisjs.com). C'est un framework :icon{name="vscode-icons:file-type-node" }NodeJS qui permet de créer des applications web en utilisant le langage :icon{name="vscode-icons:file-type-typescript"} TypeScript. Dans le même temps, un ami ma fait part de vouloir commencer à apprendre le développement côté serveur.
+Fin août 2021, en travaillant sur un projet web, j'ai découvert :icon{name="logos:adonisjs-icon"} [AdonisJS](https://adonisjs.com). C'est un framework :icon{name="vscode-icons:file-type-node" } NodeJS qui permet de créer des applications web en utilisant le langage :icon{name="vscode-icons:file-type-typescript"} TypeScript. Dans le même temps, un ami ma fait part de vouloir commencer à apprendre le développement côté serveur.
 
 AdonisJS me semblait alors le parfait candidat pour lier les 2 projets, créer un tutoriel et permettre à un débutant de découvrir le développement web.
 
@@ -55,4 +55,4 @@ Retrouver la série sur :icon{name="ic:outline-logo-dev"} [Dev.to](https://dev.t
 
 Écrire un tutoriel, c'est un exercice difficile et qui demande du temps mais c'est vraiment enrichissant. Ça oblige à être très rigoureux et très précis. Il faut savoir se mettre dans la peau du lecture pour s'assurer que chaque phrase est clair et éviter les sous entendus. 
 
-J'ai pu avoir des retours de lecteurs satisfaits. C'est donc une expérience validées et que je renouvellerai dès que possible.
+J'ai pu avoir des retours de lecteurs satisfaits. C'est donc une expérience validée et que je renouvellerai dès que possible.
