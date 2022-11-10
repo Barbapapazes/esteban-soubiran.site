@@ -3,8 +3,8 @@ title: J'ai construit une cuisine numérique
 image:
   src: /images/projects/digital-kitchen.webp
   alt: Capture d'écran du site web de la cuisine numérique
-datePublished: 2022-09-15
-dateModified: 2022-09-15
+datePublished: 2021-09-15
+dateModified: 2022-11-10
 layout: prose
 ---
 
@@ -36,4 +36,4 @@ Le projet est disponible à l'adresse suivante : [la-cuisine.esteban-soubiran.si
 
 ## Conclusion
 
-Ce projet, simple d'apparence, a en réalité demandé 8 mois de réflexions. En effet, j'ai dû réfléchir à la manière de stocker les données, à la manière de les présenter, à la manière de les partager, etc. Avec cela, j'ai ensuite dû trouver un outil adapté à ses besoins. J'aurai pu construire un outil par moi-même mais cela aurait été trop long et trop fastidieux. Et surtout, je voulais montrer qu'il était possible de réaliser ses idées sans avoir à coder simplement en utilisant des outils existants.
+Ce projet, simple d'apparence, a en réalité demandé 8 mois de réflexions. En effet, j'ai dû réfléchir à la manière de stocker les données, à la manière de les présenter, à la manière de les partager, etc. Avec cela, j'ai ensuite dû trouver un outil adapté à mes besoins. J'aurai pu construire un outil par moi-même mais cela aurait été trop long et trop fastidieux. Et surtout, je voulais montrer qu'il était possible de réaliser ses idées sans avoir à coder, simplement en utilisant des outils existants.
