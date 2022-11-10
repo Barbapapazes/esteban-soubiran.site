@@ -28,15 +28,15 @@ Pour plus d'information sur l'évènements, vous pouvez vous rendre sur le [site
 
 Pour la 4ème année consécutive, j'ai pu participer à la nuit de l'info ! Cette année marque le retour de la nuit en présentiel après une édition marquée par la covid et une participation à distance !
 
-Pour cette nuit, j'ai axé mon travail sur l'architecture de la base de données avec d'autres de l'équipe et la création de l'ensemble de l'application back-end avec :icon{name=logos:adonisjs-icon} [AdonisJS](https://adonisjs.com) ! Au front-end, j'ai laissé le reste de l'équipe s'en charger afin de réaliser de la 3D !
+Pour cette nuit, j'ai axé mon travail sur l'architecture de la base de données avec d'autres de l'équipe et la création de l'ensemble de l'application back-end avec :icon{name=adonisjs} [AdonisJS](https://adonisjs.com) ! Au front-end, j'ai laissé le reste de l'équipe s'en charger afin de réaliser de la 3D !
 
 ### 2020
 
-Cette fois-ci fût très particulière puisque, en plein confinement, nous n'avons pas pu nous regrouper. Nous nous sommes adaptés et nous avons tout réalisé en visio. Fort de mes précédentes expériences, j'ai cette année pris le lead de l'équipe ce qui m'a permis de développer le management d'équipe et le travail en équipe à distance ! Nous avons aussi utilisé des technologies comme :icon{name=vscode-icons:file-type-vite} [vite](https://vitejs.dev/) ou :icon{name=vscode-icons:file-type-docker} [docker](https://www.docker.com/) pour la réalisation du projet !
+Cette fois-ci fût très particulière puisque, en plein confinement, nous n'avons pas pu nous regrouper. Nous nous sommes adaptés et nous avons tout réalisé en visio. Fort de mes précédentes expériences, j'ai cette année pris le lead de l'équipe ce qui m'a permis de développer le management d'équipe et le travail en équipe à distance ! Nous avons aussi utilisé des technologies comme :icon{name=vite} [vite](https://vitejs.dev/) ou :icon{name=docker} [docker](https://www.docker.com/) pour la réalisation du projet !
 
 ### 2019
 
-Sur cette seconde fois, je suis venu avec plus d'expérience. Pour continuer dans cette optique de découverte, j'ai créer avec :icon{name=logos:dialogflow } [Dialogflow](https://dialogflow.cloud.google.com/) un chat bot. J'ai donc pu découvrir durant cette nuit les différentes technologies et plateformes d'intelligence artificielle pour le language naturel.
+Sur cette seconde fois, je suis venu avec plus d'expérience. Pour continuer dans cette optique de découverte, j'ai créer avec :icon{name=dialogflow } [Dialogflow](https://dialogflow.cloud.google.com/) un chat bot. J'ai donc pu découvrir durant cette nuit les différentes technologies et plateformes d'intelligence artificielle pour le language naturel.
 
 ### 2018
 

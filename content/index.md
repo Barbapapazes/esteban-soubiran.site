@@ -14,7 +14,7 @@ navigation: false
       icon: mdi:github
     - name: Dev.to
       url: https://dev.to/barbapapazes
-      icon: ic:outline-logo-dev
+      icon: devto
     - name: LinkedIn
       url: https://www.linkedin.com/in/esteban25/
       icon: mdi:linkedin

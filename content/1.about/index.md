@@ -13,7 +13,7 @@ socials:
   icon: mdi:github
 - name: Me suivre sur Dev.to
   url: https://dev.to/barbapapazes
-  icon: ic:outline-logo-dev
+  icon: devto
 - name: Me suivre sur LinkedIn
   url: https://www.linkedin.com/in/esteban25/
   icon: mdi:linkedin

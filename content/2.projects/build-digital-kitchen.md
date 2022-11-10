@@ -24,7 +24,7 @@ Avant de vous présenter la solution que j'ai pu mettre en place, j'ai pu en tes
 
 ### Notion
 
-Un jour, j'ai découvert :icon{name="simple-icons:notion"} Notion et de ses tables relationnelles. Ces dernières permettent de parfaitement gérer les recettes de cuisine, avec des ingrédients, des étapes, des tags, etc. La recherche est vraiment efficace et permet de retrouver rapidement une recette.
+Un jour, j'ai découvert :icon{name="notion"} Notion et de ses tables relationnelles. Ces dernières permettent de parfaitement gérer les recettes de cuisine, avec des ingrédients, des étapes, des tags, etc. La recherche est vraiment efficace et permet de retrouver rapidement une recette.
 
 ### Projet
 
