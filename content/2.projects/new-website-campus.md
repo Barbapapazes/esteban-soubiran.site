@@ -28,10 +28,10 @@ En effet, j'ai réalisé ce site durant les grandes vacances, c'est à dire que 
 
 Ainsi, pour réussir à faire cela dans les temps, j'ai choisi la stack technologique suivante :
 
-- :icon{name=vscode-icons:file-type-nuxt} [Nuxt2](https://nuxtjs.org/) pour le développement du site;
+- :icon{name=nuxtjs} [Nuxt2](https://nuxtjs.org/) pour le développement du site;
 - [Nuxt Content](https://content.nuxtjs.org/) pour la gestion du contenu via des fichiers markdown;
-- :icon{name=logos:vuetifyjs} [Vuetify](https://vuetifyjs.com/en/) pour le design. N'ayant pas les compétences pour les créations de l'interface utilisateur, j'ai choisi une librairie qui me permet de faire des interfaces rapidement quitte à sacrifier la personnalisation;
-- :icon{name=vscode-icons:file-type-netlify} [Netlify](https://www.netlify.com/) pour le déploiement.
+- :icon{name=vuetify} [Vuetify](https://vuetifyjs.com/en/) pour le design. N'ayant pas les compétences pour les créations de l'interface utilisateur, j'ai choisi une librairie qui me permet de faire des interfaces rapidement quitte à sacrifier la personnalisation;
+- :icon{name=netlify} [Netlify](https://www.netlify.com/) pour le déploiement.
 
 ### Contenu
 

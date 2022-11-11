@@ -42,7 +42,7 @@ Dans notre projet, nous avons choisi que nos modules seraient des lampes multi-c
 
 Le fonctionnement est plutôt simple mais la mise en place est plutôt complexe notamment la double possibilité d’interaction avec les modules, en physique ou via l'interface web.
 
-Le :icon{name=logos:raspberry-pi} Raspberry Pi est le module principal. Il est connecté via USB à un :icon{name=vscode-icons:file-type-arduino} Arduino. Les modules sont des Arduino connectés à des lampes multi-couleurs ou mono-couleurs et à un interrupteur physique. Ces modules communiquent avec l'Arduino du module principal via une transmission radio.
+Le :icon{name=raspberryPi} Raspberry Pi est le module principal. Il est connecté via USB à un :icon{name=arduino} Arduino. Les modules sont des Arduino connectés à des lampes multi-couleurs ou mono-couleurs et à un interrupteur physique. Ces modules communiquent avec l'Arduino du module principal via une transmission radio.
 
 #### Physique
 

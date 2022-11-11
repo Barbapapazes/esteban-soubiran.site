@@ -42,6 +42,6 @@ Ce générateur m'a permis de simplifier la vie des auteurs de contenu. En effet
 
 Cependant, il ne fut pas si simple à créer. En effet, chacun des formulaires est généré via un fichier de configuration et à la volée. Ainsi, il m'a fallu créer un système de formulaire dynamique où les images sont retenues, optimisées avant d'être téléchargées. Il a aussi fallu mettre en place le système de téléchargement de ce dossier tout cela via une application web sans back-end.
 
-J'ai pu continuer à me familiariser avec :icon{name=vscode-icons:file-type-vue} [VueJS](https://vuejs.org) et :icon{name=logos:vuetifyjs} [Vuetify](https://vuetifyjs.com). 
+J'ai pu continuer à me familiariser avec :icon{name=vuejs} [VueJS](https://vuejs.org) et :icon{name=vuetify} [Vuetify](https://vuetifyjs.com). 
 
 Au final, je trouve que c'est un outil très précieux pour garantir le bon fonctionnement du site campus.
