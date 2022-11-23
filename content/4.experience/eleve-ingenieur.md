@@ -1,7 +1,7 @@
 ---
 title: Élève-ingénieur
 company:
-  src: /experience/insa-cvl.webp
+  src: /images/experience/insa-cvl.webp
   alt: Logo de l'INSA Centre Val de Loire.
   url: https://www.insa-centrevaldeloire.fr/
 position: Étudiant

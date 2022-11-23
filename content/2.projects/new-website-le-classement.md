@@ -14,7 +14,7 @@ Dans le cadre de l'organisation du concours "Le Classement des Associations", j'
 
 ## Contexte
 
-Dans le cadre des mes [activités au sein du BNEI](../experience/bnei), j'ai eu l'opportunité de participer à l'organisation du concours [Le Classement des Associations](../experiences/classement-des-associations).
+Dans le cadre des mes [activités au sein du BNEI](../experience/tresorier-bnei), j'ai eu l'opportunité de participer à l'organisation du concours [Le Classement des Associations](../experiences/classement-des-associations).
 
 Afin de faciliter la promotion du concours, l'ensemble de l'équipe organisatrice a décidé de revoir l'entièreté de la charte graphique du concours passant de rien à cela :
 

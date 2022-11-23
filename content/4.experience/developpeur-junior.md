@@ -1,7 +1,7 @@
 ---
 title: Développeur Angular junior
 company:
-  src: /experience/aneo.webp
+  src: /images/experience/aneo.webp
   alt: Logo de l'entreprise Aneo.
   url: https://www.aneo.eu/
 position: CDD
