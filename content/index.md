@@ -26,7 +26,7 @@ navigation: false
   Développeur web et <br /> passionné par l'associatif
 
   #subtitle
-  Je suis Estéban, un développeur web basé à Paris. Je suis le vice-président général du Bureau National des Élèves Ingénieurs. Je me plais à utiliser mes compétences pour aider les associations étudiantes à se développer. 
+  Je suis Estéban, un développeur web basé à Paris. Je suis développeur web et je me plais à utiliser mes compétences pour aider les projets à se développer. 
   ::
 
 #pictures
