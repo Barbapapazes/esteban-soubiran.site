@@ -30,7 +30,9 @@ defineProps<{
         <h1 class="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
           <ContentSlot :use="$slots.default" unwrap="p" />
         </h1>
-        <div class="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
+        <div
+          class="mt-6 space-y-7 prose prose-zinc prose-a:prose-headings:no-underline
+        prose-a:transition-all prose-a:ease-in  prose-a:prose-p:font-semibold   dark:prose-a:prose-p:decoration-sky-500/30 dark:prose-a:prose-p:text-sky-500  dark:prose-invert hover:dark:prose-a:prose-p:decoration-sky-500">
           <ContentSlot :use="$slots.content" />
         </div>
       </div>
