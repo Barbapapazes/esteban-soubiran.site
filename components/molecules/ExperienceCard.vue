@@ -23,7 +23,7 @@ defineProps<{
           }}</span>
         </NuxtLink>
       </h2>
-      <p class="z-10 text-sm font-normal text-zinc-200">{{ experience.status }}</p>
+      <p class="z-10 text-sm font-normal text-zinc-200">{{ experience.position }}</p>
       <p class="z-10 text-sm font-normal text-zinc-400">{{ experience.from }}
         <span v-if="experience.to"> -
           {{ experience.to }}
@@ -31,7 +31,7 @@ defineProps<{
       </p>
     </div>
 
-    <p class="relative z-10text-sm text-zinc-600 dark:text-zinc-400">
+    <p class="relative z-10 text-sm text-zinc-600 dark:text-zinc-400 grow">
       {{ experience.description }}
     </p>
 

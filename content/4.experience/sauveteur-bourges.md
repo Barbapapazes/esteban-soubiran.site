@@ -1,14 +1,16 @@
 ---
 title: Sauveteur en piscine
 company:
+  name: Ville de Bourges
   src: /images/experience/sauveteur-bourges.webp
   alt: Logo de la ville de Bourges.
   url: https://bourges.fr
 position: CDD
 from: 2018
 to: 2018
-datePublished: 22-11-2022
-dateModified: 22-11-2022
+datePublished: 2022-11-22
+dateModified: 2022-11-22
+layout: prose
 ---
 
 J'ai surveillé une piscine à Bourges pendant les vacances d'été.

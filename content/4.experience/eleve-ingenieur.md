@@ -1,14 +1,16 @@
 ---
 title: Élève-ingénieur
 company:
+  name: INSA Centre Val de Loire
   src: /images/experience/insa-cvl.webp
   alt: Logo de l'INSA Centre Val de Loire.
   url: https://www.insa-centrevaldeloire.fr/
 position: Étudiant
 from: 2018
 to: 2024
-datePublished: 19-11-2022
-dateModified: 19-11-2022
+datePublished: 2022-11-19
+dateModified: 2022-11-19
+layout: prose
 ---
 
 Pour ma formation dans le supérieur, j'ai choisi d'intégrer une école en cybersécurité

@@ -9,7 +9,7 @@ const { data: experience } = await useAsyncData('experience', () => queryContent
       <Icon name="heroicons:briefcase-20-solid" class="h-5 w-5 text-zinc-300" />
       <slot></slot>
     </h2>
-    <ul>
+    <ul class="flex flex-col gap-4">
       <MoleculesExperienceItem :experience="item" v-for="item in experience" :key="item._path" />
     </ul>
   </section>

@@ -1,14 +1,16 @@
 ---
 title: Développeur Angular junior
 company:
+  name: Aneo
   src: /images/experience/aneo.webp
   alt: Logo de l'entreprise Aneo.
   url: https://www.aneo.eu/
 position: CDD
 from: 2022
 to: 2023
-datePublished: 19-11-2022
-dateModified: 19-11-2022
+datePublished: 2022-11-19
+dateModified: 2022-11-19
+layout: prose
 ---
 
 Durant ma césure, j'ai saisi l'opportunité de pouvoir travailler pour vivre à Paris. Durant 12 mois, j'ai été développeur web chez Aneo.

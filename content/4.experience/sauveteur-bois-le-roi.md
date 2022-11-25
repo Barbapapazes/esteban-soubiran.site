@@ -1,14 +1,16 @@
 ---
 title: Sauveteur en lac
 company:
+  name: UCPA Bois le Roi
   src: /images/experience/sauveteur-bois-le-roi.webp
   alt: Logo de l'UCPA.
   url: https://ucpa.fr
 position: CDD
 from: 2019
 to: 2019
-datePublished: 20-11-2022
-dateModified: 20-11-2022
+datePublished: 2022-11-20
+dateModified: 2022-11-20
+layout: prose
 ---
 
 J'ai surveillé un lac durant 7 semaines pendant les vacances d'été.
