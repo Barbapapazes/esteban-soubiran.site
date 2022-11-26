@@ -26,7 +26,7 @@ navigation: false
   Développeur web et <br /> passionné par l'associatif
 
   #subtitle
-  Je suis Estéban, un développeur web basé à Paris. Je me plais à utiliser mes compétences pour soutenir et aider des projets étudiants.
+  Je suis Estéban, un développeur web basé à Paris. Je me plais à utiliser mes compétences pour soutenir et aider des projets étudiants et développer des expériences utilisateurs.
   ::
 
 #pictures
