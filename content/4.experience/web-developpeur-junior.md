@@ -1,5 +1,5 @@
 ---
-title: Développeur Angular junior
+title: Développeur web junior
 company:
   name: Aneo
   src: /images/experience/aneo.webp
