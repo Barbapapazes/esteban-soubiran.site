@@ -1,5 +1,9 @@
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
+  app: {
+    pageTransition: { name: 'page', mode: 'out-in' },
+    layoutTransition: { name: 'layout', mode: 'out-in' },
+  },
   runtimeConfig: {
     public: {
       microsoftClarityID: process.env.MICROSOFT_CLARITY_ID,
