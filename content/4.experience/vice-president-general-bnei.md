@@ -22,7 +22,7 @@ Suite à mon mandat de trésorier, j'ai choisi de renouveler mon engagement au s
 
 Le BNEI est une association loi 1901 qui promeut l'engagement étudiante et permet l'amélioration de la vie étudiante et de campus au sein des écoles d'ingénieurs françaises grâce à différentes actions.
 
-En effet, le BNEI forme des élèves ingénieurs à la gestion d'une association, la prise de mandat d'élus, la création d'évènement... et ce, dans le but de développer leurs compétences pour augmenter le niveau de la vie étudiante.
+En effet, le BNEI forme des élèves ingénieurs à la gestion d'une association, la prise de mandat d'élus, la création d'évènements... et ce, dans le but de développer les compétences pour augmenter le niveau de la vie étudiante.
 
 Dans le même temps, la structure interagit avec différentes instances comme les conférences de directeurs des écoles, les ministères, des entreprises, des associations étudiantes... afin de défendre les intérêts des élèves ingénieurs.
 
