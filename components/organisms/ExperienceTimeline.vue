@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-const { data: experience } = await useAsyncData('experience', () => queryContent('/experience/').find())
+const { data: experience } = await useAsyncData('experience', () => queryContent('/experience/').sort({ to: -1 }).find())
 </script>
 
 
