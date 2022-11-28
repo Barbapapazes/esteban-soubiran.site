@@ -1,6 +1,6 @@
 ---
 title: Projets
-description: 
+description: Entre échecs et réussites, mes créations sur internet.
 ---
 
 ::projects

@@ -1,5 +1,6 @@
 ---
 title: Expérience
+description: Mes engagements et mon parcours.
 ---
 
 ::experience

@@ -1,5 +1,7 @@
 ---
 navigation: false
+title: Estéban Soubiran
+description: Développeur web et passionné par l'associatif
 ---
 
 ::home
