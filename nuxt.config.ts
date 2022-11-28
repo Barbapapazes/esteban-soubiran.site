@@ -9,7 +9,13 @@ export default defineNuxtConfig({
       microsoftClarityID: process.env.MICROSOFT_CLARITY_ID,
     },
   },
-  modules: ['@nuxt/content', '@nuxtjs/tailwindcss', 'nuxt-schema-org', 'nuxt-icon'],
+  modules: [
+    '@nuxt/content',
+    '@nuxtjs/tailwindcss',
+    '@nuxtjs/color-mode',
+    'nuxt-schema-org',
+    'nuxt-icon',
+  ],
   content: {
     documentDriven: true,
     highlight: {
@@ -22,6 +28,9 @@ export default defineNuxtConfig({
         showURL: false,
       },
     },
+  },
+  colorMode: {
+    classSuffix: '',
   },
   schemaOrg: {
     canonicalHost: 'https://esteban-soubiran.site',
