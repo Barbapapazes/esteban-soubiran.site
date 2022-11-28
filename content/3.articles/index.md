@@ -1,5 +1,6 @@
 ---
 title: Articles
+description: Quelques écrits sur la naissance et la création de mes projets.
 ---
 
 ::articles

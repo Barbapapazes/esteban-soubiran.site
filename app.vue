@@ -1,10 +1,13 @@
 <script lang="ts" setup>
 useHead({
   titleTemplate: (titleChunk) => {
-    return titleChunk ? `${titleChunk} - Estéban Soubiran` : 'Estéban Soubiran';
+    if (titleChunk === 'Estéban Soubiran')
+      return titleChunk
+
+    return `${titleChunk} · Estéban Soubiran`
   },
   htmlAttrs: {
-    lang: 'fr',
+    lang: 'fr-FR',
     class: 'h-full font-sans antialiased dark',
   },
   bodyAttrs: {
@@ -25,6 +28,7 @@ useSchemaOrg([
     image: '/images/esteban.webp',
     sameAs: [
       'https://www.linkedin.com/in/esteban25/',
+      'https://twitter.com/esteban_dev_',
     ],
   }),
   defineWebSite({
