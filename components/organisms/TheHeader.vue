@@ -31,7 +31,7 @@ watch(route, () => {
               <li v-for="item in navigation" :key="item._path" class="relative">
                 <AtomsAppLink large :to="item._path">{{ item.title }}</AtomsAppLink>
                 <div v-show="route.path === item._path"
-                  class="absolute inset-x-1 -bottom-px h-px bg-gradient-to-r dark:from-sky-500/0 dark:via-sky-500 dark:to-sky-500/0 transition">
+                  class="absolute inset-x-1 -bottom-px h-px bg-gradient-to-r from-sky-500/0 via-sky-500 to-sky-500/0  dark:from-sky-400/0 dark:via-sky-400 dark:to-sky-400/0 transition">
                 </div>
               </li>
             </ul>
