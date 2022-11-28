@@ -32,7 +32,8 @@ defineProps<{
         </h1>
         <div
           class="mt-6 space-y-7 prose prose-zinc prose-a:prose-headings:no-underline
-        prose-a:transition-all prose-a:ease-in  prose-a:prose-p:font-semibold   dark:prose-a:prose-p:decoration-sky-500/30 dark:prose-a:prose-p:text-sky-500  dark:prose-invert hover:dark:prose-a:prose-p:decoration-sky-500">
+        prose-a:transition-all prose-a:ease-in  prose-a:prose-p:font-semibold  
+        prose-a:prose-p:decoration-sky-500/30 prose-a:prose-p:text-sky-500 hover:prose-a:prose-p:decoration-sky-500 dark:prose-a:prose-p:decoration-sky-400/30 dark:prose-a:prose-p:text-sky-400  dark:prose-invert hover:dark:prose-a:prose-p:decoration-sky-400">
           <ContentSlot :use="$slots.content" />
         </div>
       </div>
@@ -40,8 +41,9 @@ defineProps<{
         <ul class="flex flex-col gap-4">
           <li v-for="social in $props.socials" :key="social.url" class="flex">
             <NuxtLink :to="social.url"
-              class="group flex text-sm font-medium text-zinc-800 transition ease-in hover:text-sky-500 dark:text-zinc-200 dark:hover:text-sky-500">
-              <Icon class="h-6 w-6 flex-none fill-zinc-500 group-hover:fill-teal-500" :name="social.icon" />
+              class="group flex text-sm font-medium text-zinc-800 transition ease-in hover:text-sky-500 dark:text-zinc-200 dark:hover:text-sky-400">
+              <Icon class="h-6 w-6 flex-none fill-zinc-500 group-hover:fill-sky-500 group-hover:dark:fill-sky-400"
+                :name="social.icon" />
               <span class="ml-4">
                 {{ social.name }}
               </span>

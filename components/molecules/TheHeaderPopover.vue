@@ -5,13 +5,12 @@ const { navigation } = await useContent()
 </script>
         
 <template>
-  <Popover class="relative h-9">
+  <Popover class="relative right-14 h-10">
     <ClientOnly>
       <PopoverButton
-        class="group flex items-center rounded-full bg-white/90 px-4 py-2 text-sm font-medium text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10 dark:hover:ring-white/20 transition ease-in">
+        class="group h-full flex items-center rounded-full bg-white/90 px-4 py-2 text-sm font-medium text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10 dark:hover:ring-white/20 transition ease-in">
         Menu
-        <Icon
-          class="ml-3 h-auto w-2 stroke-zinc-500 group-hover:stroke-zinc-700 dark:group-hover:stroke-zinc-400 transition ease-in"
+        <Icon class="ml-3 h-auto w-2 stroke-zinc-500 group-hover:stroke-zinc-700 dark:group-hover:stroke-zinc-400"
           name="heroicons:chevron-down-20-solid" />
       </PopoverButton>
 
@@ -21,9 +20,9 @@ const { navigation } = await useContent()
         <PopoverOverlay class="fixed inset-0 z-50 bg-zinc-800/40 backdrop-blur-sm dark:bg-black/80 opacity-100" />
       </transition>
 
-      <transition enter-active-class="transition duration-200 ease-out" enter-from-class="blur-sm opacity-0"
-        enter-to-class="blur-0 opacity-100" leave-active-class="transition duration-150 ease-in"
-        leave-from-class="blur-0 opacity-100" leave-to-class="blur-sm opacity-0">
+      <transition enter-active-class="transition duration-200 ease-out" enter-from-class="opacity-0"
+        enter-to-class="opacity-100" leave-active-class="transition duration-150 ease-in" leave-from-class="opacity-100"
+        leave-to-class="opacity-0">
         <PopoverPanel v-slot="{ close }"
           class="fixed inset-x-4 top-8 z-50 origin-top rounded-3xl bg-white p-8 ring-1 ring-zinc-900/5 dark:bg-zinc-900 dark:ring-zinc-800 opacity-100 scale-100">
           <div class="flex flex-row-reverse items-center justify-between">

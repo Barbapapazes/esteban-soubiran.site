@@ -10,7 +10,7 @@ defineProps<{ project: ParsedContent }>()
     <img v-if="project.image" :src="project.image.src" :alt="project.image.alt"
       class="z-10 aspect-video sm:w-60 object-cover object-center rounded-lg">
     <div class="flex flex-col">
-      <h3 class="text-base text-zinc-100 font-semibold tracking-tight">
+      <h2 class="text-base font-semibold tracking-tight text-zinc-800 dark:text-zinc-100">
         <div
           class="absolute -inset-y-6 -inset-x-4 z-0 scale-95 bg-zinc-50 opacity-0 transition group-hover:scale-100 group-hover:opacity-100 dark:bg-zinc-800/50 sm:-inset-x-6 sm:rounded-2xl duration-200 ease-in">
         </div>
@@ -20,9 +20,9 @@ defineProps<{ project: ParsedContent }>()
             {{ project.title }}
           </span>
         </NuxtLink>
-      </h3>
+      </h2>
       <AtomsAppDate withBorder :datetime="project.datePublished" class="order-first relative mb-3" />
-      <p class="relative mt-2 text-sm text-zinc-400">
+      <p class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400">
         {{ project.description }}
       </p>
       <div aria-hidden="true" class="relative mt-4 inline-flex items-center gap-1 text-sky-500">
