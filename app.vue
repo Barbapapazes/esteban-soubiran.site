@@ -25,8 +25,9 @@ useHead({
 })
 
 useSeoMeta({
-  ogSiteName: 'Estéban Soubiran',
   ogType: 'website',
+  ogSiteName: 'Estéban Soubiran',
+  ogDescription: "Développeur web et passionné par l'associatif",
   ogImage: '/images/social.png',
 })
 
