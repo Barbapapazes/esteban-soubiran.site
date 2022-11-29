@@ -1,4 +1,6 @@
 <script lang="ts" setup>
+import { useSeoMeta } from '@unhead/vue';
+
 useHead({
   titleTemplate: (titleChunk) => {
     if (titleChunk === 'Estéban Soubiran')
@@ -20,6 +22,13 @@ useHead({
       href: '/favicon.ico',
     },
   ],
+})
+
+useSeoMeta({
+  ogType: 'website',
+  ogSiteName: 'Estéban Soubiran',
+  ogDescription: "Développeur web et passionné par l'associatif",
+  ogImage: '/images/social.png',
 })
 
 useSchemaOrg([
