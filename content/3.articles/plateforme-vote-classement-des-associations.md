@@ -90,42 +90,42 @@ Une fois la web application construite, il faut pouvoir la mettre à disposition
 
 Dans un premier temps, il nous faut un domain ! Pour cela, on va utiliser un sous domain de [le-classement.fr](http://le-classement.fr). Un peut changement DNS et c'est chose faite ! 
 
-Ensuite, il nous faut un serveur pour la base de donnés, le serveur nodejs et y déposer les fichiers des associations. Pour cela, j'ai choisi un VPS chez DigitalOcean. Un VPS me permet de le dimensionner en fonction de mes besoins.
+Ensuite, il nous faut un serveur pour la base de données, le serveur :icon{name=node} Node.js et y déposer les fichiers des associations. Pour cela, j'ai choisi un VPS chez :icon{name=digitalOcean} DigitalOcean. En effet, un VPS est une machine virtuelle qui peut être facilement redimensionné.
 
-Le seul souci c'est qu'un VPS est nu lorsqu'on l'achète. Il faut donc le provisionner, c'est à dire installer toutes les ressources nécessaires à son bon fonctionnement comme le reverse proxy :icon{name=nginx} Nginx, le pare-feu, le certbot et bien d'autres comme les outils de monitoring.
+Le seul soucis, c'est qu'un VPS est "nu" lorsqu'on l'achète. Il faut donc le provisionner, c'est à dire installer toutes les ressources nécessaires à son bon fonctionnement comme le reverse proxy :icon{name=nginx} Nginx, le pare-feu, le certbot et bien d'autres comme les outils de monitoring.
 
-Ensuite, il faut 
-
-<!-- il faut écrire la suite -->
+Une fois cela fait, il n'y a plus qu'à y déposer son application, créer un utilisateur pour la base de données, mettre à jour les variables d'environnement et c'est parti !
 
 ### Fonctionnement de la validation des voix
 
 L'une des premières difficultés fut de créer un système de vote performant et qui limite les risques d'attaques.
 
-// parler de valider le vote et de toute la chaîne pour bien comprendre 
-
 Pour cela, il y a deux éléments à prendre en compte :
 
-- La base de donnés
+- La base de données
 - Le système d'envoi de mails
 
-En ce qui concerne la base de donnés, il faut empêcher les utilisateurs d'y écrire autant de donnés qu'ils le souhaitent. En effet, on pourrait mettre en péril le système si celui venait à être saturé. C'est essentiel d'avoir cela en tête lors du design du système de vote. L'approche la plus simple consisterait à mettre en place le fonctionnement technique suivant :
+En ce qui concerne la base de données, il faut empêcher les utilisateurs d'y écrire autant de données qu'ils le souhaitent. En effet, on pourrait mettre en péril le système si celui venait à être saturé, tant sur la quantité totale que sur le débit. C'est essentiel d'avoir cela en tête lors du design du système de vote. 
+
+L'approche la plus simple consisterait à mettre en place le fonctionnement technique suivant :
 
 - Lorsqu'un utilisateur soumet son adresse électronique pour voter au système, ce dernier l'enregistre avec un flag indiquant l'absence de validation.
 - Le système envoie le mail de validation à l'utilisateur.
 - L'utilisateur va valide son vote via un lien présent dans le mail. Le système change l'état du flag permettant d'indiquer la validation du vote.
 
-Ce fonctionnement n'est pas viable pour trois raisons. D'une part, il permet à un utilisateur malintentionné de venir saturer la base de données en enregistrant de fausses adresses électroniques. Ensuite, les adresses électroniques de n'importe qui pourrait être sauvegardées sur notre système. Cela pose évidemment des problèmes de sécurité et de gestion des données personnelles sans consentement des utilisateurs concernés. Et enfin, cela signifie devoir gérer ce flag lors du compte des voix ou de son affichage dans le panel d'administration rajoutant de la complexité non nécessaire.
+Ce fonctionnement n'est pas viable pour trois raisons. D'une part, il permet à un utilisateur malintentionné de venir saturer la base de données en enregistrant de fausses adresses électroniques. Ensuite, les adresses électroniques de n'importe qui pourrait être sauvegardées sur notre système. Cela pose évidemment des problèmes de sécurité et de gestion des données personnelles sans consentement des utilisateurs concernés. Et enfin, cela signifie devoir gérer ce flag lors du compte des voix (c'est à dire ajouter des conditions pour indiquer les types de voix voulues) ou de son affichage dans le panel d'administration rajoutant de la complexité non nécessaire.
 
 Ainsi, il a été essentiel de trouver une solution technique permettant de ne pas avoir ces problèmes à gérer. Pour cela, les voix sont gérés de la manière suivant :
 
-- Lorsqu'un utilisateur soumet son adresse électronique pour voter, le système génère un lien avec l'adresse électronique et une signature. Cette dernière est un token formé d'une clé secret présente sur le serveur et de l'adresse électronique.
+- Lorsqu'un utilisateur soumet son adresse électronique pour voter, le système génère un lien avec l'adresse électronique et une signature. Cette dernière est un token formé grâce à une clé secrète présente sur le serveur et de l'adresse électronique.
 - Le système envoie le mail de confirmation contenant le lien signé mais ne stock aucune information dans la base de données
-- L'utilisateur clique ensuite sur le lien présentent dans son mail. Le serveur vérifie la validité du lien et valide le vote en enregistrant les données en base. Le lien n'est plus valide en cas de modification des donnes qu'il contient ou de sa clé. En effet, les donnés enregistrées sont présente dans le lien utilisé par l'utilisateur.
+- L'utilisateur clique ensuite sur le lien présentent dans son mail. Le serveur vérifie la validité du lien et valide le vote en enregistrant les données en base. Le lien n'est plus valide en cas de modification des données qu'il contient ou de sa clé (la clé est une combinaison des données et de la clé secrète du serveur). En effet, les données enregistrées sont présente dans le lien utilisé par l'utilisateur et si une modification est effectuée alors que le lien reste valide, tout ce processus n'a plus de sens.
 
-Ce système permet d'éviter l'ensemble des soucis évoqués précédemment. 
+Ce système permet d'éviter l'ensemble des soucis évoqués précédemment et d'avoir un système simple mais performant et garantissant la protection des données personnelles des utilisateurs en évitant l'injection dans la base de données de n'importe quelle donnée.
 
 ### Administration
+
+<!-- Ajouter une image où le lien vers l'administration est cliqué -->
 
 Cette partie du site nous permet de voir l’ensemble des voix, ajouter et supprimer les associations, les écoles et les catégories et de visualiser l’évolution de différentes données. Ainsi, nous avons mis en place différents graphiques nous permettant d’observer le nombre de vote par heure, par jour et par association !
 
@@ -135,6 +135,8 @@ Cette partie du site nous permet de voir l’ensemble des voix, ajouter et suppr
 
 
 ## Quelques chiffres
+
+Pour finir, voici quelques chiffres de la plateforme de vote durant son utilisation en 2022 :
 
 - Plus de 60 000 utilisateurs uniques
 - Plus de 219 000 pages vues

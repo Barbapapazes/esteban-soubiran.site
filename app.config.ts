@@ -29,6 +29,7 @@ export default defineAppConfig({
       dialogflow: 'logos:dialogflow',
       heroku: 'logos:heroku-icon',
       netlify: 'vscode-icons:file-type-netlify',
+      digitalOcean: 'logos:digital-ocean',
       nginx: 'vscode-icons:file-type-nginx',
     },
   },
