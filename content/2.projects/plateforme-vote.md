@@ -14,10 +14,14 @@ Pour le Classement des Associations, j'ai créé une plateforme de vote de A à 
 
 ## Contexte
 
-##
+Dans le cadre de mes [responsabilités au sein du Classement des Associations](../4.experience/responsable-classement-des-associations.md), j'ai eu la charge de créer une plateforme de vote. Celle-ci devait permettre à qui le souhaite de soutenir une association en votant pour elle.
 
-###
+## La plateforme de vote
 
-###
+### Besoin et objectifs
+
+### Développement
 
 ## Conclusion
+
+J'ai écrit [un article sur les aspects techniques](../3.articles/plateforme-vote-classement-des-associations.md) de la plateforme qui rentre dans tous les détails.
