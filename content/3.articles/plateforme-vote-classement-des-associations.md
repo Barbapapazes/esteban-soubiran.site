@@ -48,9 +48,9 @@ Une fois l'association voulue trouvée, il est possible de se rendre sur la page
 
 L’intégralité de la plateforme a été réalisée avec :icon{name=adonisjs} [AdonisJS](https://adonisjs.com/). Il s’agit d’un framework [MVC](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller) similaire à :icon{name=laravel} [Laravel](https://laravel.com/) ou :icon{name=rails} [Rails](https://rubyonrails.org/). Pour la sauvegarde des données, il a été utilisé une base de données [SQL](https://fr.wikipedia.org/wiki/Structured_Query_Language).
 
-Dans le même temps, pour améliorer l’expérience utilisateur et soulager le serveur, il a aussi été utilisé [Unpoly](https://unpoly.com/). Cet outil permet un rechargement partiel des pages pour rendre la navigation entre ces dernières plus fluide et naturelle. Dans le même temps, il est en mesure d’indiquer au serveur les parties à rendre, ou non. Cela permet de ne générer que le contenu qui va changer et de limiter le temps de calcul, les accès à la base de données et la taille des réponses. Le site est ainsi plus rapide, plus économe et plus agréable pour les utilisateurs.
+Dans le même temps, pour améliorer l’expérience utilisateur et soulager le serveur, il a été utilisé [Unpoly](https://unpoly.com/). Cet outil permet un rechargement partiel des pages pour rendre la navigation entre ces dernières plus fluide et naturelle. Cela est possible parce qu'il est en mesure d’indiquer au serveur les parties à rendre, ou non. Cela permet de ne générer que le contenu qui va changer et de limiter le temps de calcul, les accès à la base de données et la taille des réponses. Le site est ainsi plus rapide, plus économe en ressource et plus agréable pour les utilisateurs.
 
-Le projet est open-source, disponible à [cette adresse](https://github.com/Barbapapazes/vote.le-classement.fr).
+Le projet est open-source :git-hub-link{repo=Barbapapazes/vote.le-classement.fr}.
 
 ### Les entités
 
@@ -62,6 +62,8 @@ Il existe au sein de la plateforme cinq entités :
 - User
 - Vote
 
+Ces 5 entités sont le coeur de la plateforme et représentent les données qui y sont stockées.
+
 ### Les associations
 
 Il s’agit de l’entité principal. C’est autour d’elle que tourne l’ensemble de la plateforme.
@@ -72,15 +74,15 @@ Voici son schéma SQL :
 
 On peut y voir qu’une association est à une école par une relation [one-to-many](https://en.wikipedia.org/wiki/One-to-many_(data_model)) et à une catégorie par une seconde relation one-to-many. Cette relation nous permet ensuite de filtrer les associations sur les écoles et les catégories.
 
-### Les votes
+### Les voix
 
-La seconde grande partie de la plateforme de vote est les votes. En effet, avoir une liste des associations est un bon point de départ mais s’il n’est pas possible de voter pour ces dernières, la plateforme perd de son intérêt.
+La seconde grande partie de la plateforme de vote est les voix. En effet, avoir une liste des associations est un bon point de départ mais s’il n’est pas possible de voter pour ces dernières, la plateforme perd de son intérêt.
 
-Les votes sont représentés par l'entité suivante :
+Les voix sont représentés par l'entité suivante :
 
 <!-- mettre une image -->
 
-On peut voir que chacun est relié à une association et que l'email doit être unique au sein de la table. Ainsi, compter le nombre de votes d’une association est une chose assez simple avec SQL.
+On peut voir que chacun est relié à une association et que l'email doit être unique au sein de la table. Ainsi, compter le nombre de voix d’une association est une chose assez simple avec SQL.
 
 ### Mise en production
 
@@ -96,7 +98,7 @@ Ensuite, il faut
 
 <!-- il faut écrire la suite -->
 
-### Fonctionnement des votes
+### Fonctionnement de la validation des voix
 
 L'une des premières difficultés fut de créer un système de vote performant et qui limite les risques d'attaques.
 
@@ -113,9 +115,9 @@ En ce qui concerne la base de donnés, il faut empêcher les utilisateurs d'y é
 - Le système envoie le mail de validation à l'utilisateur.
 - L'utilisateur va valide son vote via un lien présent dans le mail. Le système change l'état du flag permettant d'indiquer la validation du vote.
 
-Ce fonctionnement n'est pas viable pour trois raisons. D'une part, il permet à un utilisateur malintentionné de venir saturer la base de données en enregistrant de fausses adresses électroniques. Ensuite, les adresses électroniques de n'importe qui pourrait être sauvegardées sur notre système. Cela pose évidemment des problèmes de sécurité et de gestion des données personnelles sans consentement des utilisateurs concernés. Et enfin, cela signifie devoir gérer ce flag lors du compte des votes ou de son affichage dans le panel d'administration rajoutant de la complexité non nécessaire.
+Ce fonctionnement n'est pas viable pour trois raisons. D'une part, il permet à un utilisateur malintentionné de venir saturer la base de données en enregistrant de fausses adresses électroniques. Ensuite, les adresses électroniques de n'importe qui pourrait être sauvegardées sur notre système. Cela pose évidemment des problèmes de sécurité et de gestion des données personnelles sans consentement des utilisateurs concernés. Et enfin, cela signifie devoir gérer ce flag lors du compte des voix ou de son affichage dans le panel d'administration rajoutant de la complexité non nécessaire.
 
-Ainsi, il a été essentiel de trouver une solution technique permettant de ne pas avoir ces problèmes à gérer. Pour cela, les votes sont gérés de la manière suivant :
+Ainsi, il a été essentiel de trouver une solution technique permettant de ne pas avoir ces problèmes à gérer. Pour cela, les voix sont gérés de la manière suivant :
 
 - Lorsqu'un utilisateur soumet son adresse électronique pour voter, le système génère un lien avec l'adresse électronique et une signature. Cette dernière est un token formé d'une clé secret présente sur le serveur et de l'adresse électronique.
 - Le système envoie le mail de confirmation contenant le lien signé mais ne stock aucune information dans la base de données
@@ -125,7 +127,7 @@ Ce système permet d'éviter l'ensemble des soucis évoqués précédemment.
 
 ### Administration
 
-Cette partie du site nous permet de voir l’ensemble des votes, ajouter et supprimer les associations, les écoles et les catégories et de visualiser l’évolution de différentes données. Ainsi, nous avons mis en place différents graphiques nous permettant d’observer le nombre de vote par heure, par jour et par association !
+Cette partie du site nous permet de voir l’ensemble des voix, ajouter et supprimer les associations, les écoles et les catégories et de visualiser l’évolution de différentes données. Ainsi, nous avons mis en place différents graphiques nous permettant d’observer le nombre de vote par heure, par jour et par association !
 
 ![Graphique montrant l'évolution du nombre de voix par jour](/images/articles/plateforme-vote-classement-des-associations/vote-per-day.png)
 
