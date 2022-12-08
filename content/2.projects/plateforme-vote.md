@@ -20,8 +20,22 @@ Dans le cadre de mes [responsabilités au sein du Classement des Associations](.
 
 ### Besoin et objectifs
 
+La plateforme permet aux associations de se mettre en avant et de se faire connaître. En effet, la plateforme est accessible à tous à tout moment et ouverte au vote durant le mois de septembre.
+
+Ainsi, les associations peuvent diffuser le message, le fait de les soutenir, aux nouveaux arrivants, durant les amphis de rentrée et lors des événements organisés par les associations comme les forums des associations.
+
+Pour la Classement, la plateforme de vote est un moyen de se faire connaître par les autres associations. 
+
 ### Développement
+
+Cette plateforme a pris 1 mois à être développée. Elle a été réalisée avec :icon{name=adonisjs} AdonisJS, un framework NodeJS et déployée sur un VPS chez :icon{name=digitalOcean} DigitalOcean.
+
+J'ai écrit [un article sur les aspects techniques](../3.articles/plateforme-vote-classement-des-associations.md) de la plateforme qui rentre dans tous les détails.
+
+Au-delà de cet aspect de développement, il y a eu énormément de maintenant à réaliser pendant le mois de son utilisation afin de s'assurer qu'elle ne tombe pas, pour ajouter des fonctionnalités d'administration et des correctifs.
 
 ## Conclusion
 
-J'ai écrit [un article sur les aspects techniques](../3.articles/plateforme-vote-classement-des-associations.md) de la plateforme qui rentre dans tous les détails.
+Ce projet m'a permis d’atteindre 2 objectifs. Le premier, il s'agit de la première application web que j'ai pu construire avec :icon{name=adonisjs} AdonisJS. Le second est qu'il s'agit de la première application que je met en production et qui réalise autant de visite en peu de temps.
+
+Ainsi, ce projet est pour moi une véritable réussite et je suis vraiment très fier du résultat. Il y a 4 ans, lorsque j'ai commencé le développement web, je n'aurais jamais imaginé pouvoir réaliser un tel projet.
