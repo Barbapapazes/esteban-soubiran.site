@@ -31,6 +31,8 @@ export default defineAppConfig({
       netlify: 'vscode-icons:file-type-netlify',
       digitalOcean: 'logos:digital-ocean',
       nginx: 'vscode-icons:file-type-nginx',
+      postgresql: 'logos:postgresql',
+      mysql: 'vscode-icons:file-type-mysql',
     },
   },
 })
