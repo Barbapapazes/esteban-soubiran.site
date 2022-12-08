@@ -66,7 +66,7 @@ Il existe au sein de la plateforme cinq entités :
 
 Ces 5 entités sont le coeur de la plateforme et représentent les données qui y sont stockées.
 
-![Capture d'écran des différentes entités](/images/articles/plateforme-vote-classement-des-associations/entites.webp)
+![Capture d'écran des différentes entités](/images/articles/plateforme-vote-classement-des-associations/entities.webp)
 
 ### Les associations
 
