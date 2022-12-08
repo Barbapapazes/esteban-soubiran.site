@@ -9,8 +9,6 @@ Pour l'édition 2022 du Classement des Associations, j'ai eu l'opportunité de c
 
 <!-- more -->
 
-# Une plate-forme de vote pour le Classement des Associations
-
 Au travers cet article, tu découvriras les coulisses de la création et mise en production de cette dernière ainsi que quelques exclusivités ! 👀 
 
 > ⚠ Cet article peut contenir des éléments techniques. N'hésite pas à les sauter et passer directement à la suite.
@@ -36,13 +34,17 @@ Pour la Classement, la plateforme de vote est un moyen de se faire connaître pa
 
 Sur la page principale de la plateforme, il est possible de découvrir l'ensemble des associations représentées au sein de cartes. Ces dernières contiennent le nom, l'école, la catégorie, un court texte et un visuel ! Le nombre de vote à l'instant du chargement de la page est aussi sur cette carte. 
 
-<!-- mettre des images -->
+![Capture d'écran de la plateforme de vote](./articles/plateforme-vote-classement-des-associations/plateforme.webp)
+
+![Capture d'écran de la page contenant l'ensemble des associations](./articles/plateforme-vote-classement-des-associations/associations.webp)
 
 Des filtres sont à disposition de l'utilisateur pour permettre à chacun de trouver rapidement et simplement l'association qu'il souhaite.
 
-<!-- images des filtres -->
+![Capture d'écran des filtres de la plateforme de vote](./articles/plateforme-vote-classement-des-associations/filtres.webp)
 
 Une fois l'association voulue trouvée, il est possible de se rendre sur la page de cette dernière. L'utilisateur y trouve alors le rendu écrit et les informations présente sur la carte sauf le visuel. Le rendu écrit est un document PDF permettant aux associations de se présenter, d'exposer leurs projets et d'expliquer en quoi elles peuvent être élues “meilleure association étudiante 2022”.
+
+![Capture d'écran de la page d'une association](./articles/plateforme-vote-classement-des-associations/association.webp)
 
 ### Réalisation et technique
 
@@ -64,23 +66,17 @@ Il existe au sein de la plateforme cinq entités :
 
 Ces 5 entités sont le coeur de la plateforme et représentent les données qui y sont stockées.
 
+![Capture d'écran des différentes entités](./articles/plateforme-vote-classement-des-associations/entites.webp)
+
 ### Les associations
 
 Il s’agit de l’entité principal. C’est autour d’elle que tourne l’ensemble de la plateforme.
-
-Voici son schéma SQL :
-
-<!-- mettre une image -->
 
 On peut y voir qu’une association est à une école par une relation [one-to-many](https://en.wikipedia.org/wiki/One-to-many_(data_model)) et à une catégorie par une seconde relation one-to-many. Cette relation nous permet ensuite de filtrer les associations sur les écoles et les catégories.
 
 ### Les voix
 
 La seconde grande partie de la plateforme de vote est les voix. En effet, avoir une liste des associations est un bon point de départ mais s’il n’est pas possible de voter pour ces dernières, la plateforme perd de son intérêt.
-
-Les voix sont représentés par l'entité suivante :
-
-<!-- mettre une image -->
 
 On peut voir que chacun est relié à une association et que l'email doit être unique au sein de la table. Ainsi, compter le nombre de voix d’une association est une chose assez simple avec SQL.
 
