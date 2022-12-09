@@ -8,23 +8,22 @@ dateModified: 2022-12-07
 layout: prose
 ---
 
-Pour l'édition 2022 du Classement des Associations, j'ai eu l'opportunité de créer sa plateforme de vote.
+Pour l'édition 2022 du Classement des Associations, j'ai eu l'opportunité de créer la plateforme de vote.
 
 <!-- more -->
 
-Au travers cet article, tu découvriras les coulisses de la création, la mise en production ainsi que l'ensemble des problématique que j'ai pu rencontrer avec les solutions mise en place !
+Grâce à cet article, tu découvriras les coulisses de la création, la mise en production ainsi que l'ensemble des problématiques que j'ai pu rencontrer avec les solutions mise en place !
 
-> ⚠ Cet article peut contenir des éléments techniques. N'hésite pas à les sauter et passer directement à la suite.
 
 ## Le Classement des Associations
 
 Le Classement des Associations est un concours qui permet de rassembler, promouvoir et valoriser la vie étudiante associative ! Ce concours est porté par [Aneo](https://aneo.fr) depuis maintenant plus de 10 ans !
 
-Dans ce cadre de la 11e édition, il a été choisi de mettre en place une plateforme de vote pour permettre aux associations de se faire connaître et de se qualifier directement à la finale permettant à des associations avec un gros réseau de se qualifier directement à la finale.
+Dans le cadre de la 11e édition, il a été choisi de mettre en place une plateforme de vote pour permettre aux associations de se faire connaître et de se qualifier directement à la finale.
 
 ## La plateforme
 
-Au sein du Classement des Associations édition 2022, la plateforme de vote permet à deux associations de se qualifier directement à la finale ! Accéder directement à la finale permet d'une part de gagner mille euros mais aussi de se rapprocher du titre de meilleure association étudiante.
+Avant d'expliquer la lanière dont la plateforme a été créée, voyons ensemble les différents objectifs auxquels elle réponds. 
 
 ### Objectifs
 
@@ -32,21 +31,23 @@ La plateforme permet aux associations de se mettre en avant et de se faire conna
 
 Ainsi, les associations peuvent diffuser le message, le fait d'être soutenu, aux nouveaux arrivants de l'école, durant les amphithéâtres de rentrée et lors des événements organisés par les associations comme les forums des associations, les soirées...
 
-Pour la Classement, la plateforme de vote est un moyen de se faire connaître par les autres associations et de promouvoir la vie associative étudiante !
+Pour le Classement, la plateforme de vote est un moyen de se faire connaître par les autres associations et de promouvoir la vie associative étudiante !
 
-### Présentation
+### Présentation de la plateforme 
 
-Sur la page principale de la plateforme, il est possible de découvrir l'ensemble des associations représentées au sein de cartes. Ces dernières contiennent le nom, l'école, la catégorie, un court texte et un visuel ! Le nombre de vote à l'instant du chargement de la page est aussi sur cette carte. 
+Sur la page principale de la plateforme, il est possible de découvrir l'ensemble des associations représentées par une liste de cartes. Ces dernières contiennent le nom, l'école, la catégorie, un court texte et un visuel ! Le nombre de vote à l'instant du chargement de la page est aussi sur cette carte. 
 
 ![Capture d'écran de la page contenant l'ensemble des associations](/images/articles/plateforme-vote-classement-des-associations/associations.webp)
 
-Des filtres sont à disposition de l'utilisateur pour permettre à chacun de trouver rapidement et simplement l'association qu'il souhaite.
+Des filtres sont à disposition de l'utilisateur pour lui permettre de trouver rapidement et simplement l'association ou l'information qu'il souhaite.
 
 ![Capture d'écran des filtres de la plateforme de vote](/images/articles/plateforme-vote-classement-des-associations/filters.webp)
 
-Une fois l'association voulue trouvée, il est possible de se rendre sur la page de cette dernière. L'utilisateur y trouve alors le rendu écrit et les informations présente sur la carte sauf le visuel. Le rendu écrit est un document PDF permettant aux associations de se présenter, d'exposer leurs projets et d'expliquer en quoi elles peuvent être élues “meilleure association étudiante 2022”.
+Une fois l'association voulue trouvée, il est possible de se rendre sur la page de cette dernière. L'utilisateur y trouve alors le rendu écrit et les informations présente sur la carte. Le rendu écrit est un document PDF permettant aux associations de se présenter, d'exposer leurs projets et d'expliquer pourquoi être la “meilleure association étudiante 2022”.
 
 ![Capture d'écran de la page d'une association](/images/articles/plateforme-vote-classement-des-associations/association.webp)
+
+Sur cette page de présentation, un bouton permet de soutenir une association grâce à une adresse mail. 
 
 ## Réalisation
 
@@ -91,17 +92,17 @@ Il existe au sein de la plateforme cinq entités :
 - User
 - Vote
 
-Ces 5 entités sont le coeur de la plateforme et représentent les données qui sont stockéesdans la base de données.
+Ces 5 entités sont le coeur de la plateforme et représentent les données qui sont stockées dans la base de données.
 
 ![Capture d'écran des différentes entités](/images/articles/plateforme-vote-classement-des-associations/entities.webp)
 
 ### Les associations
 
-Il s’agit de l’entité principal. C’est autour d’elle que tourne l’ensemble de la plateforme.
+Il s’agit de l’entité principale. C’est autour d’elle que tourne l’ensemble de la plateforme.
 
-On peut y voir qu’une association est à une école par une relation [one-to-many](https://en.wikipedia.org/wiki/One-to-many_(data_model)) et à une catégorie par une seconde relation one-to-many. Cette relation nous permet ensuite de filtrer les associations sur les écoles et les catégories.
+On peut y voir qu’une association appartient à une école par une relation [one-to-many](https://en.wikipedia.org/wiki/One-to-many_(data_model)) et à une catégorie par une seconde relation one-to-many. Cette relation nous permet ensuite de filtrer les associations sur les écoles et les catégories.
 
-Ces relations permettent de justifier l'utilisation d'une base de données relationnelle.
+Ces relations justifie l'utilisation d'une base de données relationnelle.
 
 ### Les voix
 
@@ -119,7 +120,7 @@ Dans un premier temps, il nous faut un domain ! Pour cela, on va utiliser un sou
 vote.le-classement.fr. 18000 IN A 104.248.167.216
 ```
 
-Ensuite, il nous faut un serveur pour la base de données, le serveur :icon{name=node} Node.js et y déposer les fichiers des associations (images et PDF). Pour cela, j'ai choisi un VPS chez :icon{name=digitalOcean} DigitalOcean. En effet, un VPS est une machine virtuelle qui peut être facilement redimensionné. Cela est pratique pour augmenter les capacités de la machines durant les périodes de forte activité.
+Ensuite, il nous faut un serveur pour la base de données, le serveur :icon{name=node} Node.js et y déposer les fichiers des associations (images et PDF). Pour cela, j'ai choisi un VPS chez :icon{name=digitalOcean} DigitalOcean. Un VPS est une machine virtuelle qui peut être facilement redimensionnée. Cela est pratique pour augmenter les capacités de la machines durant les périodes avec une forte activité.
 
 Le seul soucis, c'est qu'un VPS est "nu" lorsqu'on l'achète. Il faut donc le provisionner, c'est à dire installer toutes les ressources nécessaires à son bon fonctionnement comme le reverse proxy :icon{name=nginx} Nginx, le pare-feu, le certbot et bien d'autres comme les outils de monitoring.
 
@@ -131,7 +132,7 @@ C'est très appréciable d'avoir un outil de ce genre parce que le gain de temps
 
 Une fois cela fait, il n'y a plus qu'à y déposer son application, créer un utilisateur pour la base de données, mettre à jour les variables d'environnement, cliquer sur 3 boutons et c'est parti, le site est en ligne et fonctionnel ! 🚀
 
-### Fonctionnement de la validation des voix
+## Fonctionnement de la validation des voix
 
 L'une des premières difficultés fut de créer un système de vote performant (plus de 25 000 personnes ont votées en 2022) et qui limite les risques d'attaques.
 
