@@ -28,6 +28,11 @@ export default defineNuxtConfig({
     defaultLanguage: 'fr-FR'
   },
 
+  app: {
+    pageTransition: { name: 'page', mode: 'out-in' },
+    layoutTransition: { name: 'layout', mode: 'out-in' }
+  },
+
   nitro: {
     prerender: {
       routes: ['/'],
