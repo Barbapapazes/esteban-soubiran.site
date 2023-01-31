@@ -1,34 +1,33 @@
 <script lang="ts" setup>
-import { useSeoMeta } from '@unhead/vue';
+import { useSeoMeta } from '@unhead/vue'
 
 useHead({
   titleTemplate: (titleChunk) => {
-    if (titleChunk === 'Estéban Soubiran')
-      return titleChunk
+    if (titleChunk === 'Estéban Soubiran') { return titleChunk }
 
     return `${titleChunk} · Estéban Soubiran`
   },
   htmlAttrs: {
     lang: 'fr-FR',
-    class: 'h-full font-sans antialiased',
+    class: 'h-full font-sans antialiased'
   },
   bodyAttrs: {
-    class: 'flex h-full flex-col bg-zinc-50 dark:bg-black',
+    class: 'flex h-full flex-col bg-zinc-50 dark:bg-black'
   },
   link: [
     {
       rel: 'icon',
       type: 'image/ico',
-      href: '/favicon.ico',
-    },
-  ],
+      href: '/favicon.ico'
+    }
+  ]
 })
 
 useSeoMeta({
   ogType: 'website',
   ogSiteName: 'Estéban Soubiran',
   ogDescription: "Développeur web et passionné par l'associatif",
-  ogImage: '/images/social.png',
+  ogImage: '/images/social.png'
 })
 
 useSchemaOrg([
@@ -37,16 +36,15 @@ useSchemaOrg([
     image: '/images/esteban.webp',
     sameAs: [
       'https://www.linkedin.com/in/esteban25/',
-      'https://twitter.com/esteban_dev_',
-    ],
+      'https://twitter.com/esteban_dev_'
+    ]
   }),
   defineWebSite({
     name: 'Estéban Soubiran',
     url: 'https://esteban-soubiran.site',
-    inLanguage: 'fr-FR',
-  })
-  ,
-  defineWebPage(),
+    inLanguage: 'fr-FR'
+  }),
+  defineWebPage()
 ])
 </script>
 
@@ -54,8 +52,8 @@ useSchemaOrg([
   <div class="h-full pt-6">
     <div class="fixed inset-0 sm:px-8 lg:px-16">
       <div
-        class="w-full h-full max-w-screen-xl mx-auto ring-1 bg-white ring-zinc-100 dark:bg-zinc-900 dark:ring-zinc-300/20">
-      </div>
+        class="w-full h-full max-w-screen-xl mx-auto ring-1 bg-white ring-zinc-100 dark:bg-zinc-900 dark:ring-zinc-300/20"
+      />
     </div>
     <div class="z-50 sticky top-6 flex flex-row justify-center">
       <OrganismsTheHeader />
