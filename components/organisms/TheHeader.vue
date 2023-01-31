@@ -17,7 +17,7 @@ watch(route, () => {
         <Transition>
           <NuxtLink v-if="!isHome" to="/"
             class="absolute left-0 h-10 w-10 rounded-full bg-white/90 p-0.5 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:ring-white/10">
-            <img src="/images/esteban.webp" alt="Photo de profil d'Estéban Soubiran" width="36" height="36"
+            <img src="/esteban.webp" alt="Photo de profil d'Estéban Soubiran" width="36" height="36"
               class="block w-9 h-9 rounded-full object-cover backdrop-filter backdrop-blur" loading="async">
           </NuxtLink>
         </Transition>
