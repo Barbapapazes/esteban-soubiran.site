@@ -8,7 +8,7 @@ description: Développeur web et passionné par l'associatif
   ::home-hero
   ---
   profile:
-    src: /images/esteban.webp
+    src: /esteban.webp
     alt: Photo de profil d'Estéban
   socials:
     - name: GitHub
