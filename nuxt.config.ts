@@ -5,7 +5,7 @@ export default defineNuxtConfig({
     '@nuxtjs/tailwindcss',
     '@nuxtjs/color-mode',
     'nuxt-schema-org',
-    'nuxt-icon',
+    'nuxt-icon'
   ],
 
   runtimeConfig: {
@@ -21,16 +21,11 @@ export default defineNuxtConfig({
     }
   },
   colorMode: {
-    classSuffix: '',
+    classSuffix: ''
   },
   schemaOrg: {
     canonicalHost: 'https://esteban-soubiran.site',
     defaultLanguage: 'fr-FR'
-  },
-
-  app: {
-    pageTransition: { name: 'page', mode: 'out-in' },
-    layoutTransition: { name: 'layout', mode: 'out-in' }
   },
 
   nitro: {

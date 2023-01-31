@@ -10,3 +10,5 @@ dist
 .yarn/*
 !.yarn/releases
 !yarn.lock
+
+.eslintcache

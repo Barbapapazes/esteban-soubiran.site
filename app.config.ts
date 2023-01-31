@@ -32,7 +32,7 @@ export default defineAppConfig({
       digitalOcean: 'logos:digital-ocean',
       nginx: 'vscode-icons:file-type-nginx',
       postgresql: 'logos:postgresql',
-      mysql: 'vscode-icons:file-type-mysql',
-    },
-  },
+      mysql: 'vscode-icons:file-type-mysql'
+    }
+  }
 })
