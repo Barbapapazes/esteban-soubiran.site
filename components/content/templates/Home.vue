@@ -1,12 +1,12 @@
 <template>
   <div>
-    <AtomsAppSection>
+    <BaseSection>
       <ContentSlot :use="$slots.default" unwrap="p" />
-    </AtomsAppSection>
+    </BaseSection>
     <div class="mt-16 sm:mt-20">
       <ContentSlot :use="$slots.pictures" unwrap="p" />
     </div>
-    <AtomsAppSection class="mt-24">
+    <BaseSection class="mt-24">
       <div class="flex flex-col lg:flex-row items-start gap-12">
         <OrganismsProjectsList :max="3" class="grow">
           Mes projets
@@ -15,6 +15,6 @@
           Expérience
         </OrganismsExperienceTimeline>
       </div>
-    </AtomsAppSection>
+    </BaseSection>
   </div>
 </template>
