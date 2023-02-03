@@ -7,7 +7,7 @@ const isHome = ref(route.path === '/')
 watch(route, () => {
   if (route.path === '/') { isHome.value = true } else { isHome.value = false }
 })
-const isActive = (item: any) => route.path === item._path
+const isActive = (item: any) => route.fullPath.startsWith(item._path)
 </script>
 
 <template>
@@ -40,12 +40,12 @@ const isActive = (item: any) => route.path === item._path
                 <NuxtLink
                   :to="item._path"
                   class="relative block px-3 py-2 transition hover:text-sky-500 hover:dark:text-sky-400 text-base"
-                  :class="{ 'text-sky-500 dark:text-sky-400': route.path === item._path }"
+                  :class="{ 'text-sky-500 dark:text-sky-400': isActive(item) }"
                 >
                   {{ item.title }}
                 </NuxtLink>
                 <div
-                  v-show="route.path === item._path"
+                  v-show="isActive(item)"
                   class="absolute inset-x-1 -bottom-px h-px bg-gradient-to-r from-sky-500/0 via-sky-500 to-sky-500/0  dark:from-sky-400/0 dark:via-sky-400 dark:to-sky-400/0 transition"
                 />
               </li>
