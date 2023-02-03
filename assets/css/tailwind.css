@@ -12,7 +12,7 @@
   background-color: theme("colors.white");
 }
 
-.dark ::webkit-scrollbar-track {
+.dark ::-webkit-scrollbar-track {
   background-color: theme("colors.zinc.900");
 }
 
@@ -21,7 +21,7 @@
   background-color: theme("colors.gray.300");
 }
 
-::webkit-scrollbar-thumb:hover {
+::-webkit-scrollbar-thumb:hover {
   background-color: theme("colors.zinc.400");
 }
 
@@ -29,7 +29,7 @@
   background-color: theme("colors.zinc.500");
 }
 
-.dark ::webkit-scrollbar-thumb {
+.dark ::-webkit-scrollbar-thumb {
   background-color: theme("colors.zinc.700");
 }
 

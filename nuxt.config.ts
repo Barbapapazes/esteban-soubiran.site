@@ -23,7 +23,8 @@ export default defineNuxtConfig({
 
   content: {
     documentDriven: {
-      host: 'https://esteban-soubiran.site'
+      host: 'https://esteban-soubiran.site',
+      trailingSlash: true
     },
     highlight: {
       theme: 'github-dark'
