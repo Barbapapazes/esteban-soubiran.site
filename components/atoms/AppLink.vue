@@ -13,7 +13,7 @@ const isActive = computed(() => route.path === props.to)
   <NuxtLink
     :to="to"
     class="relative block px-3 py-2 transition hover:text-sky-500 hover:dark:text-sky-400"
-    :class="{ 'text-sm': !large, 'text-base px-3 py-2 ': large, 'text-sky-500 dark:text-sky-400': isActive }"
+    :class="{ 'text-sm': !large, 'text-base': large, 'text-sky-500 dark:text-sky-400': isActive }"
   >
     <slot />
   </NuxtLink>
