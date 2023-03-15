@@ -743,11 +743,11 @@ __metadata:
   linkType: hard
 
 "@headlessui/vue@npm:^1.7.8":
-  version: 1.7.8
-  resolution: "@headlessui/vue@npm:1.7.8"
+  version: 1.7.12
+  resolution: "@headlessui/vue@npm:1.7.12"
   peerDependencies:
     vue: ^3.2.0
-  checksum: 27feb562acce9f4fe61862149c0e18e6df3ee8dfa8142bbbd4a66670d6154e2b6cd7d74ba2d43b44b9993fcc7f5314e56120bad0f3cd4f1f2d12cd5f6c7c39e5
+  checksum: 70b0f55a0bb237eaaa6832b0e0fb18d64c95590cf4d3934292c8d88e12dc9383b941b155ef78fb463a5f6f928ccf6d4e7fa80f13e156f16c3697fe7b98e23002
   languageName: node
   linkType: hard
 
