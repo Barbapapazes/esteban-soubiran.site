@@ -1,6 +1,6 @@
 ---
 title: À propos
-description: Je suis Estéban. Je vis à Paris et je développe des expériences utilisateurs.  
+description: Je suis Estéban. Je vis à Paris et je développe des expériences utilisateurs.
 ---
 
 ::about
