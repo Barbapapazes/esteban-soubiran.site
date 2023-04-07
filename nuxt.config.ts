@@ -2,6 +2,7 @@
 export default defineNuxtConfig({
   extends: ['nuxt-seo-kit'],
   modules: [
+    'nuxt-clarity-analytics',
     '@nuxt/content',
     '@nuxtjs/tailwindcss',
     '@nuxtjs/color-mode',
