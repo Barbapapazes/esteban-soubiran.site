@@ -1,16 +1,13 @@
 ---
 title: Mes petits projets
+description: Quelques petits projets réalisés lors de moments d'ennui ou pour se découvrir des petites technologies. Souvent rien d’ambitieux mais toujours intéressant à faire.
 image: 
   src: /images/projects/side-projects.webp
   alt: Capture d'écran de mon profil GitHub
 datePublished: 2020-04-15
 dateModified: 2020-11-05
-layout: prose
+layout: project
 ---
-
-Quelques petits projets réalisés lors de moments d'ennui ou pour se découvrir des petites technologies. Souvent rien d’ambitieux mais toujours intéressant à faire.
-
-<!-- more -->
 
 ## Track ENT - 2020
 

@@ -1,16 +1,13 @@
 ---
 title: Mon premier vrai porte-folio
+description: J'ai créer mon premier porte-folio ! Une place qui me ressemble, à mon image et qui permet de présenter mes projets, mes essais et mes réalisations.
 image:
   src: /images/projects/portfolio-v2.webp
   alt: Capture d'écran du site. On peut y voir un titre "Code" et un sous titre "Élève-ingénieur en sécurité informatique, Développeur web dans son temps libre, Passionné par le monde associatif"
 datePublished: 2021-03-25
 dateModified: 2022-11-06
-layout: prose
+layout: project
 ---
-
-J'ai créer mon premier porte-folio ! Une place qui me ressemble, à mon image et qui permet de présenter mes projets, mes essais et mes réalisations.
-
-<!-- more -->
 
 ## Contexte
 

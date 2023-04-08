@@ -6,16 +6,13 @@ company:
   alt: Logo du BNEI.
   url: https://bnei.fr
 position: Bénévole
+description: Durant 1 an, j'ai été eu la responsabilité de la trésorerie du Bureau National des Élèves Ingénieurs.
 from: 2020
 to: 2021
 datePublished: 2022-11-25
 dateModified: 2022-11-25
-layout: prose
+layout: experience
 ---
-
-Durant 1 an, j'ai été eu la responsabilité de la trésorerie du Bureau National des Élèves Ingénieurs.
-
-<!-- more -->
 
 ## BNEI
 
