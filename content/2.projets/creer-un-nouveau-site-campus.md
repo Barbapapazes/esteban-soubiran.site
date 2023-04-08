@@ -1,16 +1,13 @@
 ---
 title: Créer un nouveau site campus
+description: Pour la rentrée scolaire, j'ai eu l'opportunité de mettre à jour le site campus de mon école. Cela est passé par le contact des associations et le développement d'un nouveau site.
 image:
   src: /images/projects/campus_new-website.webp
   alt: Capture d'écran du nouveau site campus. On peut y voir un titre "#campus INSA CVL".
 datePublished: 2020-09-01
 dateModified: 2020-11-05
-layout: prose
+layout: project
 ---
-
-Pour la rentrée scolaire, j'ai eu l'opportunité de mettre à jour le site campus de mon école. Cela est passé par le contact des associations et le développement d'un nouveau site.
-
-<!-- more -->
 
 ## Contexte
 

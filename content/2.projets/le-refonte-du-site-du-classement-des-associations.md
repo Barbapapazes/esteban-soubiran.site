@@ -1,16 +1,13 @@
 ---
 title: La refonte du site du Classement des Associations
+description: Dans le cadre de l'organisation du concours "Le Classement des Associations", j'ai réalisé le nouveau site web de l'événement avec l'aide d'une experte en UI et UX.
 image: 
   src: /images/projects/le-classement_new-website.webp
   alt: Capture d'écran du site du Classement des Associations. Le titre indique "Le Classement des Associations" et le sous-titre "Le concours national de référence qui recense et classe les meilleures associations étudiantes !"
 datePublished: 2022-05-20
 dateModified: 2022-11-03
-layout: prose
+layout: project
 ---
-
-Dans le cadre de l'organisation du concours "Le Classement des Associations", j'ai réalisé le nouveau site web de l'événement avec l'aide d'une experte en UI et UX.
-
-<!-- more -->
 
 ## Contexte
 
@@ -108,4 +105,3 @@ Dans le même temps, j'ai pu travailler avec des maquettes réalisées par un pr
 Lors de la présentation du site web, nous avons eu de très bon retours et nous avons pu directement nous en servir promouvoir l'évènement.
 
 Ce projet est une réussite ! 🎉
-

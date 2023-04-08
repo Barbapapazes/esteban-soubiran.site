@@ -1,19 +1,15 @@
 ---
 title: La plateforme de vote du Classement des Associations
+description: Pour l'édition 2022 du Classement des Associations, j'ai eu l'opportunité de créer la plateforme de vote.
 image:
   src: /images/articles/plateforme-vote-classement-des-associations/platform.webp
   alt: Capture d'écran de la plateforme de vote
 datePublished: 2022-12-07
 dateModified: 2022-12-07
-layout: prose
+layout: article
 ---
 
-Pour l'édition 2022 du Classement des Associations, j'ai eu l'opportunité de créer la plateforme de vote.
-
-<!-- more -->
-
 Grâce à cet article, tu découvriras les coulisses de la création, la mise en production ainsi que l'ensemble des problématiques que j'ai pu rencontrer avec les solutions mise en place !
-
 
 ## Le Classement des Associations
 

@@ -6,16 +6,13 @@ company:
   alt: Logo du BNEI.
   url: https://bnei.fr
 position: Bénévole
+description: Suite à mon mandat de trésorier, j'ai choisi de renouveler mon engagement au sein du BNEI.
 from: 2021
 to: 2022
 datePublished: 2022-11-25
 dateModified: 2022-11-25
-layout: prose
+layout: experience
 ---
-
-Suite à mon mandat de trésorier, j'ai choisi de renouveler mon engagement au sein du BNEI.
-
-<!-- more -->
 
 ## BNEI
 

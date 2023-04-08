@@ -1,20 +1,18 @@
 ---
-title: Responsable du Classement des Associations
+title: Responsable
 company:
+  name: Classement des Associations
   src: /images/experience/classement-des-associations.webp
   alt: Logo du Classement des Associations.
   url: https://le-classement.fr
 position: Bénévole
+description: Durant 8 mois, j'ai été responsable du Classement des Associations !
 from: 2022
 to: 2022
 datePublished: 2022-12-07
 dateModified: 2022-12-07
-layout: prose
+layout: experience
 ---
-
-Durant 8 mois, j'ai été responsable du Classement des Associations !
-
-<!-- more -->
 
 ## Le Classement des Associations
 

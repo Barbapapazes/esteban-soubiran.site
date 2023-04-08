@@ -1,16 +1,13 @@
 ---
 title: Mon premier tutoriel
+description: Dans l'optique d’approfondir mon apprentissage et de transmettre mes connaissances, je me suis livré à l'exercice que je considère comme le plus exigent. 
 image:
   src: /images/projects/first-tuto.webp
   alt: Capture d'écran de mon premier tutoriel.
 datePublished: 2021-08-28
 dateModified: 2022-11-06
-layout: prose
+layout: project
 ---
-
-Dans l'optique d’approfondir mon apprentissage et de transmettre mes connaissances, je me suis livré à l'exercice que je considère comme le plus exigent.
-
-<!--  -->
 
 ## Contexte
 

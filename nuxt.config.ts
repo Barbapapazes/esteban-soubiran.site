@@ -4,7 +4,7 @@ export default defineNuxtConfig({
   modules: [
     'nuxt-clarity-analytics',
     '@nuxt/content',
-    '@nuxtjs/tailwindcss',
+    '@unocss/nuxt',
     '@nuxtjs/color-mode',
     'nuxt-schema-org',
     'nuxt-icon'
@@ -31,6 +31,12 @@ export default defineNuxtConfig({
       theme: 'github-dark'
     }
   },
+
+  css: [
+    '@unocss/reset/tailwind.css',
+    '~/assets/css/app.css'
+  ],
+
   colorMode: {
     classSuffix: ''
   },
