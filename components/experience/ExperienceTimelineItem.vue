@@ -9,7 +9,7 @@ defineProps<{
 <template>
   <li>
     <NuxtLink :to="$props.experience._path" class="w-full flex flex-row items-center gap-4">
-      <AtomsExperienceImage
+      <ExperienceImage
         small
         :image="experience.company"
         class="shrink-0
