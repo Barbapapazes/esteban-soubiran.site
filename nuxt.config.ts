@@ -7,7 +7,8 @@ export default defineNuxtConfig({
     '@unocss/nuxt',
     '@nuxtjs/color-mode',
     'nuxt-schema-org',
-    'nuxt-icon'
+    'nuxt-icon',
+    '@nuxthq/studio'
   ],
 
   runtimeConfig: {
