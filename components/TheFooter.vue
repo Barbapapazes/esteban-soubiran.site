@@ -1,8 +1,7 @@
 <script lang="ts" setup>
-const { navigation } = await useContent()
+const { navigation } = useContent()
 
-const route = useRoute()
-const isActive = (item: any) => route.fullPath.startsWith(item._path)
+const { isActive } = useActivePath()
 </script>
 
 <template>
@@ -15,7 +14,7 @@ const isActive = (item: any) => route.fullPath.startsWith(item._path)
               <NuxtLink
                 :to="item._path"
                 class="relative block px-3 py-2 transition hover:text-sky-500 hover:dark:text-sky-400 text-sm"
-                :class="{ 'text-sky-500 dark:text-sky-400': isActive(item) }"
+                :class="{ 'text-sky-500 dark:text-sky-400': isActive(item._path) }"
               >
                 {{ item.title }}
               </NuxtLink>

@@ -1,4 +1,10 @@
 export default defineAppConfig({
+  portfolio: {
+    sameAs: [
+      'https://www.linkedin.com/in/esteban25/',
+      'https://github.com/barbapapazes'
+    ]
+  },
   nuxtIcon: {
     aliases: {
       raspberryPi: 'logos:raspberry-pi',

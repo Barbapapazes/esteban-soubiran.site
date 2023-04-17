@@ -19,7 +19,7 @@ const props = defineProps<{ article: ParsedContent }>()
         </NuxtLink>
       </h2>
       <!-- TODO: Create a folder named Card to store component related to card -->
-      <AtomsAppDate with-border :datetime="props.article.datePublished" class="md:hidden order-first relative mb-3" />
+      <AppDate with-border :datetime="props.article.datePublished" class="md:hidden order-first relative mb-3" />
       <p class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400">
         {{ $props.article.description }}
       </p>
@@ -29,7 +29,7 @@ const props = defineProps<{ article: ParsedContent }>()
       </div>
     </div>
     <div class="hidden lg:block order-first relative">
-      <AtomsAppDate :datetime="props.article.datePublished" />
+      <AppDate :datetime="props.article.datePublished" />
     </div>
   </article>
 </template>

@@ -22,6 +22,9 @@ devDependencies:
   '@unocss/reset':
     specifier: ^0.51.0
     version: 0.51.0
+  '@unocss/transformer-directives':
+    specifier: ^0.51.4
+    version: 0.51.4
   eslint:
     specifier: ^8.37.0
     version: 8.37.0
@@ -1729,6 +1732,10 @@ packages:
     resolution: {integrity: sha512-uU/dvbrAcRqx5j7Qm19aewtRZr1QQ0Lg6mQhfCYhXQdIlT4sjT8FtduCchWMYQdsAb/kh2eP0LXT5KAP1REnoQ==}
     dev: true
 
+  /@unocss/core@0.51.4:
+    resolution: {integrity: sha512-glPBN989gJNNVzjulH6NlLAekBLuZbsFRIDqwZ1ZaoWY6teu8Z6uo3pqFCy+ibjxZSEha77BcnKfDzd2Hccsdw==}
+    dev: true
+
   /@unocss/extractor-arbitrary-variants@0.51.0:
     resolution: {integrity: sha512-UL1XAE44zkcbSmlQEk4IxvFHpL+xrqfCbIYjALwhaToqCsnyhxMTuiOLySF1fr9uAknMiHsRM9BbmBAqjrHR2w==}
     dependencies:
@@ -1869,6 +1876,13 @@ packages:
     resolution: {integrity: sha512-sQgCvq5V6SsEBEBCQ2+COjWwqJ7QJl7qK6D5bSSjlc1u7QTX5WWkC7UfoH6j71jdhph+Qi+XvzBSTyXTbQD3nQ==}
     dependencies:
       '@unocss/core': 0.51.0
+      css-tree: 2.3.1
+    dev: true
+
+  /@unocss/transformer-directives@0.51.4:
+    resolution: {integrity: sha512-AJvW4b+egEH7Mr9uce68J5T9CI2LJmpRL+vCOjeAVz8Mw2rYhpu94nzkAFr/nxn5UoBNsc6ZcLAwBipZoCDEuw==}
+    dependencies:
+      '@unocss/core': 0.51.4
       css-tree: 2.3.1
     dev: true
 

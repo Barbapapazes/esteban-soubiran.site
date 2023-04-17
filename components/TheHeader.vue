@@ -1,13 +1,7 @@
 <script lang="ts" setup>
-const route = useRoute()
-const { navigation } = await useContent()
+const { navigation } = useContent()
 
-const isHome = ref(route.path === '/')
-
-watch(route, () => {
-  if (route.path === '/') { isHome.value = true } else { isHome.value = false }
-})
-const isActive = (item: any) => route.fullPath.startsWith(item._path)
+const { isHome, isActive } = useActivePath()
 </script>
 
 <template>
@@ -40,20 +34,20 @@ const isActive = (item: any) => route.fullPath.startsWith(item._path)
                 <NuxtLink
                   :to="item._path"
                   class="relative block px-3 py-2 transition hover:text-sky-500 hover:dark:text-sky-400 text-base"
-                  :class="{ 'text-sky-500 dark:text-sky-400': isActive(item) }"
+                  :class="{ 'text-sky-500 dark:text-sky-400': isActive(item._path) }"
                 >
                   {{ item.title }}
                 </NuxtLink>
                 <div
-                  v-show="isActive(item)"
+                  v-show="isActive(item._path)"
                   class="absolute inset-x-1 -bottom-px h-px bg-gradient-to-r from-sky-500/0 via-sky-500 to-sky-500/0  dark:from-sky-400/0 dark:via-sky-400 dark:to-sky-400/0 transition"
                 />
               </li>
             </ul>
           </nav>
         </div>
-        <MoleculesTheHeaderPopover class="md:hidden" />
-        <MoleculesColorModeSwitcher class="absolute right-0" />
+        <TheHeaderDialog class="md:hidden" />
+        <ColorModeSwitcher class="absolute right-0" />
       </div>
     </div>
   </header>
