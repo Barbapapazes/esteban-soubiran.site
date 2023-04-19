@@ -9,7 +9,7 @@
     "postinstall": "nuxt prepare",
     "lint": "eslint --cache ."
   },
-  "packageManager": "pnpm@8.1.1",
+  "packageManager": "pnpm@8.3.1",
   "devDependencies": {
     "@headlessui/vue": "^1.7.12",
     "@nuxt/content": "^2.5.2",
