@@ -11,7 +11,7 @@ layout: project
 
 ## Contexte
 
-Depuis 2018, je me forme au développement web. J'ai eu différentes opportunités de mettre en oeuvre mes compétences comme les différentes [nuits de l'info](./involvement-in-nuit-de-linfo) ou des projets personnels.
+Depuis 2018, je me forme au développement web. J'ai eu différentes opportunités de mettre en oeuvre mes compétences comme les différentes [nuits de l'info](./mes-participations-aux-nuits-de-linfo.md) ou des projets personnels.
 
 Durant le mois de mars 2021, la Junior Entreprise de mon école a publié une offre de mission pour la réalisation d'un site vitrine pour une entreprise. J'ai postulé et j'ai été retenu.
 

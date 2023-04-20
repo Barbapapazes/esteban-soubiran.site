@@ -13,7 +13,7 @@ layout: project
 
 Durant le second semestre ma première année d'école, j'ai eu l'opportunité de réaliser un projet technique sur la thématique de mon choix.
 
-Étant tombé amoureux du développement web durant [ma première nuit de l'info](./involvment-nuit-de-linfo.md), j'ai décidé de réaliser un projet avec du web.
+Étant tombé amoureux du développement web durant [ma première nuit de l'info](./mes-participations-aux-nuits-de-linfo.md), j'ai décidé de réaliser un projet avec du web.
 
 Mais ce projet était à réaliser avec 2 autres personnes. Afin de satisfaire chacun, et parce que nous avions carte blanche, nous avons choisi de lier le web et l'électronique. 
 

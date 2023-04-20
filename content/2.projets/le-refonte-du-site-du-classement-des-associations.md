@@ -11,7 +11,7 @@ layout: project
 
 ## Contexte
 
-Dans le cadre des mes [activités au sein du BNEI](../experience/tresorier-bnei), j'ai eu l'opportunité de participer à l'organisation du concours [Le Classement des Associations](../experiences/classement-des-associations).
+Dans le cadre des mes [activités au sein du BNEI](../experience/tresorier-bnei), j'ai eu l'opportunité de participer à l'organisation du concours [Le Classement des Associations](../4.experience/responsable-classement-des-associations.md).
 
 Afin de faciliter la promotion du concours, l'ensemble de l'équipe organisatrice a décidé de revoir l'entièreté de la charte graphique du concours passant de rien à cela :
 
@@ -66,7 +66,7 @@ Je suis parti sur la stack suivante :
 - [Nuxt Content v2](https://content.nuxtjs.org/);
 - :icon{name=logos:netlify} [Netlify](https://www.netlify.com/).
 
-C'est une stack que j'ai déjà pu mettre en oeuvre lors de la création de [mon porte-folio](./first-portfolio-in-production) et sur la [création du site campus](./new-website-campus) de mon école.
+C'est une stack que j'ai déjà pu mettre en oeuvre lors de la création de [mon porte-folio](./mon-premier-vrai-porte-folio.md) et sur la [création du site campus](./creer-un-nouveau-site-campus.md) de mon école.
 
 La nouveauté était le passage à de Nuxt2 à Nuxt3. J'ai donc profité de ce projet pour prendre en main cette nouvelle version de Nuxt.
 
