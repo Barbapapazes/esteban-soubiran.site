@@ -10,7 +10,6 @@ export default defineNuxtConfig({
     '@nuxt/content',
     '@unocss/nuxt',
     '@nuxtjs/color-mode',
-    'nuxt-schema-org',
     'nuxt-icon',
     '@nuxthq/studio'
   ],
@@ -65,5 +64,14 @@ export default defineNuxtConfig({
       routes: ['/'],
       crawlLinks: true
     }
+  },
+
+  linkChecker: {
+    exclude: [
+      '/a-propos',
+      '/projets',
+      '/articles',
+      '/experience'
+    ]
   }
 })

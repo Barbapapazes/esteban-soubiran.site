@@ -58,7 +58,7 @@ Ce petit projet, que j'ai utilisé à la salle de sport, m'a permis de mettre en
 
 ### Contexte
 
-Après avoir pu jouer avec des :icon{name=arduino} Arduino et un :icon{name=raspberryPi} Raspberry Pi durant mon [projet de première année](./discover-iot), j'ai décidé de continuer avec une nouvelle formule. Cette fois-ci, je voulais pouvoir avoir des données météorologiques en temps réel.
+Après avoir pu jouer avec des :icon{name=arduino} Arduino et un :icon{name=raspberryPi} Raspberry Pi durant mon [projet de première année](./mes-premiers-modules-diot.md), j'ai décidé de continuer avec une nouvelle formule. Cette fois-ci, je voulais pouvoir avoir des données météorologiques en temps réel.
 
 ### Projet
 
@@ -89,7 +89,7 @@ Depuis mes débuts dans le développement web, j'ai envie de réaliser mon propr
 
 ### Projet
 
-L'idée est simple, créer un site où je peux être en mesure de créer des articles. En parallèle de mon [projet de première année](./discover-iot.md), et avec le peu de connaissance que je pouvais avoir, j'ai décidé de me lancer.
+L'idée est simple, créer un site où je peux être en mesure de créer des articles. En parallèle de mon [projet de première année](./mes-premiers-modules-diot.md), et avec le peu de connaissance que je pouvais avoir, j'ai décidé de me lancer.
 
 Il s'agissait d'un blog créer avec :icon{name=express} Express et :icon{name=mongo} MongoDB. Pour la partie graphique, j'ai essayé de tout faire à la main.
 

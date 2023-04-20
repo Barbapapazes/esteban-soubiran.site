@@ -22,7 +22,7 @@ Le Classement des Associations est un concours qui permet de rassembler, promouv
 
 En tant que responsable du Classement des Associations, j'ai travaillé durant 8 mois avec 5 autres personnes à la bonne réalisation du concours. J'ai eu la charge du suivi des associations, de l'écriture des textes pour les publications et d'un partie de l'organisation de la cérémonie finale.
 
-Dans le même temps, j'ai beaucoup réfléchi à la stratégie du concours, ses objectifs et à la concrétisation de ceux-ci. Ainsi, j'ai pu [mettre à jour le site internet du concours](../2.projects/new-website-le-classement.md) et créer la plateforme de vote.
+Dans le même temps, j'ai beaucoup réfléchi à la stratégie du concours, ses objectifs et à la concrétisation de ceux-ci. Ainsi, j'ai pu [mettre à jour le site internet du concours](../2.projets/le-refonte-du-site-du-classement-des-associations.md) et créer la plateforme de vote.
 
 ## Conclusion
 
