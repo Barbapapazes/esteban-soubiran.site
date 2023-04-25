@@ -11,7 +11,7 @@ layout: project
 
 ## Contexte
 
-J'ai refait [le site campus](./new-website-campus.md) de mon école. Mais je savais que ça ne pouvait pas être suffisant. En effet, on peut avoir le plus joli site du monde, si ce dernier n'est pas rempli, alors il n'a que peu d'intérêt.
+J'ai refait [le site campus](./creer-un-nouveau-site-campus.md) de mon école. Mais je savais que ça ne pouvait pas être suffisant. En effet, on peut avoir le plus joli site du monde, si ce dernier n'est pas rempli, alors il n'a que peu d'intérêt.
 
 Cependant, le nouveau site campus se basait sur des fichiers markdown. Et je savais que les associations n'allaient pas forcément être à l'aise avec ce format de fichier.
 

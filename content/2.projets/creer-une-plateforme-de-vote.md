@@ -27,7 +27,7 @@ Pour la Classement, la plateforme de vote est un moyen de se faire connaître pa
 
 Cette plateforme a pris 1 mois à être développée. Elle a été réalisée avec :icon{name=adonisjs} AdonisJS, un framework NodeJS et déployée sur un VPS chez :icon{name=digitalOcean} DigitalOcean.
 
-J'ai écrit [un article sur les aspects techniques](../3.articles/plateforme-vote-classement-des-associations.md) de la plateforme qui rentre dans tous les détails.
+J'ai écrit [un article sur les aspects techniques](../3.articles/la-plateforme-de-vote-du-classement-des-associations.md) de la plateforme qui rentre dans tous les détails.
 
 Au-delà de cet aspect de développement, il y a eu énormément de maintenant à réaliser pendant le mois de son utilisation afin de s'assurer qu'elle ne tombe pas, pour ajouter des fonctionnalités d'administration et des correctifs.
 

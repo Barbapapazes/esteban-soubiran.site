@@ -11,7 +11,7 @@ layout: project
 
 ## Contexte
 
-Alors que [depuis le début](./side-projects#mon-premier-site-2018) de mon apprentissage du développement web, j'ai envie de réaliser un site à mon image, je pense que le temps était enfin venu. Alors je me suis lancé en profitant de l'occasion pour apprendre un nouveau framework.
+Alors que [depuis le début](./mes-petits-projets.md) de mon apprentissage du développement web, j'ai envie de réaliser un site à mon image, je pense que le temps était enfin venu. Alors je me suis lancé en profitant de l'occasion pour apprendre un nouveau framework.
 
 ## Réalisation
 

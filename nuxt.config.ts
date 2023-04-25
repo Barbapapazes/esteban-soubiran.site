@@ -1,12 +1,15 @@
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
+  experimental: {
+    watcher: 'parcel'
+  },
+
   extends: ['nuxt-seo-kit'],
   modules: [
     'nuxt-clarity-analytics',
     '@nuxt/content',
     '@unocss/nuxt',
     '@nuxtjs/color-mode',
-    'nuxt-schema-org',
     'nuxt-icon',
     '@nuxthq/studio'
   ],
@@ -61,5 +64,14 @@ export default defineNuxtConfig({
       routes: ['/'],
       crawlLinks: true
     }
+  },
+
+  linkChecker: {
+    exclude: [
+      '/a-propos',
+      '/projets',
+      '/articles',
+      '/experience'
+    ]
   }
 })
