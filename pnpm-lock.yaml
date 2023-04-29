@@ -8,8 +8,8 @@ devDependencies:
     specifier: ^2.6.0
     version: 2.6.0
   '@nuxthq/studio':
-    specifier: ^0.10.1
-    version: 0.10.1
+    specifier: ^0.11.0
+    version: 0.11.0
   '@nuxtjs/color-mode':
     specifier: ^3.2.0
     version: 3.2.0
@@ -38,8 +38,8 @@ devDependencies:
     specifier: ^0.0.2
     version: 0.0.2
   nuxt-icon:
-    specifier: ^0.3.3
-    version: 0.3.3(vue@3.2.47)
+    specifier: ^0.4.0
+    version: 0.4.0(vue@3.2.47)
   nuxt-seo-kit:
     specifier: ^1.3.7
     version: 1.3.7(@unhead/vue@1.1.26)(vue@3.2.47)
@@ -1293,10 +1293,10 @@ packages:
       - vue-tsc
     dev: true
 
-  /@nuxthq/studio@0.10.1:
-    resolution: {integrity: sha512-EWzk3HkE6QuiqVxqZ7jsAc/8GxSDKRO+jnTBv1wlOAvPKJNPsHrlYGP8EyR6S1NaB3pQTJ9iVBhmskAtrKIsYQ==}
+  /@nuxthq/studio@0.11.0:
+    resolution: {integrity: sha512-9cIJSguUWvtiFs6/dlZB6f/xQ588HGqWXzRU9logl5THig6X5lYwV4hfleaY4tYoitve3j5OUCXzfFhUQqCxGA==}
     dependencies:
-      '@nuxt/kit': 3.3.3
+      '@nuxt/kit': 3.4.3
       defu: 6.1.2
       nuxt-component-meta: 0.5.1
       nuxt-config-schema: 0.4.5
@@ -6204,7 +6204,7 @@ packages:
   /nuxt-component-meta@0.5.1:
     resolution: {integrity: sha512-vwx5wySyVX+QbFrNb3wLYNMPlADho8E66MO45d5i5fTlEkmhopVpQ9YXwlAvM3pLCPjupxG3R3D5rKpLDeitkw==}
     dependencies:
-      '@nuxt/kit': 3.4.2
+      '@nuxt/kit': 3.4.3
       scule: 1.0.0
       typescript: 5.0.4
       vue-component-meta: 1.2.0(typescript@5.0.4)
@@ -6216,7 +6216,7 @@ packages:
   /nuxt-config-schema@0.4.5:
     resolution: {integrity: sha512-Y5anu5puDfMJfDP7IYjXsn6Dvj262HtjZqa73jCBbFRCc5jnjrs+BEpJJmtPG32ZsqzO2+RL4oTNb3H6IfKZLQ==}
     dependencies:
-      '@nuxt/kit': 3.4.2
+      '@nuxt/kit': 3.4.3
       changelogen: 0.4.1
       defu: 6.1.2
       jiti: 1.18.2
@@ -6227,12 +6227,11 @@ packages:
       - supports-color
     dev: true
 
-  /nuxt-icon@0.3.3(vue@3.2.47):
-    resolution: {integrity: sha512-KdhJAigBGTP8/YIFZ3orwetk40AgLq6VQ5HRYuDLmv5hiDptor9Ro+WIdZggHw7nciRxZvDdQkEwi9B5G/jrkQ==}
+  /nuxt-icon@0.4.0(vue@3.2.47):
+    resolution: {integrity: sha512-j7phHbE4Ug2MsHvj9SidH5Nx9Bs2i/XpoH7HjQJD7DPlWNaI9srJGDOPY1g83S8i4vmDJvCc6KqkLjRasJZlYA==}
     dependencies:
       '@iconify/vue': 4.1.1(vue@3.2.47)
-      '@nuxt/kit': 3.3.3
-      nuxt-config-schema: 0.4.5
+      '@nuxt/kit': 3.4.3
     transitivePeerDependencies:
       - rollup
       - supports-color
