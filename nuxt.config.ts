@@ -71,5 +71,7 @@ export default defineNuxtConfig({
       '/articles',
       '/experience'
     ]
-  }
+  },
+
+  devtools: true
 })
