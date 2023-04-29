@@ -5,7 +5,6 @@ defineProps<{
 }>()
 </script>
 
-
 <template>
   <span>
     <Icon name="carbon:logo-github" class="inline-block w-5 h-5 dark:text-zinc-200" />

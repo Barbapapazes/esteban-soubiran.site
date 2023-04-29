@@ -1,5 +1,6 @@
 <script lang="ts" setup>
 const { page } = useContent()
+const socials = usePortfolio().socials
 </script>
 
 <template>
@@ -26,7 +27,7 @@ const { page } = useContent()
       </div>
       <div class="lg:pl-20">
         <ul class="flex flex-col gap-4">
-          <li v-for="social in page.socials" :key="social.url" class="flex">
+          <li v-for="social in socials" :key="social.url" class="flex">
             <NuxtLink
               :to="social.url"
               class="group flex text-sm font-medium text-zinc-800 transition ease-in hover:text-sky-500 dark:text-zinc-200 dark:hover:text-sky-400"
@@ -36,7 +37,7 @@ const { page } = useContent()
                 :name="social.icon"
               />
               <span class="ml-4">
-                {{ social.name }}
+                Me suivre sur {{ social.name }}
               </span>
             </NuxtLink>
           </li>

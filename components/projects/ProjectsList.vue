@@ -11,7 +11,7 @@ const { data: projects } = await useProjects(props.max)
     <h2 class="sr-only">
       <slot />
     </h2>
-    <div class="flex max-w-3xl flex-col space-y-16">
+    <div class="grid max-w-3xl gap-y-16">
       <ProjectsCard v-for="project in projects" :key="project._path" :project="project" />
     </div>
   </section>
