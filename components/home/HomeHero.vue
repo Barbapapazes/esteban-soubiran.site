@@ -1,21 +1,10 @@
 <script lang="ts" setup>
-defineProps<{
-  profile: {
-    src: string
-    alt: string
-  }
-  // TODO: Add to app config
-  socials: {
-    name: string
-    url: string
-    icon: string
-  }[]
-}>()
+const socials = usePortfolio().socials
 </script>
 
 <template>
   <div class="max-w-2xl flex flex-col gap-6">
-    <img :src="$props.profile.src" :alt="$props.profile.alt" class="rounded-full h-16 w-16">
+    <img src="/esteban.webp" alt="Photo de profil d'Estéban" class="rounded-full h-16 w-16">
     <h1 class="text-4xl sm:text-5xl leading-[3.5rem] font-bold tracking-tight  dark:text-zinc-100">
       <ContentSlot :use="$slots.title" unwrap="p" />
     </h1>

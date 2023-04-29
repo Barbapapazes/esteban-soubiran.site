@@ -1,14 +1,15 @@
+<script lang="ts" setup>
+const sameAs = useSameAs()
+</script>
+
 <template>
   <Html dir="ltr" class="h-full font-sans antialiased">
     <Head>
       <SeoKit />
       <SchemaOrgPerson
-        name="Estéban Soubiran'"
+        name="Estéban Soubiran"
         logo="/esteban.webp"
-        :same-as="[
-          'https://www.linkedin.com/in/esteban25/',
-          'https://twitter.com/esteban_dev_'
-        ]"
+        :same-as="sameAs"
       />
     </Head>
     <Body class="flex h-full flex-col bg-zinc-50 dark:bg-black">
@@ -19,12 +20,12 @@
           />
         </div>
         <div class="z-50 sticky top-6 flex flex-row justify-center">
-          <OrganismsTheHeader />
+          <TheHeader />
         </div>
         <main class="relative mt-16 sm:mt-32">
           <NuxtPage />
         </main>
-        <OrganismsTheFooter class="relative" />
+        <TheFooter class="relative" />
       </div>
     </Body>
   </Html>

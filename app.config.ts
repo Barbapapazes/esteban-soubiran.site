@@ -1,4 +1,27 @@
 export default defineAppConfig({
+  portfolio: {
+    socials: [
+      {
+        name: 'Github',
+        url: 'https://github.com/Barbapapazes',
+        icon: 'mdi:github'
+      },
+      {
+        name: 'Linkedin',
+        url: 'https://www.linkedin.com/in/esteban25/',
+        icon: 'mdi:linkedin'
+      },
+      {
+        name: 'Dev.to',
+        url: 'https://dev.to/barbapapazes',
+        icon: 'devto'
+      }
+    ],
+    sameAs: [
+      'https://www.linkedin.com/in/esteban25/',
+      'https://github.com/barbapapazes'
+    ]
+  },
   nuxtIcon: {
     aliases: {
       raspberryPi: 'logos:raspberry-pi',
