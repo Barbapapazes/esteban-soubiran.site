@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-const { data: articles } = await useArticles()
+const { data: talks } = await useTalks()
 </script>
 
 <template>
@@ -8,7 +8,7 @@ const { data: articles } = await useArticles()
       <slot />
     </h2>
     <div class="flex max-w-3xl flex-col space-y-16">
-      <ArticlesCard v-for="article in articles" :key="article._path" :article="article" />
+      <ArticlesCard v-for="talk in talks" :key="talk._path" :article="talk" />
     </div>
   </section>
 </template>
