@@ -28,7 +28,7 @@ const props = defineProps<{ article: ParsedContent }>()
         <Icon class="w-4 h-4" name="heroicons:chevron-right-20-solid" />
       </div>
     </div>
-    <div class="hidden lg:block order-first relative">
+    <div class="hidden md:block order-first relative">
       <AppDate :datetime="props.article.datePublished" />
     </div>
   </article>
