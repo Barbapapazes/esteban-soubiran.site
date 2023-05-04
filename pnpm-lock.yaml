@@ -11,8 +11,8 @@ devDependencies:
     specifier: ^0.4.5
     version: 0.4.5(nuxt@3.4.3)(vite@4.3.3)
   '@nuxthq/studio':
-    specifier: ^0.11.0
-    version: 0.11.0
+    specifier: ^0.12.0
+    version: 0.12.0
   '@nuxtjs/color-mode':
     specifier: ^3.2.0
     version: 3.2.0
@@ -1497,13 +1497,13 @@ packages:
       - vue-tsc
     dev: true
 
-  /@nuxthq/studio@0.11.0:
-    resolution: {integrity: sha512-9cIJSguUWvtiFs6/dlZB6f/xQ588HGqWXzRU9logl5THig6X5lYwV4hfleaY4tYoitve3j5OUCXzfFhUQqCxGA==}
+  /@nuxthq/studio@0.12.0:
+    resolution: {integrity: sha512-qY9uqjODqIdZ27nqfXgi0FRC3XZyJfRe/aWAP5fIRVHTFxWpFf3ogxdV1LcdAKSfvDnyrzXzGoxwjERh9OtVsw==}
     dependencies:
       '@nuxt/kit': 3.4.3
       defu: 6.1.2
       nuxt-component-meta: 0.5.1
-      nuxt-config-schema: 0.4.5
+      nuxt-config-schema: 0.4.6
       socket.io-client: 4.6.1
       ufo: 1.1.1
     transitivePeerDependencies:
@@ -3178,23 +3178,6 @@ packages:
     engines: {node: ^12.17.0 || ^14.13 || >=16.0.0}
     dev: true
 
-  /changelogen@0.4.1:
-    resolution: {integrity: sha512-p1dJO1Z995odIxdypzAykHIaUu+XnEvwYPSTyKJsbpL82o99sxN1G24tbecoMxTsV4PI+ZId82GJXRL2hhOeJA==}
-    hasBin: true
-    dependencies:
-      c12: 1.4.1
-      consola: 2.15.3
-      convert-gitmoji: 0.1.3
-      execa: 6.1.0
-      mri: 1.2.0
-      node-fetch-native: 1.1.0
-      pkg-types: 1.0.2
-      scule: 1.0.0
-      semver: 7.5.0
-    transitivePeerDependencies:
-      - supports-color
-    dev: true
-
   /character-entities-html4@2.1.0:
     resolution: {integrity: sha512-1v7fgQRj6hnSwFpq1Eu0ynr/CDEw0rXo2B61qXrLNdHZmPKgb7fqS1a2JwF0rISo9q77jDI8VMEHoApn8qDoZA==}
     dev: true
@@ -3430,10 +3413,6 @@ packages:
 
   /console-control-strings@1.1.0:
     resolution: {integrity: sha512-ty/fTekppD2fIwRvnZAVdeOiGd1c7YXEixbgJTNzqcxJWKQnjJ/V1bNEEE6hygpM3WjwHFUVK6HTjWSzV4a8sQ==}
-    dev: true
-
-  /convert-gitmoji@0.1.3:
-    resolution: {integrity: sha512-t5yxPyI8h8KPvRwrS/sRrfIpT2gJbmBAY0TFokyUBy3PM44RuFRpZwHdACz+GTSPLRLo3s4qsscOMLjHiXBwzw==}
     dev: true
 
   /convert-source-map@1.9.0:
@@ -4449,21 +4428,6 @@ packages:
       strip-final-newline: 2.0.0
     dev: true
 
-  /execa@6.1.0:
-    resolution: {integrity: sha512-QVWlX2e50heYJcCPG0iWtf8r0xjEYfz/OYLGDYH+IyjWezzPNxz63qNFOu0l4YftGWuizFVZHHs8PrLU5p2IDA==}
-    engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
-    dependencies:
-      cross-spawn: 7.0.3
-      get-stream: 6.0.1
-      human-signals: 3.0.1
-      is-stream: 3.0.0
-      merge-stream: 2.0.0
-      npm-run-path: 5.1.0
-      onetime: 6.0.0
-      signal-exit: 3.0.7
-      strip-final-newline: 3.0.0
-    dev: true
-
   /execa@7.1.1:
     resolution: {integrity: sha512-wH0eMf/UXckdUYnO21+HDztteVv05rq2GXksxT4fCGeHkBhw1DROXh40wcjMcRqDOWE7iPJ4n3M7e2+YFP+76Q==}
     engines: {node: ^14.18.0 || ^16.14.0 || >=18.0.0}
@@ -5202,11 +5166,6 @@ packages:
   /human-signals@2.1.0:
     resolution: {integrity: sha512-B4FFZ6q/T2jhhksgkbEW3HBvWIfDW85snkQgawt07S7J5QXTk6BkNV+0yAeZrM5QpMAdYlocGoljn0sJ/WQkFw==}
     engines: {node: '>=10.17.0'}
-    dev: true
-
-  /human-signals@3.0.1:
-    resolution: {integrity: sha512-rQLskxnM/5OCldHo+wNXbpVgDn5A17CUoKX+7Sokwaknlq7CdSnphy0W39GU8dw59XiCXmFXDg4fRuckQRKewQ==}
-    engines: {node: '>=12.20.0'}
     dev: true
 
   /human-signals@4.3.1:
@@ -7050,11 +7009,10 @@ packages:
       - supports-color
     dev: true
 
-  /nuxt-config-schema@0.4.5:
-    resolution: {integrity: sha512-Y5anu5puDfMJfDP7IYjXsn6Dvj262HtjZqa73jCBbFRCc5jnjrs+BEpJJmtPG32ZsqzO2+RL4oTNb3H6IfKZLQ==}
+  /nuxt-config-schema@0.4.6:
+    resolution: {integrity: sha512-kHLWJFynj5QrxVZ1MjY2xmDaTSN1BCMLGExA+hMMLoCb3wn9TJlDVqnE/nSdUJPMRkNn/NQ5WP9NLA9vlAXRUw==}
     dependencies:
       '@nuxt/kit': 3.4.3
-      changelogen: 0.4.1
       defu: 6.1.2
       jiti: 1.18.2
       pathe: 1.1.0
