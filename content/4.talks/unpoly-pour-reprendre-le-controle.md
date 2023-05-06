@@ -13,8 +13,6 @@ recording: https://youtu.be/MIM6E_XMRHQ
 layout: talk
 ---
 
-# Unpoly pour reprendre le contrôle
-
 Avant de commencer qui suis-je ?
 
 Je m'appelle Estéban Soubiran. Je suis actuellement :
