@@ -18,11 +18,11 @@ const { page } = useContent()
           Slides :&nbsp;
         </dt>
         <dd class="flex flex-row gap-1">
-          <NuxtLink :href="page.slides.pdf" rel="noopener" class="text-sky-500 dark:text-sky-400 hover:underline">
+          <NuxtLink :href="page.slides.pdf" rel="noopener" target="_blank" class="text-sky-500 dark:text-sky-400 hover:underline">
             PDF
           </NuxtLink>
           /
-          <NuxtLink :href="page.slides.pdf" rel="noopener" class="text-sky-500 dark:text-sky-400 hover:underline">
+          <NuxtLink :href="page.slides.spa" rel="noopener" target="_blank" class="text-sky-500 dark:text-sky-400 hover:underline">
             SPA
           </NuxtLink>
         </dd>

@@ -24,7 +24,7 @@ L'idée est simple. Construire différents services qui permettront de monitorer
 - Client web permettant l'affichage des résultats;
 - Bot Twitter permettant de publier régulièrement les résultats.
 
-Tout cela est hébergé sur un :icon{name=raspberryPi} Raspberry Pi 3B+ avec :icon{name=docker} Docker Compose pour la gestion des services.
+Tout cela est hébergé sur un :icon{name="raspberry-pi"} Raspberry Pi 3B+ avec :icon{name=docker} Docker Compose pour la gestion des services.
 
 ### Conclusion
 
@@ -34,7 +34,7 @@ Ce projet, sans grande prétention, m'a permis de découvrir :icon{name=docker} 
 
 ### Contexte
 
-Après avoir appris :icon{name=vuejs} Vue.js, j'ai décidé de me lancer dans un petit projet pour mettre en oeuvre tous les concepts que j'avais pu voir.
+Après avoir appris :icon{name="vue"} Vue.js, j'ai décidé de me lancer dans un petit projet pour mettre en oeuvre tous les concepts que j'avais pu voir.
 
 J'ai alors regardé autour de moi ce que je pouvais faire. Faisant de la musculation, je me suis aperçu qu'il était pénible de naviguer entre son chronomètre et son entraînement. J'ai alors décidé de réunir cela au sein d'une même application.
 
@@ -42,7 +42,7 @@ J'ai alors regardé autour de moi ce que je pouvais faire. Faisant de la muscula
 
 Jai alors eu l'idée de créer une petite application web permettant à un utilisateur d'avoir dans un même endroit, un chronomètre, un compte à rebours et même d'y renseigner ses entraînements qui peuvent être automatiquement suivi par le compte à rebours.
 
-Pour l'interface graphique, j'ai utilisé :icon{name=vuetify} Vuetify. Cela m'a permis de me concentrer sur les fonctionnalités de l'application plutôt que de devoir aussi gérer le design, un sujet que je ne maîtrise pas encore. 
+Pour l'interface graphique, j'ai utilisé :icon{name=vuetify} Vuetify. Cela m'a permis de me concentrer sur les fonctionnalités de l'application plutôt que de devoir aussi gérer le design, un sujet que je ne maîtrise pas encore.
 
 Enfin, j'ai mis en production l'application et j'ai acheté un nom de domaine. Cela m'a permis de découvrir la gestion de ce dernier.
 
@@ -52,28 +52,25 @@ Le projet est open source :git-hub-link{repo=Barbapapazes/bodybuilding-app}.
 
 ### Conclusion
 
-Ce petit projet, que j'ai utilisé à la salle de sport, m'a permis de mettre en pratique toute la découverte de :icon{name=vuejs} Vue.js que j'avais pu faire. J'ai également pu découvrir :icon{name=vuetify} Vuetify et la gestion d'un nom de domaine. Une bonne première expérience.
+Ce petit projet, que j'ai utilisé à la salle de sport, m'a permis de mettre en pratique toute la découverte de :icon{name="vue"} Vue.js que j'avais pu faire. J'ai également pu découvrir :icon{name=vuetify} Vuetify et la gestion d'un nom de domaine. Une bonne première expérience.
 
 ## Station Météo - 2018
 
 ### Contexte
 
-Après avoir pu jouer avec des :icon{name=arduino} Arduino et un :icon{name=raspberryPi} Raspberry Pi durant mon [projet de première année](./mes-premiers-modules-diot.md), j'ai décidé de continuer avec une nouvelle formule. Cette fois-ci, je voulais pouvoir avoir des données météorologiques en temps réel.
+Après avoir pu jouer avec des :icon{name=arduino} Arduino et un :icon{name="raspberry-pi"} Raspberry Pi durant mon [projet de première année](./mes-premiers-modules-diot.md), j'ai décidé de continuer avec une nouvelle formule. Cette fois-ci, je voulais pouvoir avoir des données météorologiques en temps réel.
 
 ### Projet
 
 Ce projet se voulait être une vraie découverte.
 
-J'ai utilisé des modules  :icon{name=arduino} Arduino ESP8266. Ces modules était connecté à un thermomètre électronique et à un module Wifi. Ainsi, et de manière régulière, des mesures étaient faites et transmis, via le Wifi, au :icon{name=raspberryPi} Raspberry Pi.
+J'ai utilisé des modules  :icon{name=arduino} Arduino ESP8266. Ces modules était connecté à un thermomètre électronique et à un module Wi-Fi. Ainsi, et de manière régulière, des mesures étaient faites et transmis, via le Wi-Fi, au :icon{name="raspberry-pi"} Raspberry Pi.
 
-::detail
----
-title: Connexion à un Wifi
----
-Les modules Arduino n'intègre pas directement les identifiants du Wifi. Pour pallier à cela, lorsque l'Arduino démarre, il commence par émettre un réseau wifi. En se connectant dessus via un navigateur internet, on peut alors renseigner les identifiants du Wifi. Une fois cela fait, l'Arduino se connecte au Wifi et peut alors envoyer les données.
+::detail{title="Connexion à un Wi-Fi"}
+Les modules Arduino n'intègre pas directement les identifiants du Wi-Fi. Pour pallier à cela, lorsque l'Arduino démarre, il commence par émettre un réseau wifi. En se connectant dessus via un navigateur internet, on peut alors renseigner les identifiants du Wi-Fi. Une fois cela fait, l'Arduino se connecte au Wi-Fi et peut alors envoyer les données.
 ::
 
-Sur le :icon{name=raspberryPi} Raspberry Pi, j'avais mis en place un server web capable d'enregistrer les données dans une base de données.
+Sur le :icon{name="raspberry-pi"} Raspberry Pi, j'avais mis en place un server web capable d'enregistrer les données dans une base de données.
 
 Ensuite, j'ai créer des interfaces web permettant de visualiser, via des courbes, l'ensemble des données.
 

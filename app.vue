@@ -3,7 +3,7 @@ const sameAs = useSameAs()
 </script>
 
 <template>
-  <Html dir="ltr" class="h-full font-sans antialiased">
+  <HTML dir="ltr" class="h-full font-sans antialiased">
     <Head>
       <SeoKit />
       <SchemaOrgPerson
@@ -28,5 +28,5 @@ const sameAs = useSameAs()
         <TheFooter class="relative" />
       </div>
     </Body>
-  </Html>
+  </HTML>
 </template>

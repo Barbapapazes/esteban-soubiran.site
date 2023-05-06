@@ -28,4 +28,4 @@ Au sein de la structure, en tant que trésorier, j'avais la responsabilité des 
 
 ## Conclusion
 
-Ce mandat m'a permis de devenir la personne que je suis aujourd'hui. Ce mandat au sein du BNEI m'a permis de faire énormément de rencontre, parfois positive et parfois moins, mais qui m'ont permis de grandir et d'évoluer. J'ai beaucoup appris sur la gestion d'une association, le travail en équipe, l'utilisation d'outils de gestion et de communication interne. Actuellement, beaucoup de mes compétences professionnelles et personnelles sont issues de ce mandat. 
+Ce mandat m'a permis de devenir la personne que je suis aujourd'hui. Ce mandat au sein du BNEI m'a permis de faire énormément de rencontre, parfois positive et parfois moins, mais qui m'ont permis de grandir et d'évoluer. J'ai beaucoup appris sur la gestion d'une association, le travail en équipe, l'utilisation d'outils de gestion et de communication interne. Actuellement, beaucoup de mes compétences professionnelles et personnelles sont issues de ce mandat.

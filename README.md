@@ -3,13 +3,11 @@
 
 My little home on the internet 🏡.
 
-
 ## Tech Stack
 
 **Client:** Nuxt3, TailwindCSS
 
 **Server:** Netlify
-
 
 ## Run Locally
 
@@ -37,7 +35,6 @@ Start the server
   yarn dev
 ```
 
-
 ## Deployment
 
 First, you need to build this project.
@@ -55,4 +52,3 @@ Then, you can preview the result.
 ## Authors
 
 - [@barbapapazes](https://www.github.com/barbapapazes)
-

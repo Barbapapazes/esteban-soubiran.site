@@ -2,12 +2,12 @@ export default defineAppConfig({
   portfolio: {
     socials: [
       {
-        name: 'Github',
+        name: 'GitHub',
         url: 'https://github.com/Barbapapazes',
         icon: 'mdi:github'
       },
       {
-        name: 'Linkedin',
+        name: 'LinkedIn',
         url: 'https://www.linkedin.com/in/esteban25/',
         icon: 'mdi:linkedin'
       },
@@ -24,7 +24,7 @@ export default defineAppConfig({
   },
   nuxtIcon: {
     aliases: {
-      raspberryPi: 'logos:raspberry-pi',
+      'raspberry-pi': 'logos:raspberry-pi',
       arduino: 'vscode-icons:file-type-arduino',
       notion: 'simple-icons:notion',
       devto: 'ic:outline-logo-dev',
@@ -36,8 +36,8 @@ export default defineAppConfig({
       php: 'vscode-icons:file-type-php',
       node: 'vscode-icons:file-type-node',
       vite: 'vscode-icons:file-type-vite',
-      vuejs: 'vscode-icons:file-type-vue',
-      nuxtjs: 'vscode-icons:file-type-nuxt',
+      vue: 'vscode-icons:file-type-vue',
+      nuxt: 'vscode-icons:file-type-nuxt',
       vuetify: 'logos:vuetifyjs',
       express: 'simple-icons:express',
       fatify: 'simple-icons:fastify',
@@ -52,7 +52,7 @@ export default defineAppConfig({
       dialogflow: 'logos:dialogflow',
       heroku: 'logos:heroku-icon',
       netlify: 'vscode-icons:file-type-netlify',
-      digitalOcean: 'logos:digital-ocean',
+      'digital-ocean': 'logos:digital-ocean',
       nginx: 'vscode-icons:file-type-nginx',
       postgresql: 'logos:postgresql',
       mysql: 'vscode-icons:file-type-mysql'

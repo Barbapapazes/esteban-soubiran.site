@@ -21,11 +21,11 @@ La plateforme permet aux associations de se mettre en avant et de se faire conna
 
 Ainsi, les associations peuvent diffuser le message, le fait de les soutenir, aux nouveaux arrivants, durant les amphis de rentrée et lors des événements organisés par les associations comme les forums des associations.
 
-Pour la Classement, la plateforme de vote est un moyen de se faire connaître par les autres associations. 
+Pour la Classement, la plateforme de vote est un moyen de se faire connaître par les autres associations.
 
 ### Développement
 
-Cette plateforme a pris 1 mois à être développée. Elle a été réalisée avec :icon{name=adonisjs} AdonisJS, un framework NodeJS et déployée sur un VPS chez :icon{name=digitalOcean} DigitalOcean.
+Cette plateforme a pris 1 mois à être développée. Elle a été réalisée avec :icon{name=adonisjs} AdonisJS, un framework NodeJS et déployée sur un VPS chez :icon{name="digital-ocean"} DigitalOcean.
 
 J'ai écrit [un article sur les aspects techniques](../3.articles/la-plateforme-de-vote-du-classement-des-associations.md) de la plateforme qui rentre dans tous les détails.
 

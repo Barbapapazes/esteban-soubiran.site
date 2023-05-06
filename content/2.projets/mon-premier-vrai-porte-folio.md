@@ -21,7 +21,7 @@ Une fois les idées claires, il m'a fallu créer trouver un style à ce futur si
 
 ![Maquettes du site](/images/projects/portfolio-v2_maquettes.webp)
 
-Puis, une fois l'ensemble des maquettes réalisées, j'ai pu commencer à mettre les mains dans le code. Pour la réalisation, j'ai utilisé :icon{name=nuxtjs} NuxtJS, Nuxt Content et :icon{name=tailwindcss} Tailwind CSS.
+Puis, une fois l'ensemble des maquettes réalisées, j'ai pu commencer à mettre les mains dans le code. Pour la réalisation, j'ai utilisé :icon{name="nuxt"} NuxtJS, Nuxt Content et :icon{name=tailwindcss} Tailwind CSS.
 
 Pour la mise en production, le site est automatique déployé sur :icon{name=netlify} Netlify à chaque push sur la branche `main`.
 
@@ -29,4 +29,4 @@ Le projet est open-source :git-hub-link{repo=Barbapapazes/esteban-soubiran.site/
 
 ## Conclusion
 
-Ce projet m'a permis de prendre en main :icon{name=nuxtjs} NuxtJS. Aussi, c'est vraiment une fierté, après 3 ans d'apprentissage de pouvoir créer un site accessible à n'importe qui et qui présente mes projets.
+Ce projet m'a permis de prendre en main :icon{name="nuxt"} NuxtJS. Aussi, c'est vraiment une fierté, après 3 ans d'apprentissage de pouvoir créer un site accessible à n'importe qui et qui présente mes projets.

@@ -30,4 +30,4 @@ Enfin, si quelque chose se produit, je dois être en mesure d'intervenir pour ap
 
 ## Conclusion
 
-Cet emploi saisonnier m'a permis de me confronter à de nombreuses situations inattendu. Il est donc important de savoir s'adapter pour réagir au mieux. 
+Cet emploi saisonnier m'a permis de me confronter à de nombreuses situations inattendu. Il est donc important de savoir s'adapter pour réagir au mieux.

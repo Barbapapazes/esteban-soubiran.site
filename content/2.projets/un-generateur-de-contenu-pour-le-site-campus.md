@@ -27,7 +27,7 @@ Le premier est le plus simple. Il s'agit d'un formulaire disponible où, en fonc
 
 ![Capture d'écran du site. On y voit le formulaire permettant de créer du contenu. Il est possible de choisir le template via un slider en haut de la page.](/images/projects/campus_form.webp)
 
-Le second niveau consiste à passer par un Codesandbox pour éditer le contenu sans toute la complexité de GitHub. Une fois l'édition effectué, il suffit d'envoyer le lien du Codesandbox au gestionnaire du site pour procéder aux modifications.
+Le second niveau consiste à passer par un CodeSandbox pour éditer le contenu sans toute la complexité de GitHub. Une fois l'édition effectué, il suffit d'envoyer le lien du CodeSandbox au gestionnaire du site pour procéder aux modifications.
 
 Le troisième niveau est le plus complexe. Il s'agit de cloner le repository GitHub du site campus. L'utilisateur peut alors éditer le fichier markdown directement sur son ordinateur. Une fois l'édition effectuée, il suffit de push les modifications sur GitHub via une Pull Request. Le gestionnaire n'a plus qu'à approuver les modifications et le site est mis à jour.
 
@@ -39,6 +39,6 @@ Ce générateur m'a permis de simplifier la vie des auteurs de contenu. En effet
 
 Cependant, il ne fut pas si simple à créer. En effet, chacun des formulaires est généré via un fichier de configuration et à la volée. Ainsi, il m'a fallu créer un système de formulaire dynamique où les images sont retenues, optimisées avant d'être téléchargées. Il a aussi fallu mettre en place le système de téléchargement de ce dossier tout cela via une application web sans back-end.
 
-J'ai pu continuer à me familiariser avec :icon{name=vuejs} [VueJS](https://vuejs.org) et :icon{name=vuetify} [Vuetify](https://vuetifyjs.com). 
+J'ai pu continuer à me familiariser avec :icon{name="vue"} [VueJS](https://vuejs.org) et :icon{name=vuetify} [Vuetify](https://vuetifyjs.com).
 
 Au final, je trouve que c'est un outil très précieux pour garantir le bon fonctionnement du site campus.
