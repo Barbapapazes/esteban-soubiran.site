@@ -15,7 +15,7 @@ Durant le second semestre ma première année d'école, j'ai eu l'opportunité d
 
 Étant tombé amoureux du développement web durant [ma première nuit de l'info](./mes-participations-aux-nuits-de-linfo.md), j'ai décidé de réaliser un projet avec du web.
 
-Mais ce projet était à réaliser avec 2 autres personnes. Afin de satisfaire chacun, et parce que nous avions carte blanche, nous avons choisi de lier le web et l'électronique. 
+Mais ce projet était à réaliser avec 2 autres personnes. Afin de satisfaire chacun, et parce que nous avions carte blanche, nous avons choisi de lier le web et l'électronique.
 
 ## RaspIoT
 
@@ -39,7 +39,7 @@ Dans notre projet, nous avons choisi que nos modules seraient des lampes multi-c
 
 Le fonctionnement est plutôt simple mais la mise en place est plutôt complexe notamment la double possibilité d’interaction avec les modules, en physique ou via l'interface web.
 
-Le :icon{name=raspberryPi} Raspberry Pi est le module principal. Il est connecté via USB à un :icon{name=arduino} Arduino. Les modules sont des Arduino connectés à des lampes multi-couleurs ou mono-couleurs et à un interrupteur physique. Ces modules communiquent avec l'Arduino du module principal via une transmission radio.
+Le :icon{name="raspberry-pi"} Raspberry Pi est le module principal. Il est connecté via USB à un :icon{name=arduino} Arduino. Les modules sont des Arduino connectés à des lampes multi-couleurs ou mono-couleurs et à un interrupteur physique. Ces modules communiquent avec l'Arduino du module principal via une transmission radio.
 
 #### Physique
 

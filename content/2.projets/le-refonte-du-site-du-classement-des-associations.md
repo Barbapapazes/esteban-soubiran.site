@@ -17,7 +17,7 @@ Afin de faciliter la promotion du concours, l'ensemble de l'équipe organisatric
 
 :icon{name=heroicons:photo-20-solid} [Voir la charte graphique](/pdf/projects/le-classement_charte-graphique.pdf){target=_blank}
 
-Ainsi, nous avons revu l'ensemble des supports de communication du concours et notamment le site web. 
+Ainsi, nous avons revu l'ensemble des supports de communication du concours et notamment le site web.
 
 ## Le site web
 
@@ -80,11 +80,7 @@ Avec Netlify, la mise en production est toujours un plaisir. Il suffit de suivre
 
 Cependant, j'ai pu rencontrer quelques difficultés lors de la mise en place du formulaire. En effet, des changements internes à Nuxt, comme son utilisation des _functions_, ont compliqué sa mise en place. Mais après quelques quelques recherches, j'ai pu trouver la solution.
 
-::detail
----
-title: En savoir plus
----
-
+::detail{title="En savoir plus"}
 Désormais, Nuxt utilise Nitro. Ainsi, Nuxt est en mesure d'être en SSR via les _functions_ de Netlify.
 
 Mais cela a pour conséquence que l'ensemble des requêtes sont interceptées par Nitro et non plus par Netlify. Sauf que pour l'envoi du formulaire, il est nécessaire de passer par Netlify.

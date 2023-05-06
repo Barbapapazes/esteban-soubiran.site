@@ -43,7 +43,7 @@ Cette tâche fut très prenant en temps et en énergie mais elle a permis de flu
 
 ### Maquettes
 
-Une fois que l'on connaît la direction à prendre, il est possible de commencer à travailler sur les maquettes et les prototypes. 
+Une fois que l'on connaît la direction à prendre, il est possible de commencer à travailler sur les maquettes et les prototypes.
 
 Pour mener à bien cette étape cruciale qui permet l'agencement et l'organisation de l'ensemble du contenu, je me suis appuyé sur la charte graphique de la structure. Une cohérence avec le reste de la communication et d l'identité de la structure semblait indispensable.
 

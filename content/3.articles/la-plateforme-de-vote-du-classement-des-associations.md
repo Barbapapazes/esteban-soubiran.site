@@ -19,7 +19,7 @@ Dans le cadre de la 11e édition, il a été choisi de mettre en place une plate
 
 ## La plateforme
 
-Avant d'expliquer la lanière dont la plateforme a été créée, voyons ensemble les différents objectifs auxquels elle réponds. 
+Avant d'expliquer la lanière dont la plateforme a été créée, voyons ensemble les différents objectifs auxquels elle réponds.
 
 ### Objectifs
 
@@ -29,9 +29,9 @@ Ainsi, les associations peuvent diffuser le message, le fait d'être soutenu, au
 
 Pour le Classement, la plateforme de vote est un moyen de se faire connaître par les autres associations et de promouvoir la vie associative étudiante !
 
-### Présentation de la plateforme 
+### Présentation de la plateforme
 
-Sur la page principale de la plateforme, il est possible de découvrir l'ensemble des associations représentées par une liste de cartes. Ces dernières contiennent le nom, l'école, la catégorie, un court texte et un visuel ! Le nombre de vote à l'instant du chargement de la page est aussi sur cette carte. 
+Sur la page principale de la plateforme, il est possible de découvrir l'ensemble des associations représentées par une liste de cartes. Ces dernières contiennent le nom, l'école, la catégorie, un court texte et un visuel ! Le nombre de vote à l'instant du chargement de la page est aussi sur cette carte.
 
 ![Capture d'écran de la page contenant l'ensemble des associations](/images/articles/plateforme-vote-classement-des-associations/associations.webp)
 
@@ -43,7 +43,7 @@ Une fois l'association voulue trouvée, il est possible de se rendre sur la page
 
 ![Capture d'écran de la page d'une association](/images/articles/plateforme-vote-classement-des-associations/association.webp)
 
-Sur cette page de présentation, un bouton permet de soutenir une association grâce à une adresse mail. 
+Sur cette page de présentation, un bouton permet de soutenir une association grâce à une adresse mail.
 
 ## Réalisation
 
@@ -112,11 +112,11 @@ Une fois l'application web construite, il faut pouvoir la mettre à disposition 
 
 Dans un premier temps, il nous faut un domain ! Pour cela, on va utiliser un sous domain de [le-classement.fr](http://le-classement.fr). Un petit changement DNS et nous voilà prêt à rendre la plateforme disponible pour tous !
 
-```
+```txt
 vote.le-classement.fr. 18000 IN A 104.248.167.216
 ```
 
-Ensuite, il nous faut un serveur pour la base de données, le serveur :icon{name=node} Node.js et y déposer les fichiers des associations (images et PDF). Pour cela, j'ai choisi un VPS chez :icon{name=digitalOcean} DigitalOcean. Un VPS est une machine virtuelle qui peut être facilement redimensionnée. Cela est pratique pour augmenter les capacités de la machines durant les périodes avec une forte activité.
+Ensuite, il nous faut un serveur pour la base de données, le serveur :icon{name=node} Node.js et y déposer les fichiers des associations (images et PDF). Pour cela, j'ai choisi un VPS chez :icon{name="digital-ocean"} DigitalOcean. Un VPS est une machine virtuelle qui peut être facilement redimensionnée. Cela est pratique pour augmenter les capacités de la machines durant les périodes avec une forte activité.
 
 Le seul soucis, c'est qu'un VPS est "nu" lorsqu'on l'achète. Il faut donc le provisionner, c'est à dire installer toutes les ressources nécessaires à son bon fonctionnement comme le reverse proxy :icon{name=nginx} Nginx, le pare-feu, le certbot et bien d'autres comme les outils de monitoring.
 
@@ -137,7 +137,7 @@ Pour cela, il y a deux éléments à prendre en compte :
 - La base de données
 - Le système d'envoi de mails
 
-En ce qui concerne la base de données, il faut empêcher les utilisateurs d'y écrire autant de données qu'ils le souhaitent. En effet, on pourrait mettre en péril le système si celui venait à être saturé, tant sur la quantité totale que sur le débit. C'est essentiel d'avoir cela en tête lors du design du système de vote. 
+En ce qui concerne la base de données, il faut empêcher les utilisateurs d'y écrire autant de données qu'ils le souhaitent. En effet, on pourrait mettre en péril le système si celui venait à être saturé, tant sur la quantité totale que sur le débit. C'est essentiel d'avoir cela en tête lors du design du système de vote.
 
 Pour le système d'envoi de mails, il s'agit de ne pas envoyer des mails à n'importe qui. En effet, si un utilisateur malintentionné venait à envoyer des milliers de mails, cela pourrait avoir des conséquences sur le serveur d'envoi de mails d'autant que le système n'est pas gratuit.
 

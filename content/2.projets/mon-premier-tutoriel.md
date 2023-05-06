@@ -25,12 +25,9 @@ Fin août 2021, en travaillant sur un projet web, j'ai découvert :icon{name="ad
 
 AdonisJS me semblait alors le parfait candidat pour lier les 2 projets, créer un tutoriel et permettre à un débutant de découvrir le développement web.
 
-::detail
----
-title: Pourquoi AdonisJS ?
----
+::detail{title="Pourquoi AdonisJS ?"}
 
-J'ai eu l'occasion de tester différentes librairies comme :icon{name="express"} Express ou :icon{name="fastify"} Fastify ou différents frameworks comme :icon{name="nestjs"} Nestjs ou :icon{name="feathersjs"} Feathersjs. Mais j'ai vraiment eu un coup de coeur pour :icon{name="adonisjs"} AdonisJS. Je vous conseil d'y jeter un oeil parce qu'il ne vous décevra pas.
+J'ai eu l'occasion de tester différentes librairies comme :icon{name="express"} Express ou :icon{name="fastify"} Fastify ou différents frameworks comme :icon{name="nestjs"} NestJS ou :icon{name="feathersjs"} Feathersjs. Mais j'ai vraiment eu un coup de coeur pour :icon{name="adonisjs"} AdonisJS. Je vous conseil d'y jeter un oeil parce qu'il ne vous décevra pas.
 ::
 
 ### Tutoriel
@@ -50,6 +47,6 @@ Retrouver la série sur :icon{name="devto"} [Dev.to](https://dev.to/barbapapazes
 
 ## Conclusion
 
-Écrire un tutoriel, c'est un exercice difficile et qui demande du temps mais c'est vraiment enrichissant. Ça oblige à être très rigoureux et très précis. Il faut savoir se mettre dans la peau du lecture pour s'assurer que chaque phrase est clair et éviter les sous entendus. 
+Écrire un tutoriel, c'est un exercice difficile et qui demande du temps mais c'est vraiment enrichissant. Ça oblige à être très rigoureux et très précis. Il faut savoir se mettre dans la peau du lecture pour s'assurer que chaque phrase est clair et éviter les sous entendus.
 
 J'ai pu avoir des retours de lecteurs satisfaits. C'est donc une expérience validée et que je renouvellerai dès que possible.

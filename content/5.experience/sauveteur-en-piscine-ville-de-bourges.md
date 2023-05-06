@@ -22,7 +22,6 @@ Ensuite, j'ai aussi une mission de surveillance de l'espace nautique pour m'assu
 
 Enfin, si quelque chose se produit, je dois être en mesure d'intervenir pour apporter une solution concrète rapidement. Cela va du petit bobo à la noyade. Il est donc important d'être toujours prêt à réagir.
 
-
 ## Conclusion
 
 Cet emploi saisonnier, mon tout premier, m'a permis de faire mon premier pas dans le monde professionnel. Il a été l'occasion de rencontrer de nouvelles personnes et de prendre de première responsabilités !

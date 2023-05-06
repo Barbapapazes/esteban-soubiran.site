@@ -19,13 +19,13 @@ Le précédent site campus était un agrégat de différents site WordPress. Ain
 
 ### Réalisation
 
-La première question que j'ai du me poser est de savoir comment j'allais réaliser ce nouveau site. En effet, je suis encore débutant dans plein de domaines. Mais la plus grandes contraintes est le temps. 
+La première question que j'ai du me poser est de savoir comment j'allais réaliser ce nouveau site. En effet, je suis encore débutant dans plein de domaines. Mais la plus grandes contraintes est le temps.
 
 En effet, j'ai réalisé ce site durant les grandes vacances, c'est à dire que j'avais 7 semaines pour la réalisation. Évaluer le besoin en contactant les associations, développer le site, le faire valider par le bureau des élèves, le mettre en ligne et ajouter le contenu en contactant à nouveau l'ensemble des associations.
 
 Ainsi, pour réussir à faire cela dans les temps, j'ai choisi la stack technologique suivante :
 
-- :icon{name=nuxtjs} [Nuxt2](https://nuxtjs.org/) pour le développement du site;
+- :icon{name="nuxt"} [Nuxt2](https://nuxtjs.org/) pour le développement du site;
 - [Nuxt Content](https://content.nuxtjs.org/) pour la gestion du contenu via des fichiers markdown;
 - :icon{name=vuetify} [Vuetify](https://vuetifyjs.com/en/) pour le design. N'ayant pas les compétences pour les créations de l'interface utilisateur, j'ai choisi une librairie qui me permet de faire des interfaces rapidement quitte à sacrifier la personnalisation;
 - :icon{name=netlify} [Netlify](https://www.netlify.com/) pour le déploiement.
@@ -41,11 +41,7 @@ Le site contient différentes pages :
 
 Comme chaque fichier, qui est d'ailleurs équivalent à chaque page, est un fichier markdown et que le site est hébergé sur Netlify, la modification du site est aisée pour la plus part des personnes.
 
-::detail
----
-title: Déploiement en continu
----
-
+::detail{title="Déploiement en continu"}
 Le site est déployé automatiquement sur Netlify à chaque push sur la branche `master`. Ainsi, le site est toujours à jour.
 
 Cette fonctionnalité permet à n'importe qui de suggérer des changements via une Pull Request sur GitHub et de les mettre en ligne dès qu'elles sont approuvées.
