@@ -23,7 +23,7 @@ jobs:
           cache: pnpm
 
       - run: nci
-      
+
       - run: nr lint:md
 
   lint:
@@ -40,7 +40,7 @@ jobs:
           cache: pnpm
 
       - run: nci
-      
+
       - run: nr lint
 
   generate:
@@ -57,5 +57,5 @@ jobs:
           cache: pnpm
 
       - run: nci
-      
+
       - run: nr generate
