@@ -26,29 +26,29 @@ Go to the project directory
 Install dependencies
 
 ```bash
-  yarn
+  pnpm install --frozen-lockfile
 ```
 
 Start the server
 
 ```bash
-  yarn dev
+  pnpm run dev
 ```
 
 ## Deployment
 
-First, you need to build this project.
+First, you need to generate this project.
 
 ```bash
-  yarn build
+  pnpm run generate
 ```
 
 Then, you can preview the result.
 
 ```bash
-  yarn preview
+  pnpm run preview
 ```
 
 ## Authors
 
-- [@barbapapazes](https://www.github.com/barbapapazes)
+- [@Barbapapazes](https://www.github.com/Barbapapazes)
