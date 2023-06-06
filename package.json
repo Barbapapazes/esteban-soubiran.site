@@ -13,7 +13,7 @@
     "lint:md": "markdownlint . && case-police ./**/*.md",
     "lint:md:fix": "markdownlint . --fix && case-police --fix ./**/*.md"
   },
-  "packageManager": "pnpm@8.6.0",
+  "packageManager": "pnpm@8.6.1",
   "devDependencies": {
     "@headlessui/vue": "^1.7.14",
     "@nuxt/content": "^2.6.0",
@@ -28,7 +28,7 @@
     "case-police": "^0.6.1",
     "eslint": "^8.42.0",
     "markdownlint-cli": "^0.34.0",
-    "nuxt": "^3.5.2",
+    "nuxt": "^3.5.3",
     "nuxt-clarity-analytics": "^0.0.2",
     "nuxt-icon": "^0.4.1",
     "nuxt-seo-kit": "^1.3.8",
