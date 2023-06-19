@@ -32,7 +32,10 @@ export default defineNuxtConfig({
       trailingSlash: true
     },
     highlight: {
-      theme: 'github-dark'
+      theme: {
+        default: 'github-light',
+        dark: 'github-dark'
+      }
     }
   },
 
