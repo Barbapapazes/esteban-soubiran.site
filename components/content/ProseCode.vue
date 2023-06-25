@@ -1,9 +1,9 @@
 <script lang="ts" setup>
 defineProps<{
   code: string,
-  language: string
-  filename: string,
-  meta: string
+  language?: string
+  filename?: string,
+  meta?: string
 }>()
 
 const { copy, copied, isSupported } = useClipboard()

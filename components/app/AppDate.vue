@@ -13,7 +13,7 @@ const { formatDate, ISODate } = useDate()
   <div class="flex flex-row items-center">
     <span v-if="$props.withBorder" class="h-4 w-0.5 mr-3 rounded-full bg-zinc-400 dark:bg-zinc-500" />
     <time
-      class="text-base text-zinc-400 dark:text-zinc-500"
+      class="text-base text-zinc-500 dark:text-zinc-400"
       :datetime="ISODate(date)"
     >
       <span>

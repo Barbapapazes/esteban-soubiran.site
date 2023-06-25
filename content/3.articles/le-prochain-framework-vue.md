@@ -1,9 +1,10 @@
 ---
 title: Le prochain framework Vue.js
 description: Comment écrire le prochain framework et détrôner Nuxt ? C'est ce que nous allons voir !
-image:
-  src: /images/articles/le-prochain-framework-vue/cover.webp
-  alt:
+image: /assets/socials/le-prochain-framework-vue.jpg
+cover:
+  src: /assets/articles/le-prochain-framework-vue/cover.webp
+  alt: Image de couverture sur laquelle on peut lire "Tnux, le prochain framework Vue.js, avec la puissance de Vite et Nitro."
 datePublished: 2023-06-17
 dateModified: 2023-06-17
 layout: article
@@ -12,7 +13,6 @@ layout: article
 <!-- Harmoniser le nous et le on (et les vous aussi) (sur le nous) -->
 <!-- Faire une branch pour le sfc et ajouter le lien vers l'article dans le readme -->
 <!-- Harmoniser les titres -->
-<!-- TODO: ajouter une toc dans le template (faire une intégration un peu à la docus) -->
 
 > TL;DR: Nous n'allons évidemment pas tenter de remplacer [:icon{name="nuxt"} Nuxt](https://nuxt.com) mais plutôt de comprendre son fonctionnement, l'écosystème qu'il a construit et comment nous pourrions en écrire un. À la fin de cette lecture, vous aurez un entre les mains les premières briques de votre propre framework et une bonne compréhension de ce qu'il se passe sous le capot de Nuxt.
 
@@ -45,7 +45,7 @@ Oui, c'est une bonne liste mais nous allons voir qu'avec les bons outils, c'est 
 
 ## Notre framework Vue
 
-### Architecture
+### Architecture du framework
 
 _L'architecture que je vais vous présenter n'est qu'une parmi d'autres. Il est tout à fait possible de trouver une autre architecture fonctionnelle._
 
@@ -109,7 +109,7 @@ Aujourd'hui, :icon{name="vite"} Vite est utilisé partout, du front-end au back-
 [En savoir plus sur Vite](https://vitejs.dev)
 ::
 
-### Initialisation
+### Initialisation du projet
 
 Maintenant que l'on a vu ce que l'on voulait faire, le fonctionnement le Nitro et celui :icon{name="vite"} Vite, il est temps de construire notre propre framework !
 
@@ -221,7 +221,7 @@ Relançons notre serveur et allons sur [http://localhost:3000](http://localhost:
 
 Parfait, ça fonctionne ! :tada:
 
-```txt [Réponse du serveur]
+``` [Réponse du serveur]
 Hello World
 ```
 
@@ -282,7 +282,7 @@ Magnifique, un bouton s'affiche ! :sparkles: Pour autant, lorsque nous cliquons 
 Pour en savoir plus, vous pouvez lire la documentation de [VueJS SSR](https://vuejs.org/guide/scaling-up/ssr.html).
 ::
 
-### Ajouter un template
+### Un template HTML
 
 Notre application est bien sympa mais pour que la page rendue soit une vraie page HTML, il manque quelques balises.
 
@@ -379,7 +379,7 @@ Maintenant, allons sur [http://localhost:3000](http://localhost:3000).
 
 C'est beaucoup mieux ! :rocket:
 
-### Hydratation du rendu
+### Hydratation du rendu HTML
 
 La création de notre première page, c'est clairement la partie la plus simple ! Nous allons maintenant devoir hydrater notre page lorsqu'elle arrive chez le client.
 
@@ -527,14 +527,14 @@ Ouvrons notre navigateur et allons sur [`http://localhost:3000`](http://localhos
 
 Le premier nous indique que nous devons utiliser une autre version de vue :
 
-```txt
+```
 [Vue warn]: Component provided template option but runtime compilation is not supported in this build of Vue. Configure your bundler to alias "vue" to "vue/dist/vue.esm-bundler.js".
   at <App>
 ```
 
 Le second nous indique qu'un problème lors de l'hydratation de l'application a eu lieu :
 
-```txt
+```
 [Vue warn]: Hydration node mismatch:
 - Client vnode: Symbol(v-cmt)
 - Server rendered DOM: <button>​1​</button>​
@@ -651,7 +651,7 @@ Pour voir notre HMR en action, il vous suffit simplement de mettre à jour le te
 
 Si on regarde la console, on peut voir quelque warning dont :
 
-```text
+```
 There is already an app instance mounted on the host container.
  If you want to mount another app on the same host container, you need to unmount the previous app by calling `app.unmount()` first.
 ```
@@ -695,7 +695,7 @@ Changeons un peu notre template et _voilà_, notre application est mise à jour 
 Il est important de noter que la mise en place que nous venons de faire n'est pas très approprié dans le vrai monde. Ce n'est pas une bonne idée de sauvegarder notre application dans l'objet `window`. Dans le cadre de cet article, nous ne développerons pas l'utilisation du HMR. Nous verrons même que nous allons pouvoir déléguer cette partie à un plugin.
 ::
 
-### Un peu de CSS
+### Un peu de CSS pour plus de style
 
 Maintenant que nous avons un HMR fonctionne, il est temps d'ajouter un peu de styles pour rendre note page un peu plus jolie.
 
@@ -716,7 +716,7 @@ import '@picocss/pico'
 
 Et rien à faire, notre application a maintenant un peu de style et avec le HMR, vous pouvez changer votre template et voir le résultat en temps réel !
 
-### Build de l'application
+### Construction de l'application pour la production
 
 Pour le moment, nous avons la possibilité de développer une application en local sur notre machine. Mais qu'en est-il de la mise en production ?
 
@@ -734,7 +734,7 @@ npm run preview
 
 Et là, c'est le drame, une erreur 500 ! :scream:
 
-```text
+```
 Cannot read properties of null (reading 'replace')
 ```
 
@@ -1198,7 +1198,7 @@ En développement, le driver par défaut lors de l'utilisation de `useStorage` e
 
 Maintenant que nous avons une application fonctionnelle, nous allons pouvoir nous amuser un peu avec :icon{name="vue"} Vue !
 
-### Single File Component
+### Les Single File Component
 
 :icon{name="vue"} Vue permet l'utilisation d'un format de fichier `.vue` qui permet de définir un composant en un seul fichier. Ce format de fichier est appelé [`Single File Component`](https://vuejs.org/guide/scaling-up/sfc.html) (SFC).
 
@@ -1399,7 +1399,9 @@ npm install --save-dev unstorage@1.6.1
 Vous pouvez suivre l'[issue sur GitHub](https://github.com/unjs/unstorage/issues/253)
 ::
 
-## La suite
+Accéder au code source :git-hub-link{repo="barbapapazes/the-next-vue-framework/tree/sfc" name="barbapapazes/the-next-vue-framework#sfc"}
+
+## Fin et suite
 
 Voilà, cette plongé dans la création d'un méta framework prend fin ! Vous avez pu découvrir comment lier Nitro avec :icon{name="vite"} Vite pour créer votre propre méta framework, comment gérer le HMR et créer votre CLI et les dessous du fonctionnement de :icon{name="nuxt"} Nuxt.
 
