@@ -11,8 +11,8 @@ layout: article
 ---
 
 <!-- Harmoniser le nous et le on (et les vous aussi) (sur le nous) -->
-<!-- Faire une branch pour le sfc et ajouter le lien vers l'article dans le readme -->
-<!-- Harmoniser les titres -->
+<!-- rework les images et les covers en pensant à ajouter un default aux template -->
+<!-- rework l'index pour l'avoir dans le site -->
 
 > TL;DR: Nous n'allons évidemment pas tenter de remplacer [:icon{name="nuxt"} Nuxt](https://nuxt.com) mais plutôt de comprendre son fonctionnement, l'écosystème qu'il a construit et comment nous pourrions en écrire un. À la fin de cette lecture, vous aurez un entre les mains les premières briques de votre propre framework et une bonne compréhension de ce qu'il se passe sous le capot de Nuxt.
 

@@ -19,19 +19,19 @@ defineProps<{
         <dt class="sr-only">
           Entreprise
         </dt>
-        <dd class="w-full flex-none text-sm font-medium text-zinc-900 dark:text-zinc-100">
+        <dd class="w-full flex-none text-sm font-medium text-content">
           {{ $props.experience.company.name }}
         </dd>
         <dt class="sr-only">
           Poste
         </dt>
-        <dd class="text-xs text-zinc-500 dark:text-zinc-400">
+        <dd class="text-xs text-reduced">
           {{ $props.experience.title }}
         </dd>
         <dt class="sr-only">
           Date
         </dt>
-        <dd class="ml-auto text-xs text-zinc-400 dark:text-zinc-500">
+        <dd class="ml-auto text-xs text-reduced">
           <time :datetime="$props.experience.from">
             {{ $props.experience.from }}
           </time>

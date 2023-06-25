@@ -22,7 +22,7 @@ const sameAs = useSameAs()
         <div class="z-50 sticky top-6 flex flex-row justify-center">
           <TheHeader />
         </div>
-        <main class="relative mt-16 sm:mt-32">
+        <main class="relative mt-16 sm:mt-32 text-content">
           <NuxtPage />
         </main>
         <TheFooter class="relative" />

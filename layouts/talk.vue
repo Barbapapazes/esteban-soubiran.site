@@ -17,7 +17,7 @@ useSchemaOrg([
 <template>
   <AppSection>
     <PageSection>
-      <PageProseHeader :title="page.title" :date-published="page.datePublished" />
+      <PageProseHeader :title="page.title" :date-published="page.datePublished" :cover="page.cover" />
 
       <TalksInfo class="max-w-prose w-full mx-auto mt-10" />
 

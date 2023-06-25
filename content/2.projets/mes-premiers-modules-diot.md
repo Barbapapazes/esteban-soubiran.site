@@ -1,9 +1,10 @@
 ---
 title: Mes premiers modules d'IoT
 description: J'ai crée mes premiers modules d'internet of things (IoT) lors d'un projet au sein de ma première année d'école d'ingénieurs.
-image:
-    src: /images/projects/discover-iot.webp
-    alt: Première page de notre présentation du projet. On peut y lire "Gestion d'électronique à distance, projet 1A".
+image: /assets/socials/index.png
+cover:
+  src: /images/projects/discover-iot.webp
+  alt: Première page de notre présentation du projet. On peut y lire "Gestion d'électronique à distance, projet 1A".
 datePublished: 2019-06-15
 dateModified: 2020-11-05
 layout: project

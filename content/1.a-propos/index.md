@@ -2,10 +2,11 @@
 title: À propos
 description: Je suis Estéban. Je vis à Paris et je développe des expériences utilisateurs.
 pageTitle: Je suis Estéban. Je vis à Paris et je développe des expériences utilisateurs.
-image:
+image: /assets/socials/index.png
+cover:
   src: /images/about/me.webp
   alt: Photo de profil d'Estéban Soubiran
-mail: 
+mail:
   url: mailto:pro.soubiran+portfolio@gmail.com
   name: pro.soubiran@gmail.com
   icon: heroicons:envelope-solid

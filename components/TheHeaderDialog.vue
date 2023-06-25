@@ -8,7 +8,7 @@ const { navigation } = useContent()
   <Popover class="relative right-14 h-10">
     <!-- <ClientOnly> -->
     <PopoverButton
-      class="group h-full flex items-center rounded-full bg-white/90 px-4 py-2 text-sm font-medium text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10 dark:hover:ring-white/20 transition ease-in"
+      class="group h-full flex items-center rounded-full bg-blur px-4 py-2 text-sm font-medium text-content shadow-base border-base hover:ring-zinc-900/10 hover:dark:ring-white/20 transition-base"
     >
       Menu
       <Icon

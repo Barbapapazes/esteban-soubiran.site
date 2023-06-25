@@ -17,7 +17,7 @@ const attrs = useAttrs()
     <button
       label="Changer le thème"
       v-bind="attrs"
-      class="group rounded-full bg-white/90 h-10 w-10 flex justify-center items-center shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur transition dark:bg-zinc-800/90 dark:ring-white/10 dark:hover:ring-white/20"
+      class="group rounded-full bg-blur h-10 w-10 flex justify-center items-center shadow-base border-base hover:ring-zinc-900/10 hover:dark:ring-white/20 transition-base"
       @click="toggleColor()"
     >
       <Transition name="fade" mode="out-in">

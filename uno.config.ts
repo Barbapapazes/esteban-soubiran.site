@@ -2,7 +2,21 @@ import { defineConfig, presetTypography, presetUno } from 'unocss'
 import transformerDirectives from '@unocss/transformer-directives'
 
 export default defineConfig({
-  // TODO: view shortcuts via Devtools from antfu
+  shortcuts: [
+    {
+      'text-content': 'text-zinc-800 dark:text-zinc-100',
+      'text-reduced': 'text-zinc-500 dark:text-zinc-400',
+      'text-primary': 'text-sky-500 dark:text-sky-400',
+
+      'border-base': 'ring-1 ring-zinc-900/5 dark:ring-white/10',
+
+      'shadow-base': 'shadow-lg shadow-zinc-800/5',
+
+      'transition-base': 'transition ease-in',
+
+      'bg-blur': ' backdrop-blur bg-white/90 dark:bg-zinc-800/90'
+    }
+  ],
   presets: [
     presetUno(),
     presetTypography({

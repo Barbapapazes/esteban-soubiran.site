@@ -12,7 +12,7 @@ const { isHome, isActive } = useActivePath()
           <NuxtLink
             v-if="!isHome"
             to="/"
-            class="absolute left-0 h-10 w-10 rounded-full bg-white/90 p-0.5 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:ring-white/10"
+            class="absolute left-0 h-10 w-10 rounded-full bg-blur p-0.5 shadow-base border-base hover:ring-zinc-900/10 hover:dark:ring-white/20"
           >
             <img
               src="/esteban.webp"
@@ -26,15 +26,15 @@ const { isHome, isActive } = useActivePath()
         </Transition>
 
         <div
-          class="hidden md:flex rounded-full bg-white/90 px-3 text-sm font-medium text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10"
+          class="hidden md:flex rounded-full bg-blur px-3 text-sm font-medium shadow-base border-base"
         >
           <nav aria-labelledby="Navigation primaire">
-            <ul class="flex flex-row">
+            <ul class="flex flex-row text-content">
               <li v-for="item in navigation" :key="item._path" class="relative">
                 <NuxtLink
                   :to="item._path"
-                  class="relative block px-3 py-2 transition hover:text-sky-500 hover:dark:text-sky-400 text-base"
-                  :class="{ 'text-sky-500 dark:text-sky-400': isActive(item._path) }"
+                  class="relative block px-3 py-2 transition hover:text-primary"
+                  :class="{ 'text-primary': isActive(item._path) }"
                 >
                   {{ item.title }}
                 </NuxtLink>
