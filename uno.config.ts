@@ -15,20 +15,20 @@ export default defineConfig({
           padding: 0
         },
         'p a': {
-          color: "theme('colors.sky.500')",
+          color: '#0ea5e9',
           'text-decoration-line': 'none',
           'transition-property': 'all',
           'transition-timing-function': 'cubic-bezier(0.4, 0, 1, 1)',
-          'transition-duration': "theme('duration.150')"
+          'transition-duration': '150ms'
         },
         'p a:hover': {
-          color: "theme('colors.sky.600')"
+          color: '#0284c7'
         },
         '.dark p a': {
-          color: "theme('colors.sky.400')"
+          color: '#38bdf8'
         },
         '.dark p a:hover': {
-          color: "theme('colors.sky.300')"
+          color: '#7dd3fc'
         },
         '.alert p:first-child': {
           'margin-top': 0
