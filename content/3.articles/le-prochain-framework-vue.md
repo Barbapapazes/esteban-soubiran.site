@@ -9,7 +9,7 @@ dateModified: 2023-06-17
 layout: article
 ---
 
-<!-- Harmoniser le nous et le on (sur le nous) -->
+<!-- Harmoniser le nous et le on (et les vous aussi) (sur le nous) -->
 <!-- Faire une branch pour le sfc et ajouter le lien vers l'article dans le readme -->
 <!-- Harmoniser les titres -->
 <!-- TODO: ajouter une toc dans le template (faire une intégration un peu à la docus) -->
@@ -1196,13 +1196,211 @@ En développement, le driver par défaut lors de l'utilisation de `useStorage` e
 
 ## Allons plus loin
 
+Maintenant que nous avons une application fonctionnelle, nous allons pouvoir nous amuser un peu avec :icon{name="vue"} Vue !
+
 ### Single File Component
 
-<!-- TODO: Expliquer que si on utilise vite, ça veut dire qu'on peut facilement utiliser l'écosystème et donc vue-plugin -->
-<!-- TODO: supprimer le hmr parce que le plugin nous le provide pour nous -->
+:icon{name="vue"} Vue permet l'utilisation d'un format de fichier `.vue` qui permet de définir un composant en un seul fichier. Ce format de fichier est appelé [`Single File Component`](https://vuejs.org/guide/scaling-up/sfc.html) (SFC).
 
-<!-- TODO: Déplacer le compteur dans un composant -->
+Dan le même temps, l'utilisation de :icon{name="vite"} Vite nous donne accès à tout l'écosystème de plugins dont [`@vitejs/plugin-vue`](https://github.com/vitejs/vite-plugin-vue/) que nous allons pouvoir utiliser nous permettant d'utiliser les SFC très simplement !
+
+Tout d'abord, nous allons installer le plugin :
+
+```bash
+npm install --save-dev @vitejs/plugin-vue
+```
+
+Dans notre configuration, nous allons ajouter le plugin :
+
+```javascript [cli.mjs]
+// ...
+import vueVite from '@vitejs/plugin-vue'
+
+async function main() {
+  // ...
+
+  const { config } = await loadConfig({
+    // ...
+    defaultConfig: {
+      vite: {
+        // ...
+        plugins: [
+          vueVite(),
+        ],
+      },
+      nitro: {
+        // ...
+      },
+    }
+  })
+
+  // ...
+}
+
+// ...
+```
+
+Dans le même temps, nous pouvons mettre à jour notre serveur :icon{name="vite"} Vite de développement pour utiliser le plugin :
+
+```javascript [cli.mjs]
+// ...
+
+async function main() {
+  // ...
+
+  const { config } = await loadConfig({
+    // ...
+    defaultConfig: {
+      vite: {
+        // ...
+      },
+      nitro: {
+        devHandlers: [
+          {
+            route: '/__vite',
+            handler: defineLazyEventHandler(async () => {
+              const devViteServer = await createServer({
+                plugins: [vueVite()],
+                // ...
+              })
+
+              // ...
+            }),
+          },
+        ],
+      },
+    }
+  })
+
+  // ...
+}
+
+// ...
+```
+
+Dans le même temps, nous allons devoir faire que Nitro comprenne la syntaxe des SFC afin de pouvoir rendre l'application côté serveur. Pour cela, nous allons utiliser le plugin [`rollup-plugin-vue`](https://rollup-plugin-vue.vuejs.org/) :
+
+```bash
+npm install --save-dev rollup-plugin-vue
+```
+
+```javascript [cli.mjs]
+// ...
+import vueRollup from 'rollup-plugin-vue'
+
+async function main() {
+  // ...
+
+  const { config } = await loadConfig({
+    // ...
+    defaultConfig: {
+      vite: {
+        // ...
+      },
+      nitro: {
+        rollupConfig: {
+          plugins: [
+            vueRollup(),
+          ],
+        },
+      },
+    }
+  })
+
+  // ...
+}
+
+// ...
+```
+
+Maintenant que les plugins sont installés, créons notre premier composant `App.vue` dans notre dossier `app` :
+
+```vue [App.vue]
+<template>
+  <div>
+    <h1>Hello world with SFC!</h1>
+  </div>
+</template>
+```
+
+Puis utilisons le dans notre `app.ts` :
+
+```typescript [app.ts]
+import { createSSRApp } from 'vue'
+import App from './App.vue'
+
+export function createApp() {
+  return createSSRApp(App)
+}
+```
+
+Et ça marche ! :tada:
+
+En ce qui concerne le HMR, nous allons pouvoir simplifier notre `client.ts` parce que c'est le plugin :icon{name="vite"} Vite qui va s'occuper de tout pour nous :
+
+```typescript [client.ts]
+import { createApp } from './app'
+
+createApp().mount('#root')
+```
+
+Rechargez la page et modifier votre template dans `App.vue` pour voir le HMR fonctionner !
+
+Et dans notre configuration, nous pouvons retirer les alias `vue` puisque nous n'utilisons plus directement de `template` lors de la création du composant.
+
+Pour aller encore plus loin, nous pouvons créer un composant `Counter.vue` :
+
+```vue [Counter.vue]
+<script lang="ts" setup>
+import { ref } from 'vue'
+
+const count = ref(0)
+</script>
+
+<template>
+  <button @click="count++">
+    {{ count }}
+  </button>
+</template>
+```
+
+Et utilisons le dans notre `App.vue` :
+
+```vue [App.vue]
+<script lang="ts" setup>
+import Counter from './Counter.vue'
+</script>
+
+<template>
+  <div>
+    <h1>Hello world with SFC with HMR!</h1>
+    <Counter />
+  </div>
+</template>
+```
+
+Recharger votre page et cliquez sur le bouton pour voir le compteur augmenter ! Dans le même temps, vous pouvez modifier le contenu du template, en ajouter un peu de texte sous notre compteur, de `App.vue` et voir la précisions du HMR qui ne détruit pas l'état de votre compteur.
+
+Nous pouvons même construire et prévisualiser notre application :
+
+```bash
+npm run build && npm run preview
+```
+
+Et vous pouvez [la déployer où vous le souhaitez](https://nitro.unjs.io/deploy) !
+
+::alert{type="warning"}
+Si vous rencontrez une erreur sur un driver `unstorage` qui n'est pas trouvé lors de la preview, installez la version `1.6.1`.
+
+```bash
+npm install --save-dev unstorage@1.6.1
+```
+
+Vous pouvez suivre l'[issue sur GitHub](https://github.com/unjs/unstorage/issues/253)
+::
 
 ## La suite
 
-<!-- TODO: Faire une conclusion sur ce qu'on appris, qu'on a une bonne base mais qu'on pourrait publier sur npm, commencer à l'utiliser et concurrencer nuxt ! -->
+Voilà, cette plongé dans la création d'un méta framework prend fin ! Vous avez pu découvrir comment lier Nitro avec :icon{name="vite"} Vite pour créer votre propre méta framework, comment gérer le HMR et créer votre CLI et les dessous du fonctionnement de :icon{name="nuxt"} Nuxt.
+
+Désormais, vous pouvez vous amuser à créer votre propre méta framework et à le partager avec la communauté et peut être contribuer à :icon{name="nuxt"} Nuxt ou Nitro avec vos découvertes !
