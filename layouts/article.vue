@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-const { page } = useContent()
+const { page, toc } = useContent()
 const { ISODate } = useDate()
 
 useSchemaOrg([
@@ -17,6 +17,9 @@ useSchemaOrg([
   <AppSection>
     <PageSection>
       <PageProseHeader :title="page.title" :date-published="page.datePublished" :image="page.image" />
+
+      <!-- TODO: ajouter la toc -->
+      <pre>{{ toc }}</pre>
 
       <PageProse>
         <slot />

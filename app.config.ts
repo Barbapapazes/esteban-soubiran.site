@@ -40,7 +40,7 @@ export default defineAppConfig({
       nuxt: 'vscode-icons:file-type-nuxt',
       vuetify: 'logos:vuetifyjs',
       express: 'simple-icons:express',
-      fatify: 'simple-icons:fastify',
+      fastify: 'simple-icons:fastify',
       nestjs: 'logos:nestjs',
       feathersjs: 'logos:feathersjs',
       adonisjs: 'logos:adonisjs-icon',

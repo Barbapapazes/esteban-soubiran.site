@@ -11,7 +11,8 @@ export default defineNuxtConfig({
     '@unocss/nuxt',
     '@nuxtjs/color-mode',
     'nuxt-icon',
-    '@nuxthq/studio'
+    '@nuxthq/studio',
+    '@vueuse/nuxt'
   ],
 
   runtimeConfig: {
