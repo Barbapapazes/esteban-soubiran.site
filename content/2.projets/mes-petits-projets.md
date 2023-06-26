@@ -1,7 +1,8 @@
 ---
 title: Mes petits projets
 description: Quelques petits projets réalisés lors de moments d'ennui ou pour se découvrir des petites technologies. Souvent rien d’ambitieux mais toujours intéressant à faire.
-image: 
+image: /assets/socials/index.png
+cover:
   src: /images/projects/side-projects.webp
   alt: Capture d'écran de mon profil GitHub
 datePublished: 2020-04-15

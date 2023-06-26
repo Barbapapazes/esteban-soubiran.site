@@ -8,7 +8,7 @@ defineProps<{
 <template>
   <span>
     <Icon name="carbon:logo-github" class="inline-block w-5 h-5 dark:text-zinc-200" />
-    <NuxtLink class="ml-1" :to="`https://github.com/${repo}`">
+    <NuxtLink class="ml-1" :to="`https://github.com/${repo}`" rel="noopener">
       {{ name || (repo.startsWith('barbapapazes/') ? repo.slice(13) : repo) }}
     </NuxtLink>
   </span>

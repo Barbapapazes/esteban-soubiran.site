@@ -1,7 +1,8 @@
 ---
 title: Créer un site vitrine pour un client
 description: Dans le cadre d'une mission pour la Junior Entreprise de mon école, j'ai eu l'opportunité de travailler pour une entreprise.
-image:
+image: /assets/socials/index.png
+cover:
   src: /images/projects/create-website-for-client.webp
   alt: Capture d'écran du site vitrine de l'entreprise. Un dégradé vertical du bleu au orange fait le fond. Une image d'une formation est présent sur la droite. Le texte "Les formations qui créent de l'expérience" est présent sur la gauche.
 datePublished: 2021-03-01

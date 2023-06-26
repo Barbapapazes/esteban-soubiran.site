@@ -1,7 +1,8 @@
 ---
 title: Mes participations aux nuits de l'info
 description: J'ai eu l'opportunité de participer à plusieurs nuits de l'info. Je vous propose de découvrir mes participations et mes réalisations durant ces nuits.
-image:
+image: /assets/socials/index.png
+cover:
   src: /images/projects/involvement-nuit-de-linfo.webp
   alt: L'image montre l'ensemble de l'équipe de 2018. On peut y voir 11 personnes donc 1 se faisant porter par 6 autres. Chaque personne porte un tee-shirt avec le logo de la nuit de l'info.
 datePublished: 2018-12-02

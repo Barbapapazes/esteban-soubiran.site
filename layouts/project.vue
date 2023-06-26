@@ -16,7 +16,7 @@ useSchemaOrg([
 <template>
   <AppSection>
     <PageSection>
-      <PageProseHeader :title="page.title" :date-published="page.datePublished" :image="page.image" />
+      <PageProseHeader :title="page.title" :date-published="page.datePublished" :cover="page.cover" />
 
       <PageProse>
         <slot />

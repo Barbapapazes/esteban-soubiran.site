@@ -3,6 +3,9 @@ title: Unpoly, pour reprendre le contrôle !
 description: Tools-in-action un Unpoly, un outil qui permet d'avoir l'expérience utilisateur d'une application web mais sans la complexité.
 datePublished: 2023-04-12
 dateModified: 2023-04-12
+cover:
+  src: /assets/talks/unpoly-pour-reprendre-le-controle/cover.webp
+  alt: Photo d'Estéban lors de son talk à Devoxx France
 event:
   name: Devoxx France
   url: https://www.devoxx.fr/

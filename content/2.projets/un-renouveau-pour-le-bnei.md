@@ -1,7 +1,8 @@
 ---
 title: Un renouveau pour le BNEI
 description: J'ai remis sur pied et modernisé le site du Bureau National des Élèves Ingénieurs qui avait plus de 10 ans.
-image:
+image: /assets/socials/index.png
+cover:
   src: /images/projects/restore-bnei-fr.webp
   alt: Capture d'écran de la page d'accueil de bnei.fr. On peut y voir un titre "Le Bureau National des Elèves Ingénieurs" et un sous titre "Représenter, Informer, Former"
 datePublished: 2021-11-26

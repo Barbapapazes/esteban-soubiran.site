@@ -1,5 +1,7 @@
 <script lang="ts" setup>
-const { page } = useContent()
+import PageToc from '~/components/page/PageToc.vue'
+
+const { page, toc } = useContent()
 const { ISODate } = useDate()
 
 useSchemaOrg([
@@ -16,7 +18,9 @@ useSchemaOrg([
 <template>
   <AppSection>
     <PageSection>
-      <PageProseHeader :title="page.title" :date-published="page.datePublished" :image="page.image" />
+      <PageProseHeader :title="page.title" :date-published="page.datePublished" :cover="page.cover" />
+
+      <PageToc v-if="toc" :toc="toc" />
 
       <PageProse>
         <slot />

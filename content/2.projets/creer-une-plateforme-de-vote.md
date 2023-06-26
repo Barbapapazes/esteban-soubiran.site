@@ -1,7 +1,8 @@
 ---
 title: Créer une plateforme de vote
 description: Pour le Classement des Associations, j'ai créé une plateforme de vote de A à Z !
-image:
+image: /assets/socials/index.png
+cover:
   src: /images/projects/plateforme-vote.webp
   alt: Capture d'écran de la plateforme de vote.
 datePublished: 2022-12-07

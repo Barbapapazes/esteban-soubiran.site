@@ -1,7 +1,8 @@
 ---
 title: Un générateur de contenu pour le site campus
-description: J'ai créé un générateur de contenu pour permettre à chaque association de mon campus de créer et personnaliser sa page pour le site campus. 
-image:
+description: J'ai créé un générateur de contenu pour permettre à chaque association de mon campus de créer et personnaliser sa page pour le site campus.
+image: /assets/socials/index.png
+cover:
   src: /images/projects/campus_content-generator.webp
   alt: Capture d'écran du générateur de contenu. On peut y voir un titre "Bienvenue dans les templates pour les associations". Dessous, on retrouve différentes cartes en fonction du template.
 datePublished: 2020-09-16

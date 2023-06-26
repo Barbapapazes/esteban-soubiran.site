@@ -2,6 +2,21 @@ import { defineConfig, presetTypography, presetUno } from 'unocss'
 import transformerDirectives from '@unocss/transformer-directives'
 
 export default defineConfig({
+  shortcuts: [
+    {
+      'text-content': 'text-zinc-800 dark:text-zinc-100',
+      'text-reduced': 'text-zinc-500 dark:text-zinc-400',
+      'text-primary': 'text-sky-500 dark:text-sky-400',
+
+      'border-base': 'ring-1 ring-zinc-900/5 dark:ring-white/10',
+
+      'shadow-base': 'shadow-lg shadow-zinc-800/5',
+
+      'transition-base': 'transition ease-in',
+
+      'bg-blur': ' backdrop-blur bg-white/90 dark:bg-zinc-800/90'
+    }
+  ],
   presets: [
     presetUno(),
     presetTypography({
@@ -9,23 +24,31 @@ export default defineConfig({
         'h1 a,h2 a,h3 a,h4 a,h5 a,h6 a': {
           'text-decoration-line': 'none'
         },
+        pre: {
+          margin: 0,
+          padding: 0
+        },
         'p a': {
-          'font-weight': '700',
-          color: 'rgb(14 165 233)',
-          'text-decoration-color': 'rgb(14 165 233 / 0.3)',
+          color: '#0ea5e9',
+          'text-decoration-line': 'none',
           'transition-property': 'all',
           'transition-timing-function': 'cubic-bezier(0.4, 0, 1, 1)',
           'transition-duration': '150ms'
         },
         'p a:hover': {
-          'text-decoration-color': '#0ea5e9'
+          color: '#0284c7'
         },
         '.dark p a': {
-          color: 'rgb(56 189 248)',
-          'text-decoration-color': 'rgb(56 189 248 / 0.3)'
+          color: '#38bdf8'
         },
         '.dark p a:hover': {
-          'text-decoration-color': '#38bdf8'
+          color: '#7dd3fc'
+        },
+        '.alert p:first-child': {
+          'margin-top': 0
+        },
+        '.alert p:last-child': {
+          'margin-bottom': 0
         },
         img: {
           'border-radius': '0.5rem'

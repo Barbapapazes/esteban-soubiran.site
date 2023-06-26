@@ -2,7 +2,7 @@
 defineProps<{
   title: string,
   datePublished: string
-  image?: {
+  cover?: {
     src: string,
     alt: string
   }
@@ -19,9 +19,9 @@ defineProps<{
     </div>
 
     <img
-      v-if="image"
-      :src="image.src"
-      :alt="image.alt"
+      v-if="cover"
+      :src="cover.src"
+      :alt="cover.alt"
       class="mt-6 rounded-2xl"
       width="1920"
       height="1080"

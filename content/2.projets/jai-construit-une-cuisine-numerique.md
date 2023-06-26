@@ -1,7 +1,8 @@
 ---
 title: J'ai construit une cuisine numérique
 description: Passant chaque soir à me demander ce que je pouvais manger, j'ai décidé de construire une cuisine numérique. Une place où chaque recette testée et approuvée y seraient stockées !
-image:
+image: /assets/socials/index.png
+cover:
   src: /images/projects/digital-kitchen.webp
   alt: Capture d'écran du site web de la cuisine numérique
 datePublished: 2021-09-15
