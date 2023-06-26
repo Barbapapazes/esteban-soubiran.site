@@ -521,14 +521,14 @@ Ouvrons notre navigateur et allons sur [`http://localhost:3000`](http://localhos
 
 Le premier nous indique que nous devons utiliser une autre version de vue :
 
-```
+```txt
 [Vue warn]: Component provided template option but runtime compilation is not supported in this build of Vue. Configure your bundler to alias "vue" to "vue/dist/vue.esm-bundler.js".
   at <App>
 ```
 
 Le second nous indique qu'un problème lors de l'hydratation de l'application a eu lieu :
 
-```
+```txt
 [Vue warn]: Hydration node mismatch:
 - Client vnode: Symbol(v-cmt)
 - Server rendered DOM: <button>​1​</button>​
@@ -645,7 +645,7 @@ Pour voir notre HMR en action, il nous suffit simplement de mettre à jour le te
 
 Si on regarde la console, on peut voir quelque warning dont :
 
-```
+```txt
 There is already an app instance mounted on the host container.
  If you want to mount another app on the same host container, you need to unmount the previous app by calling `app.unmount()` first.
 ```
@@ -728,7 +728,7 @@ npm run preview
 
 Et là, c'est le drame, une erreur 500 ! :scream:
 
-```
+```txt
 Cannot read properties of null (reading 'replace')
 ```
 
