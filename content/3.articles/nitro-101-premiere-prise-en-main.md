@@ -10,9 +10,9 @@ dateModified: 2023-06-24
 layout: article
 ---
 
-[Nitro](https://nitro.unjs.io) (Nitropack sur npm),c'est le serveur web écrit en :icon{name="typescript"} TypeScript qui propulse :icon{name="nuxt"} Nuxt, créé par les équipes de :icon{name="nuxt"} Nuxt et ouvert à la communauté.
+[Nitro](https://nitro.unjs.io) (Nitropack sur npm), c'est le serveur web écrit en :icon{name="typescript"} TypeScript qui propulse :icon{name="nuxt"} Nuxt. Il a été créé par les équipes de :icon{name="nuxt"} Nuxt et ouvert à la communauté.
 
-Nitro, c'est framework web back-end qui vous offre et permet :
+Nitro, c'est framework web back-end qui permet :
 
 - Hot Module Replacement (HMR)
 - Zéro configuration
@@ -24,16 +24,13 @@ Nitro, c'est framework web back-end qui vous offre et permet :
 - Middlewares
 - TypeScript
 
-Ainsi, Nitro est complètement agnostique et peut être utilisé seul ou dans votre prochain projet. Avec Nitro, vous pouvez créer des serveurs web pour des APIs, rendre de l'HTML ou bâtir le prochain framework comme peut l'être [analog](https://analogjs.org/) !
+Ainsi, Nitro est complètement agnostique et peut être utilisé seul ou dans votre prochain projet. Avec Nitro, nous pourrons créer des serveurs web pour des APIs, rendre de l'HTML ou bâtir le prochain framework comme peut l'être [analog](https://analogjs.org/) !
 
-<!-- TODO: le prochain framework vue (article) (découvrir comment batîr le prochain framework vue) -->
 :another-article{name="le-prochain-framework-vue"}
 
-## Notre projet
+## Prise en main
 
-Pour cet article, nous allons créer un serveur web qui va récupérer des informations de :icon{name="carbon:logo-github"} GitHub et nous les renvoyer.
-
-Pour commencer, initialisons notre projet en créant un nouveau dossier :
+Pour commencer, initialisons un projet en créant un nouveau dossier :
 
 ```bash
 mkdir nitro-101
@@ -48,7 +45,7 @@ npm i -D nitropack h3
 ```
 
 ::alert{type="info"}
-H3 est le serveur web bas niveau utilisé par Nitro. Il est aussi créé par les équipes de :icon{name="nuxt"} Nuxt.
+H3 est le serveur web bas niveau utilisé par Nitro. Il est aussi créé par les équipes de :icon{name="nuxt"} Nuxt. Nitro vient par dessous en ajoutant son lot de fonctionnalités, tant pour le développement que pour la production.
 ::
 
 Nous pouvons ajouter quelques scripts dans notre `package.json` :
@@ -56,15 +53,15 @@ Nous pouvons ajouter quelques scripts dans notre `package.json` :
 ```json [package.json]
 {
   "scripts": {
-    "prepare": "npx nitropack prepare",
-    "dev": "npx nitropack dev",
-    "build": "npx nitropack build",
-    "preview": "node .output/server/index.mjs"
+    "prepare": "npx nitropack prepare", // Génère les types pour TypeScript
+    "dev": "npx nitropack dev", // Lance le serveur en mode développement
+    "build": "npx nitropack build", // Compile le serveur pour la production
+    "preview": "node .output/server/index.mjs" // Lance le serveur en mode production
   }
 }
 ```
 
-Dernière étape pour nous faciliter la vie, nous allons créer un fichier `tsconfig.json` à la racine du projet :
+Dernière étape pour nous faciliter la vie et avoir de l'auto-complétion, nous allons créer un fichier `tsconfig.json` à la racine du projet :
 
 ```json [tsconfig.json]
 {
@@ -72,17 +69,17 @@ Dernière étape pour nous faciliter la vie, nous allons créer un fichier `tsco
 }
 ```
 
-Parfait, nous sommes prêts à démarrer. Sans plus attendre, nous pouvons même lancer Nitro :
+Parfait, nous sommes prêts à démarrer. Sans plus attendre, lançons Nitro :
 
 ```bash
 npm run dev
 ```
 
 ::alert{type="info"}
-Grâce au HMR, nous n'aurons pas besoin de relancer Nitro. Cependant, si vous créer un nouveau dossier comme `routes`, `api` ou `middleware`, vous aurez besoin de relancer Nitro. Il s'agit de dossiers qui sont observés par Nitro.
+Grâce au HMR, nous n'aurons pas besoin de relancer Nitro sauf lorsque nous créerons un nouveau dossier comme `routes`, `api` ou `middleware` où nous aurons besoin de relancer Nitro. Il s'agit de dossiers qui sont observés par Nitro.
 ::
 
-## nos premières routes
+## Nos premières routes
 
 Pour créer notre première route, il nous faut créer un dossier `routes` à la racine du projet et y ajouter un fichier `index.ts` :
 
@@ -95,10 +92,10 @@ export default defineEventHandler(() => {
 ::alert{type="info"}
 Nitro utilise le système de fichier pour créer les routes. Ainsi, le fichier `index.ts` sera accessible à l'URL `/`.
 
-Si vous souhaitez créer une route `/hello`, il vous suffit de créer un fichier `hello.ts` dans le dossier `routes`.
+Si nous souhaitons créer une route `/hello`, il nous suffit de créer un fichier `hello.ts` dans le dossier `routes`.
 ::
 
-Comme nous venons de créer un nouveau dosser, nous devons relancer Nitre `npm run dev`. Ensuite, observons le résultat avec `curl` :
+Comme nous venons de créer un nouveau dossier à observer par Nitro, nous devons relancer Nitro avec `npm run dev`. Ensuite, observons le résultat avec `curl` :
 
 ```bash
 curl -i http://localhost:3000
@@ -126,6 +123,7 @@ Nitro fonctionne avec des composables. Il s'agit de petites fonctions, qui ne fo
 Les fonctions de Nitro et de h3 sont automatiquement importées et disponibles dans votre projet.
 
 [En savoir plus](https://nitro.unjs.io/guide/auto-imports)
+[Pour découvrir tous les composables d'h3](https://www.jsdocs.io/package/h3#package-index-functions)
 ::
 
 Pour tester notre nouvelle route :
@@ -138,7 +136,7 @@ curl -i http://localhost:3000/hello
 curl -i http://localhost:3000/world
 ```
 
-Pour jouer avec les query, nous pouvons créer une nouvelle route `search.ts` :
+Pour jouer avec les query, nous pouvons créer une nouvelle route `search.ts`. Comme avec la route précédente, nous allons utiliser un composable pour sortir rapidement la query de la requête :
 
 ```ts [search.ts]
 export default defineEventHandler((event) => {
@@ -147,6 +145,12 @@ export default defineEventHandler((event) => {
   return `Search: ${q}`
 })
 ```
+
+::alert{type="info"}
+Ce qu'il est important de comprendre avec ces 2 exemples, c'est que Nitro nous permet de sortir rapidement le contenu de la requête via des composables, sans même savoir ce que contient l'`event`.
+
+Ainsi, nous savons déjà comment sortir le `body`, un `header` ou `cookie` de la requête ! Pratique !
+::
 
 Pour tester notre nouvelle route :
 
@@ -175,7 +179,7 @@ curl -i -X POST -H "Content-Type: application/json" http://localhost:3000/body -
 ```
 
 ::alert{type="info"}
-Il est très important de spécifier dans les headers le `Content-Type` du body. En effet, cela permet à Nitro de savoir comment parser le body.
+Il est très important de spécifier dans les headers le `Content-Type` du body. En effet, cela permet à Nitro de savoir comment parser le body. Autrement, il le considérerait comme une chaîne de caractères.
 ::
 
 ### Les headers
@@ -216,7 +220,7 @@ Pour tester notre nouvelle route :
 curl -i http://localhost:3000/cookies -H "Cookie: hello=nitro"
 ```
 
-Ensuite, on peut aussi ajouter des cookies à la réponse :
+Ensuite, nous pouvons aussi ajouter des cookies à la réponse :
 
 ```ts [cookies.ts]
 export default defineEventHandler((event) => {
@@ -224,7 +228,7 @@ export default defineEventHandler((event) => {
 
   setCookie(event, 'from', 'nitro', {
     secure: true,
-    // Il est possible de définir toute les options de cookie
+    // Il est possible de définir toute les options relatives aux cookies
   })
 
   return cookie
@@ -234,7 +238,7 @@ export default defineEventHandler((event) => {
 
 ### Les sessions
 
-Dans la suite des cookies, Nitro permet la création des sessions. Par exemple, il est possible de créer une nouvelle session avec `useSession`. Pour cela, nous pouvons créer une nouvelle route `session.ts` :
+Dans la suite des cookies, Nitro permet facilement la création de sessions. Par exemple, il est possible de créer une nouvelle session avec `useSession`. Pour cela, nous pouvons créer une nouvelle route `sessions.ts` :
 
 ```ts [sessions.ts]
 export default defineEventHandler((event) => {
@@ -254,7 +258,7 @@ Pour gérer les sessions, il existe plusieurs fonctions :
 - `clearSession` : supprime la session courante
 
 ::alert{type="info"}
-Nous n'irons pas plus loin dans les explications sur les sessions parce que l'idée de Nitro et h3 est de vous fournir des petites fonctions que vous pouvez assembler pour construire un plus grand système.
+Nous n'irons pas plus loin dans les explications sur les sessions parce que l'idée de Nitro et h3 est de nous fournir des petites fonctions que nous pouvons assembler pour construire un plus grand système et la gestion des sessions pourrait faire l'objet d'un article complet.
 ::
 
 ## Les middlewares
@@ -263,6 +267,8 @@ Avec Nitro, il est possible de créer des middlewares pour gérer les requêtes 
 
 ::alert{type="info"}
 Pour que Nitro prenne en compte les middlewares, il faut redémarrer le serveur.
+
+⚠️ `middleware`, le nom du dossier, ne prend pas de `S` à la fin.
 ::
 
 Les middlewares sont exécutés dans l'ordre dans lequel ils sont définis dans le dossier. Par exemple, si nous créons un fichier `middleware/log.ts` et `middleware/auth.ts`, le middleware `auth.ts` sera le premier exécuté. Pour autant, il est possible de préfixer ses middlewares pour changer l'ordre d’exécution.
@@ -282,7 +288,7 @@ export default defineEventHandler((event) => {
 ```
 
 ::alert{type="info"}
-Pour en savoir plus sur les middlewares, vous pouvez [consulter cette PR](https://github.com/unjs/nitro/pull/1307)
+Pour en savoir plus sur les middlewares, nous pouvons [consulter cette PR](https://github.com/unjs/nitro/pull/1307)
 ::
 
 ## Le stockage
@@ -297,10 +303,10 @@ export default defineEventHandler(async () => {
 })
 ```
 
-Par défaut, Nitro monte un système de fichier de l'ensemble du projet vous permettant d'y accéder facilement.
+Par défaut, Nitro monte un système de fichier de l'ensemble du projet nous permettant d'y accéder facilement.
 
 ::alert{type="info"}
-Pour en savoir plus sur la couche de stockage, vous pouvez consulter [la documentation de Nitro](https://nitro.unjs.io/guide/storage) et [la documentation d'unstorage](https://unstorage.js.org/guide).
+Pour en savoir plus sur la couche de stockage, nous pouvons consulter [la documentation de Nitro](https://nitro.unjs.io/guide/storage) et [la documentation d'unstorage](https://unstorage.js.org/guide).
 ::
 
 Dans le même temps, il est possible de configurer notre stockage via les paramètres de Nitro.
@@ -311,7 +317,7 @@ Dans le même temps, il est possible de configurer notre stockage via les param�
 
 ## Le pré-rendu
 
-Le pré-rendu permet de construire l'application au build time. Cela permet d'avoir des fichiers statiques facile et rapide à servir. C'est pratique pour héberger son site sur un CDN ou pour améliorer le SEO de son site.
+Le pré-rendu permet de construire l'application au build time. Cela permet d'avoir des fichiers statiques facile et rapide à servir. C'est pratique pour héberger son site sur un CDN ou pour améliorer le SEO de son site en améliorant le temps de réponse.
 
 Pour activer le pré-rendu, il est possible de le faire via les paramètres de Nitro. Pour cela, commençons par créer un fichier `nitro.config.ts` à la racine du projet dans lequel nous allons indiquer vouloir pré-rendre la route `/storage` :
 
@@ -322,12 +328,13 @@ export default defineNitroConfig({
   },
 })
 ```
+
 Ensuite, nous pouvons construire notre application avec `npm run build`.
 
-En inspectant le résultant, nous pouvons trouver un fichier nommé `storage` dans `.output/public`. Il contient le résultat de la route `/storage`. Ainsi, lorsqu'un utilisateur viendra sur cette route, le serveur pourra envoyer directement le fichier statique.
+En inspectant le résultat, nous pouvons trouver un fichier nommé `storage` dans `.output/public`. Il contient le résultat de la route `/storage`. Ainsi, lorsqu'un utilisateur viendra sur cette route, le serveur pourra envoyer directement le fichier statique sans avoir à lire le système de fichier.
 
 ::alert{type="info"}
-Pour en savoir plus sur le pré-rendu, vous pouvez consulter [la documentation de Nitro](https://nitro.unjs.io/config#prerender).
+Pour en savoir plus sur le pré-rendu, nous pouvons consulter [la documentation de Nitro](https://nitro.unjs.io/config#prerender).
 ::
 
 ## Connexion à une API
@@ -342,17 +349,21 @@ export default defineEventHandler(async () => {
 })
 ```
 
+::alert{type="info"}
+`$fetch` est une instance de [ofetch](https://github.com/unjs/ofetch).
+::
+
 Ensuite, nous pouvons tester notre nouvelle route :
 
 ```bash
 curl -i http://localhost:3000/api
 ```
 
-Avec cette route, on s'attends au même résultat que la route `/storage`. Il est possible d'appeler n'importe quelle API avec `$fetch`.
+Avec cette route, nous nous attendons au même résultat que la route `/storage`. Il est possible d'appeler n'importe quelle API, interne ou externe, avec `$fetch`.
 
 ## Mise en production
 
-Rien de plus simple dans cette partie ! En effet, Nitro est compatible avec énormément de providers et est en mesure de les détecter depuis la CI. Autrement dit, nous n'avons rien à faire, si ce n'est utiliser la CI du provider chez qui nous allons déployer notre site. Aussi, nous n'avons rien à modifier dans notre code. Nitro est compatible par défaut avec les providers et même on-edge.
+Rien de plus simple dans cette partie ! En effet, Nitro est compatible avec énormément de providers et est en mesure de les détecter depuis la CI. Autrement dit, nous n'avons rien à faire, si ce n'est utiliser la CI du provider chez qui nous allons déployer notre site. Aussi, nous n'avons rien à modifier dans notre code. Nitro est compatible par défaut avec tous ces providers et même on-edge.
 
 ::alert{type="info"}
 Pour en savoir plus sur les [providers disponibles](https://nitro.unjs.io/deploy).
@@ -363,3 +374,7 @@ Autrement, il est tout à faire possible de déployer en local, sur notre machin
 ```bash
 npm run build && npm run preview
 ```
+
+## Conclusion
+
+_Voilà_, nous avons maintenant les bases pour utiliser Nitro et commencer à créer tout ce qui nous passe par la tête !
