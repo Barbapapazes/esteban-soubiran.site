@@ -11,8 +11,7 @@ layout: article
 ---
 
 <!-- Harmoniser le nous et le on (et les vous aussi) (sur le nous) -->
-<!-- rework les images et les covers en pensant à ajouter un default aux template -->
-<!-- rework l'index pour l'avoir dans le site -->
+<!-- faire une relecture pour corriger les fautes -->
 
 > TL;DR: Nous n'allons évidemment pas tenter de remplacer [:icon{name="nuxt"} Nuxt](https://nuxt.com) mais plutôt de comprendre son fonctionnement, l'écosystème qu'il a construit et comment nous pourrions en écrire un. À la fin de cette lecture, vous aurez un entre les mains les premières briques de votre propre framework et une bonne compréhension de ce qu'il se passe sous le capot de Nuxt.
 
@@ -56,8 +55,6 @@ Pour ce faire, nous allons nous inspirer des recommandations de [la documentatio
 La première chose à faire, c'est le rendu côté-serveur. Ensuite, il faut hydrater le client et revoir la structure de notre code pour écrire à la fois du code pour le client et pour le serveur.
 
 Du coup, il nous faut un serveur capable de renvoyer de l'HTML et d'envoyer les fichiers :icon{name="javascript"} JavaScript au client pour la phase d'hydratation. Cet ensemble doit répondre à la fois aux requêtes du client et du serveur au travers du même port.
-
-<!-- TODO: faire un schéma avec une requête qui arrive au serveur, une réponse en html et le html qui demande les fichiers et le serveur qui le renvoie -->
 
 Ainsi, le serveur sera notre fondation, l'élément de base, autour duquel nous viendrons ensuite ajouter d'autres outils.
 
