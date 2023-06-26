@@ -10,27 +10,24 @@ dateModified: 2023-06-17
 layout: article
 ---
 
-<!-- Harmoniser le nous et le on (et les vous aussi) (sur le nous) -->
-<!-- faire une relecture pour corriger les fautes -->
-
-> TL;DR: Nous n'allons évidemment pas tenter de remplacer [:icon{name="nuxt"} Nuxt](https://nuxt.com) mais plutôt de comprendre son fonctionnement, l'écosystème qu'il a construit et comment nous pourrions en écrire un. À la fin de cette lecture, vous aurez un entre les mains les premières briques de votre propre framework et une bonne compréhension de ce qu'il se passe sous le capot de Nuxt.
+> TL;DR: Nous n'allons évidemment pas tenter de remplacer [:icon{name="nuxt"} Nuxt](https://nuxt.com) mais plutôt de comprendre son fonctionnement, l'écosystème qu'il a construit et comment nous pourrions écrire notre propre framework. À la fin de cette lecture, nous aurons entre les mains les premières briques de notre propre framework et une bonne compréhension de ce qu'il se passe sous le capot de Nuxt.
 
 Accéder au code source :git-hub-link{repo="barbapapazes/the-next-vue-framework"}
 
 À l'origine de cet article, il y a 2 choses :
 
-- Le talk de [Daniel Roe](https://github.com/danielroe) à l'[Agent Conf](https://youtu.be/hdHLU0qHKhA) qui m'a donné envie de me plonger dans Nitro et Vite pour les comprendre et que je vous recommande chaudement.
+- Le talk de [Daniel Roe](https://github.com/danielroe) à l'[Agent Conf](https://youtu.be/hdHLU0qHKhA) qui m'a donné envie de me plonger dans Nitro et Vite pour les comprendre et que je recommande chaudement.
 - L'envie de répondre à la question : "Comment on fait un framework ?", ce que nous allons faire ensemble.
 
 ## Prélude
 
 Avant de commencer, c'est quoi un framework pour :icon{name="vue"} Vue ?
 
-C'est une structure, un cadre vous permettant de construire par dessus ce que vous voulez en vous fournissant des outils pour vous faciliter la vie.
+C'est une structure, un cadre nous permettant de construire par dessus ce que nous voulons en nous fournissant des outils pour nous faciliter la vie.
 
-C'est très générique mais la notion important à garder en tête est que nous devons construire un cadre pour l'utilisateur. Autrement dit, l'utilisateur doit se concentrer sur la business logic et nous du reste.
+C'est très générique mais la notion importante à garder en tête est que nous devons construire un cadre pour le développeur. Autrement dit, le développeur doit se concentrer sur la business logic de son application et nous du reste la configuration de cette dernière.
 
-En 2023, nous voulons un framework capable :
+En 2023, nous voulons que notre framework soit capable :
 
 - d'être une SPA ([Single Page Application](https://vuejs.org/guide/extras/ways-of-using-vue.html#single-page-application-spa)) et interactive client-side
 - de faire du SSR ([Server-Side Rendering](https://vuejs.org/guide/extras/ways-of-using-vue.html#fullstack-ssr))
@@ -46,7 +43,7 @@ Oui, c'est une bonne liste mais nous allons voir qu'avec les bons outils, c'est 
 
 ### Architecture du framework
 
-_L'architecture que je vais vous présenter n'est qu'une parmi d'autres. Il est tout à fait possible de trouver une autre architecture fonctionnelle._
+_L'architecture que je vais présenter n'est qu'une parmi d'autres. Il est tout à fait possible de trouver une autre architecture fonctionnelle._
 
 Pour réussir à créer notre framework, nous allons avoir besoin de réfléchir à son architecture, c'est à dire à la manière dont nous allons organiser notre code.
 
@@ -64,7 +61,7 @@ Globalement, c'est l'architecture actuelle de Nuxt que je viens de décrire.
 
 #### Choisir nos outils
 
-Pour construire le prochain :icon{name="nuxt"}, nous n'allons pas partir de 0. D'une part parce que vous êtes seul sur le projet et d'autre part parce que nous ne ferions que perdre du temps à essayer de réinventer la roue alors que des outils très intelligemment conçus existent déjà.
+Pour construire le prochain :icon{name="nuxt"} Nuxt, nous n'allons pas partir de 0. D'une part parce que nous sommes seuls sur le projet et d'autre part parce que nous ne ferions que perdre du temps à essayer de réinventer la roue alors que des outils intelligemment conçus existent déjà.
 
 ##### Le serveur
 
@@ -78,17 +75,17 @@ Il en existe d'autres mais Nitro est le plus adapté à ce que nous voulons fair
 
 Nitro va nous permettre de répondre aux requêtes, de générer l'HTML et de gérer le SSR. Aussi, il va nous permettre d'avoir la partie APIs.
 
-Enfin, Nitro va nous permettre de 'build' la partie serveur, de pré-générer nos pages statiquement et de nous sortir un unique dossier contenant à la fois les fichiers relatifs au server et au client.
+Enfin, Nitro va nous permettre de 'build' la partie serveur, de pré-générer nos pages statiquement et de nous sortir un unique dossier contenant à la fois les fichiers relatifs au serveur et au client.
 
 ::detail{title="Nitro, c'est quoi exactement ?"}
-Nitro, c'est un framework :icon{name="typescript"} TypeScript pour écrire des servers web ultra rapide.
+Nitro, c'est un framework :icon{name="typescript"} TypeScript pour écrire des serveurs web ultra rapide.
 
-Il fait parti de l'écosystème [Unjs](https://unjs.io) dont le but est de créer des outils :icon{name="javascript"} JavaScript performant, moderne et utilisable avec tous les runtimes.
+Il fait parti de l'écosystème [UnJS](https://unjs.io) dont le but est de créer des outils :icon{name="javascript"} JavaScript performant, moderne et utilisable avec tous les runtimes.
 
 [En savoir plus sur Nitro](https://nitro.unjs.com)
 ::
 
-<!-- TODO: écrire un article sur Nitro : Nitro 101, la première prise en main (et trouver un moyen de faire un composant stylé pour rediriger vers l'article) (genre avec une preview et tout en mode card comme dans les articles des journaux) -->
+:another-article{name="nitro-101-premiere-prise-en-main"}
 
 ##### Le client
 
@@ -96,7 +93,7 @@ Clairement, il n'y a pas de débat ici. Nous allons utiliser :icon{name="vite"} 
 
 :icon{name="vite"} Vite va nous permettre d'envoyer au client les fichiers :icon{name="javascript"} JavaScript et de gérer le HMR. En plus de cela, il va gérer directement la transpilation des fichiers :icon{name="typescript"} TypeScript et la gestion du :icon{name="css"} CSS.
 
-Enfin, Vite va nous permettre de 'build' notre application pour la production.
+Enfin, Vite va nous permettre de 'build' la partie client de notre application pour la production.
 
 ::detail{title="Vite, c'est quoi exactement ?"}
 Vite, c'est un outil de build pour le développement web. Développé par Evan You, le créateur de :icon{name="vue"} Vue, il est pensé pour être performant et moderne avec un système de plugins riches.
@@ -175,11 +172,11 @@ Nitro fonctionne avec un modèle où les fonctions peuvent être auto-importées
 [En savoir plus sur l'auto-imports de Nitro](https://nitro.unjs.io/guide/auto-imports)
 ::
 
-_Voilà_, nous sommes prêt à mettre en place le rendu côté serveur et à jouer avec Nitro.
+_Voilà_, nous sommes prêts à mettre en place le rendu côté serveur et à jouer avec Nitro.
 
 #### Notre premier contrôleur
 
-<!-- TODO: rediriger vers Nitro 101 histoire de ne pas perdre totalement les nouveaux utilisateurs -->
+:another-article{name="nitro-101-premiere-prise-en-main"}
 
 Pour commencer, créons un fichier `server.ts` dans le dossier `app` qui contiendra un contrôleur pour générer notre page. Pour le moment, nous allons simplement retourner une chaîne de caractère.
 
@@ -197,7 +194,7 @@ Horreur, ça ne fonctionne pas ! :scream:
 {"url":"/","statusCode":404,"statusMessage":"Cannot find any path matching /.","message":"Cannot find any path matching /."}
 ```
 
-Mais c'est normal puisque nous n'avons pas dit à Nitro que ce fichier est un point d'entrée pour gérer les requêtes.
+C'est normal puisque nous n'avons pas dit à Nitro que ce fichier est un point d'entrée pour gérer les requêtes.
 
 Pour cela, nous devons créer un fichier `nitro.config.ts` à la racine de notre projet et y ajouter une configuration lui permettant de trouver notre contrôleur et de l'associer à une route. Avec le paramètre `handlers`, nous pouvons définir une liste de contrôleurs à utiliser pour gérer les requêtes en fonction de la route d'entré.
 
@@ -224,10 +221,10 @@ Hello World
 
 #### Rendu HTML
 
-Maintenant que nous avons un serveur web fonctionnel, nous allons pouvoir lui faire renvoyer de l'HTML. Cet HTML, on souhaite qu'il soit construit par Vue nous permettant ensuite de l'hydrater afin de le rendre interactif.
+Maintenant que nous avons un serveur web fonctionnel, nous allons pouvoir lui faire renvoyer de l'HTML. Cet HTML, nous souhaitons qu'il soit construit par Vue nous permettant ensuite de l'hydrater afin de le rendre interactif.
 
 ::detail{title="Pourquoi ne pas renvoyer directement de l'HTML ?"}
-Renvoyer directement de l'HTML n'a pas d'intérêt dans la mesure où on souhaite ensuite que le développeur puisse utiliser Vue.
+Renvoyer directement de l'HTML n'a pas d'intérêt dans la mesure où nous souhaitons ensuite que le développeur puisse utiliser Vue.
 
 En effet, on pourrait faire :
 
@@ -276,7 +273,7 @@ Allons sur [http://localhost:3000](http://localhost:3000).
 Magnifique, un bouton s'affiche ! :sparkles: Pour autant, lorsque nous cliquons dessus, rien ne se passe. Ce comportement est tout à fait normal dans la mesure où nous n'avons aucun script côté client pour rendre ce bouton interactif (mais ça va venir).
 
 ::alert{type="info"}
-Pour en savoir plus, vous pouvez lire la documentation de [VueJS SSR](https://vuejs.org/guide/scaling-up/ssr.html).
+Pour en savoir plus, nous pouvons lire la documentation de [VueJS SSR](https://vuejs.org/guide/scaling-up/ssr.html).
 ::
 
 ### Un template HTML
@@ -345,7 +342,7 @@ export default defineEventHandler(async () => {
   // Injection de l'HTML dans le template
   const render = template.replace('<!-- ssr-content -->', html)
 
-  // Si vous n'utilisez pas `<!-- ssr-content -->`, alors vous pouvez directement remplacer la balise main et vous vous assurez d'éviter les problèmes d'espaces lors de l'hydratation.
+  // Si nous n'utilisons pas `<!-- ssr-content -->`, alors nous pouvons directement remplacer la balise main et nous nous assurons d'éviter les problèmes d'espaces lors de l'hydratation.
   // const render = template.replace('<main id="root" class="container"></main>', `<main id="root" class="container">${html}</main>`)
 
   return render
@@ -371,7 +368,7 @@ Maintenant, allons sur [http://localhost:3000](http://localhost:3000).
 ```
 
 ::alert{type="info"}
-:warning: L'id `root` est essentiel. Il n'est pas recommandé de le changer pour vous éviter des problèmes par la suite de ce tutoriel.
+:warning: L'id `root` est essentiel. Il n'est pas recommandé de le changer pour nous éviter des problèmes par la suite de ce tutoriel.
 ::
 
 C'est beaucoup mieux ! :rocket:
@@ -453,7 +450,7 @@ Pour cela, utilisions `curl` :
 curl -i http://localhost:3000/__vite/@vite/client
 ```
 
-Dans votre console va alors apparaître le code du client ainsi que sa source map ! Génial ! :zap:
+Dans la console va alors apparaître le code du client ainsi que sa source map ! Génial ! :zap:
 
 ::alert{type="info"}
 Le client de :icon{name="vite"} Vite permet de gérer la connexion websocket et HTTP pour le HMR. Globalement, il permet de gérer la communication entre le serveur et le client.
@@ -560,7 +557,7 @@ const devViteServer = await createServer({
 ```
 
 ::alert{type="info"}
-Le fichier `vue/dist/vue.esm-bundler.js` est le fichier de vue qui permet d'utiliser le runtime compiler. Dans notre cas, nous en avons besoin parce que nous utilisons directement un template compilé dans le navigateur de l'utilisateur.
+Le fichier `vue/dist/vue.esm-bundler.js` est le fichier de :icon{name="vue"} Vue qui permet d'utiliser le runtime compiler. Dans notre cas, nous en avons besoin parce que nous utilisons directement un template compilé dans le navigateur de l'utilisateur.
 
 En savoir plus sur [le runtime compiler](https://v3.ru.vuejs.org/guide/installation.html#with-a-bundler).
 
@@ -601,7 +598,7 @@ Pour palier à cela, on peut simplement ajouter le client de :icon{name="vite"} 
 </html>
 ```
 
-Retournons sur notre page, rechargeons-la pour charger le client. Maintenant que nous avons établi une connexion websocket entre le serveur et le client, modifions le template de notre application. En enregistrant, vous verrez alors votre page recharger automatiquement. :white_check_mark:
+Retournons sur notre page et rechargeons-la pour charger le client. Maintenant que nous avons établi une connexion websocket entre le serveur et le client, modifions le template de notre application. En enregistrant, nous verrons alors notre page recharger automatiquement. :white_check_mark:
 
 ::detail{title="C'est quoi ce client ?"}
 Le client de :icon{name="vite"} Vite, c'est un script qui crée une connexion websocket entre le serveur et le navigateur. Cette connexion, nous allons pouvoir l'utiliser pour intercepter les messages transmis par le serveur et ainsi mettre à jour notre application sans recharger la page.
@@ -644,7 +641,7 @@ const app = createApp()
 // ...
 ```
 
-Pour voir notre HMR en action, il vous suffit simplement de mettre à jour le template de votre application en ajoutant un peu de texte par exemple ! Et ça fonctionne !
+Pour voir notre HMR en action, il nous suffit simplement de mettre à jour le template de notre application en ajoutant un peu de texte par exemple ! Et ça fonctionne !
 
 Si on regarde la console, on peut voir quelque warning dont :
 
@@ -689,12 +686,12 @@ declare global {
 Changeons un peu notre template et _voilà_, notre application est mise à jour sans recharger la page ! :fire:
 
 ::alert{type="warning"}
-Il est important de noter que la mise en place que nous venons de faire n'est pas très approprié dans le vrai monde. Ce n'est pas une bonne idée de sauvegarder notre application dans l'objet `window`. Dans le cadre de cet article, nous ne développerons pas l'utilisation du HMR. Nous verrons même que nous allons pouvoir déléguer cette partie à un plugin.
+Il est important de noter que la mise en place que nous venons de faire n'est pas très appropriée dans le vrai monde. Ce n'est pas une bonne idée de sauvegarder notre application dans l'objet `window`. Dans le cadre de cet article, nous ne développerons pas l'utilisation du HMR. Nous verrons même que nous allons pouvoir déléguer cette partie à un plugin.
 ::
 
 ### Un peu de CSS pour plus de style
 
-Maintenant que nous avons un HMR fonctionne, il est temps d'ajouter un peu de styles pour rendre note page un peu plus jolie.
+Maintenant que nous avons un HMR fonctionnel, il est temps d'ajouter un peu de styles pour rendre note page un peu plus jolie.
 
 Pour cela, et pour faire simple, nous allons utiliser [Pico.css](https://picocss.com).
 
@@ -711,7 +708,7 @@ import '@picocss/pico'
 // ...
 ```
 
-Et rien à faire, notre application a maintenant un peu de style et avec le HMR, vous pouvez changer votre template et voir le résultat en temps réel !
+Et rien à faire, notre application a maintenant un peu de style et avec le HMR, nous pouvons changer notre template et voir le résultat en temps réel !
 
 ### Construction de l'application pour la production
 
@@ -735,7 +732,7 @@ Et là, c'est le drame, une erreur 500 ! :scream:
 Cannot read properties of null (reading 'replace')
 ```
 
-Cette erreur était attendu parce que nous n'avons pas :icon{name="vite"} Vite lors du build de l'application. Nous ne l'avons installé que dans le cadre du développement. Pour s'en sortir, nous allons devoir créer un CLI qui va nous permettre de lancer notre application en développement ou de la build pour la production avec la même configuration et de manière programmatique.
+Cette erreur était attendue parce que nous n'avons pas :icon{name="vite"} Vite lors du build de l'application. Nous ne l'avons installé que dans le cadre du développement. Pour s'en sortir, nous allons devoir créer un CLI qui va nous permettre de lancer notre application en développement ou de la build pour la production avec la même configuration et de manière programmatique.
 
 Créons un fichier `cli.mjs` dans le dossier `bin` :
 
@@ -817,12 +814,12 @@ Et mettons à jour nos scripts dans le `package.json` :
 ```
 
 ::alert{type="info"}
-Vous pouvez lancer `npm run dev` et vous verrez que votre application fonctionne toujours. En revanche, `npm run build` ne fonctionne pas encore puisqu'elle ne contient pas :icon{name="vite"} Vite.
+Nous pouvons lancer `npm run dev` et nous verrons que notre application fonctionne toujours. En revanche, `npm run build` ne fonctionne pas encore puisqu'elle ne contient pas :icon{name="vite"} Vite.
 ::
 
 Ce CLI, nous allons devoir le personnaliser :
 
-- Ajouter notre configuration à la fois pour le développement et la production et la cacher. Nous voulons cacher cette configuration car il s'agit de complexité dont le développeur n'a pas besoin de se soucier.
+- Ajouter notre configuration à la fois pour le développement et la production et la cacher du développeur. Nous voulons cacher cette configuration car il s'agit d'une complexité dont le développeur n'a pas besoin de se soucier.
 - Donner la possibilité au développeur d'avoir une configuration personnalisée.
 - Utiliser :icon{name="vite"} Vite pour construire nos assets pour la production.
 
@@ -971,7 +968,7 @@ async function main() {
 // ...
 ```
 
-Désormais, lors que nous allons vouloir build notre application, nous allons build nos assets front-end avec :icon{name="vite"} Vite et les copier dans le dossier `.nitro/client` dans un premier temps puis construire notre application avec Nitro. D'ailleurs, nous allons nous servir de Nitro pour déplacer nos assets publics générés par :icon{name="vite"} Vite dans le dossier `.nitro/public`. Pour cela, dans la configuration de Nitro, nous allons ajouter :
+Désormais, lorsque nous allons vouloir build notre application, nous allons build nos assets front-end avec :icon{name="vite"} Vite et les copier dans le dossier `.nitro/client` dans un premier temps puis construire notre application avec Nitro. D'ailleurs, nous allons nous servir de Nitro pour déplacer nos assets publics générés par :icon{name="vite"} Vite dans le dossier `.nitro/public`. Pour cela, dans la configuration de Nitro, nous allons ajouter :
 
 ```javascript [cli.mjs]
 // ...
@@ -999,7 +996,7 @@ async function main() {
 ```
 
 ::alert{type="warning"}
-Jusqu'à présent, il ne vous est toujours pas possible de build votre application avec `npm run build`, une erreur va se produire à cause de :icon{name="vite"} Vite.
+Jusqu'à présent, il ne nous est toujours pas possible de build notre application avec `npm run build`, une erreur va se produire à cause de :icon{name="vite"} Vite.
 ::
 
 En production, nous n'avons pas besoin du client de :icon{name="vite"}. Au contraire, il ne ferait qu'ajouter du poids à notre application. Ainsi, nous allons directement le supprimer dans notre `index.html`. Dans le même temps, nous n'avons configuré :icon{name="vite"} Vite pour comprendre le chemin `__vite` qu'en développement. En production, :icon{name="vite"} Vite ne va pas le comprendre et nous devons le changer.
@@ -1121,7 +1118,7 @@ Aussi, nous avons retiré le client de notre `index.html`et changé le chemin de
 
 Pour corriger ces deux erreurs, nous allons passer par notre CLI.
 
-Pour changer mettre à jour notre template, nous allons simplement le récupérer, le modifier et le stocker dans notre espace de stockage `templates` :
+Pour mettre à jour notre template, nous allons simplement le récupérer, le modifier et le stocker dans notre espace de stockage `templates` :
 
 ```javascript [cli.mjs]
 // ...
@@ -1190,7 +1187,6 @@ Lors de la phase de production, nous insérons une clé dans notre espace de sto
 En développement, le driver par défaut lors de l'utilisation de `useStorage` est le système de fichiers. Ainsi, lorsque nous ajoutons notre template dans l'espace de stockage `templates`, il est simplement en mémoire mais inaccessible par notre `server.ts` qui va le chercher dans nos fichiers. Ainsi, nous devons créer un `devStorage` afin de stocker la version modifiée de notre template et de la rendre accessible à notre `server.ts`.
 ::
 
-
 ## Allons plus loin
 
 Maintenant que nous avons une application fonctionnelle, nous allons pouvoir nous amuser un peu avec :icon{name="vue"} Vue !
@@ -1199,7 +1195,7 @@ Maintenant que nous avons une application fonctionnelle, nous allons pouvoir nou
 
 :icon{name="vue"} Vue permet l'utilisation d'un format de fichier `.vue` qui permet de définir un composant en un seul fichier. Ce format de fichier est appelé [`Single File Component`](https://vuejs.org/guide/scaling-up/sfc.html) (SFC).
 
-Dan le même temps, l'utilisation de :icon{name="vite"} Vite nous donne accès à tout l'écosystème de plugins dont [`@vitejs/plugin-vue`](https://github.com/vitejs/vite-plugin-vue/) que nous allons pouvoir utiliser nous permettant d'utiliser les SFC très simplement !
+Dans le même temps, l'utilisation de :icon{name="vite"} Vite nous donne accès à tout l'écosystème de plugins dont [`@vitejs/plugin-vue`](https://github.com/vitejs/vite-plugin-vue/) que nous allons pouvoir utiliser nous permettant d'utiliser les SFC très simplement !
 
 Tout d'abord, nous allons installer le plugin :
 
@@ -1341,7 +1337,7 @@ import { createApp } from './app'
 createApp().mount('#root')
 ```
 
-Rechargez la page et modifier votre template dans `App.vue` pour voir le HMR fonctionner !
+Rechargeons la page et modifions notre template dans `App.vue` pour voir le HMR fonctionner !
 
 Et dans notre configuration, nous pouvons retirer les alias `vue` puisque nous n'utilisons plus directement de `template` lors de la création du composant.
 
@@ -1376,7 +1372,7 @@ import Counter from './Counter.vue'
 </template>
 ```
 
-Recharger votre page et cliquez sur le bouton pour voir le compteur augmenter ! Dans le même temps, vous pouvez modifier le contenu du template, en ajouter un peu de texte sous notre compteur, de `App.vue` et voir la précisions du HMR qui ne détruit pas l'état de votre compteur.
+Rechargeons notre page et cliquons sur le bouton pour voir le compteur augmenter ! Dans le même temps, nous pouvons modifier le contenu du template, en ajouter un peu de texte sous notre compteur, de `App.vue` et voir la précisions du HMR qui ne détruit pas l'état de notre compteur.
 
 Nous pouvons même construire et prévisualiser notre application :
 
@@ -1384,22 +1380,12 @@ Nous pouvons même construire et prévisualiser notre application :
 npm run build && npm run preview
 ```
 
-Et vous pouvez [la déployer où vous le souhaitez](https://nitro.unjs.io/deploy) !
-
-::alert{type="warning"}
-Si vous rencontrez une erreur sur un driver `unstorage` qui n'est pas trouvé lors de la preview, installez la version `1.6.1`.
-
-```bash
-npm install --save-dev unstorage@1.6.1
-```
-
-Vous pouvez suivre l'[issue sur GitHub](https://github.com/unjs/unstorage/issues/253)
-::
+Et nous pouvons [la déployer où nous le souhaitons](https://nitro.unjs.io/deploy) !
 
 Accéder au code source :git-hub-link{repo="barbapapazes/the-next-vue-framework/tree/sfc" name="barbapapazes/the-next-vue-framework#sfc"}
 
 ## Fin et suite
 
-Voilà, cette plongé dans la création d'un méta framework prend fin ! Vous avez pu découvrir comment lier Nitro avec :icon{name="vite"} Vite pour créer votre propre méta framework, comment gérer le HMR et créer votre CLI et les dessous du fonctionnement de :icon{name="nuxt"} Nuxt.
+Voilà, cette plongé dans la création d'un méta framework prend fin ! Nous avons pu découvrir comment lier Nitro avec :icon{name="vite"} Vite pour créer notre propre meta framework, comment gérer le HMR et créer notre CLI et les dessous du fonctionnement de :icon{name="nuxt"} Nuxt.
 
-Désormais, vous pouvez vous amuser à créer votre propre méta framework et à le partager avec la communauté et peut être contribuer à :icon{name="nuxt"} Nuxt ou Nitro avec vos découvertes !
+Désormais, nous pouvons nous amuser à créer notre propre méta framework et à le partager avec la communauté et peut être contribuer à :icon{name="nuxt"} Nuxt ou Nitro avec vos découvertes !
