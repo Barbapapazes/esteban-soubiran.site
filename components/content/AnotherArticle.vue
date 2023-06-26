@@ -20,7 +20,6 @@ const { data: article } = await useAsyncData(`articles:${props.name}`, () => que
           </h1>
           <p class="mt-2 text-reduced text-nowrap text-ellipsis overflow-hidden">
             {{ article.description }}
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis fuga pariatur cupiditate velit praesentium sint, similique magnam dolores quasi optio delectus sequi modi exercitationem, dicta necessitatibus architecto nam accusamus enim!
           </p>
         </div>
       </NuxtLink>
