@@ -1,8 +1,10 @@
 ---
 title: Nitro 101 - Première prise en main
 description: Découvrez Nitro, le framework TypeScript pour écrire des serveurs web ultra rapide.
-image: /assets/socials/index.png
+image: /assets/socials/nitro-101-premiere-prise-en-main.jpg
 cover:
+  src: /assets/articles/nitro-101-premiere-prise-en-main/cover.webp
+  alt: Image d'illustration où on y voit le logo de Nitro ainsi qu'un texte indiquant 'Nitro, pour créer des serveurs qui fonctionnent partout'
 datePublished: 2023-06-24
 dateModified: 2023-06-24
 layout: article
@@ -25,6 +27,7 @@ Nitro, c'est framework web back-end qui vous offre et permet :
 Ainsi, Nitro est complètement agnostique et peut être utilisé seul ou dans votre prochain projet. Avec Nitro, vous pouvez créer des serveurs web pour des APIs, rendre de l'HTML ou bâtir le prochain framework comme peut l'être [analog](https://analogjs.org/) !
 
 <!-- TODO: le prochain framework vue (article) (découvrir comment batîr le prochain framework vue) -->
+:another-article{name="le-prochain-framework-vue"}
 
 ## Notre projet
 
