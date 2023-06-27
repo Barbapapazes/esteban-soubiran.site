@@ -30,7 +30,7 @@
     "case-police": "^0.6.1",
     "eslint": "^8.43.0",
     "markdownlint-cli": "^0.35.0",
-    "nuxt": "^3.5.3",
+    "nuxt": "^3.6.1",
     "nuxt-clarity-analytics": "^0.0.2",
     "nuxt-icon": "^0.4.1",
     "nuxt-seo-kit": "^1.3.8",
