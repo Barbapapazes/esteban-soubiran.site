@@ -6,10 +6,10 @@ const socials = usePortfolio().socials
   <div class="max-w-2xl flex flex-col gap-6">
     <img src="/esteban.webp" alt="Photo de profil d'Estéban" class="rounded-full h-16 w-16">
     <h1 class="text-4xl sm:text-5xl leading-[3.5rem] font-bold tracking-tight text-content">
-      <ContentSlot :use="$slots.title" unwrap="p" />
+      <slot name="title" />
     </h1>
     <p class="mt-6 text-base text-reduced">
-      <ContentSlot :use="$slots.subtitle" unwrap="p" />
+      <slot name="subtitle" />
     </p>
     <div class="flex flex-row gap-6">
       <NuxtLink v-for="social in socials" :key="social.url" :to="social.url" class="-m-1 p-1 group">
