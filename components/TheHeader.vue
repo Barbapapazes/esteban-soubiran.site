@@ -12,7 +12,7 @@ const { isHome, isActive } = useActivePath()
           <NuxtLink
             v-if="!isHome"
             to="/"
-            class="absolute left-0 h-10 w-10 rounded-full bg-blur p-0.5 shadow-base border-base hover:ring-zinc-900/10 hover:dark:ring-white/20"
+            class="absolute left-0 h-10 w-10 rounded-full bg-blur p-0.5 shadow-base border-base hover:ring-zinc-900/10 hover:dark:ring-white/20 transition-base"
           >
             <img
               src="/esteban.webp"
