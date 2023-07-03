@@ -231,6 +231,7 @@ Pour que cela fonctionne au mieux, il est essentiel d'ajouter une clé `version`
   // ...
 }
 ```
+
 ::
 
 Nous allons alors voir apparaître dans notre console :
