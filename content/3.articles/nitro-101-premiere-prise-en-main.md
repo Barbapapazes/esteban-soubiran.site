@@ -10,6 +10,8 @@ dateModified: 2023-06-24
 layout: article
 ---
 
+## Introduction
+
 [Nitro](https://nitro.unjs.io) (Nitropack sur npm), c'est le serveur web écrit en :icon{name="typescript"} TypeScript qui propulse :icon{name="nuxt"} Nuxt. Il a été créé par les équipes de :icon{name="nuxt"} Nuxt et ouvert à la communauté.
 
 Nitro, c'est framework web back-end qui permet :
@@ -26,7 +28,19 @@ Nitro, c'est framework web back-end qui permet :
 
 Ainsi, Nitro est complètement agnostique et peut être utilisé seul ou dans votre prochain projet. Avec Nitro, nous pourrons créer des serveurs web pour des APIs, rendre de l'HTML ou bâtir le prochain framework comme peut l'être [analog](https://analogjs.org/) !
 
+Retrouver le code source de cet article :git-hub-link{repo="barbapapazes/nitro-101-first-hand"}
+
 :another-article{name="le-prochain-framework-vue"}
+
+### UnJS, c'est quoi ?
+
+[UnJS](https://unjs.io), c'est un écosystème d'outils JavaScript. L'objectif est de fournir des outils qui ne font qu'une seule chose mais qui la font très bien et qui peuvent être combinés entre eux pour créer des outils plus complexes.
+
+UnJS suis [la philosophie UNIX](http://www.catb.org/~esr/writings/taoup/html/ch01s06.html) : _"Faites une chose et faites le bien"_. Ainsi, la plupart des outils UnJS sont des outils avec très peu de fonctionnalités mais dont la force réside dans la modularité avec d'autres outils. À l'origine du projet, il y a [Pooya "Pi0" Parsa](https://github.com/pi0) développeur chez [NuxtLabs](https://github.com/nuxtlabs) et leader de :icon{name="nuxt"} [Nuxt] des premiers commits à son lancement officiel !
+
+Chacun des projets est maintenu par son auteur et des mainteneurs désignés.
+
+Pour en savoir plus, nous pouvons [lire leur gouvernance](https://github.com/unjs/governance).
 
 ## Prise en main
 
