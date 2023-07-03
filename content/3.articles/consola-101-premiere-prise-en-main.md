@@ -350,6 +350,8 @@ Avoir un reporter JSON, c'est bien mais avoir un reporteur Emoji, c'est beaucoup
 touch src/reporters/emoji.ts
 ```
 
+Ensuite, nous allons créer notre classe `EmojiReporter` :
+
 ```typescript [src/reporters/emoji.ts]
 import type { ConsolaReporter, LogObject, LogType } from 'consola'
 
@@ -378,6 +380,8 @@ export class EmojiReporter implements ConsolaReporter {
   }
 }
 ```
+
+Puis nous allons configurer notre instance de `Consola` pour utiliser notre reporteur et afficher quelques logs :
 
 ```typescript [src/emoji.ts]
 import { createConsola } from 'consola'
@@ -408,6 +412,8 @@ Pour utiliser les prompts, commençons par créer un fichier `src/prompt.ts` :
 ```bash
 touch src/prompt.ts
 ```
+
+Ensuite, utilisons la commande `prompt` pour afficher un prompt :
 
 ```typescript [src/prompt.ts]
 import { createConsola } from 'consola'
@@ -480,6 +486,8 @@ Pour utiliser les boîtes, commençons par créer un fichier `src/box.ts` :
 touch src/box.ts
 ```
 
+Ensuite, utilisons la commande `box` pour afficher une boîte :
+
 ```typescript [src/box.ts]
 import { createConsola } from 'consola'
 
@@ -518,6 +526,8 @@ consola.box({
   },
 })
 ```
+
+Sur notre console, nous pouvons voir :
 
 ```txt
 
@@ -592,6 +602,8 @@ Pour tester la fonctionnalité, commençons par créer un fichier `src/stop.ts` 
 ```bash
 touch src/stop.ts
 ```
+
+Pour utiliser cette fonctionnalité, il suffit d'utiliser les fonctions `pauseLogs` et `resumeLogs` :
 
 ```typescript [src/stop.ts]
 import { consola } from 'consola'
