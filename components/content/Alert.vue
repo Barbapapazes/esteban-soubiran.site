@@ -6,9 +6,9 @@ defineProps<{
 }>()
 
 const typeClasses: Record<Type, string> = {
-  info: 'border-1 border-blue-300/40 dark:border-blue-700/40 bg-blue-300/20 dark:bg-blue-700/20 dark:text-blue-100 text-blue-950',
-  warning: 'border-1 border-yellow-300/40 dark:border-yellow-700/40 bg-yellow-300/20 dark:bg-yellow-700/20 dark:text-yellow-100 text-yellow-950',
-  danger: 'border-1 border-red-300/40 dark:border-red-700/40 bg-red-300/20 dark:bg-red-700/20 dark:text-red-100 text-red-950'
+  info: 'border-1 border-blue-300/40 dark:border-blue-700/40 bg-blue-200/20 dark:bg-blue-700/10 dark:text-blue-50 text-blue-950',
+  warning: 'border-1 border-yellow-300/40 dark:border-yellow-700/40 bg-yellow-200/20 dark:bg-yellow-700/10 dark:text-yellow-50 text-yellow-950',
+  danger: 'border-1 border-red-300/40 dark:border-red-700/40 bg-red-200/20 dark:bg-red-700/10 dark:text-red-50 text-red-950'
 }
 </script>
 
