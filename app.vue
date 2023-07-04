@@ -5,12 +5,12 @@ const sameAs = useSameAs()
 <template>
   <Html dir="ltr" class="h-full font-sans antialiased">
     <Head>
-      <SeoKit />
-      <SchemaOrgPerson
+      <!-- <SeoKit /> -->
+      <!-- <SchemaOrgPerson
         name="Estéban Soubiran"
         logo="/esteban.webp"
         :same-as="sameAs"
-      />
+      /> -->
     </Head>
     <Body class="flex h-full flex-col bg-zinc-50 dark:bg-black">
       <div class="h-full pt-6">

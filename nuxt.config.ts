@@ -4,7 +4,19 @@ export default defineNuxtConfig({
     watcher: 'parcel'
   },
 
-  extends: ['nuxt-seo-kit'],
+  app: {
+    head: {
+      link: [
+        {
+          rel: 'icon',
+          type: 'image/ico',
+          href: '/favicon.ico'
+        }
+      ]
+    }
+  },
+
+  // extends: ['nuxt-seo-kit'],
   modules: [
     'nuxt-clarity-analytics',
     '@nuxt/content',
@@ -12,7 +24,10 @@ export default defineNuxtConfig({
     '@nuxtjs/color-mode',
     'nuxt-icon',
     '@nuxthq/studio',
-    '@vueuse/nuxt'
+    '@vueuse/nuxt',
+    'nuxt-simple-robots',
+    'nuxt-simple-sitemap' // I need to update dateModified to modifiedAt et publishedAt
+    // add the new seo-experimental
   ],
 
   runtimeConfig: {
@@ -40,6 +55,21 @@ export default defineNuxtConfig({
     }
   },
 
+  sitemap: {
+    sitemaps: {
+      articles: {
+        include: [
+          '/articles/**'
+        ]
+      },
+      pages: {
+        exclude: [
+          '/articles/**'
+        ]
+      }
+    }
+  },
+
   css: [
     '@unocss/reset/tailwind.css',
     '~/assets/css/app.css'
@@ -49,25 +79,6 @@ export default defineNuxtConfig({
     classSuffix: ''
   },
 
-  app: {
-    head: {
-      link: [
-        {
-          rel: 'icon',
-          type: 'image/ico',
-          href: '/favicon.ico'
-        }
-      ]
-    }
-  },
-
-  nitro: {
-    prerender: {
-      routes: ['/'],
-      crawlLinks: true
-    }
-  },
-
   linkChecker: {
     exclude: [
       '/a-propos',
@@ -75,6 +86,13 @@ export default defineNuxtConfig({
       '/articles',
       '/experience'
     ]
+  },
+
+  nitro: {
+    prerender: {
+      routes: ['/'],
+      crawlLinks: true
+    }
   },
 
   devtools: true
