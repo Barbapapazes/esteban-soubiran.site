@@ -13,6 +13,29 @@ useSchemaOrg([
     }
   )
 ])
+
+useServerHead({
+  meta: [
+    {
+      name: 'author',
+      content: 'Estéban Soubiran'
+    },
+    {
+      property: 'og:article:author',
+      content: 'Estéban Soubiran'
+    },
+    {
+      name: 'publish_date',
+      property: 'og:article:publish_date',
+      content: ISODate(new Date(page.value.datePublished))
+    },
+    {
+      name: 'modified_date',
+      property: 'og:article:modified_date',
+      content: ISODate(new Date(page.value.dateModified))
+    }
+  ]
+})
 </script>
 
 <template>
