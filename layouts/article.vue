@@ -48,6 +48,7 @@ useServerHead({
       <PageProse>
         <slot />
       </PageProse>
+      <EditOnLink class="mt-4" />
     </PageSection>
   </AppSection>
 </template>

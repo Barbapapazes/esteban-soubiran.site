@@ -20,7 +20,12 @@ export default defineAppConfig({
     sameAs: [
       'https://www.linkedin.com/in/esteban25/',
       'https://github.com/barbapapazes'
-    ]
+    ],
+    github: {
+      dir: 'content',
+      branch: 'main',
+      owner: 'barbapapazes/esteban-soubiran.site'
+    }
   },
   nuxtIcon: {
     aliases: {
