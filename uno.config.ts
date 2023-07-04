@@ -9,6 +9,7 @@ export default defineConfig({
       'text-primary': 'text-sky-500 dark:text-sky-400',
 
       'border-base': 'ring-1 ring-zinc-900/5 dark:ring-white/10',
+      'border-primary': 'border-sky-500 dark:border-sky-400',
 
       'shadow-base': 'shadow-lg shadow-zinc-800/5',
 
