@@ -15,7 +15,7 @@ const attrs = useAttrs()
 <template>
   <ClientOnly>
     <button
-      label="Changer le thème"
+      title="Changer le thème"
       v-bind="attrs"
       class="group rounded-full bg-blur h-10 w-10 flex justify-center items-center shadow-base border-base hover:ring-zinc-900/10 hover:dark:ring-white/20 transition-base"
       @click="toggleColor()"
