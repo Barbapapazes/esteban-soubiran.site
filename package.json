@@ -35,5 +35,9 @@
     "nuxt-icon": "^0.4.1",
     "nuxt-seo-kit": "^1.3.8",
     "typescript": "^5.1.3"
+  },
+  "dependencies": {
+    "nuxt-simple-robots": "3.0.0-beta.1",
+    "nuxt-simple-sitemap": "^2.7.0"
   }
 }
