@@ -51,6 +51,10 @@ export default defineConfig({
         '.alert p:last-child': {
           'margin-bottom': 0
         },
+        '.alert ul': {
+          'margin-top': 0,
+          'margin-bottom': 0
+        },
         img: {
           'border-radius': '0.5rem'
         }
