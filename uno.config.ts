@@ -45,14 +45,10 @@ export default defineConfig({
         '.dark p a:hover': {
           color: '#7dd3fc'
         },
-        '.alert p:first-child': {
+        '.alert *:first-child': {
           'margin-top': 0
         },
-        '.alert p:last-child': {
-          'margin-bottom': 0
-        },
-        '.alert ul': {
-          'margin-top': 0,
+        '.alert *:last-child': {
           'margin-bottom': 0
         },
         img: {
