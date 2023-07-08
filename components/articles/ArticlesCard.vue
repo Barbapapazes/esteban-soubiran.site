@@ -1,7 +1,7 @@
 <script lang="ts" setup>
-import { ParsedContent } from '@nuxt/content/dist/runtime/types'
+import { ParsedArticle } from '@/types/article'
 
-const props = defineProps<{ article: ParsedContent }>()
+defineProps<{ article: ParsedArticle }>()
 </script>
 
 <template>
@@ -11,16 +11,16 @@ const props = defineProps<{ article: ParsedContent }>()
         <div
           class="absolute -inset-y-6 -inset-x-4 z-0 scale-95 bg-zinc-50 opacity-0 transition group-hover:scale-100 group-hover:opacity-100 dark:bg-zinc-800/50 sm:-inset-x-6 sm:rounded-2xl duration-200 ease-in"
         />
-        <NuxtLink :to="$props.article._path">
+        <NuxtLink :to="article._path">
           <span class="absolute -inset-y-6 -inset-x-4 sm:-inset-x-6 z-20 sm:rounded-2xl" />
           <span class="relative z-10">
-            {{ $props.article.title }}
+            {{ article.title }}
           </span>
         </NuxtLink>
       </h2>
-      <AppDate with-border :datetime="props.article.datePublished" class="md:hidden order-first relative mb-3" />
+      <AppDate v-if="article.datePublished" with-border :datetime="article.datePublished" class="md:hidden order-first relative mb-3" />
       <p class="relative z-10 mt-2 text-sm text-reduced">
-        {{ $props.article.description }}
+        {{ article.description }}
       </p>
       <div aria-hidden="true" class="relative mt-4 inline-flex items-center gap-1 text-primary">
         <span class="text-sm font-semibold">Lire plus</span>
@@ -28,7 +28,7 @@ const props = defineProps<{ article: ParsedContent }>()
       </div>
     </div>
     <div class="hidden md:block order-first relative">
-      <AppDate small :datetime="props.article.datePublished" />
+      <AppDate v-if="article.datePublished" small :datetime="article.datePublished" />
     </div>
   </article>
 </template>

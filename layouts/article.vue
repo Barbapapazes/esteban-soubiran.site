@@ -4,12 +4,15 @@ import PageToc from '~/components/page/PageToc.vue'
 const { page, toc } = useContent()
 const { ISODate } = useDate()
 
+const publishedAt = page.value.datePublished ? ISODate(new Date(page.value.datePublished)) : ''
+const modifiedAt = page.value.dateModified ? ISODate(new Date(page.value.dateModified)) : ''
+
 useSchemaOrg([
   defineArticle(
     {
       image: page.value.image ?? '',
-      datePublished: ISODate(new Date(page.value.datePublished)),
-      dateModified: ISODate(new Date(page.value.dateModified))
+      datePublished: publishedAt,
+      dateModified: modifiedAt
     }
   )
 ])
@@ -27,12 +30,12 @@ useServerHead({
     {
       name: 'publish_date',
       property: 'og:article:publish_date',
-      content: ISODate(new Date(page.value.datePublished))
+      content: publishedAt
     },
     {
       name: 'modified_date',
       property: 'og:article:modified_date',
-      content: ISODate(new Date(page.value.dateModified))
+      content: modifiedAt
     }
   ]
 })
@@ -43,7 +46,7 @@ useServerHead({
     <PageSection>
       <PageProseHeader :title="page.title" :date-published="page.datePublished" :cover="page.cover" />
 
-      <PageToc v-if="toc" :toc="toc" />
+      <PageToc v-if="toc.links.length" :toc="toc" />
 
       <PageProse>
         <slot />

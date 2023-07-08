@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 defineProps<{
-  title: string,
-  datePublished: string
+  title?: string,
+  datePublished?: string
   cover?: {
     src: string,
     alt: string
@@ -12,10 +12,10 @@ defineProps<{
 <template>
   <div class="max-w-prose w-full mx-auto">
     <div class="flex flex-col gap-4">
-      <PageTitle class="mt-4">
+      <PageTitle v-if="title" class="mt-4">
         {{ title }}
       </PageTitle>
-      <PageDate :datetime="datePublished" class="order-first" />
+      <PageDate v-if="datePublished" :datetime="datePublished" class="order-first" />
     </div>
 
     <img
