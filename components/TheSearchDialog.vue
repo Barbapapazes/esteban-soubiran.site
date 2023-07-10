@@ -80,7 +80,7 @@ watch(search, () => {
             leave-from="opacity-100 scale-100"
             leave-to="opacity-0 scale-95"
           >
-            <DialogPanel as="div" class="w-full max-w-3xl md:h-md flex flex-col bg-white/90 dark:bg-zinc-800/90 md:rounded-2xl border-base shadow-xl text-content overflow-hidden">
+            <DialogPanel as="div" class="h-full md:h-auto w-full max-w-3xl md:h-md flex flex-col bg-white/90 dark:bg-zinc-800/90 md:rounded-2xl border-base shadow-xl text-content overflow-hidden">
               <Combobox v-model="selected">
                 <div class="flex flex-row justify-between items-center gap-4 px-6 py-4 border-b border-zinc-9000/5 dark:border-white/10">
                   <label for="search">
