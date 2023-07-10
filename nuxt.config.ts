@@ -68,6 +68,14 @@ export default defineNuxtConfig({
     }
   },
 
+  routeRules: {
+    '/api/search': {
+      prerender: true,
+      // Use text/plain to avoid Nitro render an index.html
+      headers: { 'Content-Type': 'text/plain' }
+    }
+  },
+
   linkChecker: {
     exclude: [
       '/a-propos',

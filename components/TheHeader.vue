@@ -47,6 +47,7 @@ const { isHome, isActive } = useActivePath()
           </nav>
         </div>
         <TheHeaderDialog class="md:hidden" />
+        <TheSearch class="absolute right-16" />
         <ColorModeSwitcher class="absolute right-0" />
       </div>
     </div>
