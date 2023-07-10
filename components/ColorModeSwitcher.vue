@@ -13,10 +13,13 @@ const attrs = useAttrs()
 </script>
 
 <template>
-  <button
+  <HeaderItem
+    as="button"
+    type="button"
     title="Changer le thème"
     v-bind="attrs"
-    class="group rounded-full bg-blur h-10 w-10 flex justify-center items-center shadow-base border-base hover:ring-zinc-900/10 hover:dark:ring-white/20 transition-base"
+    class="group h-10 w-10 flex justify-center items-center"
+    hover
     @click="toggleColor()"
   >
     <ClientOnly fallback="...">
@@ -33,7 +36,7 @@ const attrs = useAttrs()
         />
       </Transition>
     </ClientOnly>
-  </button>
+  </HeaderItem>
 </template>
 
 <style scoped>

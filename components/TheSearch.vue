@@ -10,18 +10,20 @@ useEventListener('keydown', (event) => {
 </script>
 
 <template>
-  <button
-    v-bind="$attrs"
-    title="Ouvrir la recherche"
+  <HeaderItem
+    as="button"
     type="button"
-    class="group rounded-full bg-blur h-10 w-10 flex justify-center items-center shadow-base border-base hover:ring-zinc-900/10 hover:dark:ring-white/20 transition-base"
+    title="Ouvrir la recherche"
+    v-bind="$attrs"
+    class="group flex justify-center items-center h-10 w-10"
+    hover
     @click="openSearch = true"
   >
     <Icon
       name="heroicons:magnifying-glass"
       class="h-5 w-5 fill-sky-50 stroke-zinc-500 group-hover:stroke-zinc-600 dark:stroke-zinc-500 dark:group-hover:stroke-zinc-400 dark:fill-sky-400/10 transition-base"
     />
-  </button>
+  </HeaderItem>
   <TheSearchDialog v-model:open="openSearch" />
 </template>
 
