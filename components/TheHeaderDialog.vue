@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-// TODO: try to lazy load this component
+// can't be lazy loaded since there is animation
 // TODO: harmonize animation
 import { Popover, PopoverButton, PopoverPanel, PopoverOverlay } from '@headlessui/vue'
 
