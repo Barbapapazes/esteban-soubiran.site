@@ -20,8 +20,8 @@ devDependencies:
     specifier: ^0.6.1
     version: 0.6.1(nuxt@3.6.1)(vite@4.3.9)
   '@nuxthq/studio':
-    specifier: ^0.13.2
-    version: 0.13.2
+    specifier: ^0.13.4
+    version: 0.13.4
   '@nuxtjs/color-mode':
     specifier: ^3.2.0
     version: 3.2.0
@@ -1339,21 +1339,21 @@ packages:
     engines: {node: ^14.18.0 || >=16.10.0}
     dependencies:
       '@nuxt/schema': 3.5.3
-      c12: 1.4.2
+      c12: 1.4.1
       consola: 3.1.0
       defu: 6.1.2
-      globby: 13.2.0
+      globby: 13.1.4
       hash-sum: 2.0.0
       ignore: 5.2.4
       jiti: 1.18.2
       knitwork: 1.0.0
-      mlly: 1.4.0
+      mlly: 1.3.0
       pathe: 1.1.1
       pkg-types: 1.0.3
       scule: 1.0.0
-      semver: 7.5.3
+      semver: 7.5.1
       unctx: 2.3.1
-      unimport: 3.0.10(rollup@3.25.3)
+      unimport: 3.0.8
       untyped: 1.3.2
     transitivePeerDependencies:
       - rollup
@@ -1574,10 +1574,10 @@ packages:
       - vue-tsc
     dev: true
 
-  /@nuxthq/studio@0.13.2:
-    resolution: {integrity: sha512-lSjMDSq0yxX3I3O8EVJWoU+kA9iEwUuTS1sZfyha625FhiU2qDIGGkc7gEeA1ubBNeZmJMXTl2hIauxOVTSfgQ==}
+  /@nuxthq/studio@0.13.4:
+    resolution: {integrity: sha512-+Jn0iN6TvRTTtTBX4qXWhtOMLL4rsyUIX3/9HM+eBAwr5/cELLw3RuI1tgp942QteTi7PvI5Av4nEi6BlLBr+A==}
     dependencies:
-      '@nuxt/kit': 3.5.3
+      '@nuxt/kit': 3.6.1
       defu: 6.1.2
       nuxt-component-meta: 0.5.3
       nuxt-config-schema: 0.4.6
@@ -7526,7 +7526,7 @@ packages:
   /nuxt-component-meta@0.5.3:
     resolution: {integrity: sha512-+MHUrESdr+Si9PdbkxQrzQv+X6RdRd/ffmFWVVsZAHA7X9vGoNAYxwvoB1Pbs15TaPtFBWA1P5a4VGqtp+bhAg==}
     dependencies:
-      '@nuxt/kit': 3.5.3
+      '@nuxt/kit': 3.6.1
       scule: 1.0.0
       typescript: 5.1.3
       vue-component-meta: 1.6.5(typescript@5.1.3)
@@ -7538,7 +7538,7 @@ packages:
   /nuxt-config-schema@0.4.6:
     resolution: {integrity: sha512-kHLWJFynj5QrxVZ1MjY2xmDaTSN1BCMLGExA+hMMLoCb3wn9TJlDVqnE/nSdUJPMRkNn/NQ5WP9NLA9vlAXRUw==}
     dependencies:
-      '@nuxt/kit': 3.5.3
+      '@nuxt/kit': 3.6.1
       defu: 6.1.2
       jiti: 1.18.2
       pathe: 1.1.1
