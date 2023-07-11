@@ -13,27 +13,30 @@ const attrs = useAttrs()
 </script>
 
 <template>
-  <ClientOnly>
-    <button
-      title="Changer le thème"
-      v-bind="attrs"
-      class="group rounded-full bg-blur h-10 w-10 flex justify-center items-center shadow-base border-base hover:ring-zinc-900/10 hover:dark:ring-white/20 transition-base"
-      @click="toggleColor()"
-    >
+  <HeaderItem
+    as="button"
+    type="button"
+    title="Changer le thème"
+    v-bind="attrs"
+    class="group h-10 w-10 flex justify-center items-center"
+    hover
+    @click="toggleColor()"
+  >
+    <ClientOnly fallback="...">
       <Transition name="fade" mode="out-in">
         <Icon
           v-if="$colorMode.value === 'dark'"
           name="heroicons:moon"
-          class="hidden h-5 w-5 fill-zinc-700 stroke-zinc-500 transition dark:block [@media(prefers-color-scheme:dark)]:group-hover:stroke-zinc-400 [@media_not_(prefers-color-scheme:dark)]:fill-sky-400/10 [@media_not_(prefers-color-scheme:dark)]:stroke-sky-500"
+          class="h-5 w-5 stroke-zinc-500 group-hover:stroke-zinc-400 fill-sky-400/10 transition-base"
         />
         <Icon
           v-else-if="$colorMode.value === 'light'"
           name="heroicons:sun"
-          class="h-5 w-5 fill-zinc-100 stroke-zinc-500 transition group-hover:fill-zinc-200 group-hover:stroke-zinc-700 dark:hidden [@media(prefers-color-scheme:dark)]:fill-sky-50 [@media(prefers-color-scheme:dark)]:stroke-sky-500 [@media(prefers-color-scheme:dark)]:group-hover:fill-sky-50 [@media(prefers-color-scheme:dark)]:group-hover:stroke-sky-600"
+          class="h-5 w-5 fill-sky-50 stroke-sky-500 group-hover:stroke-sky-600 transition-base"
         />
       </Transition>
-    </button>
-  </ClientOnly>
+    </ClientOnly>
+  </HeaderItem>
 </template>
 
 <style scoped>
