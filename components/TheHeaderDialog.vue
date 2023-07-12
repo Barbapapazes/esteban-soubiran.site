@@ -7,7 +7,7 @@ const { navigation } = useContent()
 </script>
 
 <template>
-  <Popover class="relative right-32 h-10">
+  <Popover class="h-10">
     <!-- <ClientOnly> -->
     <PopoverButton
       class="group h-full flex items-center rounded-full bg-blur px-4 py-2 text-sm font-medium text-content shadow-base border-base hover:ring-zinc-900/10 hover:dark:ring-white/20 transition-base"
