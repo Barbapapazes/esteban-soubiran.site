@@ -1,9 +1,5 @@
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
-  experimental: {
-    watcher: 'parcel'
-  },
-
   extends: ['nuxt-seo-kit'],
   modules: [
     'nuxt-clarity-analytics',
