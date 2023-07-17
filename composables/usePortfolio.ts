@@ -1,3 +1,3 @@
 export const usePortfolio = () => {
-  return useAppConfig().portfolio
+  return ref(useAppConfig().portfolio)
 }

@@ -1,3 +1,7 @@
-export const useSameAs = () => {
-  return usePortfolio().sameAs
+export const useSameAs = (): ComputedRef<string[]> => {
+  const socials = usePortfolio().value.socials
+
+  return computed(() => {
+    return Object.values(socials).map(({ url }) => url)
+  })
 }

@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-const socials = usePortfolio().socials
+const socials = usePortfolio().value.socials
 </script>
 
 <template>
