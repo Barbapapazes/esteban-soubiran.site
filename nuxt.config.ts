@@ -11,6 +11,10 @@ export default defineNuxtConfig({
     '@vueuse/nuxt'
   ],
 
+  experimental: {
+    inlineSSRStyles: false
+  },
+
   runtimeConfig: {
     public: {
       trailingSlash: true,
