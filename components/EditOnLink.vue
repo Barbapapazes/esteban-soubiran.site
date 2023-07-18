@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 const { page } = useContent()
-const { github } = usePortfolio()
+const github = usePortfolio().value.github
 
 const link = computed(() => {
   return `https://github.com/${github.owner}/edit/${github.branch}/content/${page.value._file}`

@@ -1,26 +1,22 @@
 export default defineAppConfig({
   portfolio: {
-    socials: [
-      {
+    socials: {
+      github: {
         name: 'GitHub',
         url: 'https://github.com/Barbapapazes',
         icon: 'mdi:github'
       },
-      {
+      linkedin: {
         name: 'LinkedIn',
         url: 'https://www.linkedin.com/in/esteban25/',
         icon: 'mdi:linkedin'
       },
-      {
-        name: 'Dev.to',
-        url: 'https://dev.to/barbapapazes',
-        icon: 'devto'
+      twitter: {
+        name: 'Twitter',
+        url: 'https://twitter.com/soubiran_',
+        icon: 'mdi:twitter'
       }
-    ],
-    sameAs: [
-      'https://www.linkedin.com/in/esteban25/',
-      'https://github.com/barbapapazes'
-    ],
+    },
     github: {
       dir: 'content',
       branch: 'main',

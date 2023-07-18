@@ -10,7 +10,8 @@ const { isHome } = useActivePath()
       <HeaderItem
         :as="NuxtLink"
         to="/"
-        class="h-10 w-10 p-0.5"
+        class="h-10 w-10 p-0.5 block"
+        v-bind="$attrs"
         hover
       >
         <img

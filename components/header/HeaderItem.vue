@@ -1,8 +1,6 @@
 <script lang="ts" setup>
-import { ConcreteComponent } from 'nuxt/dist/app/compat/capi'
-
 defineProps<{
-  as?: string | ConcreteComponent
+  as?: any
   hover?: boolean
 }>()
 </script>
