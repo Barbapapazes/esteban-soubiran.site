@@ -36,7 +36,8 @@ export default defineNuxtConfig({
       theme: {
         default: 'github-light',
         dark: 'github-dark'
-      }
+      },
+      preload: ['sql', 'ini']
     }
   },
 
