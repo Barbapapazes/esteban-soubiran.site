@@ -20,8 +20,8 @@ devDependencies:
     specifier: ^0.8.5
     version: 0.8.5(nuxt@3.7.4)(vite@4.5.0)
   '@nuxthq/studio':
-    specifier: ^0.14.1
-    version: 0.14.1
+    specifier: ^1.0.2
+    version: 1.0.2
   '@nuxtjs/color-mode':
     specifier: ^3.3.0
     version: 3.3.0
@@ -1453,8 +1453,8 @@ packages:
       - vue-tsc
     dev: true
 
-  /@nuxthq/studio@0.14.1:
-    resolution: {integrity: sha512-9Pdkiph1D7AoWess+pcj4AOinTnpEKpB0F0zmcbZt05LZr1urEab6nvpWlhbaen5mtkqhXlWe6skbBrQVNv17w==}
+  /@nuxthq/studio@1.0.2:
+    resolution: {integrity: sha512-QoF6oYigr6IcHgNeQqAUBmCrSqnuPffoF9Tbg8cToF3oYU7WHkKgYCe+diICFdWuiH/SHTEfSm9kaone/Bp2gw==}
     dependencies:
       '@nuxt/kit': 3.7.4
       defu: 6.1.2
