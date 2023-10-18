@@ -36,7 +36,8 @@ export default defineNuxtConfig({
       theme: {
         default: 'github-light',
         dark: 'github-dark'
-      }
+      },
+      preload: ['sql', 'ini']
     }
   },
 
@@ -64,7 +65,8 @@ export default defineNuxtConfig({
   nitro: {
     prerender: {
       routes: ['/'],
-      crawlLinks: true
+      crawlLinks: true,
+      failOnError: false
     }
   },
 
