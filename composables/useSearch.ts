@@ -1,9 +1,10 @@
-import MiniSearch, { type Options as MiniSearchOptions, SearchResult } from 'minisearch'
+import MiniSearch, { type Options as MiniSearchOptions, type SearchResult as MiniSearchSearchResult } from 'minisearch'
 
-export const useSearch = async (search: MaybeRefOrGetter<string>): Promise<ComputedRef<SearchResult[]>> => {
+export async function useSearch(search: MaybeRefOrGetter<string>): Promise<ComputedRef<MiniSearchSearchResult[]>> {
   const { data } = await useFetch<string>('/api/search')
 
-  if (!data.value) { return computed(() => []) }
+  if (!data.value)
+    return computed(() => [])
 
   const { results } = useIndexedMiniSearch(search, data as Ref<string>, {
     fields: ['title', 'titles'],
@@ -13,16 +14,15 @@ export const useSearch = async (search: MaybeRefOrGetter<string>): Promise<Compu
       fuzzy: 0.2,
       boost: {
         title: 4,
-        content: 2,
-        titles: 1
-      }
-    }
+        titles: 1,
+      },
+    },
   })
 
   return results
 }
 
-const useIndexedMiniSearch = (search: MaybeRefOrGetter<string>, indexedData: MaybeRefOrGetter<string>, options: MiniSearchOptions) => {
+function useIndexedMiniSearch(search: MaybeRefOrGetter<string>, indexedData: MaybeRefOrGetter<string>, options: MiniSearchOptions) {
   const createIndexedMiniSearch = () => {
     return MiniSearch.loadJSON(toValue(indexedData), toValue(options))
   }
@@ -32,13 +32,13 @@ const useIndexedMiniSearch = (search: MaybeRefOrGetter<string>, indexedData: May
   watch(
     () => toValue(options),
     () => { indexedMiniSearch.value = createIndexedMiniSearch() },
-    { deep: true }
+    { deep: true },
   )
 
   watch(
     () => toValue(indexedData),
     () => { indexedMiniSearch.value = createIndexedMiniSearch() },
-    { deep: true }
+    { deep: true },
   )
 
   const results = computed(() => {
@@ -47,6 +47,6 @@ const useIndexedMiniSearch = (search: MaybeRefOrGetter<string>, indexedData: May
 
   return {
     results,
-    indexedMiniSearch
+    indexedMiniSearch,
   }
 }

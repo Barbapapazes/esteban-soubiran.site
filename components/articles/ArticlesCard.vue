@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { ParsedArticle } from '@/types/article'
+import type { ParsedArticle } from '@/types/article'
 
 defineProps<{ article: ParsedArticle }>()
 </script>

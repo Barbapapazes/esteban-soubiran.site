@@ -10,7 +10,7 @@ const open = ref(false)
   <div class="max-w-prose mx-auto w-full mt-6 mb-4 text-zinc-800 dark:text-zinc-200">
     <button type="button" class="flex flex-row items-center gap-2" @click="open = !open">
       <span> Sommaire </span>
-      <Icon name="heroicons:play-20-solid" class="w-3 h-3 transition-transform duration-75 ease-in" :class="{'transform rotate-90': open }" />
+      <Icon name="heroicons:play-20-solid" class="w-3 h-3 transition-transform duration-75 ease-in" :class="{ 'transform rotate-90': open }" />
     </button>
     <ul v-show="open" class="ml-4 mt-4">
       <li v-for="link in toc.links" :key="link.id">

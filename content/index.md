@@ -24,8 +24,8 @@ adventures:
 
 ::home-hero-section
 #title
-Développeur web et <br /> passionné par l'associatif
+Développeur web et <br /> passionné par l'open source
 
 #subtitle
-Je suis Estéban, un développeur web basé à Paris. Je me plais à utiliser mes compétences pour soutenir et aider des projets étudiants et développer des expériences utilisateurs.
+Je suis Estéban, un développeur web basé à Paris. Je me plais à contribuer des projets open source comme [Nuxt](https://nuxt.com) ou [UnJS](https://unjs.io) et à écrire des articles pour partager mes expériences.
 ::

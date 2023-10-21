@@ -1,10 +1,10 @@
-import { ParsedContent } from '@nuxt/content/dist/runtime/types'
-import { Section } from '../../types/search'
+import type { ParsedContent } from '@nuxt/content/dist/runtime/types'
+import type { Section } from '../../types/search'
 
 const HEADING = /^h([1-6])$/
 const isHeading = (tag: string) => HEADING.test(tag)
 
-export function splitPageIntoSections (page: ParsedContent) {
+export function splitPageIntoSections(page: ParsedContent) {
   const path = page._path ?? ''
 
   const sections: Section[] = []
@@ -16,7 +16,7 @@ export function splitPageIntoSections (page: ParsedContent) {
       title: page.title,
       titles: [],
       content: '',
-      level: 0
+      level: 0,
     })
   }
 
@@ -33,10 +33,12 @@ export function splitPageIntoSections (page: ParsedContent) {
       if (currentHeadingLevel === 1) {
         // Reset the titles
         titles.splice(0, titles.length)
-      } else if (currentHeadingLevel < previousHeadingLevel) {
+      }
+      else if (currentHeadingLevel < previousHeadingLevel) {
         // Go up tree, remove every title after the current level
         titles.splice(currentHeadingLevel - 1, titles.length - 1)
-      } else if (currentHeadingLevel === previousHeadingLevel) {
+      }
+      else if (currentHeadingLevel === previousHeadingLevel) {
         // Same level, remove the last title (add title later to avoid to it in titles)
         titles.pop()
       }
@@ -46,7 +48,7 @@ export function splitPageIntoSections (page: ParsedContent) {
         title,
         titles: [...titles],
         content: '',
-        level: currentHeadingLevel
+        level: currentHeadingLevel,
       })
 
       titles.push(title)
@@ -63,7 +65,7 @@ export function splitPageIntoSections (page: ParsedContent) {
           title: '',
           titles: [],
           content: '',
-          level: 0
+          level: 0,
         }
       }
 
@@ -74,24 +76,21 @@ export function splitPageIntoSections (page: ParsedContent) {
   return sections
 }
 
-function extractTextFromAst (node: any) {
+function extractTextFromAst(node: any) {
   let text = ''
 
   // Get text from markdown AST
-  if (node.type === 'text') {
+  if (node.type === 'text')
     text += node.value
-  }
 
   // Do not explore children
-  if (node.tag === 'code' || node.tag === 'style') {
+  if (node.tag === 'code' || node.tag === 'style')
     return ''
-  }
 
   // Explore children
   if (node.children) {
-    for (const child of node.children) {
-      text += ' ' + extractTextFromAst(child)
-    }
+    for (const child of node.children)
+      text += ` ${extractTextFromAst(child)}`
   }
 
   return text

@@ -8,7 +8,8 @@ export default defineEventHandler(async (event) => {
   const sections = (await Promise.all(
     files
       .filter(file => file._extension === 'md' && !file?._draft && !file?.empty)
-      .map(page => splitPageIntoSections(page))))
+      .map(page => splitPageIntoSections(page)),
+  ))
     .flat()
 
   // Add an option to enable index
@@ -21,9 +22,9 @@ export default defineEventHandler(async (event) => {
       boost: {
         title: 4,
         content: 2,
-        titles: 1
-      }
-    }
+        titles: 1,
+      },
+    },
   })
 
   // Index the documents

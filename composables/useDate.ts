@@ -1,9 +1,9 @@
-export const useDate = () => {
+export function useDate() {
   const formatDate = (date: Date) => {
     return new Intl.DateTimeFormat('fr-FR', {
       year: 'numeric',
       month: 'long',
-      day: 'numeric'
+      day: 'numeric',
     }).format(date)
   }
 
@@ -13,6 +13,6 @@ export const useDate = () => {
 
   return {
     ISODate,
-    formatDate
+    formatDate,
   }
 }

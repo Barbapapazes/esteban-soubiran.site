@@ -1,12 +1,11 @@
 <script lang="ts" setup>
 const colorMode = useColorMode()
 
-const toggleColor = () => {
-  if (colorMode.value === 'light') {
+function toggleColor() {
+  if (colorMode.value === 'light')
     colorMode.preference = 'dark'
-  } else {
+  else
     colorMode.preference = 'light'
-  }
 }
 
 const attrs = useAttrs()

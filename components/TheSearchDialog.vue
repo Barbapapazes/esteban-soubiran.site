@@ -1,15 +1,15 @@
 <script lang="ts" setup>
 import {
-  TransitionRoot,
-  TransitionChild,
-  Dialog,
-  DialogPanel,
   Combobox,
   ComboboxInput,
+  ComboboxOption,
   ComboboxOptions,
-  ComboboxOption
+  Dialog,
+  DialogPanel,
+  TransitionChild,
+  TransitionRoot,
 } from '@headlessui/vue'
-import { SearchResult } from 'minisearch'
+import type { SearchResult } from 'minisearch'
 
 defineProps<{
   open: boolean
@@ -19,7 +19,7 @@ const emit = defineEmits<{
   'update:open': [state: boolean]
 }>()
 
-const close = () => {
+function close() {
   emit('update:open', false)
 }
 
@@ -28,7 +28,8 @@ const search = ref('')
 const searchDebounced = refDebounced(search, 200)
 
 const navigate = function () {
-  if (!selected.value) { return }
+  if (!selected.value)
+    return
 
   navigateTo(selected.value.id)
   close()
@@ -42,15 +43,13 @@ const slicedResult = computed(() => {
 })
 
 watch(result, () => {
-  if (!result.value.length && search.value) {
+  if (!result.value.length && search.value)
     isEmpty.value = true
-  }
 })
 
 watch(search, () => {
-  if (!search.value) {
+  if (!search.value)
     isEmpty.value = false
-  }
 })
 </script>
 
