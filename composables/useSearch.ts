@@ -1,7 +1,7 @@
 import MiniSearch, { type Options as MiniSearchOptions, type SearchResult as MiniSearchSearchResult } from 'minisearch'
 
 export async function useSearch(search: MaybeRefOrGetter<string>): Promise<ComputedRef<MiniSearchSearchResult[]>> {
-  const { data } = await useFetch<string>('/api/search')
+  const { data } = await useFetch<string>('/api/search', { server: false })
 
   if (!data.value)
     return computed(() => [])
