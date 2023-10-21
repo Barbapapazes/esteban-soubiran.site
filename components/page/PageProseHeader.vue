@@ -1,9 +1,9 @@
 <script lang="ts" setup>
 defineProps<{
-  title?: string,
+  title?: string
   datePublished?: string
   cover?: {
-    src: string,
+    src: string
     alt: string
   }
 }>()

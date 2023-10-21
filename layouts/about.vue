@@ -32,12 +32,12 @@ const socials = usePortfolio().value.socials
               :to="social.url"
               class="group flex flex-row items-center text-sm font-medium transition ease-in text-content hover:text-primary"
             >
-              <Icon
+              <div
                 class="h-6 w-6 flex-none fill-zinc-500 group-hover:fill-sky-500 group-hover:dark:fill-sky-400"
-                :name="social.icon"
+                :class="social.icon"
               />
               <span class="ml-4">
-                Me suivre sur {{ social.name }}
+                Me Retrouver sur {{ social.name }}
               </span>
             </NuxtLink>
           </li>

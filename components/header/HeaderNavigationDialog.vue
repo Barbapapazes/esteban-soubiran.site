@@ -1,11 +1,11 @@
 <script lang="ts" setup>
 import { PopoverOverlay, PopoverPanel } from '@headlessui/vue'
 
-const { navigation } = useContent()
-
 defineProps<{
   open: boolean
 }>()
+
+const { navigation } = useContent()
 </script>
 
 <template>

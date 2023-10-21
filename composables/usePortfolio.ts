@@ -1,3 +1,5 @@
-export const usePortfolio = () => {
-  return ref(useAppConfig().portfolio)
+export function usePortfolio() {
+  const appConfig = useAppConfig()
+
+  return computed(() => appConfig.portfolio)
 }

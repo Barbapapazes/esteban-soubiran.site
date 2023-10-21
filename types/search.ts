@@ -8,5 +8,5 @@ export interface Section {
   // Level of the section
   level: number
   // Content of the section
-  content: string,
+  content: string
 }

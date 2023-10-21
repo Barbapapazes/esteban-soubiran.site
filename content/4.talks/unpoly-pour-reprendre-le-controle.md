@@ -6,15 +6,25 @@ dateModified: 2023-04-12
 cover:
   src: /assets/talks/unpoly-pour-reprendre-le-controle/cover.webp
   alt: Photo d'Estéban lors de son talk à Devoxx France
-event:
-  name: Devoxx France
-  url: https://www.devoxx.fr/
-slides:
-  spa: https://talks.esteban-soubiran.site/2023/unpoly
-  pdf: /talks/2023-04-12
-recording: https://youtu.be/MIM6E_XMRHQ
+resources:
+  - name: Slides
+    url: https://talks.esteban-soubiran.site/2023/unpoly
+    icon: i-heroicons-chat-bubble-bottom-center-text-20-solid?mask
+  - name: PDF
+    url: /talks/2023-04-12
+    icon: i-heroicons-document-text-20-solid?mask
+  - name: Vidéo
+    url: https://youtu.be/MIM6E_XMRHQ
+    icon: i-heroicons-video-camera-20-solid?mask
+  - name: Devoxx France
+    url: https://www.devoxx.fr/
+    icon: i-heroicons-user-group-20-solid?mask
 layout: talk
 ---
+
+Pour la [Devoxx France](https://devoxx.fr) 2023, j'ai eu l'occasion de présenter Unpoly, un outil qui permet d'avoir l'expérience utilisateur d'une application web mais sans la complexité des frameworks front-end. Voici les slides et la transcription de mon talk.
+
+## Transcription
 
 Avant de commencer qui suis-je ?
 

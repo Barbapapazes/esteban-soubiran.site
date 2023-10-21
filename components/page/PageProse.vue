@@ -3,3 +3,9 @@
     <slot />
   </div>
 </template>
+
+<style scoped>
+div> :deep(*> :first-child) {
+  margin-top: 0;
+}
+</style>

@@ -2,7 +2,6 @@
 import { Popover, PopoverButton } from '@headlessui/vue'
 
 const openNavigation = ref(false)
-
 </script>
 
 <template>

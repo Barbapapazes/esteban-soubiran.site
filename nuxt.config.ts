@@ -8,11 +8,11 @@ export default defineNuxtConfig({
     '@nuxtjs/color-mode',
     'nuxt-icon',
     '@nuxthq/studio',
-    '@vueuse/nuxt'
+    '@vueuse/nuxt',
   ],
 
   experimental: {
-    inlineSSRStyles: false
+    inlineSSRStyles: false,
   },
 
   runtimeConfig: {
@@ -21,33 +21,33 @@ export default defineNuxtConfig({
       siteUrl: 'https://esteban-soubiran.site',
       siteName: 'Estéban Soubiran',
       siteDescription:
-        "Développeur web et passionné par l'associatif",
+        'Développeur web et passionné par l\'associatif',
       language: 'fr-FR',
-      titleSeparator: '·'
-    }
+      titleSeparator: '·',
+    },
   },
 
   content: {
     documentDriven: {
       host: 'https://esteban-soubiran.site',
-      trailingSlash: true
+      trailingSlash: true,
     },
     highlight: {
       theme: {
         default: 'github-light',
-        dark: 'github-dark'
+        dark: 'github-dark',
       },
-      preload: ['sql', 'ini']
-    }
+      preload: ['sql', 'ini'],
+    },
   },
 
   css: [
     '@unocss/reset/tailwind.css',
-    '~/assets/css/app.css'
+    '~/assets/css/app.css',
   ],
 
   colorMode: {
-    classSuffix: ''
+    classSuffix: '',
   },
 
   app: {
@@ -56,26 +56,26 @@ export default defineNuxtConfig({
         {
           rel: 'icon',
           type: 'image/ico',
-          href: '/favicon.ico'
-        }
-      ]
-    }
+          href: '/favicon.ico',
+        },
+      ],
+    },
   },
 
   nitro: {
     prerender: {
       routes: ['/'],
       crawlLinks: true,
-      failOnError: false
-    }
+      failOnError: false,
+    },
   },
 
   routeRules: {
     '/api/search': {
       prerender: true,
       // Use text/plain to avoid Nitro render an index.html
-      headers: { 'Content-Type': 'text/plain' }
-    }
+      headers: { 'Content-Type': 'text/plain' },
+    },
   },
 
   linkChecker: {
@@ -83,9 +83,9 @@ export default defineNuxtConfig({
       '/a-propos',
       '/projets',
       '/articles',
-      '/experience'
-    ]
+      '/experience',
+    ],
   },
 
-  devtools: true
+  devtools: true,
 })
