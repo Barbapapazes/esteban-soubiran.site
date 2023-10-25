@@ -3,9 +3,9 @@ export default defineNuxtConfig({
   extends: ['nuxt-seo-kit'],
   modules: [
     'nuxt-clarity-analytics',
+    '@nuxt/ui',
     '@nuxt/content',
-    '@unocss/nuxt',
-    '@nuxtjs/color-mode',
+    // '@unocss/nuxt', // we need to remove this and to update every styles
     'nuxt-icon',
     '@nuxthq/studio',
     '@vueuse/nuxt',
