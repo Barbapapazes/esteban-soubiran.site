@@ -21,11 +21,15 @@ const { isActive } = useActivePath()
             </li>
           </ul>
         </nav>
-        <p class="sm:py-2 text-sm text-reduced">
-          2023
-          -
-          Estéban Soubiran
-        </p>
+        <div class="sm:py-2 flex items-center gap-2 text-sm text-zinc-500 dark:text-zinc-400">
+          <p>
+            Estéban Soubiran
+          </p>
+          <span>
+            -
+          </span>
+          <FollowMe />
+        </div>
       </div>
     </div>
   </footer>

@@ -1,15 +1,15 @@
 <script lang="ts" setup>
 import {
-  TransitionRoot,
-  TransitionChild,
-  Dialog,
-  DialogPanel,
   Combobox,
   ComboboxInput,
+  ComboboxOption,
   ComboboxOptions,
-  ComboboxOption
+  Dialog,
+  DialogPanel,
+  TransitionChild,
+  TransitionRoot,
 } from '@headlessui/vue'
-import { SearchResult } from 'minisearch'
+import type { SearchResult } from 'minisearch'
 
 defineProps<{
   open: boolean
@@ -19,7 +19,7 @@ const emit = defineEmits<{
   'update:open': [state: boolean]
 }>()
 
-const close = () => {
+function close() {
   emit('update:open', false)
 }
 
@@ -28,7 +28,8 @@ const search = ref('')
 const searchDebounced = refDebounced(search, 200)
 
 const navigate = function () {
-  if (!selected.value) { return }
+  if (!selected.value)
+    return
 
   navigateTo(selected.value.id)
   close()
@@ -42,15 +43,13 @@ const slicedResult = computed(() => {
 })
 
 watch(result, () => {
-  if (!result.value.length && search.value) {
+  if (!result.value.length && search.value)
     isEmpty.value = true
-  }
 })
 
 watch(search, () => {
-  if (!search.value) {
+  if (!search.value)
     isEmpty.value = false
-  }
 })
 </script>
 
@@ -87,9 +86,8 @@ watch(search, () => {
                     <span class="sr-only">
                       Rechercher
                     </span>
-                    <Icon
-                      name="heroicons:magnifying-glass"
-                      class="w-6 h-6"
+                    <div
+                      class="i-heroicons-magnifying-glass w-6 h-6"
                     />
                   </label>
                   <ComboboxInput
@@ -103,9 +101,11 @@ watch(search, () => {
                     @keydown.enter="navigate"
                   />
                   <button class=" ml-4 p-1" @click="close">
-                    <Icon
-                      name="heroicons:x-mark-solid"
-                      class="w-6 h-6 text-reduced"
+                    <span class="sr-only">
+                      Fermer la recherhce
+                    </span>
+                    <span
+                      class="i-heroicons-x-mark-solid block w-6 h-6 text-reduced"
                     />
                   </button>
                 </div>
@@ -119,18 +119,18 @@ watch(search, () => {
                     @click="close"
                   >
                     <NuxtLink :to="item.id" class="px-6 py-3 w-full flex" :class="{ 'bg-sky-100/60 dark:bg-sky-900/20': active }">
-                      <Icon name="heroicons:hashtag" :class="{ 'text-primary': active, 'text-reduced': !active }" class="my-1 shrink-0" />
-                      <div class="ml-2 flex items-center gap-x-2 flex-wrap">
+                      <span :class="{ 'text-primary': active, 'text-reduced': !active }" class="i-heroicons-hashtag block my-1 shrink-0" />
+                      <span class="ml-2 flex items-center gap-x-2 flex-wrap">
                         <template v-for="title in item.titles" :key="title">
                           <span>
                             {{ title }}
                           </span>
-                          <Icon name="heroicons:chevron-right" class="text-reduced" />
+                          <span class="i-heroicons-chevron-right block text-reduced" />
                         </template>
                         <span class="font-semibold" :class="{ 'text-primary': active }">
                           {{ item.title }}
                         </span>
-                      </div>
+                      </span>
                     </NuxtLink>
                   </ComboboxOption>
                 </ComboboxOptions>
@@ -143,27 +143,24 @@ watch(search, () => {
                   </p>
                   <ul class="mt-2 text-content">
                     <li class="flex flex-row items-center gap-1">
-                      <Icon
-                        name="heroicons:chevron-double-right"
-                        class="w-3 h-3"
+                      <span
+                        class="i-heroicons-chevron-double-right block w-3 h-3"
                       />
                       <NuxtLink to="/articles" class="text-primary hover:text-sky-600 dark:hover:text-sky-300" @click="close">
-                        Voir tous mes articles
+                        Tous mes articles
                       </NuxtLink>
                     </li>
                     <li class="flex flex-row items-center gap-1">
-                      <Icon
-                        name="heroicons:chevron-double-right"
-                        class="w-3 h-3"
+                      <span
+                        class="i-heroicons-chevron-double-right block w-3 h-3"
                       />
                       <NuxtLink to="/talks" class="text-primary hover:text-sky-600 dark:hover:text-sky-300" @click="close">
-                        Voir tous mes talks
+                        Tous mes talks
                       </NuxtLink>
                     </li>
                     <li class="flex flex-row items-center gap-1">
-                      <Icon
-                        name="heroicons:chevron-double-right"
-                        class="w-3 h-3"
+                      <span
+                        class="i-heroicons-chevron-double-right block w-3 h-3"
                       />
                       <NuxtLink to="/a-propos" class="text-primary hover:text-sky-600 dark:hover:text-sky-300" @click="close">
                         À propos

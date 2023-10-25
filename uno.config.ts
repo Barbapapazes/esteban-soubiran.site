@@ -1,4 +1,4 @@
-import { defineConfig, presetTypography, presetUno } from 'unocss'
+import { defineConfig, presetIcons, presetTypography, presetUno } from 'unocss'
 import transformerDirectives from '@unocss/transformer-directives'
 
 export default defineConfig({
@@ -15,49 +15,63 @@ export default defineConfig({
 
       'transition-base': 'transition ease-in',
 
-      'bg-blur': ' backdrop-blur bg-white/90 dark:bg-zinc-800/90'
-    }
+      'bg-blur': ' backdrop-blur bg-white/90 dark:bg-zinc-800/90',
+    },
   ],
+  content: {
+    pipeline: {
+      include: [
+        // the default
+        /\.(vue|svelte|[jt]sx|mdx?|astro|elm|php|phtml|html)($|\?)/,
+        // include
+        'app.config.ts',
+      ],
+    },
+    filesystem: [
+      '.nuxt/content-cache/**/*',
+    ],
+  },
   presets: [
     presetUno(),
+    presetIcons(),
     presetTypography({
       cssExtend: {
         'h1 a,h2 a,h3 a,h4 a,h5 a,h6 a': {
-          'text-decoration-line': 'none'
+          'text-decoration-line': 'none',
         },
-        pre: {
+        'pre': {
           margin: 0,
-          padding: 0
+          padding: 0,
         },
         'p a': {
-          color: '#0ea5e9',
+          'color': '#0ea5e9',
           'text-decoration-line': 'none',
           'transition-property': 'all',
           'transition-timing-function': 'cubic-bezier(0.4, 0, 1, 1)',
-          'transition-duration': '150ms'
+          'transition-duration': '150ms',
         },
         'p a:hover': {
-          color: '#0284c7'
+          color: '#0284c7',
         },
         '.dark p a': {
-          color: '#38bdf8'
+          color: '#38bdf8',
         },
         '.dark p a:hover': {
-          color: '#7dd3fc'
+          color: '#7dd3fc',
         },
         '.alert *:first-child': {
-          'margin-top': 0
+          'margin-top': 0,
         },
         '.alert *:last-child': {
-          'margin-bottom': 0
+          'margin-bottom': 0,
         },
-        img: {
-          'border-radius': '0.5rem'
-        }
-      }
-    })
+        'img': {
+          'border-radius': '0.5rem',
+        },
+      },
+    }),
   ],
   transformers: [
-    transformerDirectives()
-  ]
+    transformerDirectives(),
+  ],
 })

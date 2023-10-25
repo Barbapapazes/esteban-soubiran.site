@@ -2,7 +2,6 @@
 defineProps<{
   datetime: string
 }>()
-
 </script>
 
 <template>

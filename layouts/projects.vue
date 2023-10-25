@@ -3,8 +3,8 @@ const { page } = useContent()
 
 useSchemaOrg([
   defineWebPage({
-    '@type': 'CollectionPage'
-  })
+    '@type': 'CollectionPage',
+  }),
 ])
 </script>
 

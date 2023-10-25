@@ -7,9 +7,9 @@ useSchemaOrg([
     {
       image: page.value.image ?? '',
       datePublished: ISODate(new Date(page.value.datePublished)),
-      dateModified: ISODate(new Date(page.value.dateModified))
-    }
-  )
+      dateModified: ISODate(new Date(page.value.dateModified)),
+    },
+  ),
 ])
 </script>
 

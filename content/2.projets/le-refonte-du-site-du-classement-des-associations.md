@@ -1,6 +1,6 @@
 ---
 title: La refonte du site du Classement des Associations
-description: Dans le cadre de l'organisation du concours "Le Classement des Associations", j'ai réalisé le nouveau site web de l'événement avec l'aide d'une experte en UI et UX.
+description: Pour le concours "Le Classement des Associations", j'ai réalisé le nouveau site web de l'événement avec l'aide d'une experte en UI/UX.
 image: /assets/socials/index.png
 cover:
   src: /images/projects/le-classement_new-website.webp
