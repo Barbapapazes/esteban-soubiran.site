@@ -8,7 +8,7 @@ defineProps<{
 
 <!-- TODO: rename to link -->
 <template>
-  <component :is="is" class="hover:text-zinc-800 hover:dark:text-zinc-200 transition ease-in">
+  <Component :is="is" class="hover:text-zinc-800 hover:dark:text-zinc-200 transition ease-in">
     <slot />
-  </component>
+  </Component>
 </template>

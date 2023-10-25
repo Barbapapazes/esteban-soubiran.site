@@ -9,7 +9,7 @@ const { navigation } = useContent()
 </script>
 
 <template>
-  <transition
+  <Transition
     enter-active-class="duration-200 ease-out"
     enter-from-class="opacity-0"
     enter-to-class="opacity-100"
@@ -18,9 +18,9 @@ const { navigation } = useContent()
     leave-to-class="opacity-0"
   >
     <PopoverOverlay class="fixed inset-0 backdrop-blur-sm bg-white/1" />
-  </transition>
+  </Transition>
 
-  <transition
+  <Transition
     enter-active-class="duration-200 ease-out"
     enter-from-class="opacity-0 scale-95"
     enter-to-class="opacity-100 scale-100"
@@ -53,5 +53,5 @@ const { navigation } = useContent()
         </ul>
       </nav>
     </PopoverPanel>
-  </transition>
+  </Transition>
 </template>
