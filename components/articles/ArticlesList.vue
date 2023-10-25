@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-const { data: articles } = await useAsyncData('content:list:articles', () => queryContent('/articles/').sort({ dataPublished: -1 }).only(['_path', 'title', 'datePublished', 'description']).find())
+const { data: articles } = await useAsyncData('content:list:articles', () => queryContent('/articles/').sort({ datePublished: -1 }).only(['_path', 'title', 'datePublished', 'description']).find())
 </script>
 
 <template>
