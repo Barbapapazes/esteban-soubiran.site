@@ -9,7 +9,7 @@ export default defineNuxtConfig({
     'nuxt-icon',
     '@nuxthq/studio',
     '@vueuse/nuxt',
-    'nuxt-payload-analyzer'
+    'nuxt-payload-analyzer',
   ],
 
   experimental: {
