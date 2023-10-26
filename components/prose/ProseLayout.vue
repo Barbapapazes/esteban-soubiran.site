@@ -13,7 +13,7 @@ defineProps<{
 
 <template>
   <article class="grid grid-cols-1 xl:grid-cols-[1fr_auto_1fr] gap-6">
-    <div class="xl:col-start-2">
+    <div class="xl:col-start-2 max-w-prose">
       <ProseContentHeader
         :title="title"
         :date="date"

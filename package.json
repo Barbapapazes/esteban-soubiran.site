@@ -15,7 +15,8 @@
     "lint:md:fix": "markdownlint . --fix && case-police --fix ./**/*.md"
   },
   "dependencies": {
-    "minisearch": "^6.1.0"
+    "minisearch": "^6.1.0",
+    "nuxt-payload-analyzer": "^0.1.2"
   },
   "devDependencies": {
     "@antfu/eslint-config": "1.0.0-beta.27",
