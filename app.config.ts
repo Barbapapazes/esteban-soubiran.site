@@ -2,6 +2,37 @@ export default defineAppConfig({
   ui: {
     primary: 'sky',
     gray: 'zinc',
+    button: {
+      color: {
+        white: {
+          solid: 'shadow-sm ring-1 ring-inset ring-zinc-300 dark:ring-zinc-700 text-zinc-900 dark:text-white bg-white hover:bg-zinc-50 disabled:bg-white dark:bg-zinc-900 dark:hover:bg-zinc-800/50 dark:disabled:bg-zinc-900 focus-visible:ring-2 focus-visible:ring-primary-500 dark:focus-visible:ring-primary-400',
+        },
+      },
+    },
+    input: {
+      placeholder: 'placeholder-zinc-400 dark:placeholder-zinc-500',
+      color: {
+        white: {
+          outline: 'shadow-sm bg-white dark:bg-zinc-900 text-zinc-900 dark:text-white ring-1 ring-inset ring-zinc-300 dark:ring-zinc-700 focus:ring-2 focus:ring-primary-500 dark:focus:ring-primary-400',
+        },
+      },
+    },
+    select: {
+      color: {
+        white: {
+          outline: 'shadow-sm bg-white dark:bg-zinc-900 text-zinc-900 dark:text-white ring-1 ring-inset ring-zinc-300 dark:ring-zinc-700 focus:ring-2 focus:ring-primary-500 dark:focus:ring-primary-400',
+        },
+      },
+    },
+    selectMenu: {
+      background: 'bg-white dark:bg-zinc-800',
+      ring: 'ring-1 ring-zinc-200 dark:ring-zinc-700',
+      option: {
+        base: 'cursor-pointer',
+        color: 'text-zinc-900 dark:text-white',
+        active: 'bg-zinc-100 dark:bg-zinc-900',
+      },
+    },
   },
   portfolio: {
     socials: {
