@@ -6,12 +6,12 @@ const { isActive } = useActivePath()
 <template>
   <HeaderItem class="px-3">
     <nav aria-labelledby="Navigation primaire">
-      <ul class="flex flex-row font-medium text-content text-sm">
+      <ul class="flex flex-row font-medium text-zinc-800 dark:text-zinc-100 text-sm">
         <li v-for="item in navigation" :key="item._path" class="relative">
           <NuxtLink
             :to="item._path"
-            class="relative block px-3 py-2 transition hover:text-primary"
-            :class="{ 'text-primary': isActive(item._path) }"
+            class="relative block px-3 py-2 transition hover:text-sky-500 hover:dark:text-sky-400"
+            :class="{ 'text-sky-500 dark:text-sky-400': isActive(item._path) }"
           >
             {{ item.title }}
           </NuxtLink>

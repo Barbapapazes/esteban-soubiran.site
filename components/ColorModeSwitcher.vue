@@ -17,7 +17,7 @@ const attrs = useAttrs()
     type="button"
     title="Changer le thème"
     v-bind="attrs"
-    class="group h-10 w-10 flex justify-center items-center text-reduced"
+    class="group h-10 w-10 flex justify-center items-center text-zinc-500 dark:text-zinc-400"
     hover
     @click="toggleColor()"
   >

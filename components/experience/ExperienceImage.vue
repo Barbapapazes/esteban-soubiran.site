@@ -10,7 +10,7 @@ defineProps<{
 
 <template>
   <div
-    class="relative z-10 flex h-12 w-12 items-center justify-center rounded-full bg-white dark:bg-zinc-800 shadow-base border-base"
+    class="relative z-10 flex h-12 w-12 items-center justify-center rounded-full bg-white dark:bg-zinc-800 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:ring-white/10"
     :class="{
       'w-10 h-10': small, 'h-12 w-12': !small,
     }"

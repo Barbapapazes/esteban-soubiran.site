@@ -3,6 +3,7 @@ export default defineAppConfig({
     primary: 'sky',
     gray: 'zinc',
     button: {
+      base: 'transition ease-in',
       color: {
         white: {
           solid: 'shadow-sm ring-1 ring-inset ring-zinc-300 dark:ring-zinc-700 text-zinc-900 dark:text-white bg-white hover:bg-zinc-50 disabled:bg-white dark:bg-zinc-900 dark:hover:bg-zinc-800/50 dark:disabled:bg-zinc-900 focus-visible:ring-2 focus-visible:ring-primary-500 dark:focus-visible:ring-primary-400',

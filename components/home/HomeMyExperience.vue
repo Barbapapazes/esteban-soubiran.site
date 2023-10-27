@@ -4,7 +4,7 @@ const { data } = await useAsyncData('content:home-my-experience', () => queryCon
 
 <template>
   <section class="group relative w-full rounded-2xl border dark:border-zinc-700/40 p-6 flex flex-col gap-6">
-    <h2 class="flex gap-3 text-sm font-semibold text-content">
+    <h2 class="flex gap-3 text-sm font-semibold text-zinc-800 dark:text-zinc-100">
       <div class="i-heroicons-briefcase-20-solid h-5 w-5 text-zinc-500 dark:text-zinc-400 group-hover:text-zinc-800 dark:group-hover:text-zinc-200 transition ease-in" />
       Mon Expérience
       <NuxtLink to="/experience" class="absolute inset-0" />
@@ -22,19 +22,19 @@ const { data } = await useAsyncData('content:home-my-experience', () => queryCon
             <dt class="sr-only">
               Entreprise
             </dt>
-            <dd class="w-full flex-none text-sm font-medium text-content">
+            <dd class="w-full flex-none text-sm font-medium text-zinc-800 dark:text-zinc-100">
               {{ experience.company.name }}
             </dd>
             <dt class="sr-only">
               Poste
             </dt>
-            <dd class="text-xs text-reduced">
+            <dd class="text-xs text-zinc-500 dark:text-zinc-400">
               {{ experience.title }}
             </dd>
             <dt class="sr-only">
               Date
             </dt>
-            <dd class="ml-auto text-xs text-reduced">
+            <dd class="ml-auto text-xs text-zinc-500 dark:text-zinc-400">
               <time :datetime="experience.from">
                 {{ experience.from }}
               </time>

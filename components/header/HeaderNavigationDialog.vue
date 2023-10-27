@@ -30,9 +30,9 @@ const { navigation } = useContent()
   >
     <PopoverPanel
       v-slot="{ close }"
-      class="fixed inset-x-4 top-8 p-8 z-50 bg-white/90 dark:bg-zinc-800/90 rounded-2xl border-base shadow-xl text-content"
+      class="fixed inset-x-4 top-8 p-8 z-50 bg-white/90 dark:bg-zinc-800/90 rounded-2xl ring-1 ring-zinc-900/5 dark:ring-white/10 shadow-xl text-zinc-800 dark:text-zinc-100"
     >
-      <div class="flex flex-row-reverse items-center justify-between text-reduced">
+      <div class="flex flex-row-reverse items-center justify-between text-zinc-500 dark:text-zinc-400">
         <button class="-m-1 p-1" @click="close">
           <Icon class="h-6 w-6" name="heroicons:x-mark-solid" />
         </button>
@@ -42,11 +42,11 @@ const { navigation } = useContent()
       </div>
       <nav class="mt-6">
         <ul
-          class="-my-2 text-base text-content divide-y divide-zinc-900/2 dark:divide-white/5"
+          class="-my-2 text-base text-zinc-800 dark:text-zinc-100 divide-y divide-zinc-900/2 dark:divide-white/5"
           aria-labelledby="Navigation mobile"
         >
           <li v-for="item in navigation" :key="item._path">
-            <NuxtLink class="block py-2 hover:text-primary" :to="item._path" @click="close">
+            <NuxtLink class="block py-2 hover:text-sky-500 hover:dark:text-sky-400" :to="item._path" @click="close">
               {{ item.title }}
             </NuxtLink>
           </li>

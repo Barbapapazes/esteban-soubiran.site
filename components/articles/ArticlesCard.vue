@@ -1,34 +1,40 @@
 <script lang="ts" setup>
-import type { ParsedArticle } from '@/types/article'
-
-defineProps<{ article: ParsedArticle }>()
+defineProps<{
+  to: string
+  title: string
+  description: string
+  date: string
+}>()
 </script>
 
 <template>
-  <article class="md:grid md:grid-cols-4 md:items-baseline">
-    <div class="md:col-span-3 group relative flex flex-col">
-      <h2 class="text-base font-semibold tracking-tight text-content">
-        <div
-          class="absolute -inset-y-6 -inset-x-4 z-0 scale-95 bg-zinc-50 opacity-0 transition group-hover:scale-100 group-hover:opacity-100 dark:bg-zinc-800/50 sm:-inset-x-6 sm:rounded-2xl duration-200 ease-in"
-        />
-        <NuxtLink :to="article._path">
+  <UCard as="article" :ui="{ base: 'group relative overflow-visible flex flex-col', shadow: '', background: 'bg-white dark:bg-zinc-900', divide: 'divide-none', ring: 'ring-0', body: { base: 'grow', padding: 'py-0 px-0 sm:p-0 !pt-2' }, header: { base: 'flex flex-col', padding: '' } }">
+    <template #header>
+      <div
+        class="absolute -inset-y-6 -inset-x-4 z-0 scale-95 bg-zinc-50 opacity-0 transition group-hover:scale-100 group-hover:opacity-100 dark:bg-zinc-800/50 sm:-inset-x-6 sm:rounded-2xl duration-200 ease-in"
+      />
+      <h2 class="font-semibold">
+        <NuxtLink :to="to">
           <span class="absolute -inset-y-6 -inset-x-4 sm:-inset-x-6 z-20 sm:rounded-2xl" />
-          <span class="relative z-10">
-            {{ article.title }}
+          <span class="relative">
+            {{ title }}
           </span>
         </NuxtLink>
       </h2>
-      <AppDate v-if="article.datePublished" with-border :datetime="article.datePublished" class="md:hidden order-first relative mb-3" />
-      <p class="relative z-10 mt-2 text-sm text-reduced">
-        {{ article.description }}
-      </p>
-      <div aria-hidden="true" class="relative mt-4 inline-flex items-center gap-1 text-primary">
-        <span class="text-sm font-semibold">Lire plus</span>
-        <Icon class="w-4 h-4" name="heroicons:chevron-right-20-solid" />
-      </div>
-    </div>
-    <div class="hidden md:block order-first relative">
-      <AppDate v-if="article.datePublished" small :datetime="article.datePublished" />
-    </div>
-  </article>
+      <dl class="order-first pb-2 relative text-zinc-500 dark:text-zinc-400">
+        <dt class="sr-only">
+          Date de publication
+        </dt>
+        <dd>
+          <time :datetime="ISODate(date)">
+            {{ formatDate(date) }}
+          </time>
+        </dd>
+      </dl>
+    </template>
+
+    <p class="relative text-zinc-500 dark:text-zinc-400">
+      {{ description }}
+    </p>
+  </UCard>
 </template>

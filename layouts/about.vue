@@ -30,7 +30,7 @@ const socials = usePortfolio().value.socials
           <li v-for="social in socials" :key="social.url">
             <NuxtLink
               :to="social.url"
-              class="group flex flex-row items-center text-sm font-medium transition ease-in text-content hover:text-primary"
+              class="group flex flex-row items-center text-sm font-medium transition ease-in text-zinc-800 dark:text-zinc-100 hover:text-sky-500 dark:text-sky-400"
             >
               <div
                 class="h-6 w-6 flex-none fill-zinc-500 group-hover:fill-sky-500 group-hover:dark:fill-sky-400"
@@ -44,7 +44,7 @@ const socials = usePortfolio().value.socials
           <li v-if="page.mail" class="mt-4 border-t border-zinc-100 pt-8 dark:border-zinc-700/40 flex">
             <NuxtLink
               :to="page.mail.url"
-              class="group flex text-sm font-medium text-content hover:text-primary transition ease-in"
+              class="group flex text-sm font-medium text-zinc-800 dark:text-zinc-100 hover:text-sky-500 dark:text-sky-400 transition ease-in"
             >
               <Icon class="h-6 w-6 flex-none fill-zinc-500 group-hover:fill-teal-500" :name="page.mail.icon" />
               <span class="ml-4">

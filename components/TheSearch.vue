@@ -19,9 +19,8 @@ useEventListener('keydown', (event) => {
     hover
     @click="openSearch = true"
   >
-    <Icon
-      name="heroicons:magnifying-glass"
-      class="h-5 w-5 fill-sky-50 stroke-zinc-500 group-hover:stroke-zinc-600 dark:stroke-zinc-500 dark:group-hover:stroke-zinc-400 dark:fill-sky-400/10 transition-base"
+    <div
+      class="i-heroicons-magnifying-glass h-5 w-5 fill-sky-50 stroke-zinc-500 group-hover:stroke-zinc-600 dark:stroke-zinc-500 dark:group-hover:stroke-zinc-400 dark:fill-sky-400/10 transition ease-in"
     />
   </HeaderItem>
   <TheSearchDialog v-model:open="openSearch" />

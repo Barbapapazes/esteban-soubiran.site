@@ -9,16 +9,16 @@ cover:
 resources:
   - name: Slides
     url: https://talks.esteban-soubiran.site/2023/unpoly
-    icon: i-heroicons-chat-bubble-bottom-center-text-20-solid?mask
+    icon: i-heroicons-chat-bubble-bottom-center-text-20-solid
   - name: PDF
     url: /talks/2023-04-12
-    icon: i-heroicons-document-text-20-solid?mask
+    icon: i-heroicons-document-text-20-solid
   - name: Vidéo
     url: https://youtu.be/MIM6E_XMRHQ
-    icon: i-heroicons-video-camera-20-solid?mask
+    icon: i-heroicons-video-camera-20-solid
   - name: Devoxx France
     url: https://www.devoxx.fr/
-    icon: i-heroicons-user-group-20-solid?mask
+    icon: i-heroicons-user-group-20-solid
 layout: talk
 ---
 

@@ -88,5 +88,9 @@ export default defineNuxtConfig({
     ],
   },
 
+  ui: {
+    icons: ['heroicons', 'simple-icons'],
+  },
+
   devtools: true,
 })

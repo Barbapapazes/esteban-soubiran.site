@@ -15,7 +15,7 @@ const communityLinks = [
   {
     name: 'Aimer sur GitHub',
     to: 'https://github.com/barbapapazes/esteban-soubiran.site',
-    class: 'i-heroicons-star-20-solid?mask',
+    class: 'i-heroicons-star-20-solid',
   },
   {
     name: 'Éditer la page',

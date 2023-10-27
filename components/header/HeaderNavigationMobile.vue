@@ -11,7 +11,7 @@ const openNavigation = ref(false)
       type="button"
       title="Ouvrir la navigation"
       v-bind="$attrs"
-      class="font-medium text-content px-4 py-2 flex items-center gap-2"
+      class="font-medium text-zinc-800 dark:text-zinc-100 px-4 py-2 flex items-center gap-2"
       hover
       @click="openNavigation = true"
     >
