@@ -3,7 +3,7 @@ import type { Config } from 'tailwindcss'
 export default <Partial<Config>> {
   theme: {
     extend: {
-      typography: (theme) => ({
+      typography: theme => ({
         DEFAULT: {
           css: {
             'h1 a,h2 a,h3 a,h4 a,h5 a,h6 a': {
