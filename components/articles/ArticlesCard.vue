@@ -8,7 +8,7 @@ defineProps<{
 </script>
 
 <template>
-  <UCard as="article" :ui="{ base: 'group relative overflow-visible flex flex-col', shadow: '', background: 'bg-white dark:bg-zinc-900', divide: 'divide-none', ring: 'ring-0', body: { base: 'grow', padding: 'py-0 px-0 sm:p-0 !pt-2' }, header: { base: 'flex flex-col', padding: '' } }">
+  <UCard as="article" :ui="{ base: 'group relative overflow-visible flex flex-col', shadow: '', background: 'bg-white dark:bg-zinc-900', divide: 'divide-none', ring: 'ring-0', body: { padding: 'py-0 px-0 sm:p-0 !pt-2' }, header: { base: 'flex flex-col', padding: '' } }">
     <template #header>
       <div
         class="absolute -inset-y-6 -inset-x-4 z-0 scale-95 bg-zinc-50 opacity-0 transition group-hover:scale-100 group-hover:opacity-100 dark:bg-zinc-800/50 sm:-inset-x-6 sm:rounded-2xl duration-200 ease-in"

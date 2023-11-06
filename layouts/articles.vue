@@ -110,7 +110,7 @@ const results = computed(() => {
       </div>
 
       <section>
-        <div v-if="results.length" class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-16">
+        <div v-if="results.length" class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-16 items-start">
           <ArticlesCard v-for="article in results" :key="article._path" :to="article._path" :title="article.title" :description="article.description" :date="article.datePublished" />
         </div>
         <div v-else>
