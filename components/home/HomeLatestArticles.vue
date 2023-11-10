@@ -10,7 +10,7 @@ const { data } = await useAsyncData('content:home-latest-articles', () => queryC
 
     <ol class="grid grid-cols-1 md:grid-cols-2 gap-16">
       <li v-for="article in data" :key="article._path">
-        <ArticlesCard :to="article._path" :title="article.title" :description="article.description" :date="article.datePublished" />
+        <AppCard :to="article._path" :title="article.title" :description="article.description" :date="article.datePublished" />
       </li>
     </ol>
 

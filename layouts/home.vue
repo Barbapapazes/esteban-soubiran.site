@@ -1,6 +1,12 @@
+<script lang="ts" setup>
+const { page } = useContent()
+</script>
+
 <template>
   <div>
-    <slot />
+    <AppSection>
+      <HomeHero :title="page.hero.title" :description="page.hero.description" />
+    </AppSection>
 
     <HomePicturesSection class="mt-16 sm:mt-20" />
 

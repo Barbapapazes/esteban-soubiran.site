@@ -1,9 +1,9 @@
 <script lang="ts" setup>
 defineProps<{
-  to: string
-  title: string
-  description: string
-  date: string
+  to?: string
+  title?: string
+  description?: string
+  date?: string
 }>()
 </script>
 
@@ -21,7 +21,7 @@ defineProps<{
           </span>
         </NuxtLink>
       </h2>
-      <dl class="order-first pb-2 relative text-zinc-500 dark:text-zinc-400">
+      <dl v-if="date" class="order-first pb-2 relative text-zinc-500 dark:text-zinc-400">
         <dt class="sr-only">
           Date de publication
         </dt>

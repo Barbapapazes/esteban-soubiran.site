@@ -18,7 +18,7 @@ defineProps<{
         :title="title"
         :date="date"
       />
-      <AppHr class="mt-8" />
+      <UDivider class="mt-8" />
     </div>
 
     <ProseContentBody class="xl:col-start-2 mx-auto">
@@ -27,7 +27,7 @@ defineProps<{
 
     <div class="max-w-prose mx-auto w-full row-start-2 xl:row-start-1 xl:row-span-2 xl:col-start-3">
       <ProseNav :toc="toc" :filename="filename" :resources="resources" class="xl:sticky xl:top-[5.5rem] xl:overflow-y-auto xl:max-h-[calc(100vh-5.5rem)]" />
-      <AppHr class="xl:hidden mt-6" />
+      <UDivider class="xl:hidden mt-6" />
     </div>
   </article>
 </template>

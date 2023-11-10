@@ -1,4 +1,3 @@
----
 navigation: false
 title:
 head.title:
@@ -20,12 +19,6 @@ adventures:
   - src: /images/home/5.webp
     alt: Photo d'Estéban face à l'océan sur des plages de Normandie
     rotate: left
----
-
-::home-hero-section
-#title
-Développeur web et <br /> passionné par l'open source
-
-#subtitle
-Je suis Estéban, un développeur web basé à Paris. Je me plais à contribuer des projets open source comme [Nuxt](https://nuxt.com) ou [UnJS](https://unjs.io) et à écrire des articles pour partager mes expériences.
-::
+hero:
+  title: Développeur web et passionné par l'open source
+  description: Je suis Estéban, un développeur web basé à Paris. Je me plais à contribuer des projets open source comme Nuxt ou UnJS et à écrire des articles pour partager mes expériences.

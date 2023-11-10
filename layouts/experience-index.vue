@@ -11,7 +11,7 @@ useSchemaOrg([
 <template>
   <AppSection>
     <PageSection class="gap-20">
-      <PageHeader :title="page.title">
+      <PageHeader :title="page.hero.title ?? page.title" :description="page.hero.description">
         <slot />
       </PageHeader>
       <ExperienceList>

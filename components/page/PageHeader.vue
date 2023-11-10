@@ -1,6 +1,7 @@
 <script lang="ts" setup>
 defineProps<{
   title: string
+  description: string
 }>()
 </script>
 
@@ -10,7 +11,7 @@ defineProps<{
       {{ title }}
     </PageTitle>
     <PageProse class="mt-6">
-      <slot />
+      {{ description }}
     </PageProse>
   </div>
 </template>

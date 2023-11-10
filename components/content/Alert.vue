@@ -17,3 +17,13 @@ const typeClasses: Record<Type, string> = {
     <ContentSlot :use="$slots.default" />
   </div>
 </template>
+
+<style scoped>
+.alert :deep(*:first-child) {
+  margin-top: 0;
+}
+
+.alert :deep(*:last-child) {
+  margin-bottom: 0;
+}
+</style>
