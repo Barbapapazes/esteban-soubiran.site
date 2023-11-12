@@ -1,9 +1,8 @@
 <script lang="ts" setup>
 const { page, toc } = useContent()
-const { ISODate } = useDate()
 
-const publishedAt = page.value.datePublished ? ISODate(new Date(page.value.datePublished)) : ''
-const modifiedAt = page.value.dateModified ? ISODate(new Date(page.value.dateModified)) : ''
+const publishedAt = page.value.datePublished ? ISODate(page.value.datePublished) : ''
+const modifiedAt = page.value.dateModified ? ISODate(page.value.dateModified) : ''
 
 useSchemaOrg([
   defineArticle(
@@ -44,5 +43,6 @@ useServerHead({
     <ProseLayout :title="page.title" :date="page.datePublished" :toc="toc" :filename="page._file" :resources="page.resources">
       <slot />
     </ProseLayout>
+    <PrevNext class="mt-12" />
   </AppSection>
 </template>

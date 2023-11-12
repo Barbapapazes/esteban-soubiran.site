@@ -1,14 +1,12 @@
 <script lang="ts" setup>
 const { page, toc } = useContent()
 
-const { ISODate } = useDate()
-
 useSchemaOrg([
   defineArticle(
     {
       image: page.value.image ?? '',
-      datePublished: ISODate(new Date(page.value.datePublished)),
-      dateModified: ISODate(new Date(page.value.dateModified)),
+      datePublished: ISODate(page.value.datePublished),
+      dateModified: ISODate(page.value.dateModified),
     },
   ),
 ])

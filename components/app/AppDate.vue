@@ -1,13 +1,9 @@
 <script lang="ts" setup>
-const props = defineProps<{
+defineProps<{
   datetime: string
   withBorder?: boolean
   small?: boolean
 }>()
-
-const date = new Date(props.datetime)
-
-const { formatDate, ISODate } = useDate()
 </script>
 
 <template>
@@ -15,10 +11,10 @@ const { formatDate, ISODate } = useDate()
     <span v-if="withBorder" class="h-4 w-0.5 mr-3 rounded-full bg-zinc-500 dark:text-zinc-400" />
     <time
       class="text-zinc-500 dark:text-zinc-400"
-      :datetime="ISODate(date)"
+      :datetime="ISODate(datetime)"
     >
       <span>
-        {{ formatDate(date) }}
+        {{ formatDate(datetime) }}
       </span>
     </time>
   </div>

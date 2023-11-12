@@ -1,13 +1,12 @@
 <script lang="ts" setup>
-const { page } = useContent()
-const { ISODate } = useDate()
+const { page, toc } = useContent()
 
 useSchemaOrg([
   defineArticle(
     {
       image: page.value.image ?? '',
-      datePublished: ISODate(new Date(page.value.datePublished)),
-      dateModified: ISODate(new Date(page.value.dateModified)),
+      datePublished: ISODate(page.value.datePublished),
+      dateModified: ISODate(page.value.dateModified),
     },
   ),
 ])
@@ -15,12 +14,8 @@ useSchemaOrg([
 
 <template>
   <AppSection>
-    <PageSection>
-      <PageProseHeader :title="page.title" :date-published="page.datePublished" :cover="page.cover" />
-
-      <PageProse>
-        <slot />
-      </PageProse>
-    </PageSection>
+    <ProseLayout :title="page.title" :date="page.datePublished" :toc="toc" :filename="page._file" :resources="page.resources">
+      <slot />
+    </ProseLayout>
   </AppSection>
 </template>
