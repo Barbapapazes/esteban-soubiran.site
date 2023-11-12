@@ -11,10 +11,6 @@ export default defineNuxtConfig({
     'nuxt-payload-analyzer',
   ],
 
-  experimental: {
-    inlineSSRStyles: false,
-  },
-
   runtimeConfig: {
     public: {
       trailingSlash: true,
@@ -42,7 +38,6 @@ export default defineNuxtConfig({
   },
 
   css: [
-    '@unocss/reset/tailwind.css',
     '~/assets/css/app.css',
   ],
 
@@ -73,8 +68,6 @@ export default defineNuxtConfig({
   routeRules: {
     '/api/search': {
       prerender: true,
-      // Use text/plain to avoid Nitro render an index.html
-      headers: { 'Content-Type': 'text/plain' },
     },
   },
 
