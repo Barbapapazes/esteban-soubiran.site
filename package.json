@@ -15,8 +15,7 @@
     "lint:md:fix": "markdownlint . --fix && case-police --fix ./**/*.md"
   },
   "dependencies": {
-    "minisearch": "^6.1.0",
-    "nuxt-payload-analyzer": "^0.1.2"
+    "minisearch": "^6.1.0"
   },
   "devDependencies": {
     "@antfu/eslint-config": "1.0.0-beta.27",
@@ -24,9 +23,9 @@
     "@iconify-json/heroicons": "^1.1.13",
     "@iconify-json/logos": "^1.1.37",
     "@iconify-json/simple-icons": "^1.1.75",
-    "@nuxt/content": "^2.8.5",
+    "@nuxt/content": "^2.9.0",
     "@nuxt/devtools": "^1.0.0",
-    "@nuxthq/studio": "^1.0.2",
+    "@nuxthq/studio": "^1.0.3",
     "@nuxtjs/color-mode": "^3.3.0",
     "@unocss/nuxt": "^0.56.5",
     "@unocss/reset": "^0.56.5",
@@ -36,7 +35,7 @@
     "case-police": "^0.6.1",
     "eslint": "^8.51.0",
     "markdownlint-cli": "^0.37.0",
-    "nuxt": "^3.7.4",
+    "nuxt": "^3.8.0",
     "nuxt-clarity-analytics": "^0.0.6",
     "nuxt-icon": "^0.5.0",
     "nuxt-seo-kit": "^1.3.13",
