@@ -7,7 +7,6 @@ cover:
   alt: Capture d'écran du site vitrine de l'entreprise. Un dégradé vertical du bleu au orange fait le fond. Une image d'une formation est présent sur la droite. Le texte "Les formations qui créent de l'expérience" est présent sur la gauche.
 datePublished: 2021-03-01
 dateModified: 2022-11-03
-layout: project
 ---
 
 ## Contexte

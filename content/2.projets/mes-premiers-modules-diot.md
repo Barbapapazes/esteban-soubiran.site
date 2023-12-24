@@ -7,7 +7,6 @@ cover:
   alt: Première page de notre présentation du projet. On peut y lire "Gestion d'électronique à distance, projet 1A".
 datePublished: 2019-06-15
 dateModified: 2020-11-05
-layout: project
 ---
 
 ## Contexte

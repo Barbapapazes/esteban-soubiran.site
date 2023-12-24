@@ -7,7 +7,6 @@ cover:
   alt: Capture d'écran du générateur de contenu. On peut y voir un titre "Bienvenue dans les templates pour les associations". Dessous, on retrouve différentes cartes en fonction du template.
 datePublished: 2020-09-16
 dateModified: 2020-11-05
-layout: project
 ---
 
 ## Contexte

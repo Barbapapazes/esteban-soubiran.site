@@ -19,7 +19,6 @@ resources:
   - name: Devoxx France
     url: https://www.devoxx.fr/
     icon: i-heroicons-user-group-20-solid
-layout: talk
 ---
 
 Pour la [Devoxx France](https://devoxx.fr) 2023, j'ai eu l'occasion de présenter Unpoly, un outil qui permet d'avoir l'expérience utilisateur d'une application web mais sans la complexité des frameworks front-end. Voici les slides et la transcription de mon talk.

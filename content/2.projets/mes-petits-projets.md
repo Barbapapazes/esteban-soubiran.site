@@ -7,7 +7,6 @@ cover:
   alt: Capture d'écran de mon profil GitHub
 datePublished: 2020-04-15
 dateModified: 2020-11-05
-layout: project
 ---
 
 ## Track ENT - 2020

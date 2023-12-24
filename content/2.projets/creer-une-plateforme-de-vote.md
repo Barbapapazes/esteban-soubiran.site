@@ -7,7 +7,6 @@ cover:
   alt: Capture d'écran de la plateforme de vote.
 datePublished: 2022-12-07
 dateModified: 2022-12-07
-layout: project
 ---
 
 ## Contexte

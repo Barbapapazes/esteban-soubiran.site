@@ -11,7 +11,6 @@ from: 2018
 to: 2018
 datePublished: 2022-11-22
 dateModified: 2022-11-22
-layout: experience
 ---
 
 ## Mes missions
