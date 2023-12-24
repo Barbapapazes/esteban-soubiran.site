@@ -7,7 +7,6 @@ cover:
   alt: Capture d'écran du nouveau site campus. On peut y voir un titre "#campus INSA CVL".
 datePublished: 2020-09-01
 dateModified: 2020-11-05
-layout: project
 ---
 
 ## Contexte

@@ -15,7 +15,7 @@ const communityLinks = [
   {
     name: 'Aimer sur GitHub',
     to: 'https://github.com/barbapapazes/esteban-soubiran.site',
-    class: 'i-heroicons-star-20-solid?mask',
+    class: 'i-heroicons-star-20-solid',
   },
   {
     name: 'Éditer la page',
@@ -26,7 +26,7 @@ const communityLinks = [
 </script>
 
 <template>
-  <nav class="space-y-6 divide-y divide-zinc-300 dark:divide-zinc-700">
+  <nav class="space-y-6 divide-y divide-gray-200 dark:divide-gray-800">
     <ProseNavGroup icon="i-heroicons-list-bullet-20-solid">
       <template #title>
         Sommaire

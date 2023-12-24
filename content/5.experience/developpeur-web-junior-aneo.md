@@ -11,7 +11,6 @@ from: 2022
 to: 2023
 datePublished: 2022-11-19
 dateModified: 2022-11-19
-layout: experience
 ---
 
 ## Aneo

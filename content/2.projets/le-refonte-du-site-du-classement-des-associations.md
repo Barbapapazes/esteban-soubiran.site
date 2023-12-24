@@ -7,7 +7,6 @@ cover:
   alt: Capture d'écran du site du Classement des Associations. Le titre indique "Le Classement des Associations" et le sous-titre "Le concours national de référence qui recense et classe les meilleures associations étudiantes !"
 datePublished: 2022-05-20
 dateModified: 2022-11-03
-layout: project
 ---
 
 ## Contexte

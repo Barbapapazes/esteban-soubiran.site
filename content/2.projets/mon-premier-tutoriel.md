@@ -7,7 +7,6 @@ cover:
   alt: Capture d'écran de mon premier tutoriel.
 datePublished: 2021-08-28
 dateModified: 2022-11-06
-layout: project
 ---
 
 ## Contexte

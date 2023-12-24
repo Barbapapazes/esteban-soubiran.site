@@ -11,7 +11,6 @@ from: 2018
 to: 2024
 datePublished: 2022-11-19
 dateModified: 2022-11-19
-layout: experience
 ---
 
 ## Cursus

@@ -10,7 +10,6 @@ mail:
   url: mailto:pro.soubiran+portfolio@gmail.com
   name: pro.soubiran@gmail.com
   icon: heroicons:envelope-solid
-layout: about
 ---
 
 Depuis maintenant plus de 6 ans, j'apprends la programmation. En 2018, j'ai choisi de me spécialiser dans la cybersécurité en [intégrant l'INSA Centre Val de Loire](../4.experience/eleve-ingenieur-insa-centre-val-de-loire.md) mais sans savoir si c'était vraiment ce que je voulais faire. En décembre 2018, j'ai eu l'opportunité de participer à [ma première nuit de l'info](../2.projets/mes-participations-aux-nuits-de-linfo.md). J'ai adoré cette expérience et elle m'a confortée dans mon choix et mon envie de faire de l'informatique et de me spécialiser dans le développement web.
