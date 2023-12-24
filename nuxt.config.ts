@@ -1,7 +1,7 @@
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
-  extends: ['nuxt-seo-kit'],
   modules: [
+    '@nuxtseo/module',
     'nuxt-clarity-analytics',
     '@nuxt/content',
     '@nuxt/ui',
@@ -23,6 +23,14 @@ export default defineNuxtConfig({
     },
   },
 
+  site: {
+    url: 'https://esteban-soubiran.site',
+    name: 'Estéban Soubiran',
+    description: 'Développeur web passionné par l\'open-source',
+    language: 'fr-FR',
+    separator: '·',
+  },
+
   content: {
     documentDriven: false,
     highlight: {
@@ -34,47 +42,20 @@ export default defineNuxtConfig({
     },
   },
 
+  sitemap: {
+    strictNuxtContentPaths: true,
+  },
+
   css: [
     '~/assets/css/app.css',
   ],
 
-  colorMode: {
-    classSuffix: '',
-  },
-
-  app: {
-    head: {
-      link: [
-        {
-          rel: 'icon',
-          type: 'image/ico',
-          href: '/favicon.ico',
-        },
-      ],
-    },
-  },
-
   nitro: {
     prerender: {
-      routes: ['/'],
+      routes: ['/', '/api/search.json'],
       crawlLinks: true,
       failOnError: false,
     },
-  },
-
-  routeRules: {
-    '/api/search': {
-      prerender: true,
-    },
-  },
-
-  linkChecker: {
-    exclude: [
-      '/a-propos',
-      '/projets',
-      '/articles',
-      '/experience',
-    ],
   },
 
   ui: {

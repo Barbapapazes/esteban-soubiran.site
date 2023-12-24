@@ -11,6 +11,7 @@ const sameAs = useSameAs()
         logo="/esteban.webp"
         :same-as="sameAs"
       />
+      <Link rel="icon" href="/favicon.ico" type="image/ico"/>
     </Head>
     <Body class="flex h-full flex-col bg-zinc-50 dark:bg-black">
       <div class="h-full pt-6">
