@@ -13,7 +13,7 @@ const socials = usePortfolio().value.socials
 </script>
 
 <template>
-  <AppSection>
+  <AppPage>
     <div class="grid grid-cols-1 gap-y-16 lg:grid-cols-2 lg:grid-rows-[auto_1fr] lg:gap-y-12">
       <div class="lg:pl-20">
         <div class="max-w-xs px-2.5 lg:max-w-none">
@@ -27,9 +27,7 @@ const socials = usePortfolio().value.socials
         </div>
       </div>
       <div class="lg:order-first lg:row-span-2">
-        <PageTitle>
-          {{ page.pageTitle }}
-        </PageTitle>
+        <AppPageTitle :text="page.pageTitle" />
         <ProseContentBody class="mt-6">
           <ContentRenderer :value="page" />
         </ProseContentBody>
@@ -64,5 +62,5 @@ const socials = usePortfolio().value.socials
         </ul>
       </div>
     </div>
-  </AppSection>
+  </AppPage>
 </template>
