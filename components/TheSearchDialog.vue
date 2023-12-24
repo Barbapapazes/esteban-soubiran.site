@@ -79,9 +79,9 @@ watch(search, () => {
             leave-from="opacity-100 scale-100"
             leave-to="opacity-0 scale-95"
           >
-            <DialogPanel as="div" class="h-full w-full max-w-3xl md:h-[28rem] flex flex-col bg-white/90 dark:bg-zinc-800/90 md:rounded-2xl md:ring-1 ring-zinc-900/5 dark:ring-white/10 shadow-xl text-zinc-800 dark:text-zinc-100 overflow-hidden">
+            <DialogPanel as="div" class="h-full w-full max-w-3xl md:h-[28rem] flex flex-col bg-white/90 dark:bg-gray-800/90 md:rounded-2xl md:ring-1 ring-gray-900/5 dark:ring-white/10 shadow-xl text-gray-800 dark:text-gray-100 overflow-hidden">
               <Combobox v-model="selected">
-                <div class="relative flex flex-row justify-between items-center px-6 py-2 border-b border-zinc-900/5 dark:border-white/10">
+                <div class="relative flex flex-row justify-between items-center px-6 py-2 border-b border-gray-900/5 dark:border-white/10">
                   <label for="search">
                     <span class="sr-only">
                       Rechercher
@@ -95,7 +95,7 @@ watch(search, () => {
                     type="text"
                     name="search"
                     placeholder="Rechercher..."
-                    class="ml-4 py-1 w-full bg-transparent focus:outline-none placeholder:text-zinc-500 placeholder:dark:text-zinc-400 placeholder:text-lg text-lg"
+                    class="ml-4 py-1 w-full bg-transparent focus:outline-none placeholder:text-gray-500 placeholder:dark:text-gray-400 placeholder:text-lg text-lg"
                     :value="search"
                     @change="search = $event.target.value"
                     @keydown.enter="navigate"
@@ -105,11 +105,11 @@ watch(search, () => {
                       Fermer la recherche
                     </span>
                     <span
-                      class="i-heroicons-x-mark-solid block w-6 h-6 text-zinc-500 dark:text-zinc-400"
+                      class="i-heroicons-x-mark-solid block w-6 h-6 text-gray-500 dark:text-gray-400"
                     />
                   </button>
                 </div>
-                <ComboboxOptions static class="flex flex-col items-start divide-y divide-zinc-900/2 dark:divide-white/5 overflow-y-scroll">
+                <ComboboxOptions static class="flex flex-col items-start divide-y divide-gray-900/2 dark:divide-white/5 overflow-y-scroll">
                   <ComboboxOption
                     v-for="item in slicedResult"
                     :key="item.id"
@@ -119,13 +119,13 @@ watch(search, () => {
                     @click="close"
                   >
                     <NuxtLink :to="item.id" class="px-6 py-3 w-full flex" :class="{ 'bg-sky-100/60 dark:bg-sky-900/20': active }">
-                      <span :class="{ 'text-sky-500 dark:text-sky-400': active, 'text-zinc-500 dark:text-zinc-400': !active }" class="i-heroicons-hashtag block my-1 shrink-0" />
+                      <span :class="{ 'text-sky-500 dark:text-sky-400': active, 'text-gray-500 dark:text-gray-400': !active }" class="i-heroicons-hashtag block my-1 shrink-0" />
                       <span class="ml-2 flex items-center gap-x-2 flex-wrap">
                         <template v-for="title in item.titles" :key="title">
                           <span>
                             {{ title }}
                           </span>
-                          <span class="i-heroicons-chevron-right block text-zinc-500 dark:text-zinc-400" />
+                          <span class="i-heroicons-chevron-right block text-gray-500 dark:text-gray-400" />
                         </template>
                         <span class="font-semibold" :class="{ 'text-sky-500 dark:text-sky-400': active }">
                           {{ item.title }}
@@ -135,13 +135,13 @@ watch(search, () => {
                   </ComboboxOption>
                 </ComboboxOptions>
                 <div v-if="isEmpty" class="h-full flex flex-col items-center justify-center">
-                  <p class="text-zinc-800 dark:text-zinc-100">
+                  <p class="text-gray-800 dark:text-gray-100">
                     Aucun résultat pour "<strong>{{ search }}</strong>"
                   </p>
-                  <p class="mt-6 text-sm text-zinc-800 dark:text-zinc-100">
+                  <p class="mt-6 text-sm text-gray-800 dark:text-gray-100">
                     Essayez de rechercher un article ou une page
                   </p>
-                  <ul class="mt-2 text-zinc-800 dark:text-zinc-100">
+                  <ul class="mt-2 text-gray-800 dark:text-gray-100">
                     <li class="flex flex-row items-center gap-1">
                       <span
                         class="i-heroicons-chevron-double-right block w-3 h-3"

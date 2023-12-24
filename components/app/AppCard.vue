@@ -8,10 +8,10 @@ defineProps<{
 </script>
 
 <template>
-  <UCard as="article" :ui="{ base: 'group relative overflow-visible flex flex-col', shadow: '', background: 'bg-white dark:bg-zinc-900', divide: 'divide-none', ring: 'ring-0', body: { padding: 'py-0 px-0 sm:p-0 !pt-2' }, header: { base: 'flex flex-col', padding: '' } }">
+  <UCard as="article" :ui="{ base: 'group relative overflow-visible flex flex-col', shadow: '', background: 'bg-white dark:bg-gray-900', divide: 'divide-none', ring: 'ring-0', body: { padding: 'py-0 px-0 sm:p-0 !pt-2' }, header: { base: 'flex flex-col', padding: '' } }">
     <template #header>
       <div
-        class="absolute -inset-y-6 -inset-x-4 z-0 scale-95 bg-zinc-50 opacity-0 transition group-hover:scale-100 group-hover:opacity-100 dark:bg-zinc-800/50 sm:-inset-x-6 sm:rounded-2xl duration-200 ease-in"
+        class="absolute -inset-y-6 -inset-x-4 z-0 scale-95 bg-gray-50 opacity-0 transition group-hover:scale-100 group-hover:opacity-100 dark:bg-gray-800/50 sm:-inset-x-6 sm:rounded-2xl duration-200 ease-in"
       />
       <h2 class="font-semibold">
         <NuxtLink :to="to">
@@ -21,7 +21,7 @@ defineProps<{
           </span>
         </NuxtLink>
       </h2>
-      <dl v-if="date" class="order-first pb-2 relative text-zinc-500 dark:text-zinc-400">
+      <dl v-if="date" class="order-first pb-2 relative text-gray-500 dark:text-gray-400">
         <dt class="sr-only">
           Date de publication
         </dt>
@@ -33,7 +33,7 @@ defineProps<{
       </dl>
     </template>
 
-    <p class="relative text-zinc-500 dark:text-zinc-400">
+    <p class="relative text-gray-500 dark:text-gray-400">
       {{ description }}
     </p>
   </UCard>

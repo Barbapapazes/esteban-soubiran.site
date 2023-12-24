@@ -5,7 +5,7 @@ const { data: page, error } = await useAsyncData(route.path, () => queryContent(
 if (error.value) {
   throw createError({
     statusCode: 404,
-    message: 'Page not found',
+    message: 'Page introuvable',
     fatal: true,
   })
 }

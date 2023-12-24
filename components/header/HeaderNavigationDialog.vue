@@ -30,9 +30,9 @@ const { data: navigation } = await useAsyncData('navigation', () => fetchContent
   >
     <PopoverPanel
       v-slot="{ close }"
-      class="fixed inset-x-4 top-8 p-8 z-50 bg-white/90 dark:bg-zinc-800/90 rounded-2xl ring-1 ring-zinc-900/5 dark:ring-white/10 shadow-xl text-zinc-800 dark:text-zinc-100"
+      class="fixed inset-x-4 top-8 p-8 z-50 bg-white/90 dark:bg-gray-800/90 rounded-2xl ring-1 ring-gray-900/5 dark:ring-white/10 shadow-xl text-gray-800 dark:text-gray-100"
     >
-      <div class="flex flex-row-reverse items-center justify-between text-zinc-500 dark:text-zinc-400">
+      <div class="flex flex-row-reverse items-center justify-between text-gray-500 dark:text-gray-400">
         <button class="-m-1 p-1" @click="close">
           <Icon class="h-6 w-6" name="heroicons:x-mark-solid" />
         </button>
@@ -42,7 +42,7 @@ const { data: navigation } = await useAsyncData('navigation', () => fetchContent
       </div>
       <nav class="mt-6">
         <ul
-          class="-my-2 text-base text-zinc-800 dark:text-zinc-100 divide-y divide-zinc-900/2 dark:divide-white/5"
+          class="-my-2 text-base text-gray-800 dark:text-gray-100 divide-y divide-gray-900/2 dark:divide-white/5"
           aria-labelledby="Navigation mobile"
         >
           <li v-for="item in navigation" :key="item._path">

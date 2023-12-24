@@ -6,10 +6,10 @@ const { isActive } = useActivePath()
 
 <template>
   <footer class="mt-32 sm:px-8 lg:px-16">
-    <div class="max-w-screen-xl mx-auto px-8 border-t border-zinc-100 pt-10 pb-16 dark:border-zinc-700/40">
+    <div class="max-w-screen-xl mx-auto px-8 border-t border-gray-100 pt-10 pb-16 dark:border-gray-700/40">
       <div class="max-w-2xl lg:max-w-5xl mx-auto flex flex-col gap-6 sm:flex-row justify-between items-center sm:items-start">
         <nav aria-labelledby="Navigation secondaire">
-          <ul class="grid grid-cols-2 sm:grid-cols-3 lg:flex gap-x-6 md:gap-6 text-sm text-center font-medium text-zinc-800 dark:text-zinc-100">
+          <ul class="grid grid-cols-2 sm:grid-cols-3 lg:flex gap-x-6 md:gap-6 text-sm text-center font-medium text-gray-800 dark:text-gray-100">
             <li v-for="item in navigation" :key="item._path">
               <NuxtLink
                 :to="item._path"
@@ -21,7 +21,7 @@ const { isActive } = useActivePath()
             </li>
           </ul>
         </nav>
-        <div class="sm:py-2 flex items-center gap-2 text-sm text-zinc-500 dark:text-zinc-400">
+        <div class="sm:py-2 flex items-center gap-2 text-sm text-gray-500 dark:text-gray-400">
           <p>
             Estéban Soubiran
           </p>

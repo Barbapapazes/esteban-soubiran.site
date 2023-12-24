@@ -26,7 +26,7 @@ export default defineNuxtConfig({
   site: {
     url: 'https://esteban-soubiran.site',
     name: 'Estéban Soubiran',
-    description: 'Développeur web passionné par l\'open-source',
+    description: 'Développeur web passionné par l\'open source',
     language: 'fr-FR',
     separator: '·',
   },

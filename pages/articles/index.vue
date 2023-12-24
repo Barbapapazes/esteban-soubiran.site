@@ -106,7 +106,7 @@ const results = computed(() => {
       <AppGrid v-if="results.length">
         <AppCard v-for="article in results" :key="article._path" :to="article._path" :title="article.title" :description="article.description" :date="article.datePublished" />
       </AppGrid>
-      <p v-else class="text-center text-zinc-500 dark:text-zinc-400">
+      <p v-else class="text-center text-gray-500 dark:text-gray-400">
         Aucun article ne correspond à votre recherche.
       </p>
     </div>

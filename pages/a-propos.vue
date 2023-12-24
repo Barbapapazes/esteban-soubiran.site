@@ -18,7 +18,7 @@ const socials = usePortfolio().value.socials
       <div class="lg:pl-20">
         <div class="max-w-xs px-2.5 lg:max-w-none">
           <img
-            class="aspect-square rotate-3 rounded-2xl bg-zinc-100 object-cover dark:bg-zinc-800"
+            class="aspect-square rotate-3 rounded-2xl bg-gray-100 object-cover dark:bg-gray-800"
             :src="page.cover.src"
             :alt="page.cover.alt"
             width="400"
@@ -37,10 +37,10 @@ const socials = usePortfolio().value.socials
           <li v-for="social in socials" :key="social.url">
             <NuxtLink
               :to="social.url"
-              class="group flex flex-row items-center text-sm font-medium transition ease-in text-zinc-800 dark:text-zinc-100 hover:text-sky-500 hover:dark:text-sky-400"
+              class="group flex flex-row items-center text-sm font-medium transition ease-in text-gray-800 dark:text-gray-100 hover:text-sky-500 hover:dark:text-sky-400"
             >
               <div
-                class="h-6 w-6 flex-none fill-zinc-500 group-hover:fill-sky-500 group-hover:dark:fill-sky-400"
+                class="h-6 w-6 flex-none fill-gray-500 group-hover:fill-sky-500 group-hover:dark:fill-sky-400"
                 :class="social.icon"
               />
               <span class="ml-4">
@@ -48,12 +48,12 @@ const socials = usePortfolio().value.socials
               </span>
             </NuxtLink>
           </li>
-          <li v-if="page.mail" class="mt-4 border-t border-zinc-100 pt-8 dark:border-zinc-700/40 flex">
+          <li v-if="page.mail" class="mt-4 border-t border-gray-100 pt-8 dark:border-gray-700/40 flex">
             <NuxtLink
               :to="page.mail.url"
-              class="group flex text-sm font-medium text-zinc-800 dark:text-zinc-100 hover:text-sky-500 hover:dark:text-sky-400 transition ease-in"
+              class="group flex text-sm font-medium text-gray-800 dark:text-gray-100 hover:text-sky-500 hover:dark:text-sky-400 transition ease-in"
             >
-              <Icon class="h-6 w-6 flex-none fill-zinc-500 group-hover:fill-teal-500" :name="page.mail.icon" />
+              <Icon class="h-6 w-6 flex-none fill-gray-500 group-hover:fill-teal-500" :name="page.mail.icon" />
               <span class="ml-4">
                 {{ page.mail.name }}
               </span>

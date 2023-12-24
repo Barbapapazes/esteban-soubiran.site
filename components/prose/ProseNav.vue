@@ -26,7 +26,7 @@ const communityLinks = [
 </script>
 
 <template>
-  <nav class="space-y-6 divide-y divide-zinc-200 dark:divide-zinc-800">
+  <nav class="space-y-6 divide-y divide-gray-200 dark:divide-gray-800">
     <ProseNavGroup icon="i-heroicons-list-bullet-20-solid">
       <template #title>
         Sommaire

@@ -8,7 +8,7 @@ const { copy, copied, isSupported } = useClipboard()
 
 <template>
   <ClientOnly>
-    <button v-if="isSupported" class="group/copy opacity-0 group-hover:opacity-100 absolute right-2 bottom-2 p-1 backdrop-blur bg-white/90 dark:bg-zinc-800/90 rounded-sm transition w-8 h-8 flex justify-center items-center" @click="copy(code)">
+    <button v-if="isSupported" class="group/copy opacity-0 group-hover:opacity-100 absolute right-2 bottom-2 p-1 backdrop-blur bg-white/90 dark:bg-gray-800/90 rounded-sm transition w-8 h-8 flex justify-center items-center" @click="copy(code)">
       <span v-if="copied" class="sr-only">Copier dans le presse-papier</span>
       <Transition
         appear
@@ -20,8 +20,8 @@ const { copy, copied, isSupported } = useClipboard()
         leave-from-class="opacity-100"
         leave-to-class="opacity-0"
       >
-        <div v-if="copied" class="i-heroicons-check-solid group-hover/copy:text-zinc-400 dark:group-hover/copy:text-zinc-300 transition ease-in" />
-        <div v-else class="i-heroicons-clipboard-document group-hover/copy:text-zinc-400 dark:group-hover/copy:text-zinc-300 transition ease-in" />
+        <div v-if="copied" class="i-heroicons-check-solid group-hover/copy:text-gray-400 dark:group-hover/copy:text-gray-300 transition ease-in" />
+        <div v-else class="i-heroicons-clipboard-document group-hover/copy:text-gray-400 dark:group-hover/copy:text-gray-300 transition ease-in" />
       </Transition>
     </button>
   </ClientOnly>

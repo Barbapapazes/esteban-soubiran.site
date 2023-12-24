@@ -7,7 +7,7 @@ const { isActive } = useActivePath()
 <template>
   <HeaderItem class="px-3">
     <nav aria-labelledby="Navigation primaire">
-      <ul class="flex flex-row font-medium text-zinc-800 dark:text-zinc-100 text-sm">
+      <ul class="flex flex-row font-medium text-gray-800 dark:text-gray-100 text-sm">
         <li v-for="item in navigation" :key="item._path" class="relative">
           <NuxtLink
             :to="item._path"

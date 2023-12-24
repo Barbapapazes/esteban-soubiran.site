@@ -25,7 +25,7 @@ const authors = [
           Date de publication
         </dt>
         <dd>
-          <time v-if="date" :datetime="date" class="text-zinc-500 dark:text-zinc-400 text-sm">
+          <time v-if="date" :datetime="date" class="text-gray-500 dark:text-gray-400 text-sm">
             {{ new Date(date).toLocaleDateString('fr-FR', {
               year: 'numeric',
               month: 'long',
@@ -46,11 +46,11 @@ const authors = [
             <address class="flex items-center gap-2 not-italic">
               <img :src="author.picture" :alt="`Profil picture of ${author.name}`" class="w-9 h-9 rounded-full" width="36" height="36">
               <div class="text-sm">
-                <div class="text-zinc-500 dark:text-zinc-400 leading-none">
+                <div class="text-gray-500 dark:text-gray-400 leading-none">
                   {{ author.name }}
                 </div>
                 <div class="mt-1">
-                  <NuxtLink rel="author noopener" :to="`https://x.com/${author.twitter}`" target="_blank" class="text-zinc-500 dark:text-zinc-400 hover:text-zinc-800 hover:dark:text-zinc-200 leading-none font-medium transition ease-in">
+                  <NuxtLink rel="author noopener" :to="`https://x.com/${author.twitter}`" target="_blank" class="text-gray-500 dark:text-gray-400 hover:text-gray-800 hover:dark:text-gray-200 leading-none font-medium transition ease-in">
                     @{{ author.twitter }}
                   </NuxtLink>
                 </div>

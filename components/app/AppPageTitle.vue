@@ -5,7 +5,7 @@ defineProps<{
 </script>
 
 <template>
-  <h1 class="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
+  <h1 class="text-4xl font-bold tracking-tight text-gray-800 dark:text-gray-100 sm:text-5xl">
     <slot>
       {{ text }}
     </slot>

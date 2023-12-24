@@ -1,5 +1,20 @@
 <script lang="ts" setup>
+import type { NuxtError } from '#app'
+
+const props = defineProps<{
+  error: NuxtError
+}>()
+
 const sameAs = useSameAs()
+
+const title = props.error.statusCode === 404
+  ? 'Page introuvable'
+  : 'Erreur'
+
+useSeoMeta({
+  title,
+  description: 'Nous sommes désolés mais cette page est introuvable.',
+})
 </script>
 
 <template>
@@ -20,7 +35,15 @@ const sameAs = useSameAs()
           />
         </div>
         <div class="z-50 sticky top-6 flex flex-row justify-center">
-          <TheHeader />
+          <h1 class="text-4xl font-bold">
+            {{ error.statusCode }}
+          </h1>
+          <p class="mt-4 text-lg text-gray-500 dark:text-gray-400">
+            {{ error.message }}
+          </p>
+          <UButton class="mt-12" to="/" color="primary" variant="solid" size="sm" :ui="{ variant: { solid: 'shadow-none text-gray-950' } }">
+            Retourner à l'accueil
+          </UButton>
         </div>
         <main class="relative mt-16 sm:mt-32 text-gray-800 dark:text-gray-100">
           <NuxtPage />

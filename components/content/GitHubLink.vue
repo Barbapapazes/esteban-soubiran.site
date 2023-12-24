@@ -7,7 +7,7 @@ defineProps<{
 
 <template>
   <span>
-    <div class="i-simple-icons-github inline-block w-4 h-4 dark:text-zinc-200" />
+    <div class="i-simple-icons-github inline-block w-4 h-4 dark:text-gray-200" />
     <NuxtLink class="ml-1" :to="`https://github.com/${repo}`" rel="noopener">
       {{ name || (repo.startsWith('barbapapazes/') ? repo.slice(13) : repo) }}
     </NuxtLink>

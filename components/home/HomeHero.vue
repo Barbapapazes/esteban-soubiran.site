@@ -11,7 +11,7 @@ defineProps<{
     <h1 class="text-4xl sm:text-5xl leading-[3.5rem] sm:leading-[3.5rem] font-bold tracking-tight">
       {{ title }}
     </h1>
-    <p class="mt-6 text-base text-zinc-500 dark:text-zinc-400">
+    <p class="mt-6 text-base text-gray-500 dark:text-gray-400">
       {{ description }}
     </p>
     <FollowMe space="gap-6" size="h-6 w-6" />
