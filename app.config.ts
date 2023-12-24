@@ -5,7 +5,7 @@ export default defineAppConfig({
     button: {
       base: 'transition ease-in',
     },
-    },
+  },
   portfolio: {
     socials: {
       github: {
