@@ -13,18 +13,18 @@ useSeoMeta({
 
 <template>
   <div>
-    <AppSection>
+    <AppPage>
       <HomeHero :title="page.hero.title" :description="page.hero.description" />
-    </AppSection>
+    </AppPage>
 
     <HomePicturesSection class="mt-16 sm:mt-20" :images="page.images" />
 
-    <AppSection class="mt-24">
+    <AppPage class="mt-24">
       <HomeLatestArticles />
       <div class="mt-24 flex flex-col lg:flex-row items-start gap-12">
         <HomeLatestProjects />
         <HomeMyExperience class="lg:max-w-sm" />
       </div>
-    </AppSection>
+    </AppPage>
   </div>
 </template>
