@@ -1,7 +1,7 @@
 import MiniSearch, { type Options as MiniSearchOptions, type SearchResult as MiniSearchSearchResult } from 'minisearch'
 
 export async function useSearch(search: MaybeRefOrGetter<string>): Promise<ComputedRef<MiniSearchSearchResult[]>> {
-  const { data: searchData } = await useFetch<string>('/api/search.json', { lazy: true, server: false })
+  const { data: searchData } = await useFetch<string>('/api/search.txt', { lazy: true, server: false })
 
   const data = computed(() => {
     return searchData.value ?? JSON.stringify({ serializationVersion: 2, documentIds: {}, documentCount: 0, index: [], nextId: 0, fieldIds: {}, fieldLength: {}, averageFieldLength: [], storedFields: {}, dirtCount: 0 })

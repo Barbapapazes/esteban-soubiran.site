@@ -52,7 +52,7 @@ export default defineNuxtConfig({
 
   nitro: {
     prerender: {
-      routes: ['/', '/api/search.json'],
+      routes: ['/', '/api/search.txt'],
       crawlLinks: true,
       failOnError: false,
     },
