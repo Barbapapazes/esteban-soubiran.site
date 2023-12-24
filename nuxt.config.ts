@@ -24,10 +24,7 @@ export default defineNuxtConfig({
   },
 
   content: {
-    documentDriven: {
-      host: 'https://esteban-soubiran.site',
-      trailingSlash: true,
-    },
+    documentDriven: false,
     highlight: {
       theme: {
         default: 'github-light',

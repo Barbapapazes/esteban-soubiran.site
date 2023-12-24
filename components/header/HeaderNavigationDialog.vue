@@ -5,7 +5,7 @@ defineProps<{
   open: boolean
 }>()
 
-const { navigation } = useContent()
+const { data: navigation } = await useAsyncData('navigation', () => fetchContentNavigation())
 </script>
 
 <template>

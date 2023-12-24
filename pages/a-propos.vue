@@ -1,5 +1,14 @@
 <script lang="ts" setup>
-const { page } = useContent()
+const route = useRoute()
+const { data: page } = await useAsyncData(route.path, () => queryContent(route.path).findOne())
+
+useSeoMeta({
+  title: page.value.title,
+  ogTitle: page.value.title,
+  description: page.value.description,
+  ogDescription: page.value.description,
+})
+
 const socials = usePortfolio().value.socials
 </script>
 
@@ -22,7 +31,7 @@ const socials = usePortfolio().value.socials
           {{ page.pageTitle }}
         </PageTitle>
         <ProseContentBody class="mt-6">
-          <slot />
+          <ContentRenderer :value="page" />
         </ProseContentBody>
       </div>
       <div class="lg:pl-20">

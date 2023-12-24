@@ -1,5 +1,14 @@
 <script lang="ts" setup>
-const { page } = useContent()
+const { data: page } = await useAsyncData('home', () => queryContent('/').findOne())
+
+const title = 'Estéban Soubiran'
+
+useSeoMeta({
+  title: null,
+  ogTitle: title,
+  description: page.value.description,
+  ogDescription: page.value.description,
+})
 </script>
 
 <template>
@@ -8,7 +17,7 @@ const { page } = useContent()
       <HomeHero :title="page.hero.title" :description="page.hero.description" />
     </AppSection>
 
-    <HomePicturesSection class="mt-16 sm:mt-20" />
+    <HomePicturesSection class="mt-16 sm:mt-20" :images="page.images" />
 
     <AppSection class="mt-24">
       <HomeLatestArticles />

@@ -1,5 +1,13 @@
 <script lang="ts" setup>
-import type { ParsedContent } from '@nuxt/content/dist/runtime/types'
+const route = useRoute()
+const { data: page } = await useAsyncData(route.path, () => queryContent(route.path).findOne())
+
+useSeoMeta({
+  title: page.value.title,
+  ogTitle: page.value.title,
+  description: page.value.description,
+  ogDescription: page.value.description,
+})
 
 useSchemaOrg([
   defineWebPage({
@@ -7,21 +15,12 @@ useSchemaOrg([
   }),
 ])
 
-const { page } = useContent()
-
-const { data: articles } = await useAsyncData('content:articles-search', () => queryContent('/articles/').only(['_path', 'title', 'description', 'datePublished']).find() as Promise<ParsedContent[]>)
-
-if (!articles.value) {
-  throw createError({
-    statusCode: 404,
-    message: 'Page not found',
-  })
-}
+const { data: articles } = await useAsyncData('articles', () => queryContent('/articles/').only(['_path', 'title', 'description', 'datePublished']).find())
 
 const search = ref('')
 const searchDebounced = refDebounced(search, 150)
 
-const { results: searchResults } = useMiniSearch(searchDebounced, articles as Ref<ParsedContent[]>, {
+const { results: searchResults } = useMiniSearch(searchDebounced, articles, {
   idField: '_path',
   fields: ['title', 'description'],
   storeFields: ['_path', 'title', 'description', 'datePublished'],
@@ -68,10 +67,8 @@ const results = computed(() => {
 </script>
 
 <template>
-  <AppSection>
-    <PageSection class="gap-20">
-      <PageHeader :title="page.hero.title ?? page.title" :description="page.hero.description" />
-
+  <AppPage :title="page.title" :description="page.hero.description ?? page.description">
+    <div class="flex flex-col gap-8">
       <div class="flex justify-between">
         <UInput
           v-model="search"
@@ -106,17 +103,12 @@ const results = computed(() => {
           </USelectMenu>
         </UButtonGroup>
       </div>
-
-      <section>
-        <div v-if="results.length" class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-16 items-start">
-          <AppCard v-for="article in results" :key="article._path" :to="article._path" :title="article.title" :description="article.description" :date="article.datePublished" />
-        </div>
-        <div v-else>
-          <p class="text-center">
-            Aucun article ne correspond à votre recherche.
-          </p>
-        </div>
-      </section>
-    </PageSection>
-  </AppSection>
+      <AppGrid v-if="results.length">
+        <AppCard v-for="article in results" :key="article._path" :to="article._path" :title="article.title" :description="article.description" :date="article.datePublished" />
+      </AppGrid>
+      <p v-else class="text-center text-zinc-500 dark:text-zinc-400">
+        Aucun article ne correspond à votre recherche.
+      </p>
+    </div>
+  </AppPage>
 </template>

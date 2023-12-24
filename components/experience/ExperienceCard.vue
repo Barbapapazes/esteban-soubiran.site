@@ -40,7 +40,7 @@ defineProps<{
     <NuxtLink
       :to="experience.company.url"
       rel="noopener"
-      class="relative z-30 flex items-center text-sm font-medium text-zinc-800 dark:text-zinc-100 hover:text-sky-500 dark:text-sky-400 transition"
+      class="relative z-30 flex items-center text-sm font-medium text-zinc-800 dark:text-zinc-100 hover:text-sky-500 hover:dark:text-sky-400 transition"
     >
       <Icon name="heroicons:link-20-solid" class="h-4 w-4" />
       <span class="ml-2">
