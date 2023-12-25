@@ -9,7 +9,7 @@ resources:
   - name: Talk Devoxx
     url: /talks/unpoly-pour-reprendre-le-controle
     icon: i-heroicons-chat-bubble-bottom-center-text-20-solid
-  - name: Le prochain framework Vue.js
+  - name: Le prochain framework Vue
     url: /articles/le-prochain-framework-vue
     icon: i-heroicons-document-text-20-solid
 datePublished: 2023-12-25
@@ -31,11 +31,11 @@ Pour cela, je décide de rester à Paris, où j'y faisais déjà mon stage de ma
 
 ### Meetup
 
-Pour rencontrer de nouvelles personnes et découvrir de nouveaux univers, je décide de participer à des meetups, beaucoup de meetups pour y parler de JavaScript, de développement web, de Notion et même d'entrepreneuriat. Chaque mois, j'assiste à 2 à 3 meetups.
+Pour rencontrer de nouvelles personnes et découvrir de nouveaux univers, je décide de participer à des meetups, beaucoup de meetups pour y parler de JavaScript, de développement web, de Notion et même d'entrepreneuriat. Chaque mois, j'assiste à 2 ou 3 meetups.
 
 2 meetups m'ont particulièrement marqués.
 
-Le premier était en novembre 2022 à [ParisJS](https://parisjs.org/). Durant celui-ci, un organisateur de la Devoxx est venu pour présenter l'événement et expliquer qu'il était à la recherche de speaker débutant pour parler de développement web. C'est à ce moment que je me suis dit que je devais me lancer et proposer un talk.
+Le premier était en novembre 2022 à [ParisJS](https://parisjs.org/). Durant celui-ci, un organisateur de la Devoxx est venu pour présenter l'événement et expliquer qu'il était à la recherche de speakers débutant pour parler de développement web. C'est à ce moment que je me suis dit que je devais me lancer et proposer un talk.
 
 Le second est un meetup chez [Qonto](https://qonto.com/) en mars 2023 où j'ai pu assister au [GDILive#4](https://www.gdiy.fr/live-4automatisation/) (Génération Do It Yourself) avec Matthieu Stefani, Shubham Sharma, Chloe Giraut, Christofer Ciminelli et Antoine Wemaëre. Un moment passionnant avec des échanges passionnants autour de l'automatisation de la finance pour les indépendants.
 
@@ -43,13 +43,13 @@ Le second est un meetup chez [Qonto](https://qonto.com/) en mars 2023 où j'ai p
 
 ### Devoxx
 
-Après avoir découvert la Devoxx en novembre et passé mon mois de décembre à réfléchir et soumettre 2 talks pour l'édition 2023, je reçois, en février 2023, un mail m'annonçant que mon talk sur Unpoly a été retenu. Les choses sérieuses commencent, je dois préparer mon talk !
+Après avoir découvert la Devoxx en novembre et passé mon mois de décembre à réfléchir et soumettre 2 talks pour l'édition 2023, je reçois, en février 2023, un mail m'annonçant que mon talk sur Unpoly a été retenu. Quelle joie ! Les choses sérieuses commencent, je dois préparer mon talk.
 
-En ayant un talk retenu, ça m'a aussi permis de participer aux 3 jours de la conférence et d'entendre parler de GitOps, de Java, de sécurité, de PostgreSQL et même de [la loi de Conway](https://youtu.be/Kx7XOqrPoWk?si=vqOShmxtMIbsP50b). C'était une expérience de fou, tellement d'entreprises à découvrir et de personnes passionnées avec qui discuter.
+En ayant un talk retenu, ça m'a permis de participer aux 3 jours de la conférence et d'entendre parler de GitOps, de Java, de sécurité, de PostgreSQL et même de [la loi de Conway](https://youtu.be/Kx7XOqrPoWk?si=vqOShmxtMIbsP50b). C'était une expérience de fou, tellement d'entreprises à découvrir et de personnes passionnées avec qui discuter.
 
 ![Devoxx](/images/articles/recap-2023/devoxx.webp)
 
-Durant un temps d'échange avec les équipes de GitHub, je découvre qu'ils organisent un GitHub Galaxy à Paris en mai. Alors ni une ni deux, je m'y inscris.
+Durant un temps d'échange avec les équipes de GitHub, je découvre qu'ils organisent un GitHub Galaxy à Paris en mai. Alors ni une ni deux, je m'y inscris. Je ne sais pas vraiment ce que c'est mais c'est organisé par GitHub alors l'occasion est trop belle !
 
 ### GitHub Galaxy
 
@@ -65,13 +65,17 @@ Et surtout, j'ai eu la chance de rencontrer et échanger avec Anthony Fu ! Il es
 
 ## Code et Développement web
 
-Ma césure m'a permis de me concentrer davantage sur le développement web en ayant plus de temps à disposition. Ainsi, j'ai pu commencer à utiliser sérieusement Nuxt et Adonis à travers différents projets comme ceux du [Classement des Associations](https://github.com/classement-des-associations). Plus j'utilisais Nuxt et plus je me rendais compte que je ne comprenais pas vraiment ce qu'il se passait, notamment comment utiliser Nitro et où trouver sa documentation.
+Ma césure m'a permis de me concentrer davantage sur le développement web en ayant plus de temps à disposition. Ainsi, j'ai pu commencer à utiliser sérieusement Nuxt et Adonis à travers différents projets comme ceux du [Classement des Associations](https://github.com/classement-des-associations).
+
+Plus j'utilisais Nuxt et plus je me rendais compte que je ne comprenais pas vraiment ce qu'il se passait, notamment comment utiliser Nitro et où trouver sa documentation.
+
+Pour Adonis, j'attends avec impatience la v6.
 
 ### Construire un framework web full-stack
 
-Le 11 mai 2023, tout change lorsque je tombe sur la conférence de Daniel Roe : ["Building for the Edge - Crafting a Next-Gen Framework"](https://youtu.be/hdHLU0qHKhA?si=UsjHVTBBAlL6T2OO). Il y construit un framework full-stack à l'aide de Nitro et React. Je dois avouer, j'ai beau la regarder en boucle, je ne comprends pas grand-chose. Pourtant, c'est fascinant de voir à quel point ça lui semble simple.
+Le 11 mai 2023, tout change lorsque je tombe sur la conférence de Daniel Roe : ["Building for the Edge - Crafting a Next-Gen Framework"](https://youtu.be/hdHLU0qHKhA?si=UsjHVTBBAlL6T2OO). Il y construit un framework full-stack à l'aide de Nitro et React. Je dois avouer, j'ai eu beau la regarder en boucle, je ne comprenais pas grand-chose. Pourtant, c'était fascinant de voir à quel point ça lui semblait simple.
 
-Alors pour comprendre, je me suis mis en tête que j'allais faire comme lui mais en utilisant Vue. J'avais mal estimé la difficulté ! Il m'a bien fallu 1 semaine avant d'arriver à faire quelque chose de fonctionnel. En revanche, le processus m'a énormément appris, tant sur Vite que sur Nitro et la relation entre les 2. Cela m'a aussi permis de découvrir UnJS et de commencer à me plonger dans l'écosystème !
+Alors pour comprendre, je me suis mis en tête que j'allais faire comme lui mais en utilisant Vue. J'avais mal estimé la difficulté ! Il m'a bien fallu 1 semaine avant d'arriver à faire quelque chose d'un peu fonctionnel. En revanche, le processus m'a énormément appris, tant sur Vite que sur Nitro et la relation entre les 2. Cela m'a aussi permis de découvrir UnJS et de commencer à me plonger dans l'écosystème !
 
 ### UnJS
 
@@ -81,9 +85,9 @@ Du coup, je décide d'écrire [une prise en main sur Nitro](/articles/nitro-101-
 
 Effectivement, ça serait super, mais mon petit blog n'a pas vocation à recevoir du contenu en anglais. Du coup, je me pose, je réfléchis et je regarde ce qui se fait dans les autres écosystèmes. Je m'aperçois que le concept de "mastering" x ou y est plutôt commun. Alors pourquoi ne pas lancer la même chose pour UnJS ? C'est comme ça que je me suis lancé dans la création de Mastering UnJS.
 
-Ce projet n'a jamais vu le jour. Pooya Parsa, le créateur d'UnJS, m'a contacté pour me demander si je n'étais pas plus intéressé à l'idée d'aider l'écosystème à se développer en travaillant sur le site et le marketing plutôt que de commencer à séparer la communauté. J'ai trouvé l'idée géniale, l'opportunité unique donc j'ai accepté sans trop hésiter.
+Ne le cherchez pas, ce projet n'a jamais vu le jour. Pooya Parsa, le créateur d'UnJS, m'a contacté pour me demander si je n'étais pas plutôt intéressé à l'idée d'aider l'écosystème à se développer en travaillant sur le site et le marketing plutôt que de commencer à séparer la communauté en créant ma propre plateforme. J'ai trouvé l'idée géniale, l'opportunité unique donc j'ai accepté sans trop hésiter.
 
-Depuis août 2023, je fais partie de l'équipe d'UnJS en charge du site et du marketing. C'est une expérience de dingue où je m'éclate à travailler pour produire des outils et du contenu permettant à chacun de mieux comprendre UnJS. Jusqu'à présent, c'était un travail en sous-marin mais en 2024, ça devrait commencer à devenir très intéressant !
+Depuis août 2023, je fais partie de l'équipe d'UnJS en charge du site et du marketing. C'est une expérience de dingue et très nouvelle où je m'éclate à travailler pour produire des outils et du contenu permettant à chacun de mieux comprendre UnJS. Jusqu'à présent, c'était un travail en sous-marin mais en 2024, ça devrait commencer à devenir très intéressant !
 
 ## Conclusion
 
@@ -93,4 +97,6 @@ Cet investissement se retrouve clairement dans mes contributions GitHub, passant
 
 ![Mes contributions GitHub](/images/articles/recap-2023/github-contributions.webp)
 
-Joyeux Noël et bonnes fêtes ! 🎄🎉
+Pour l'année 2024, je continue sur ma lancée et de nouvelles choses se préparent à partir de février avec mon départ pour la Suisse et peut-être une Devoxx 2024 !
+
+Et en ce jour de Noël et en cette fin d'année 20203: Joyeux Noël et bonnes fêtes ! 🎄🎉
