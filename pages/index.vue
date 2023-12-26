@@ -22,8 +22,8 @@ useSeoMeta({
     <AppPage class="mt-24">
       <HomeLatestArticles />
       <div class="mt-24 flex flex-col lg:flex-row items-start gap-12">
-        <HomeLatestProjects />
-        <HomeMyExperience class="lg:max-w-sm" />
+        <HomeLatestProjects class="w-full" />
+        <HomeMyExperience class="lg:w-[40rem]" />
       </div>
     </AppPage>
   </div>
