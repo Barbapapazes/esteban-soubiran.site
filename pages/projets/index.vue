@@ -31,7 +31,7 @@ useSchemaOrg([
             />
             <div class="relative shrink-0">
               <img v-if="project.img" :src="project.img" aria-hidden="true" class="w-10">
-              <div v-else-if="project.icon" :class="project.icon" aria-hidden="true" class="w-10" />
+              <div v-else-if="project.icon" :class="project.icon" aria-hidden="true" class="w-10 h-10" />
             </div>
             <div>
               <h3 class="font-semibold tex-lg">

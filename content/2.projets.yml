@@ -21,21 +21,21 @@ projects:
     - name: Nuxt Payload Analyzer
       to: https://github.com/barbapapazes/nuxt-payload-analyzer
       description: Un module pour analyser le poids des payloads de ses pages Nuxt.
-      icon: i-logos-nuxt-icon
+      img: /nuxt.svg
     - name: Nuxt Clarity Analytics
       to: https://github.com/barbapapazes/nuxt-clarity-analytics
       description: Un module pour intégrer Clarity Analytics à son application Nuxt.
-      icon: i-logos-nuxt-icon
+      img: /nuxt.svg
 
   Nuxt UI Pro Templates:
     - name: Slantire
       to: https://github.com/barbapapazes/slantire
       description: Un template de Portfolio.
-      icon: i-logos-nuxt-icon
+      img: /nuxt.svg
     - name: The Green Chronicle
       to: https://github.com/barbapapazes/the-green-chronicle
       description: Un template de Blog.
-      icon: i-logos-nuxt-icon
+      img: /nuxt.svg
 
   Starter Templates:
     - name: Starter Nitro
@@ -49,7 +49,7 @@ projects:
     - name: Starter Nuxt UI Pro
       to: https://github.com/barbapapazes/starter-nuxt-ui-pro
       description: Un starter pour Nuxt UI Pro.
-      icon: i-logos-nuxt-icon
+      img: /nuxt.svg
 
   Extensions VS Code:
     - name: Utils AI

@@ -17,7 +17,7 @@ const { data } = await useAsyncData('content:home-projects', () => queryContent(
           <li v-for="project in group" :key="project.to" class="flex flex-row items-center gap-1">
             <div class="relative shrink-0">
               <img v-if="project.img" :src="project.img" aria-hidden="true" class="w-4">
-              <div v-else-if="project.icon" :class="project.icon" aria-hidden="true" class="w-4" />
+              <div v-else-if="project.icon" :class="project.icon" aria-hidden="true" class="w-4 h-4" />
             </div>
             <NuxtLink :to="project.to" target="_blank" rel="noopener">
               {{ project.name }}
