@@ -12,7 +12,7 @@ layout: article
 
 _J'aime Nuxt, et cet article se veut être un **état de l'art**. Il se veut constructif et bienveillant. Devenir grand prend du temps et ce qui a été accompli ces dernières années est déjà merveilleux !_ :yellow_heart:
 
-Nuxt, Next, Remix, SvelteKit ou même Solid Start ont un point commun. Après avoir conquis le front-end, ils s'attaquent à la partie back-end du web et tentent de devenir de véritables frameworks full-stack. Mais qu'en est-il aujourd'hui et où en sont-ils par rapport aux frameworks full-stack déjà présents, comme AdonisJS, Laravel ou Rails, originellement plus axés sur le back-end que le front-end et matures.
+Nuxt, Next, Remix, SvelteKit ou même Solid Start ont un point commun. Après avoir conquis le front-end, ils s'attaquent à la partie back-end du web et tentent de devenir de véritables frameworks full-stack. Mais qu'en est-il aujourd'hui et où en sont-ils par rapport aux frameworks full-stack déjà présents, comme Adonis, Laravel ou Rails, originellement plus axés sur le back-end que le front-end et matures.
 
 ::alert{type="info"}
 Avec cet article, nous allons prendre l'exemple de Nuxt. Cependant, les autres frameworks cités sont dans la même situation et les conclusions de cet article sont valables pour eux.
@@ -169,10 +169,10 @@ La conséquence de cela, c'est une mauvaise intégration et gestion des erreurs 
 
 ```json
 {
-    "message": "[\n  {\n    \"code\": \"invalid_type\",\n    \"expected\": \"string\",\n    \"received\": \"undefined\",\n    \"path\": [\n      \"url\"\n    ],\n    \"message\": \"Required\"\n  }\n]",
-    "statusCode": 400,
-    "statusMessage": "",
-    "url": "/api/redirects"
+  "message": "[\n  {\n    \"code\": \"invalid_type\",\n    \"expected\": \"string\",\n    \"received\": \"undefined\",\n    \"path\": [\n      \"url\"\n    ],\n    \"message\": \"Required\"\n  }\n]",
+  "statusCode": 400,
+  "statusMessage": "",
+  "url": "/api/redirects"
 }
 ```
 
