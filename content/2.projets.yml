@@ -1,0 +1,64 @@
+title: Projets
+description: Depuis des années, je me plais à créer des choses en ligne et à les partager à travers mes articles. Voici une liste de projets que j'ai réalisé et dont je suis fier.
+projects:
+  Priorités Actuelles:
+    - name: UnJS Website
+      to: https://github.com/unjs/website
+      description: Le site principale de l'organisation UnJS.
+      img: /unjs.svg
+
+  Écosystème UnJS:
+    - name: UnJS Relations
+      to: https://github.com/barbapapazes/unjs-relations
+      description: Un site web pour visualiser les relations entre les projets de l'écosystème UnJS.
+      img: /unjs.svg
+    - name: UnJS Metrics
+      to: https://github.com/barbapapazes/unjs-metrics
+      description: Un site web pour visualiser les métriques des projets de l'écosystème UnJS.
+      img: /unjs.svg
+
+  Écosystème Nuxt:
+    - name: Nuxt Payload Analyzer
+      to: https://github.com/barbapapazes/nuxt-payload-analyzer
+      description: Un module pour analyser le poids des payloads de ses pages Nuxt.
+      icon: i-logos-nuxt-icon
+    - name: Nuxt Clarity Analytics
+      to: https://github.com/barbapapazes/nuxt-clarity-analytics
+      description: Un module pour intégrer Clarity Analytics à son application Nuxt.
+      icon: i-logos-nuxt-icon
+
+  Nuxt UI Pro Templates:
+    - name: Slantire
+      to: https://github.com/barbapapazes/slantire
+      description: Un template de Portfolio.
+      icon: i-logos-nuxt-icon
+    - name: The Green Chronicle
+      to: https://github.com/barbapapazes/the-green-chronicle
+      description: Un template de Blog.
+      icon: i-logos-nuxt-icon
+
+  Starter Templates:
+    - name: Starter Nitro
+      to: https://github.com/barbapapazes/starter-nitro
+      description: Un starter pour Nitro.
+      img: /nitro.svg
+    - name: Starter npm Package
+      to: https://github.com/barbapapazes/starter-npm-package
+      description: Un starter pour npm.
+      icon: i-logos-npm-icon
+    - name: Starter Nuxt UI Pro
+      to: https://github.com/barbapapazes/starter-nuxt-ui-pro
+      description: Un starter pour Nuxt UI Pro.
+      icon: i-logos-nuxt-icon
+
+  Extensions VS Code:
+    - name: Utils AI
+      to: https://github.com/barbapapazes/utils-ai
+      description: Une collection d'utilitaire écrire avec l'IA.
+      icon: i-logos-visual-studio-code
+
+  CLI:
+    - name: Utils AI
+      to: https://github.com/barbapapazes/utils-ai
+      description: Une collection d'utilitaire écrire avec l'IA.
+      icon: i-heroicons-command-line
