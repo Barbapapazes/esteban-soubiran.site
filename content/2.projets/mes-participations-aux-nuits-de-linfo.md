@@ -7,7 +7,6 @@ cover:
   alt: L'image montre l'ensemble de l'équipe de 2018. On peut y voir 11 personnes donc 1 se faisant porter par 6 autres. Chaque personne porte un tee-shirt avec le logo de la nuit de l'info.
 datePublished: 2018-12-02
 dateModified: 2022-11-05
-layout: project
 ---
 
 ## Contexte

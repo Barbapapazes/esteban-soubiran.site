@@ -1,4 +1,4 @@
-export const useActivePath = () => {
+export function useActivePath() {
   const route = useRoute()
 
   const isHome = computed(() => route.path === '/')
@@ -9,6 +9,6 @@ export const useActivePath = () => {
 
   return {
     isHome,
-    isActive
+    isActive,
   }
 }

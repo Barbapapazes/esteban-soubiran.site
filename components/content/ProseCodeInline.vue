@@ -1,5 +1,5 @@
 <template>
-  <code class="mx-1px px-[0.375rem] py-[0.2rem] rounded-md font-mono font-400 text-sm text-sky-500 dark:text-sky-400 bg-sky-50 dark:bg-sky-950 before-content-empty after-content-empty">
+  <code class="mx-1px px-[0.375rem] py-[0.2rem] rounded-md font-mono font-400 text-sky-500 dark:text-sky-400 bg-sky-50 dark:bg-sky-950 before:content-[''] after:content-['']">
     <slot />
   </code>
 </template>

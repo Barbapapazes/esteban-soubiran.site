@@ -1,12 +1,11 @@
 <script lang="ts" setup>
 const colorMode = useColorMode()
 
-const toggleColor = () => {
-  if (colorMode.value === 'light') {
+function toggleColor() {
+  if (colorMode.value === 'light')
     colorMode.preference = 'dark'
-  } else {
+  else
     colorMode.preference = 'light'
-  }
 }
 
 const attrs = useAttrs()
@@ -18,7 +17,7 @@ const attrs = useAttrs()
     type="button"
     title="Changer le thème"
     v-bind="attrs"
-    class="group h-10 w-10 flex justify-center items-center text-reduced"
+    class="group h-10 w-10 flex justify-center items-center text-gray-500 dark:text-gray-400"
     hover
     @click="toggleColor()"
   >
@@ -27,7 +26,7 @@ const attrs = useAttrs()
         <Icon
           v-if="$colorMode.value === 'dark'"
           name="heroicons:moon"
-          class="h-5 w-5 stroke-zinc-500 group-hover:stroke-zinc-400 fill-sky-400/10 transition-base"
+          class="h-5 w-5 stroke-gray-500 group-hover:stroke-gray-400 fill-sky-400/10 transition-base"
         />
         <Icon
           v-else-if="$colorMode.value === 'light'"

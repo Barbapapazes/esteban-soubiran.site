@@ -1,15 +1,15 @@
 <script lang="ts" setup>
 import {
-  TransitionRoot,
-  TransitionChild,
-  Dialog,
-  DialogPanel,
   Combobox,
   ComboboxInput,
+  ComboboxOption,
   ComboboxOptions,
-  ComboboxOption
+  Dialog,
+  DialogPanel,
+  TransitionChild,
+  TransitionRoot,
 } from '@headlessui/vue'
-import { SearchResult } from 'minisearch'
+import type { SearchResult } from 'minisearch'
 
 defineProps<{
   open: boolean
@@ -19,7 +19,7 @@ const emit = defineEmits<{
   'update:open': [state: boolean]
 }>()
 
-const close = () => {
+function close() {
   emit('update:open', false)
 }
 
@@ -28,7 +28,8 @@ const search = ref('')
 const searchDebounced = refDebounced(search, 200)
 
 const navigate = function () {
-  if (!selected.value) { return }
+  if (!selected.value)
+    return
 
   navigateTo(selected.value.id)
   close()
@@ -42,15 +43,13 @@ const slicedResult = computed(() => {
 })
 
 watch(result, () => {
-  if (!result.value.length && search.value) {
+  if (!result.value.length && search.value)
     isEmpty.value = true
-  }
 })
 
 watch(search, () => {
-  if (!search.value) {
+  if (!search.value)
     isEmpty.value = false
-  }
 })
 </script>
 
@@ -80,16 +79,15 @@ watch(search, () => {
             leave-from="opacity-100 scale-100"
             leave-to="opacity-0 scale-95"
           >
-            <DialogPanel as="div" class="h-full md:h-auto w-full max-w-3xl md:h-md flex flex-col bg-white/90 dark:bg-zinc-800/90 md:rounded-2xl md:border-base shadow-xl text-content overflow-hidden">
+            <DialogPanel as="div" class="h-full w-full max-w-3xl md:h-[28rem] flex flex-col bg-white/90 dark:bg-gray-800/90 md:rounded-2xl md:ring-1 ring-gray-900/5 dark:ring-white/10 shadow-xl text-gray-800 dark:text-gray-100 overflow-hidden">
               <Combobox v-model="selected">
-                <div class="relative flex flex-row justify-between items-center px-6 py-2 border-b border-zinc-9000/5 dark:border-white/10">
+                <div class="relative flex flex-row justify-between items-center px-6 py-2 border-b border-gray-900/5 dark:border-white/10">
                   <label for="search">
                     <span class="sr-only">
                       Rechercher
                     </span>
-                    <Icon
-                      name="heroicons:magnifying-glass"
-                      class="w-6 h-6"
+                    <div
+                      class="i-heroicons-magnifying-glass w-6 h-6"
                     />
                   </label>
                   <ComboboxInput
@@ -97,19 +95,21 @@ watch(search, () => {
                     type="text"
                     name="search"
                     placeholder="Rechercher..."
-                    class="ml-4 py-1 w-full bg-transparent focus:outline-none placeholder:text-reduced placeholder:text-lg text-lg"
+                    class="ml-4 py-1 w-full bg-transparent focus:outline-none placeholder:text-gray-500 placeholder:dark:text-gray-400 placeholder:text-lg text-lg"
                     :value="search"
                     @change="search = $event.target.value"
                     @keydown.enter="navigate"
                   />
                   <button class=" ml-4 p-1" @click="close">
-                    <Icon
-                      name="heroicons:x-mark-solid"
-                      class="w-6 h-6 text-reduced"
+                    <span class="sr-only">
+                      Fermer la recherche
+                    </span>
+                    <span
+                      class="i-heroicons-x-mark-solid block w-6 h-6 text-gray-500 dark:text-gray-400"
                     />
                   </button>
                 </div>
-                <ComboboxOptions static class="flex flex-col items-start divide-y divide-zinc-900/2 dark:divide-white/5 overflow-y-scroll">
+                <ComboboxOptions static class="flex flex-col items-start divide-y divide-gray-900/2 dark:divide-white/5 overflow-y-scroll">
                   <ComboboxOption
                     v-for="item in slicedResult"
                     :key="item.id"
@@ -119,53 +119,50 @@ watch(search, () => {
                     @click="close"
                   >
                     <NuxtLink :to="item.id" class="px-6 py-3 w-full flex" :class="{ 'bg-sky-100/60 dark:bg-sky-900/20': active }">
-                      <Icon name="heroicons:hashtag" :class="{ 'text-primary': active, 'text-reduced': !active }" class="my-1 shrink-0" />
-                      <div class="ml-2 flex items-center gap-x-2 flex-wrap">
+                      <span :class="{ 'text-sky-500 dark:text-sky-400': active, 'text-gray-500 dark:text-gray-400': !active }" class="i-heroicons-hashtag block my-1 shrink-0" />
+                      <span class="ml-2 flex items-center gap-x-2 flex-wrap">
                         <template v-for="title in item.titles" :key="title">
                           <span>
                             {{ title }}
                           </span>
-                          <Icon name="heroicons:chevron-right" class="text-reduced" />
+                          <span class="i-heroicons-chevron-right block text-gray-500 dark:text-gray-400" />
                         </template>
-                        <span class="font-semibold" :class="{ 'text-primary': active }">
+                        <span class="font-semibold" :class="{ 'text-sky-500 dark:text-sky-400': active }">
                           {{ item.title }}
                         </span>
-                      </div>
+                      </span>
                     </NuxtLink>
                   </ComboboxOption>
                 </ComboboxOptions>
                 <div v-if="isEmpty" class="h-full flex flex-col items-center justify-center">
-                  <p class="text-content">
+                  <p class="text-gray-800 dark:text-gray-100">
                     Aucun résultat pour "<strong>{{ search }}</strong>"
                   </p>
-                  <p class="mt-6 text-sm text-content">
+                  <p class="mt-6 text-sm text-gray-800 dark:text-gray-100">
                     Essayez de rechercher un article ou une page
                   </p>
-                  <ul class="mt-2 text-content">
+                  <ul class="mt-2 text-gray-800 dark:text-gray-100">
                     <li class="flex flex-row items-center gap-1">
-                      <Icon
-                        name="heroicons:chevron-double-right"
-                        class="w-3 h-3"
+                      <span
+                        class="i-heroicons-chevron-double-right block w-3 h-3"
                       />
-                      <NuxtLink to="/articles" class="text-primary hover:text-sky-600 dark:hover:text-sky-300" @click="close">
-                        Voir tous mes articles
+                      <NuxtLink to="/articles" class="text-sky-500 dark:text-sky-400 hover:text-sky-600 dark:hover:text-sky-300" @click="close">
+                        Tous mes articles
                       </NuxtLink>
                     </li>
                     <li class="flex flex-row items-center gap-1">
-                      <Icon
-                        name="heroicons:chevron-double-right"
-                        class="w-3 h-3"
+                      <span
+                        class="i-heroicons-chevron-double-right block w-3 h-3"
                       />
-                      <NuxtLink to="/talks" class="text-primary hover:text-sky-600 dark:hover:text-sky-300" @click="close">
-                        Voir tous mes talks
+                      <NuxtLink to="/talks" class="text-sky-500 dark:text-sky-400 hover:text-sky-600 dark:hover:text-sky-300" @click="close">
+                        Tous mes talks
                       </NuxtLink>
                     </li>
                     <li class="flex flex-row items-center gap-1">
-                      <Icon
-                        name="heroicons:chevron-double-right"
-                        class="w-3 h-3"
+                      <span
+                        class="i-heroicons-chevron-double-right block w-3 h-3"
                       />
-                      <NuxtLink to="/a-propos" class="text-primary hover:text-sky-600 dark:hover:text-sky-300" @click="close">
+                      <NuxtLink to="/a-propos" class="text-sky-500 dark:text-sky-400 hover:text-sky-600 dark:hover:text-sky-300" @click="close">
                         À propos
                       </NuxtLink>
                     </li>

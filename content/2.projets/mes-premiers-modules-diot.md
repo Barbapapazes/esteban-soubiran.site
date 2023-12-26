@@ -7,7 +7,6 @@ cover:
   alt: Première page de notre présentation du projet. On peut y lire "Gestion d'électronique à distance, projet 1A".
 datePublished: 2019-06-15
 dateModified: 2020-11-05
-layout: project
 ---
 
 ## Contexte
@@ -86,33 +85,33 @@ Voici un exemple du fichier JSON servant de base de données :
 {
   "addDevices": false,
   "bulbs": [
-  {
-    "name": "one",
-    "id": "1",
-    "state": true,
-    "type": "relay"
-  },
-  {
-    "name": "two",
-    "id": "2",
-    "value": 36,
-    "type": "pwm"
-  },
-  {
-    "name": "three",
-    "id": "3",
-    "state": true,
-    "type": "relay"
-  },
-  {
-    "name": "four",
-    "id": "4",
-    "value": 91,
-    "type": "pwm"
-  }
-],
-"deleteDevices": false,
-"python": false
+    {
+      "name": "one",
+      "id": "1",
+      "state": true,
+      "type": "relay"
+    },
+    {
+      "name": "two",
+      "id": "2",
+      "value": 36,
+      "type": "pwm"
+    },
+    {
+      "name": "three",
+      "id": "3",
+      "state": true,
+      "type": "relay"
+    },
+    {
+      "name": "four",
+      "id": "4",
+      "value": 91,
+      "type": "pwm"
+    }
+  ],
+  "deleteDevices": false,
+  "python": false
 }
 ```
 

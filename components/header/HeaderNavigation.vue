@@ -1,17 +1,18 @@
 <script lang="ts" setup>
-const { navigation } = useContent()
+const { data: navigation } = await useAsyncData('navigation', () => fetchContentNavigation())
+
 const { isActive } = useActivePath()
 </script>
 
 <template>
   <HeaderItem class="px-3">
     <nav aria-labelledby="Navigation primaire">
-      <ul class="flex flex-row font-medium text-content text-sm">
+      <ul class="flex flex-row font-medium text-gray-800 dark:text-gray-100 text-sm">
         <li v-for="item in navigation" :key="item._path" class="relative">
           <NuxtLink
             :to="item._path"
-            class="relative block px-3 py-2 transition hover:text-primary"
-            :class="{ 'text-primary': isActive(item._path) }"
+            class="relative block px-3 py-2 transition hover:text-sky-500 hover:dark:text-sky-400"
+            :class="{ 'text-sky-500 dark:text-sky-400': isActive(item._path) }"
           >
             {{ item.title }}
           </NuxtLink>

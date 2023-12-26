@@ -7,7 +7,6 @@ cover:
   alt: Capture d'écran du site web de la cuisine numérique
 datePublished: 2021-09-15
 dateModified: 2022-11-10
-layout: project
 ---
 
 ## Contexte

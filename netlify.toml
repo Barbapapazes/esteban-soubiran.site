@@ -1,9 +1,9 @@
-[build.environment]
-  NODE_VERSION = "18"
-
 [build]
-  publish = "dist"
-  command = "pnpm run generate"
+publish = "dist"
+command = "pnpm run generate"
+
+[build.environment]
+NODE_VERSION = "18"
 
 [build.processing.html]
-  pretty_urls = true
+pretty_urls = true

@@ -2,7 +2,6 @@
 import { Popover, PopoverButton } from '@headlessui/vue'
 
 const openNavigation = ref(false)
-
 </script>
 
 <template>
@@ -12,7 +11,7 @@ const openNavigation = ref(false)
       type="button"
       title="Ouvrir la navigation"
       v-bind="$attrs"
-      class="font-medium text-content px-4 py-2 flex items-center gap-2"
+      class="font-medium text-gray-800 dark:text-gray-100 px-4 py-2 flex items-center gap-2"
       hover
       @click="openNavigation = true"
     >
@@ -20,7 +19,7 @@ const openNavigation = ref(false)
         Menu
       </span>
       <Icon
-        class="h-auto w-3 stroke-zinc-500 group-hover:stroke-zinc-700 dark:group-hover:stroke-zinc-400"
+        class="h-auto w-3 stroke-gray-500 group-hover:stroke-gray-700 dark:group-hover:stroke-gray-400"
         name="heroicons:chevron-down"
       />
     </HeaderItem>

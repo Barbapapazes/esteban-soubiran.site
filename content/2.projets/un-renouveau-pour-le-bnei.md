@@ -7,7 +7,6 @@ cover:
   alt: Capture d'écran de la page d'accueil de bnei.fr. On peut y voir un titre "Le Bureau National des Elèves Ingénieurs" et un sous titre "Représenter, Informer, Former"
 datePublished: 2021-11-26
 dateModified: 2022-11-06
-layout: project
 ---
 
 ## Contexte

@@ -1,19 +1,15 @@
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
-  extends: ['nuxt-seo-kit'],
   modules: [
+    '@nuxtseo/module',
     'nuxt-clarity-analytics',
     '@nuxt/content',
-    '@unocss/nuxt',
-    '@nuxtjs/color-mode',
+    '@nuxt/ui',
     'nuxt-icon',
     '@nuxthq/studio',
-    '@vueuse/nuxt'
+    '@vueuse/nuxt',
+    'nuxt-payload-analyzer',
   ],
-
-  experimental: {
-    inlineSSRStyles: false
-  },
 
   runtimeConfig: {
     public: {
@@ -21,69 +17,50 @@ export default defineNuxtConfig({
       siteUrl: 'https://esteban-soubiran.site',
       siteName: 'Estéban Soubiran',
       siteDescription:
-        "Développeur web et passionné par l'associatif",
+        'Développeur web et passionné par l\'associatif',
       language: 'fr-FR',
-      titleSeparator: '·'
-    }
+      titleSeparator: '·',
+    },
+  },
+
+  site: {
+    url: 'https://esteban-soubiran.site',
+    name: 'Estéban Soubiran',
+    description: 'Développeur web passionné par l\'open source',
+    language: 'fr-FR',
+    separator: '·',
   },
 
   content: {
-    documentDriven: {
-      host: 'https://esteban-soubiran.site',
-      trailingSlash: true
-    },
+    documentDriven: false,
     highlight: {
       theme: {
         default: 'github-light',
-        dark: 'github-dark'
-      }
-    }
+        dark: 'github-dark',
+      },
+      preload: ['sql', 'ini'],
+    },
+  },
+
+  sitemap: {
+    strictNuxtContentPaths: true,
   },
 
   css: [
-    '@unocss/reset/tailwind.css',
-    '~/assets/css/app.css'
+    '~/assets/css/app.css',
   ],
-
-  colorMode: {
-    classSuffix: ''
-  },
-
-  app: {
-    head: {
-      link: [
-        {
-          rel: 'icon',
-          type: 'image/ico',
-          href: '/favicon.ico'
-        }
-      ]
-    }
-  },
 
   nitro: {
     prerender: {
-      routes: ['/'],
-      crawlLinks: true
-    }
+      routes: ['/', '/api/search.txt'],
+      crawlLinks: true,
+      failOnError: false,
+    },
   },
 
-  routeRules: {
-    '/api/search': {
-      prerender: true,
-      // Use text/plain to avoid Nitro render an index.html
-      headers: { 'Content-Type': 'text/plain' }
-    }
+  ui: {
+    icons: ['heroicons', 'simple-icons'],
   },
 
-  linkChecker: {
-    exclude: [
-      '/a-propos',
-      '/projets',
-      '/articles',
-      '/experience'
-    ]
-  },
-
-  devtools: true
+  devtools: true,
 })

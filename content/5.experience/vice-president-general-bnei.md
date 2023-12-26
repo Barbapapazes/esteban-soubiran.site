@@ -11,7 +11,6 @@ from: 2021
 to: 2022
 datePublished: 2022-11-25
 dateModified: 2022-11-25
-layout: experience
 ---
 
 ## BNEI
