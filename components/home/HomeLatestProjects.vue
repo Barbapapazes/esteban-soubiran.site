@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-const { data } = await useAsyncData('content:home-latest-projects', () => queryContent('/projets/').sort({ datePublished: -1 }).only(['_path', 'title', 'datePublished', 'description', 'cover']).limit(3).find())
+const { data } = await useAsyncData('content:home-projects', () => queryContent('/projets/').findOne())
 </script>
 
 <template>
@@ -8,9 +8,22 @@ const { data } = await useAsyncData('content:home-latest-projects', () => queryC
       Mes derniers projets
     </template>
 
-    <ol class="space-y-16">
-      <li v-for="project in data" :key="project._path">
-        <AppCard :to="project._path" :title="project.title" :description="project.description" :date="project.datePublished" :cover="project.cover" date-term="Publié le" />
+    <ol class="flex flex-col gap-2">
+      <li v-for="(group, index) in data.projects" :key="index">
+        <span>
+          {{ index }}
+        </span>
+        <ul class="mt-1 flex flex-row items-center gap-2 text-gray-500 dark:text-gray-400">
+          <li v-for="project in group" :key="project.to" class="flex flex-row items-center gap-1">
+            <div class="relative shrink-0">
+              <img v-if="project.img" :src="project.img" aria-hidden="true" class="w-4 h-4">
+              <div v-else-if="project.icon" :class="project.icon" aria-hidden="true" class="w-4 h-4" />
+            </div>
+            <NuxtLink :to="project.to" target="_blank" rel="noopener">
+              {{ project.name }}
+            </NuxtLink>
+          </li>
+        </ul>
       </li>
     </ol>
 
