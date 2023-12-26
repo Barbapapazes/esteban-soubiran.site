@@ -30,8 +30,8 @@ useSchemaOrg([
               class="absolute -inset-4 z-0 scale-95 bg-gray-50 opacity-0 transition group-hover:scale-100 group-hover:opacity-100 dark:bg-gray-800/50 sm:rounded-lg duration-200 ease-in"
             />
             <div class="relative shrink-0">
-              <img v-if="project.img" :src="project.img" aria-hidden="true" class="w-10 h-10">
-              <div v-else-if="project.icon" :class="project.icon" aria-hidden="true" class="w-10 h-10" />
+              <img v-if="project.img" :src="project.img" aria-hidden="true" class="w-10">
+              <div v-else-if="project.icon" :class="project.icon" aria-hidden="true" class="w-10" />
             </div>
             <div>
               <h3 class="font-semibold tex-lg">
