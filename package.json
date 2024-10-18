@@ -15,7 +15,7 @@
     "lint:md:fix": "markdownlint . --fix && case-police --fix ./**/*.md"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^2.4.6",
+    "@antfu/eslint-config": "^3.8.0",
     "@iconify-json/heroicons": "^1.1.19",
     "@iconify-json/logos": "^1.1.41",
     "@iconify-json/simple-icons": "^1.1.85",
@@ -27,7 +27,7 @@
     "@vueuse/core": "^10.7.0",
     "@vueuse/nuxt": "^10.7.0",
     "case-police": "^0.6.1",
-    "eslint": "^8.56.0",
+    "eslint": "^9.13.0",
     "markdownlint-cli": "^0.37.0",
     "minisearch": "^6.3.0",
     "nuxt": "^3.8.2",
