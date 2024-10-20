@@ -9,14 +9,14 @@ devDependencies:
     specifier: ^2.4.6
     version: 2.4.6(@vue/compiler-sfc@3.3.13)(eslint@8.56.0)(typescript@5.3.3)
   '@iconify-json/heroicons':
-    specifier: ^1.1.19
-    version: 1.1.19
+    specifier: ^1.2.1
+    version: 1.2.1
   '@iconify-json/logos':
-    specifier: ^1.1.41
-    version: 1.1.41
+    specifier: ^1.2.3
+    version: 1.2.3
   '@iconify-json/simple-icons':
-    specifier: ^1.1.85
-    version: 1.1.85
+    specifier: ^1.2.9
+    version: 1.2.9
   '@nuxt/content':
     specifier: ^2.10.0
     version: 2.10.0(nuxt@3.8.2)(vue@3.3.13)
@@ -1324,14 +1324,14 @@ packages:
       '@iconify/types': 2.0.0
     dev: true
 
-  /@iconify-json/heroicons@1.1.19:
-    resolution: {integrity: sha512-uW2F9vdGll59W21ocBl+wR4Ve+/1CsmzBqPTuOaR3CbKzqnJKwzGASvC4Op0uTieFVWfBaevnzcRxwNo73J29g==}
+  /@iconify-json/heroicons@1.2.1:
+    resolution: {integrity: sha512-TkKfS5U27kE5MXmSGLzPoz95BP5VA9xEJXwJFwmPMVLX+xyWq0OkoiWTUXB0uAoQODpb8BaRpzSydItrq9fIRA==}
     dependencies:
       '@iconify/types': 2.0.0
     dev: true
 
-  /@iconify-json/logos@1.1.41:
-    resolution: {integrity: sha512-nq69aemSNSxsPh6hDx6QHQBZca6vQzTg6fUXdo996IQe41TNueyJrQXjdhaZr0jaqGEforuSPGLB16SMSZ+T2A==}
+  /@iconify-json/logos@1.2.3:
+    resolution: {integrity: sha512-JLHS5hgZP1b55EONAWNeqBUuriRfRNKWXK4cqYx0PpVaJfIIMiiMxFfvoQiX/bkE9XgkLhcKmDUqL3LXPdXPwQ==}
     dependencies:
       '@iconify/types': 2.0.0
     dev: true
@@ -1348,8 +1348,8 @@ packages:
       '@iconify/types': 2.0.0
     dev: true
 
-  /@iconify-json/simple-icons@1.1.85:
-    resolution: {integrity: sha512-INgYqgh+zZZgqjD22HVSFYy7m0ben88lG4JuS41emxf23BVJcvDidADAh78H/+5U0vdc2zfceglVR893VS+TaQ==}
+  /@iconify-json/simple-icons@1.2.9:
+    resolution: {integrity: sha512-0hxlf0uCKAUT+rLjh4iH16XMfRqptOpZURBVk2PKAFDGbe1+8hPPstKFkBAPvtfkCK0bO+E9QE/Q5ozuCYz28A==}
     dependencies:
       '@iconify/types': 2.0.0
     dev: true
@@ -1691,7 +1691,7 @@ packages:
       '@nuxt/devtools': 1.0.6
     dependencies:
       '@iconify-json/carbon': 1.1.27
-      '@iconify-json/logos': 1.1.41
+      '@iconify-json/logos': 1.2.3
       '@iconify-json/ri': 1.1.18
       '@iconify-json/tabler': 1.1.102
       '@nuxt/devtools': 1.0.6(nuxt@3.8.2)(vite@4.5.0)
@@ -1998,7 +1998,7 @@ packages:
       '@egoist/tailwindcss-icons': 1.4.0(tailwindcss@3.4.0)
       '@headlessui/tailwindcss': 0.2.0(tailwindcss@3.4.0)
       '@headlessui/vue': 1.7.16(vue@3.3.13)
-      '@iconify-json/heroicons': 1.1.19
+      '@iconify-json/heroicons': 1.2.1
       '@nuxt/kit': 3.8.2
       '@nuxtjs/color-mode': 3.3.2
       '@nuxtjs/tailwindcss': 6.10.1
